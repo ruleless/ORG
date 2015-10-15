@@ -1,0 +1,17 @@
+* Schedule
+** Schedule For Job
+*** 2015/10
+**** <2015-10-15 周四>(第二周)
+***** PROCESSING [[http://172.16.0.150:81/issues/14921][首次出国任务警示和死亡引导]]
+	  DEADLINE: <2015-10-17 周六>
+	  - State "PROCESSING" from "TODO"       [2015-10-15 周四 15:13]
+****** DONE 新手玩家首次被杀时，给与一定的补偿和安抚
+	   CLOSED: [2015-10-15 周四 20:07]
+	   - State "DONE"       from "PROCESSING" [2015-10-15 周四 20:07]
+	   - State "PROCESSING" from "TODO"       [2015-10-15 周四 15:13]
+****** TODO 新手玩家初次出国时，给予警示
+***** TODO [[http://172.16.0.150:81/issues/15582][怪物装备掉率可调整功能支持]]
+	  DEADLINE: <2015-10-17 周六>
+***** TODO 技能心法1-50级引导界面
+	  DEADLINE: <2015-10-17 周六>
+** Schedule For Career
