@@ -1,17 +1,39 @@
 * Schedule
 ** Schedule For Job
 *** 2015/10
-**** <2015-10-15 周四>(第二周)
-***** PROCESSING [[http://172.16.0.150:81/issues/14921][首次出国任务警示和死亡引导]]
-	  DEADLINE: <2015-10-17 周六>
-	  - State "PROCESSING" from "TODO"       [2015-10-15 周四 15:13]
-****** DONE 新手玩家首次被杀时，给与一定的补偿和安抚
-	   CLOSED: [2015-10-15 周四 20:07]
-	   - State "DONE"       from "PROCESSING" [2015-10-15 周四 20:07]
-	   - State "PROCESSING" from "TODO"       [2015-10-15 周四 15:13]
-****** TODO 新手玩家初次出国时，给予警示
+**** PROCESSING <2015-10-15 周四>(第二周) [66%]
+	 - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:06]
 ***** TODO [[http://172.16.0.150:81/issues/15582][怪物装备掉率可调整功能支持]]
 	  DEADLINE: <2015-10-17 周六>
-***** TODO 技能心法1-50级引导界面
-	  DEADLINE: <2015-10-17 周六>
+***** DONE 技能心法1-50级引导界面
+	  CLOSED: [2015-10-16 周五 16:33] DEADLINE: <2015-10-17 周六>
+	  - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:33]
+	  - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:47]
+***** DONE [[http://172.16.0.150:81/issues/14921][首次出国任务警示和死亡引导]] [100%]
+	  CLOSED: [2015-10-16 周五 16:00]
+	  - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:00]
+	  - State "PROCESSING" from "DONE"       [2015-10-16 周五 10:07]
+****** DONE 新手玩家首次被杀时，给与一定的补偿和安抚
+	   CLOSED: [2015-10-16 周五 10:06]
+	   - State "DONE"       from "PROCESSING" [2015-10-16 周五 10:06]
+	   - State "PROCESSING" from "TODO"       [2015-10-15 周四 15:05]
+****** DONE 新手玩家初次出国时，给予警示
+	   CLOSED: [2015-10-16 周五 16:00]
+	   - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:00]
+	   - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:47]
 ** Schedule For Career
+*** By Time
+**** 2015/10
+***** TODO <2015-10-16 周五> [0%]
+****** TODO [[link_Quaternion][四元数]]
+****** TODO [[link_KBE_Startup][KBE启动和执行流程]]
+*** By Theme
+**** TODO KBEngine [0%]
+***** TODO read source code of KBEngine [0%]
+****** TODO KBEngine 启动和执行流程
+	   #<<link_KBE_Startup>>	   
+****** TODO KBEngine 玩家登陆和角色创建流程
+**** TODO 3D Rendering [0%]												 :3D:
+***** TODO Math [%]													   :math:
+****** TODO Quaternion (四元数)	[%] 						   :Quaternion:Q:
+	   #<<link_Quaternion>>
