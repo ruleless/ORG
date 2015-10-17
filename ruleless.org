@@ -1,10 +1,13 @@
 * Schedule
 ** Schedule For Job
 *** 2015/10
-**** PROCESSING <2015-10-15 周四>(第二周) [66%]
+**** DONE <2015-10-15 周四>(第二周) [100%]
+	 CLOSED: [2015-10-17 周六 17:42]
+	 - State "DONE"       from "PROCESSING" [2015-10-17 周六 17:42]
 	 - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:06]
-***** TODO [[http://172.16.0.150:81/issues/15582][怪物装备掉率可调整功能支持]]
-	  DEADLINE: <2015-10-17 周六>
+***** DONE [[http://172.16.0.150:81/issues/15582][怪物装备掉率可调整功能支持]]
+	  CLOSED: [2015-10-17 周六 17:42] DEADLINE: <2015-10-17 周六>
+	  - State "DONE"       from "TODO"       [2015-10-17 周六 17:42]
 ***** DONE 技能心法1-50级引导界面
 	  CLOSED: [2015-10-16 周五 16:33] DEADLINE: <2015-10-17 周六>
 	  - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:33]
@@ -21,6 +24,8 @@
 	   CLOSED: [2015-10-16 周五 16:00]
 	   - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:00]
 	   - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:47]
+*** BUG Trace
+**** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 ** Schedule For Career
 *** By Time
 **** 2015/10
