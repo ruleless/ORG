@@ -1,0 +1,21 @@
+* Elisp
+** Debug Help
+*** 快捷键
+	+ C-h f (describe-function): 取得函数描述
+	+ C-h v (describe-variable): 取得变量描述
+	+ C-h k (describe-key): 快捷键所绑定的命令
+	+ C-h b (describe-bindings): 列出当前所有的快捷键绑定命令
+*** 调试函数
+	+ eval-last-sexp: 执行光标前的一条语句，该函数绑定到快捷键: (C-xC-e)
+	+ load-file: 执行指定elisp文件
+** Elisp 语法
+*** Data Type
+	* boolean
+	  * nil
+	  * t
+	* numeric
+	* string
+	* function
+*** Expressions
+	*
+*** Flow Control
