@@ -60,7 +60,7 @@
 		 * [ ] [[http://www.cnblogs.com/fingerpass/p/discussion-about-game-ai.html][漫谈游戏中的人工智能]]
 	   * [ ] 决策树
 	   * [ ] 行为树
-* notes
+* Notes
 ** Unix
 *** [[file:Unix/PermMana.org][Unix权限管理]]
 ** GAE(Google App Engine)
@@ -81,3 +81,9 @@
 	 * [ ] [[https://github.com/ruleless/kbengine][kbengine]]
 	   A MMOG engine of server.
 	 * [ ] [[https://github.com/ruleless/ogre][orge]]
+* Articles
+** MMOG
+*** [[https://developer.valvesoftware.com/wiki/Main_Page][Source Engine]]
+**** [[https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization][网络延时补偿]]
+**** [[https://developer.valvesoftware.com/wiki/Lag_compensation][Lag compensation]]
+**** [[https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking][Source Multiplayer Networking]]
