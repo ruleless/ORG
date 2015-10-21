@@ -19,3 +19,32 @@
 *** Expressions
 	*
 *** Flow Control
+* Org-mode
+  * 自动显示图片
+	1. 开启图片显示功能
+	   在.emacs中加入
+	   #+BEGIN_SRC elisp
+         (auto-image-file-mode t)
+	   #+END_SRC
+	2. image-library-alist变量
+	   在完成上一步骤之后，如果还是不能显示图片，那么我们就需要排查问题了，首先查看image-library-alist变量的值：C-h v:image-library-alist。它显示了各不同格式的图片所需要的dll文件。你可以分别测试各dll的加载情况：
+	   #+BEGIN_SRC elisp
+         (image-type-available-p 'gif)
+         (image-type-available-p 'jpeg)
+         (image-type-available-p 'tiff)
+         (image-type-available-p 'xpm)
+         (image-type-available-p 'xbm)
+         (image-type-available-p 'pbm)
+	   #+END_SRC
+	   之后，我们从网上下载需要用到的dll文件，将它放置Emacs的Bin目录即可。
+	3. 图文混排
+	   完成上面第二个步骤还只能让你在Emacs中显示图片而已，如果我们需要在Org-mode中自动显示图片的话，可以在.emacs加入下面的代码
+	   #+BEGIN_SRC elisp
+         (defun org-toggle-iimage-in-org ()
+           "display images in your org file"
+           (interactive)
+           (if (face-underline-p 'org-link)
+               (set-face-underline-p 'org-link nil)
+             (set-face-underline-p 'org-link t))
+           (iimage-mode))
+	   #+END_SRC
