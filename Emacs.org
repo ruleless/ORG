@@ -25,6 +25,8 @@
    * 知识梳理、灵感捕捉
    * 可作日程管理
    * 可导出成html、pdf等各种格式的文件
+** 格式化文本编辑
+   org与markdown一样，属于轻文本标记语言。
 ** 在Org-mode中显示图片
    1. 在Emacs中支持显示图片
 	  查看image-library-alist变量的值：C-h v:image-library-alist。它显示了各不同格式的图片所需要的dll文件。你可以分别测试各dll的加载情况：
