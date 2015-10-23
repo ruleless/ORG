@@ -19,6 +19,20 @@
 *** Expressions
 	*
 *** Flow Control
+	* 顺序执行程序块
+	  #+begin_src emacs-lisp
+        (progn
+          (...)
+          (...)
+          ...)
+	  #+end_src
+	* 条件执行
+	  #+begin_src emacs-lisp :tangle yes
+        (if (a)
+            (b)
+          (c)) ; 若(a)不为nil，则执行(b)；否则，执行(c)
+	  #+end_src
+	* 循环控制
 * Org-mode
 ** 特点
    * 基于树形结构的纯文本格式

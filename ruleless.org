@@ -24,8 +24,12 @@
 	   CLOSED: [2015-10-16 周五 16:00]
 	   - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:00]
 	   - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:47]
-**** TODO <2015-10-19 周一> [0%]
-***** TODO 玩家每秒受到的伤害包个数，伤害包的技能来源，还有伤害值 :skill:tracer:
+**** DONE <2015-10-19 周一> [100%]
+	 CLOSED: [2015-10-23 周五 16:58]
+	 - State "DONE"       from "TODO"       [2015-10-23 周五 16:58]
+***** DONE 伤害分析功能支持									   :skill:tracer:
+	  CLOSED: [2015-10-23 周五 16:58]
+	  - State "DONE"       from "TODO"       [2015-10-23 周五 16:58]
 	  #+BEGIN_SRC lua
         function toggleSkillTimeTracer()
             if existSkillTimeTracer() then
@@ -38,8 +42,15 @@
         end
         toggleSkillTimeTracer()
 	  #+END_SRC
-***** TODO 首次出国任务警示和死亡引导跟进优化
-***** TODO 怪物的技能也要支持配置：修正目标至最远点
+***** DONE 实时直线碰撞型技能优化，并提供数值配置依据
+	  CLOSED: [2015-10-23 周五 12:24]
+	  - State "DONE"       from "TODO"       [2015-10-23 周五 12:24]
+***** DONE 首次出国任务警示和死亡引导跟进优化
+	  CLOSED: [2015-10-23 周五 09:52]
+	  - State "DONE"       from "TODO"       [2015-10-23 周五 09:52]
+***** DONE 怪物的技能也要支持配置：修正目标至最远点
+	  CLOSED: [2015-10-23 周五 09:52]
+	  - State "DONE"       from "TODO"       [2015-10-23 周五 09:52]
 *** BUG Trace
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 *** TODO OGame微端 [%]
@@ -110,10 +121,25 @@
 ***** TODO Math [%]													   :math:
 ****** TODO Quaternion (四元数)	[%] 						   :Quaternion:Q:
 	   #<<link_Quaternion>>
+** Summary
+*** be skilled in
+	* 熟悉中心拓扑结构的MMOG服务器架构
+*** Work Exp
+**** OG
+	 * 技能模块设计和实现
 * Notes
 ** Unix
 *** [[file:Unix/PermMana.org][Unix权限管理]]
 ** GAE(Google App Engine)
+** Programming Language
+*** C语言取当前系统时间
+	#+begin_src c
+      time_t nowtime;
+      struct tm *timeinfo;
+      time( &nowtime );
+      timeinfo = localtime( &nowtime );
+      printf("年：%d 月：%d 日：%d\n", timeinfo->tm_year + 1900, timeinfo->tm_mon + 1, timeinfo->tm_mday);
+	#+end_src
 ** Source
 *** GitHub
 **** [[https://github.com/TencentOpen][腾讯开源库]]
