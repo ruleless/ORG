@@ -159,16 +159,26 @@
 	 * [ ] [[https://github.com/ruleless/kbengine_unity3d_warring][kbengine_unity3d_warring]]
 	 * [ ] [[https://github.com/ruleless/ogre][orge]]
 ** Git																	:git:
-*** Fork之后与源同步
-	可按如下步骤同步源的最新代码：
-	1. 将源仓库添加到远程仓库列表(git remote add)
-	2. 从源仓库获取最新代码
-	3. 将新更新下来的分支合并到master分支
-	#+BEGIN_SRC c
-      git remote add source git@github.com:source/proj.git
-      git fetch source
-      git merge source/master
-	#+END_SRC
+*** .git目录结构
+**** .git目录下的重要文件
+     |--------+------------------------+---------------------------------------------------|
+     | 文件名 | 文件内容               | 文件作用                                          |
+     |--------+------------------------+---------------------------------------------------|
+     | config | 远程主机信息；分支信息 | Git配置，用于描述远程主机地址、分支以及子模块信息 |
+     | index  | 二进制文件             | 对应Git的暂存区                                   |
+     | HEAD   | ref: refs/heads/master | 对应当前本地分支（或概念模型中的版本库）          |
+     |--------+------------------------+---------------------------------------------------|
+**** .git目录下的重要目录
+     |----------+--------------------------|
+     | 目录名   | 描述                     |
+     |----------+--------------------------|
+     | refs/    | 该目录有三个子目录：     |
+     |          | *heads* : 本地分支指针   |
+     |          | *remotes* : 远程分支指针 |
+     |          | *tags* :                 |
+     | objects/ | Git对象库                |
+     | logs/    |                          |
+     |----------+--------------------------|
 *** Git远程操作
 **** Git远程命令概览
 	 1. git clone
@@ -384,6 +394,16 @@
 	 #+begin_src sh
        $ git push origin --tags
 	 #+end_src
+**** Fork之后与源同步
+	 可按如下步骤同步源的最新代码：
+	 1. 将源仓库添加到远程仓库列表(git remote add)
+	 2. 从源仓库获取最新代码
+	 3. 将新更新下来的分支合并到master分支
+	 #+BEGIN_SRC c
+       git remote add source git@github.com:source/proj.git
+       git fetch source
+       git merge source/master
+	 #+END_SRC
 *** Git分支
 **** 分支查看
 	 * 查看本地分支
@@ -418,6 +438,7 @@
 	   #+BEGIN_SRC sh
          git checkout <分支名>
 	   #+END_SRC
+**** 分支合并
 * Articles
 ** MMOG
    * [[https://developer.valvesoftware.com/wiki/Main_Page][Source Engine]]

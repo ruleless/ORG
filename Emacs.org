@@ -16,6 +16,8 @@
 	* numeric
 	* string
 	* function
+*** S±Ì¥Ô Ω
+
 *** Expressions
 	*
 *** Flow Control
