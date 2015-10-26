@@ -3,57 +3,67 @@
 *** 2015/10
 **** DONE <2015-10-15 周四>(第二周) [100%]
 	 CLOSED: [2015-10-17 周六 17:42]
-	 - State "DONE"       from "PROCESSING" [2015-10-17 周六 17:42]
-	 - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:06]
-***** DONE [[http://172.16.0.150:81/issues/15582][怪物装备掉率可调整功能支持]]
+	 - STATE "DONE"       FROM "PROCESSING" [2015-10-17 周六 17:42]
+	 - STATE "PROCESSING" FROM "TODO"       [2015-10-16 周五 10:06]
+***** DONE [[HTTP://172.16.0.150:81/ISSUES/15582][怪物装备掉率可调整功能支持]]
 	  CLOSED: [2015-10-17 周六 17:42] DEADLINE: <2015-10-17 周六>
-	  - State "DONE"       from "TODO"       [2015-10-17 周六 17:42]
+	  - STATE "DONE"       FROM "TODO"       [2015-10-17 周六 17:42]
 ***** DONE 技能心法1-50级引导界面
 	  CLOSED: [2015-10-16 周五 16:33] DEADLINE: <2015-10-17 周六>
-	  - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:33]
-	  - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:47]
-***** DONE [[http://172.16.0.150:81/issues/14921][首次出国任务警示和死亡引导]] [100%]
+	  - STATE "DONE"       FROM "PROCESSING" [2015-10-16 周五 16:33]
+	  - STATE "PROCESSING" FROM "TODO"       [2015-10-16 周五 10:47]
+***** DONE [[HTTP://172.16.0.150:81/ISSUES/14921][首次出国任务警示和死亡引导]] [100%]
 	  CLOSED: [2015-10-16 周五 16:00]
-	  - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:00]
-	  - State "PROCESSING" from "DONE"       [2015-10-16 周五 10:07]
+	  - STATE "DONE"       FROM "PROCESSING" [2015-10-16 周五 16:00]
+	  - STATE "PROCESSING" FROM "DONE"       [2015-10-16 周五 10:07]
 ****** DONE 新手玩家首次被杀时，给与一定的补偿和安抚
 	   CLOSED: [2015-10-16 周五 10:06]
-	   - State "DONE"       from "PROCESSING" [2015-10-16 周五 10:06]
-	   - State "PROCESSING" from "TODO"       [2015-10-15 周四 15:05]
+	   - STATE "DONE"       FROM "PROCESSING" [2015-10-16 周五 10:06]
+	   - STATE "PROCESSING" FROM "TODO"       [2015-10-15 周四 15:05]
 ****** DONE 新手玩家初次出国时，给予警示
 	   CLOSED: [2015-10-16 周五 16:00]
-	   - State "DONE"       from "PROCESSING" [2015-10-16 周五 16:00]
-	   - State "PROCESSING" from "TODO"       [2015-10-16 周五 10:47]
+	   - STATE "DONE"       FROM "PROCESSING" [2015-10-16 周五 16:00]
+	   - STATE "PROCESSING" FROM "TODO"       [2015-10-16 周五 10:47]
 **** DONE <2015-10-19 周一> [100%]
 	 CLOSED: [2015-10-23 周五 16:58]
-	 - State "DONE"       from "TODO"       [2015-10-23 周五 16:58]
-***** DONE 伤害分析功能支持									   :skill:tracer:
+	 - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 16:58]
+***** DONE 伤害分析功能支持									   :SKILL:TRACER:
 	  CLOSED: [2015-10-23 周五 16:58]
-	  - State "DONE"       from "TODO"       [2015-10-23 周五 16:58]
-	  #+BEGIN_SRC lua
-        function toggleSkillTimeTracer()
-            if existSkillTimeTracer() then
-                closeSkillTimeTracer()
-                GetChatClient():addSystemTips(TipType_Operate, InfoPos_ActorRight+InfoPos_ChatWindow, "关闭技能时间追踪，请打开配表查询！")
-            else
-                openSkillTimeTracer()
-                GetChatClient():addSystemTips(TipType_Operate, InfoPos_ActorRight+InfoPos_ChatWindow, "打开技能时间追踪！")
-            end
-        end
-        toggleSkillTimeTracer()
+	  - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 16:58]
+	  #+BEGIN_SRC LUA
+        FUNCTION TOGGLESKILLTIMETRACER()
+            IF EXISTSKILLTIMETRACER() THEN
+                CLOSESKILLTIMETRACER()
+                GETCHATCLIENT():ADDSYSTEMTIPS(TIPTYPE_OPERATE, INFOPOS_ACTORRIGHT+INFOPOS_CHATWINDOW, "关闭技能时间追踪，请打开配表查询！")
+            ELSE
+                OPENSKILLTIMETRACER()
+                GETCHATCLIENT():ADDSYSTEMTIPS(TIPTYPE_OPERATE, INFOPOS_ACTORRIGHT+INFOPOS_CHATWINDOW, "打开技能时间追踪！")
+            END
+        END
+        TOGGLESKILLTIMETRACER()
 	  #+END_SRC
 ***** DONE 实时直线碰撞型技能优化，并提供数值配置依据
 	  CLOSED: [2015-10-23 周五 12:24]
-	  - State "DONE"       from "TODO"       [2015-10-23 周五 12:24]
+	  - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 12:24]
 ***** DONE 首次出国任务警示和死亡引导跟进优化
 	  CLOSED: [2015-10-23 周五 09:52]
-	  - State "DONE"       from "TODO"       [2015-10-23 周五 09:52]
+	  - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 09:52]
 ***** DONE 怪物的技能也要支持配置：修正目标至最远点
 	  CLOSED: [2015-10-23 周五 09:52]
-	  - State "DONE"       from "TODO"       [2015-10-23 周五 09:52]
-*** BUG Trace
+	  - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 09:52]
+**** TODO <2015-10-26 周一> [25%]
+***** PROCESSING 所有场景服消息支持从Lua脚本否决(作为临时关闭功能模块的最后手段)
+	  - State "PROCESSING" from "TODO"       [2015-10-26 周一 18:27]
+***** PROCESSING 摆摊后台日志优化(针对转入日志添加顾客信息，针对转出日志添加摊主信息)；摆摊模块资源操作优化(修复一处刷资源隐患)；摆摊模块支持可用Lua脚本关闭
+	  - State "PROCESSING" from "TODO"       [2015-10-26 周一 18:27]
+***** PROCESSING OGAME微端服务器架设以及调通原有逻辑
+	  - STATE "PROCESSING" FROM "TODO"       [2015-10-26 周一 09:43]
+***** DONE 优化成就系统的七龙珠调试功能
+	  CLOSED: [2015-10-26 周一 16:06]
+	  - State "DONE"       from "TODO"       [2015-10-26 周一 16:06]
+*** BUG TRACE
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
-*** TODO OGame微端 [%]
+*** TODO OGAME微端 [%]
 **** 微端原理及工作流程
 	 * 文件云服务协议及工作过程简述:
 	   1. 客户端连接到云服务器
@@ -73,10 +83,10 @@
 	   5. 下载内容需要支持压缩
 	   6. 本地需要保存为包态，并支持自动更新
 	   7. 只下载当前地图可能用到的资源
-	   8. 根据进入地图到用到该资源的Tick进行统计，优先下载相近时间点需要的资源
+	   8. 根据进入地图到用到该资源的TICK进行统计，优先下载相近时间点需要的资源
 	   9. 按之前的评分进行下载，然后根据命中的效果对评分进行修正，例如30秒内用到则+10分,30-60秒用到+5分,5分钟内用到+1分
-	   10. 由于基于http访问，所以最好合并请求
-	   11. 另外支持TCP专有协议请求，因为这样可以减少断开连接带来的损失，最好小文件TCP请求,大文件http请求.2种做到无缝切换
+	   10. 由于基于HTTP访问，所以最好合并请求
+	   11. 另外支持TCP专有协议请求，因为这样可以减少断开连接带来的损失，最好小文件TCP请求,大文件HTTP请求.2种做到无缝切换
 	   12. 尝试建立文件关联性，如果某个文件被下载，则另外一个文件很可能被下载
 	   13. 文件数据库存储在服务端，每次从服务器下载最新文件数据库
 	   14. 支持多线程下载
@@ -84,62 +94,35 @@
 	   16. 需要同步下载的文件不能从网上下载，FB文件都要改成异步加载
 	   17. 前期任务速度需要减慢速度，以赢得下载时间
 	   18. 服务器上存储包文件好还是存储散文件好？
-** Schedule For Career
-*** By Time
-**** 2015/10
-***** DONE <2015-10-16 周五> [100%]
-	  CLOSED: [2015-10-20 周二 09:42]
-	  - State "DONE"       from "TODO"       [2015-10-20 周二 09:42]
-****** DONE Learned About Emacs Org-mode
-	   CLOSED: [2015-10-19 周一 19:55]
-	   - State "DONE"       from "TODO"       [2015-10-19 周一 19:55]
-***** TODO <2015-10-19 周一> [0%]
-****** TODO [[link_KBE_Startup][KBE启动和执行流程]]
-****** TODO [[link_U3DHeadline][U3D]]
-****** PROCESSING [[link_Quaternion][四元数]]
-	   - State "PROCESSING" from "TODO"       [2015-10-19 周一 19:56]
-*** By Theme
-**** TODO Unity 3D [%]
-	 #<<link_U3DHeadline>>
-**** TODO Game[0%]
-***** TODO AI [0%]
-	  * [ ] 游戏中的人工智能
-	    * [ ] 资料
-		  * [ ] [[http://www.cnblogs.com/fingerpass/p/discussion-about-game-ai.html][漫谈游戏中的人工智能]]
-	  * [ ] 决策树
-	  * [ ] 行为树
-***** TODO Game Server [0%]
-****** TODO KBEngine [0%]
-******* TODO KBEngine 启动和执行流程
-		#<<link_KBE_Startup>>
-******* TODO KBEngine 玩家登陆和角色创建流程
-****** 游戏服务器所应包含的基本功能
-	   * 网络通信
-	   * 集群结构
-	   * 数据持久化
-**** TODO 3D Rendering [0%]												 :3D:
-***** TODO Math [%]													   :math:
-****** TODO Quaternion (四元数)	[%] 						   :Quaternion:Q:
-	   #<<link_Quaternion>>
-** Summary
-*** be skilled in
+** SCHEDULE FOR CAREER
+*** 2015/10
+**** DONE <2015-10-16 周五> [100%]
+	 CLOSED: [2015-10-20 周二 09:42]
+	 - STATE "DONE"       FROM "TODO"       [2015-10-20 周二 09:42]
+***** DONE LEARNED ABOUT EMACS ORG-MODE
+	  CLOSED: [2015-10-19 周一 19:55]
+	  - STATE "DONE"       FROM "TODO"       [2015-10-19 周一 19:55]
+**** TODO <2015-10-19 周一> [0%]
+***** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
+***** PROCESSING [[LINK_QUATERNION][四元数]]
+	  - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
+** SUMMARY
+*** BE SKILLED IN
 	* 熟悉中心拓扑结构的MMOG服务器架构
-*** Work Exp
+*** WORK EXP
 **** OG
 	 * 技能模块设计和实现
-* Notes
-** Unix
-*** [[file:Unix/PermMana.org][Unix权限管理]]
-** GAE(Google App Engine)
-** Programming Language
+* NOTES
+** GAE(GOOGLE APP ENGINE)
+** PROGRAMMING LANGUAGE
 *** C语言取当前系统时间
-	#+begin_src c
-      time_t nowtime;
-      struct tm *timeinfo;
-      time( &nowtime );
-      timeinfo = localtime( &nowtime );
-      printf("年：%d 月：%d 日：%d\n", timeinfo->tm_year + 1900, timeinfo->tm_mon + 1, timeinfo->tm_mday);
-	#+end_src
+	#+BEGIN_SRC C
+      TIME_T NOWTIME;
+      STRUCT TM *TIMEINFO;
+      TIME( &NOWTIME );
+      TIMEINFO = LOCALTIME( &NOWTIME );
+      PRINTF("年：%D 月：%D 日：%D\N", TIMEINFO->TM_YEAR + 1900, TIMEINFO->TM_MON + 1, TIMEINFO->TM_MDAY);
+	#+END_SRC
 ** Source
 *** GitHub
 **** [[https://github.com/TencentOpen][腾讯开源库]]
