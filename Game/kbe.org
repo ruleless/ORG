@@ -1,4 +1,17 @@
-* 集群结构
+* 服务器集群结构
+  1. baseapp
+	 网络消息转发，负责跟玩家位置无关的逻辑
+  2. baseappmgr
+	 baseapp的管理进程
+  3. cellapp
+	 负责跟玩家位置相关的逻辑
+  4. cellappmgr
+	 cellapp的管理进程
+  5. dbmgr
+	 数据库服务器
+  6. loginapp
+	 登录服，负责账号创建、登录等身份认证相关逻辑
+  7. machine
 * FAQ
   Q: KBEngine是什么，能用来做什么？
   A: KBEngine是一个通用网络游戏服务器引擎，适合绝大多数中心拓扑结构的网络游戏，包括但不限于即时和回合制MMORPG、副本类、房间类、卡牌、棋牌等。不适合基于P2P技术的游戏类型。
