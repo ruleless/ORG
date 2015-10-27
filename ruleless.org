@@ -51,13 +51,16 @@
 ***** DONE 怪物的技能也要支持配置：修正目标至最远点
 	  CLOSED: [2015-10-23 周五 09:52]
 	  - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 09:52]
-**** TODO <2015-10-26 周一> [25%]
-***** PROCESSING 所有场景服消息支持从Lua脚本否决(作为临时关闭功能模块的最后手段)
-	  - State "PROCESSING" from "TODO"       [2015-10-26 周一 18:27]
-***** PROCESSING 摆摊后台日志优化(针对转入日志添加顾客信息，针对转出日志添加摊主信息)；摆摊模块资源操作优化(修复一处刷资源隐患)；摆摊模块支持可用Lua脚本关闭
-	  - State "PROCESSING" from "TODO"       [2015-10-26 周一 18:27]
+**** TODO <2015-10-26 周一> [33%]
+***** TODO 摆摊模块支持可用Lua脚本关闭
+***** TODO 合服界面活动图标切页逻辑优化
+***** TODO Request_QiChengDownHorse优化
 ***** PROCESSING OGAME微端服务器架设以及调通原有逻辑
 	  - STATE "PROCESSING" FROM "TODO"       [2015-10-26 周一 09:43]
+***** DONE 摆摊后台日志优化(针对转入日志添加顾客信息，针对转出日志添加摊主信息)；摆摊模块资源操作优化(修复一处刷资源隐患)
+	  CLOSED: [2015-10-27 周二 19:42]
+	  - State "DONE"       from "PROCESSING" [2015-10-27 周二 19:42]
+	  - State "PROCESSING" from "TODO"       [2015-10-26 周一 18:27]
 ***** DONE 优化成就系统的七龙珠调试功能
 	  CLOSED: [2015-10-26 周一 16:06]
 	  - State "DONE"       from "TODO"       [2015-10-26 周一 16:06]
@@ -112,8 +115,242 @@
 *** WORK EXP
 **** OG
 	 * 技能模块设计和实现
-* NOTES
+* Notes
 ** GAE(GOOGLE APP ENGINE)
+** Apache
+*** Apache的配置文件http.conf参数含义详解
+**** 基本配置:
+	 #+begin_src sh
+       ServerRoot "/mnt/software/apache2" #你的apache软件安装的位置。其它指定的目录如果没有指定绝对路径，则目录是相对于该目录。
+       PidFile logs/httpd.pid #第一个httpd进程(所有其他进程的父进程)的进程号文件位置。
+       Listen 80 #服务器监听的端口号。
+       ServerName www.clusting.com:80 #主站点名称（网站的主机名）。
+       ServerAdmin admin@clusting.com #管理员的邮件地址。
+       DocumentRoot "/mnt/web/clusting" #主站点的网页存储位置。
+	 #+end_src
+	 目录访问控制配置
+	 #+begin_src html
+       <Directory "D:/xampp/cgi-bin">
+         Options FollowSymLinks
+         AllowOverride None
+         Order allow,deny
+         Allow from all
+       </Directory>
+	 #+end_src
+	 在上面这段目录属性配置中，主要有下面的选项：
+	 1. Options：配置在特定目录使用哪些特性，常用的值和基本含义如下：
+	    1. ExecCGI: 在该目录下允许执行CGI脚本。
+		2. FollowSymLinks: 在该目录下允许文件系统使用符号连接。
+		3. Indexes: 当用户访问该目录时，如果用户找不到DirectoryIndex指定的主页文件(例如index.html),则返回该目录下的文件列表给用户。
+		4. SymLinksIfOwnerMatch: 当使用符号连接时，只有当符号连接的文件拥有者与实际文件的拥有者相同时才可以访问。
+	    其它可用值和含义请参阅：http://www.clusting.com/Apache/ApacheManual/mod/core.html#options
+	 2. AllowOverride：允许存在于.htaccess文件中的指令类型(.htaccess文件名是可以改变的，其文件名由AccessFileName指令决定)：
+	    1. None: 当AllowOverride被设置为None时。不搜索该目录下的.htaccess文件（可以减小服务器开销）。
+		2. All: 在.htaccess文件中可以使用所有的指令。
+	    其他的可用值及含义(如：Options FileInfo AuthConfig Limit等)，请参看： http://www.clusting.com/Apache/ApacheManual/mod/core.html#AllowOverride
+	 3. Order：控制在访问时Allow和Deny两个访问规则哪个优先：
+		1. Allow：允许访问的主机列表(可用域名或子网，例如：Allow from 192.168.0.0/16)。
+		2. Deny：拒绝访问的主机列表。
+	    更详细的用法可参看：http://www.clusting.com/Apache/ApacheManual/mod/mod_access.html#order
+	 #+begin_src sh
+       DirectoryIndex index.html index.htm index.PHP #主页文件的设置（本例将主页文件设置为：index.html,index.htm和index.php）
+	 #+end_src
+**** 服务器的优化 (MPM: Multi-Processing Modules)
+	 apache2主要的优势就是对多处理器的支持更好，在编译时同过使用–with-mpm选项来决定apache2的工作模式。如果知道当前的apache2使用什么工作机制，可以通过httpd -l命令列出apache的所有模块，就可以知道其工作方式：
+	 * prefork：如果httpd -l列出prefork.c，则需要对下面的段进行配置：
+	   1. StartServers 5 #启动apache时启动的httpd进程个数。
+	   2. MinSpareServers 5 #服务器保持的最小空闲进程数。
+	   3. MaxSpareServers 10 #服务器保持的最大空闲进程数。
+	   4. MaxClients 150 #最大并发连接数。
+	   5. MaxRequestsPerChild 1000 #每个子进程被请求服务多少次后被kill掉。0表示不限制，推荐设置为1000。
+	   在该工作模式下，服务器启动后起动5个httpd进程(加父进程共6个，通过ps -ax|grep httpd命令可以看到)。当有用户连接时，apache会使用一个空闲进程为该连接服务，同时父进程会fork一个子进程。直到内存中的空闲进程达到 MaxSpareServers。该模式是为了兼容一些旧版本的程序。我缺省编译时的选项。
+	 * worker：如果httpd -l列出worker.c，则需要对下面的段进行配置：
+	   1. StartServers 2 #启动apache时启动的httpd进程个数。
+	   2. MaxClients 150 #最大并发连接数。
+	   3. MinSpareThreads 25 #服务器保持的最小空闲线程数。
+	   4. MaxSpareThreads 75 #服务器保持的最大空闲线程数。
+	   5. ThreadsPerChild 25 #每个子进程的产生的线程数。
+	   6. MaxRequestsPerChild 0 #每个子进程被请求服务多少次后被kill掉。0表示不限制，推荐设置为1000。
+	   该模式是由线程来监听客户的连接。当有新客户连接时，由其中的一个空闲线程接受连接。服务器在启动时启动两个进程，每个进程产生的线程数是固定的 (ThreadsPerChild决定)，因此启动时有50个线程。当50个线程不够用时，服务器自动fork一个进程，再产生25个线程。
+	 * perchild：如果httpd -l列出perchild.c，则需要对下面的段进行配置：
+	   1. NumServers 5 #服务器启动时启动的子进程数
+	   2. StartThreads 5 #每个子进程启动时启动的线程数
+	   3. MinSpareThreads 5 #内存中的最小空闲线程数
+	   4. MaxSpareThreads 10 #最大空闲线程数
+	   5. MaxThreadsPerChild 2000 #每个线程最多被请求多少次后退出。0不受限制。
+	   6. MaxRequestsPerChild 10000 #每个子进程服务多少次后被重新fork。0表示不受限制。
+	   该模式下，子进程的数量是固定的，线程数不受限制。当客户端连接到服务器时，又空闲的线程提供服务。 如果空闲线程数不够，子进程自动产生线程来为新的连接服务。该模式用于多站点服务器。
+**** HTTP返回头信息配置
+	 * ServerTokens Prod #该参数设置http头部返回的apache版本信息，可用的值和含义如下：
+	   1. Prod：仅软件名称，例如：apache
+	   2. Major：包括主版本号，例如：apache/2
+	   3. Minor：包括次版本号，例如：apache/2.0
+	   4. Min：仅apache的完整版本号，例如：apache/2.0.54
+	   5. OS：包括操作系统类型，例如：apache/2.0.54（Unix）
+	   6. Full：包括apache支持的模块及模块版本号，例如：Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7g
+	 * ServerSignature Off #在页面产生错误时是否出现服务器版本信息。推荐设置为Off
+**** 持久性连接设置
+	 * KeepAlive On #开启持久性连接功能。即当客户端连接到服务器，下载完数据后仍然保持连接状态。
+	 * MaxKeepAliveRequests 100 #一个连接服务的最多请求次数。
+	 * KeepAliveTimeout 30 #持续连接多长时间，该连接没有再请求数据，则断开该连接。缺省为15秒。
+**** 别名设置
+	 对于不在DocumentRoot指定的目录内的页面，既可以使用符号连接，也可以使用别名。别名的设置如下：
+	 #+begin_src html
+       Alias /download/ "/var/www/download/" #访问时可以输入:http://www.custing.com/download/
+       #对该目录进行访问控制设置
+       Options Indexes MultiViews
+       AllowOverride AuthConfig
+       Order allow,deny
+       Allow from all
+	 #+end_src
+**** CGI设置
+	 #+begin_src html
+       scrīptAlias /cgi-bin/ "/mnt/software/apache2/cgi-bin/" # 访问时可以：http://www.clusting.com/cgi-bin/ 。但是该目录下的CGI脚本文件要加可执行权限！
+
+       #设置目录属性
+       AllowOverride None
+       Options None
+       Order allow,deny
+       Allow from all
+	 #+end_src
+**** 日志的设置
+	 * 错误日志的设置
+	   #+begin_src sh
+         ErrorLog logs/error_log #日志的保存位置
+         LogLevel warn #日志的级别
+	   #+end_src
+	   显示的格式如下
+	   #+begin_src html
+         [Mon Oct 10 15:54:29 2005] [error] [client 192.168.10.22] access to /download/ failed, reason: user admin not allowed access
+	   #+end_src
+	 * 日志格式设置
+	   日志的缺省格式有如下几种：
+	   #+begin_src html
+         LogFormat "%h %l %u %t "%r" %>s %b "%{Referer}i" "%{User-Agent}i"" combined
+         LogFormat "%h %l %u %t "%r" %>s %b" common #common为日志格式名称
+         LogFormat "%{Referer}i -> %U" referer
+         LogFormat "%{User-agent}i" agent
+         CustomLog logs/access_log common
+	   #+end_src
+	   格式中的各个参数如下：
+	   #+begin_src html
+         %h –客户端的ip地址或主机名
+         %l –The 这是由客户端 identd 判断的RFC 1413身份，输出中的符号 "-" 表示此处信息无效。
+         %u –由HTTP认证系统得到的访问该网页的客户名。有认证时才有效，输出中的符号 "-" 表示此处信息无效。
+         %t –服务器完成对请求的处理时的时间。
+         "%r" –引号中是客户发出的包含了许多有用信息的请求内容。
+         %>s –这个是服务器返回给客户端的状态码。
+         %b –最后这项是返回给客户端的不包括响应头的字节数。
+         "%{Referer}i" –此项指明了该请求是从被哪个网页提交过来的。
+         "%{User-Agent}i" –此项是客户浏览器提供的浏览器识别信息。
+	   #+end_src
+	   下面是一段访问日志的实例：
+	   #+begin_src html
+         192.168.10.22 – bearzhang [10/Oct/2005:16:53:06 +0800] "GET /download/ HTTP/1.1" 200 1228
+         192.168.10.22 – - [10/Oct/2005:16:53:06 +0800] "GET /icons/blank.gif HTTP/1.1" 304 -
+         192.168.10.22 – - [10/Oct/2005:16:53:06 +0800] "GET /icons/back.gif HTTP/1.1" 304 -
+	   #+end_src
+**** 虚拟主机的配置
+	 * 基于IP地址的虚拟主机配置
+	   #+begin_src html
+         Listen 80
+
+         DocumentRoot /www/example1
+         ServerName www.example1.com
+
+         DocumentRoot /www/example2
+         ServerName www.example2.org
+	   #+end_src
+	 * 基于IP和多端口的虚拟主机配置
+	   #+begin_src html
+         Listen 172.20.30.40:80
+         Listen 172.20.30.40:8080
+         Listen 172.20.30.50:80
+         Listen 172.20.30.50:8080
+
+         DocumentRoot /www/example1-80
+         ServerName www.example1.com
+
+         DocumentRoot /www/example1-8080
+         ServerName www.example1.com
+
+         DocumentRoot /www/example2-80
+         ServerName www.example1.org
+
+         DocumentRoot /www/example2-8080
+         ServerName www.example2.org
+	   #+end_src
+	 * 单个IP地址的服务器上基于域名的虚拟主机配置
+	   #+begin_src html
+         # Ensure that Apache listens on port 80
+         Listen 80
+
+         # Listen for virtual host requests on all IP addresses
+         NameVirtualHost *:80
+
+         DocumentRoot /www/example1
+         ServerName www.example1.com
+         ServerAlias example1.com. *.example1.com
+         # Other directives here
+
+         DocumentRoot /www/example2
+         ServerName www.example2.org
+         # Other directives here
+	   #+end_src
+	 * 在多个IP地址的服务器上配置基于域名的虚拟主机：
+	   #+begin_src html
+         Listen 80
+
+         # This is the "main" server running on 172.20.30.40
+         ServerName server.domain.com
+         DocumentRoot /www/mainserver
+
+         # This is the other address
+         NameVirtualHost 172.20.30.50
+
+         DocumentRoot /www/example1
+         ServerName www.example1.com
+         # Other directives here …
+
+         DocumentRoot /www/example2
+         ServerName www.example2.org
+         # Other directives here …
+	   #+end_src
+	 * 在不同的端口上运行不同的站点(基于多端口的服务器上配置基于域名的虚拟主机)
+	   #+begin_src html
+         Listen 80
+         Listen 8080
+
+         NameVirtualHost 172.20.30.40:80
+         NameVirtualHost 172.20.30.40:8080
+
+         ServerName www.example1.com
+         DocumentRoot /www/domain-80
+
+         ServerName www.example1.com
+         DocumentRoot /www/domain-8080
+
+         ServerName www.example2.org
+         DocumentRoot /www/otherdomain-80
+
+         ServerName www.example2.org
+         DocumentRoot /www/otherdomain-8080
+	   #+end_src
+	 * 基于域名和基于IP的混合虚拟主机的配置
+	   #+begin_src html
+         Listen 80
+
+         NameVirtualHost 172.20.30.40
+
+         DocumentRoot /www/example1
+         ServerName www.example1.com
+
+         DocumentRoot /www/example2
+         ServerName www.example2.org
+
+         DocumentRoot /www/example3
+         ServerName www.example3.net
+	   #+end_src
 ** PROGRAMMING LANGUAGE
 *** C语言取当前系统时间
 	#+BEGIN_SRC C
