@@ -51,12 +51,16 @@
 ***** DONE 怪物的技能也要支持配置：修正目标至最远点
 	  CLOSED: [2015-10-23 周五 09:52]
 	  - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 09:52]
-**** TODO <2015-10-26 周一> [33%]
+**** TODO <2015-10-26 周一> [66%]
 ***** TODO 摆摊模块支持可用Lua脚本关闭
-***** TODO 合服界面活动图标切页逻辑优化
-***** TODO Request_QiChengDownHorse优化
 ***** PROCESSING OGAME微端服务器架设以及调通原有逻辑
 	  - STATE "PROCESSING" FROM "TODO"       [2015-10-26 周一 09:43]
+***** DONE Request_QiChengDownHorse优化
+	  CLOSED: [2015-10-28 周三 11:33]
+	  - State "DONE"       from "TODO"       [2015-10-28 周三 11:33]
+***** DONE 合服界面活动图标切页逻辑优化
+	  CLOSED: [2015-10-28 周三 09:46]
+	  - State "DONE"       from "TODO"       [2015-10-28 周三 09:46]
 ***** DONE 摆摊后台日志优化(针对转入日志添加顾客信息，针对转出日志添加摊主信息)；摆摊模块资源操作优化(修复一处刷资源隐患)
 	  CLOSED: [2015-10-27 周二 19:42]
 	  - State "DONE"       from "PROCESSING" [2015-10-27 周二 19:42]
@@ -66,7 +70,48 @@
 	  - State "DONE"       from "TODO"       [2015-10-26 周一 16:06]
 *** BUG TRACE
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
-*** TODO OGAME微端 [%]
+*** TODO OGAME微端 [0%]
+**** TODO 微客户端可异步加载的资源 [1/5]
+	 1. [X] UI/ [4/4]
+		本目录存放游戏界面所需的图片以及特效资源。
+		1. [X] UI/Image/
+	       远征遗留下来的旧UI资源目录，现在仍有部分图片资源在该目录下。
+		   此目录下的所有资源均可异步加载。
+		2. [X] UI/image_New/
+		   可异步加载
+		3. [X] UI/bg/
+		   登陆、角色选取以及场景切换需使用到的大背景图存放于此目录。
+		   * 登陆及角色选取背景图片由于是直接在逻辑层引用图片路径，未走文件系统逻辑，所以无法异步加载
+		   * 场景切换背景图片在资源缺失时通常需要在完成场景切换后才会走完异步加载流程，原因待查
+		4. [X] UI/effect/
+		   此目录用于存放UI序列帧动画相应的图片资源，例如技能冷却转圈动画。
+		   此目录下的所有资源均可异步加载。
+	 2. [ ] Creature/
+		远征遗留的特效资源目录。
+	 3. [ ] Effect/
+		不败传说特效资源目录，主要包含三类文件：模型文件(.Mz)，模型贴图文件(.dds)，粒子(.pts)
+		1. [ ] Effect/ActorSkillEffect/
+		   技能特效资源目录，除在技能编辑器中引用到特效资源之外还包含技能升级特效资源。另外.skilleffects格式的文件为配置文件，不可异步加载。
+		2. [ ] Effect/CommonEffect/
+		   Buff和其他功能模块所引用的特效资源存放于此目录。
+		3. [ ] Effect/D3_sourceimages/
+		4. [ ] Effect/EquipmentFlash/
+		   装备发光特效资源目录。
+		5. [ ] Effect/MonsterEffect/
+		6. [ ] Effect/NPCEffect/
+		7. [ ] Effect/SceneEffect/
+		   场景相关的特效资源目录。
+		8. [ ] Effect/textures/
+		   模型贴图资源目录。
+		9. [ ] Effect/UiEffect/
+		   UI特效资源目录。
+		10. [ ] Effect/WingEFFect/
+			翅膀特效资源目录。
+	 4. [ ] Models/
+		此目录存放怪物、主角的模型、贴图以及动画文件。
+	 5. [ ] Scene/
+		游戏场景相关的资源存放在此目录
+		1. [ ]
 **** 微端原理及工作流程
 	 * 文件云服务协议及工作过程简述:
 	   1. 客户端连接到云服务器
