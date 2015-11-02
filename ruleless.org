@@ -51,9 +51,10 @@
 ***** DONE 怪物的技能也要支持配置：修正目标至最远点
 	  CLOSED: [2015-10-23 周五 09:52]
 	  - STATE "DONE"       FROM "TODO"       [2015-10-23 周五 09:52]
-**** TODO <2015-10-26 周一> [66%]
-***** TODO 摆摊模块支持可用Lua脚本关闭
-***** PROCESSING OGAME微端服务器架设以及调通原有逻辑
+**** TODO <2015-10-26 周一> [71%]
+***** DONE OGAME微端服务器架设以及调通原有逻辑
+	  CLOSED: [2015-11-02 周一 11:46]
+	  - State "DONE"       from "PROCESSING" [2015-11-02 周一 11:46]
 	  - STATE "PROCESSING" FROM "TODO"       [2015-10-26 周一 09:43]
 ***** DONE Request_QiChengDownHorse优化
 	  CLOSED: [2015-10-28 周三 11:33]
@@ -68,10 +69,14 @@
 ***** DONE 优化成就系统的七龙珠调试功能
 	  CLOSED: [2015-10-26 周一 16:06]
 	  - State "DONE"       from "TODO"       [2015-10-26 周一 16:06]
+**** TODO <2015-11-02 周一> [0%]
+***** TODO 摆摊模块支持可用Lua脚本关闭
+***** TODO OGame微客户端 [0/1]
+****** TODO 可异步下载资源整理
 *** BUG TRACE
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 *** TODO OGAME微端 [0%]
-**** TODO 微客户端可异步加载的资源 [1/6]
+**** TODO 微客户端可异步加载的资源 [7/7]
 	 1. [X] UI/ [4/4]
 		本目录存放游戏界面所需的图片以及特效资源。
 		1. [X] UI/Image/
@@ -86,40 +91,45 @@
 		4. [X] UI/effect/
 		   此目录用于存放UI序列帧动画相应的图片资源，例如技能冷却转圈动画。
 		   此目录下的所有资源均可异步加载。
-	 2. [ ] Creature/
-		远征遗留的特效资源目录。
-	 3. [ ] Effect/
-		不败传说特效资源目录，主要包含三类文件：模型文件(.Mz)，模型贴图文件(.dds)，粒子(.pts)
-		1. [ ] Effect/ActorSkillEffect/
+	 2. [X] Models/
+		此目录存放怪物、主角以及载具的模型、贴图和动画文件。可异步加载。
+	 3. [X] Effect/ [10/10]
+		不败传说特效资源目录，主要包含三类文件：模型文件(.Mz, .mzlod)，模型贴图文件(.dds)，粒子(.pts)。
+		除了.skilleffects技能配置文件和.mzlod文件之外，该目录下的其余文件均可异步加载。
+		1. [X] Effect/ActorSkillEffect/
 		   技能特效资源目录，除在技能编辑器中引用到特效资源之外还包含技能升级特效资源。另外.skilleffects格式的文件为配置文件，不可异步加载。
-		2. [ ] Effect/CommonEffect/
+		2. [X] Effect/CommonEffect/
 		   Buff和其他功能模块所引用的特效资源存放于此目录。
-		3. [ ] Effect/D3_sourceimages/
-		4. [ ] Effect/EquipmentFlash/
+		3. [X] Effect/D3_sourceimages/
+		4. [X] Effect/EquipmentFlash/
 		   装备发光特效资源目录。
-		5. [ ] Effect/MonsterEffect/
-		6. [ ] Effect/NPCEffect/
-		7. [ ] Effect/SceneEffect/
+		5. [X] Effect/MonsterEffect/
+		6. [X] Effect/NPCEffect/
+		7. [X] Effect/SceneEffect/
 		   场景相关的特效资源目录。
-		8. [ ] Effect/textures/
+		8. [X] Effect/textures/
 		   模型贴图资源目录。
-		9. [ ] Effect/UiEffect/
+		9. [X] Effect/UiEffect/
 		   UI特效资源目录。
-		10. [ ] Effect/WingEFFect/
+		10. [X] Effect/WingEFFect/
 			翅膀特效资源目录。
-	 4. [ ] Models/
-		此目录存放怪物、主角的模型、贴图以及动画文件。
-	 5. [-] Scene/
+	 4. [X] Creature/
+		远征遗留的特效资源目录。
+		可异步加载。
+	 5. [X] Scene/
 		游戏场景相关的资源存放在此目录。
 		1. [X] Scene/Grass/
 		   地表植被贴图资源。当前不可异步加载。
 		2. [X] Scene/Maps/
 		   此目录存放：mps文件、terrain文件以及切块后的小地图图片文件(jpg格式)。mps及terrain文件不可异步加载，jpg可以异步加载。
-		3. [ ] Scene/Model/
-		   场景物件模型资源目录。
+		3. [X] Scene/Model/
+		   场景物件模型资源目录。有BUG，需调试
 		4. [X] Scene/Texture/
 		   地表贴图。当前不可异步加载。
-	 6. [ ] Music/
+	 6. [X] Music/
+		音频资源文件可异步加载。
+	 7. [X] Environment/
+		环境相关的资源目录。只有此目录下的模型和贴图文件才可异步加载。
 **** 微端原理及工作流程
 	 * 文件云服务协议及工作过程简述:
 	   1. 客户端连接到云服务器
@@ -158,10 +168,21 @@
 ***** DONE LEARNED ABOUT EMACS ORG-MODE
 	  CLOSED: [2015-10-19 周一 19:55]
 	  - STATE "DONE"       FROM "TODO"       [2015-10-19 周一 19:55]
-**** TODO <2015-10-19 周一> [0%]
-***** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
-***** PROCESSING [[LINK_QUATERNION][四元数]]
-	  - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
+**** DONE <2015-10-19 周一> [100%]
+	 CLOSED: [2015-11-02 周一 11:54]
+	 - State "DONE"       from "TODO"       [2015-11-02 周一 11:54]
+***** DONE 针对编程语言设计的一些浅显思考
+	  CLOSED: [2015-11-02 周一 11:55]
+	  - State "DONE"       from "TODO"       [2015-11-02 周一 11:55]
+      1. 计算机是图灵机，图灵机是现代命令式编程语言的理论基础。
+      2. 数理逻辑是计算机科学相当重要的理论学科
+	  3. 数理逻辑包含二演算、四论：命题逻辑演算、谓词逻辑演算；模型论、递归论、证明论、集合论。
+**** TODO <2015-11-02 周一> [0%]
+***** TODO 线程池技术
+***** TODO 日志系统实现
+**** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
+**** PROCESSING [[LINK_QUATERNION][四元数]]
+	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
 ** SUMMARY
 *** BE SKILLED IN
 	* 熟悉中心拓扑结构的MMOG服务器架构
@@ -172,7 +193,7 @@
 ** GAE(GOOGLE APP ENGINE)
 ** Apache
 *** Apache的配置文件http.conf参数含义详解
-**** 基本配置:
+**** 基本配置
 	 #+begin_src sh
        ServerRoot "/mnt/software/apache2" #你的apache软件安装的位置。其它指定的目录如果没有指定绝对路径，则目录是相对于该目录。
        PidFile logs/httpd.pid #第一个httpd进程(所有其他进程的父进程)的进程号文件位置。
