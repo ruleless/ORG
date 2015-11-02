@@ -1,6 +1,229 @@
 * 线程池
-** 概述
-   线程池实际就是预创建一批线程，
 ** 基本设计思路
    我们首先设计TPThread类，用于管理单个线程的属性和方法；有了TPThread表示的线程之后，我们定义ThreadPool类，用以管理一组TPThread对象，此处所说的管理包括：针对所有TPThread线程的创建、销毁以及调度。
-   我们怎么将需要在线程中调用的业务逻辑代码接入线程池呢？选择之一是利用TPThread提供多态函数，将业务逻辑代码嵌入TPThread的子对象；
+
+   我们怎么将需要在线程中调用的业务逻辑代码接入线程池呢？选择之一是利用TPThread提供多态函数，将业务逻辑代码嵌入TPThread的子对象。但是这样做，在每次将并发任务代理给线程池后，TPThread将会绑定到固定的业务逻辑上。更灵活的设计是分离出一个专门用于代理并发任务的TPTask类。
+
+   那么，现在的线程池结构是：一个全局的ThreadPool对象，在它初始化的时候会创建一组初始数量的TPThread对象，用户的并发业务逻辑在TPTask的子对象中实现，这样的子对象同样也都交给全局的ThreadPool对象管理，ThreadPool将分配当前空闲的TPThread线程去处理TPTask任务。
+
+** 使用线程池的优势
+   设计线程池的初衷是规避频发创建和销毁线程的开销。但从上面的设计来看，除了性能方面的优势之外，利用线程池，用户通常只需一个类似addTask的方法即可实现并发任务；在并发任务中又可通过返回值来终止当前任务；并发线程与主线程的交互也将更加简单，这将在接下来的源码中体现出来。综上所述，线程池对比操作系统提供的原始线程控制原语，它不仅降低了线程频繁创建、销毁的性能开销，也为用户提供了更简易明了的操作接口。
+
+** TPTask
+   我们将为TPTask类提供两个函数：一个纯虚函数，用于继承该对象的用户子对象重写该方法以嵌入并发的业务逻辑；一个有默认实现的在主线程中被调用的虚函数。
+   #+begin_src c++
+     class TPTask
+     {
+     public:
+         enum TPTaskState
+         {
+             TPTask_Completed = 0, // 一个任务已经完成
+             TPTask_ContinueMainThread = 1, // 继续在主线程执行
+             TPTask_ContinueChildThread = 2, // 继续在子线程执行
+         };
+
+         virtual bool process() = 0;
+         virtual TPTask::TPTaskState presentMainThread() { return TPTask::TPTask_Completed; }
+     };
+   #+end_src
+   presentMainThread函数是并发线程与主线程交互的接口，它将在TPThread对象的process函数执行之后的某一时刻在主线程中被调用。
+
+** TPThread的声明
+   #+begin_src c++
+     class ThreadPool;
+     class TPThread
+     {
+     public:
+         friend class ThreadPool;
+
+         enum EThreadState
+         {
+             ThreadState_Stop = -1,
+             ThreadState_Sleep = 0,
+             ThreadState_Busy = 1,
+             ThreadState_End = 2
+         };
+
+         TPThread(ThreadPool* threadPool, int threadWaitSecond = 0)
+             :mThreadWaitSecond(threadWaitSecond)
+             ,mpCurrTask(NULL)
+             ,mpThreadPool(threadPool)
+         {
+             mState = ThreadState_Sleep;
+             initCond();
+             initMutex();
+         }
+
+         virtual ~TPThread()
+         {
+             deleteCond();
+             deleteMutex();
+         }
+
+         THREAD_ID createThread(void);
+         bool join(void);
+
+         void onTaskCompleted(void);
+
+         // 线程通知 等待条件信号
+         bool onWaitCondSignal(void);
+
+         virtual TPTask* tryGetTask(void);
+
+     #if PLATFORM == PLATFORM_WIN32
+         static unsigned __stdcall threadFunc(void *arg);
+     #else
+         static void* threadFunc(void* arg);
+     #endif
+
+         int sendCondSignal(void) { return THREAD_SINGNAL_SET(mCond); }
+
+         virtual void onStart() {}
+         virtual void onEnd() {}
+
+         virtual void onProcessTaskStart(TPTask* pTask) {}
+         virtual void processTask(TPTask* pTask) { pTask->process(); }
+         virtual void onProcessTaskEnd(TPTask* pTask) {}
+
+         THREAD_ID id(void) const { return mTid; }
+         void id(THREAD_ID tidp) { mTid = tidp; }
+
+         virtual void initCond(void) { THREAD_SINGNAL_INIT(mCond); }
+         virtual void initMutex(void) { THREAD_MUTEX_INIT(mMutex); }
+
+         virtual void deleteCond(void) { THREAD_SINGNAL_DELETE(mCond); }
+         virtual void deleteMutex(void) { THREAD_MUTEX_DELETE(mMutex); }
+
+         virtual void lock(void) { THREAD_MUTEX_LOCK(mMutex); }
+         virtual void unlock(void) { THREAD_MUTEX_UNLOCK(mMutex); }
+
+         TPTask* task(void) const { return mpCurrTask; }
+         void task(TPTask* tpt) { mpCurrTask = tpt; }
+
+         int state(void) const { return mState; }
+
+         ThreadPool* threadPool() { return mpThreadPool; }
+
+         virtual std::string printWorkState()
+         {
+             char buf[128];
+             lock();
+             sprintf(buf, "%p,%u", mpCurrTask, mDoneTasks);
+             unlock();
+             return buf;
+         }
+
+         void resetDoneTasks() { mDoneTasks = 0; }
+         void incDoneTasks() { ++mDoneTasks; }
+     protected:
+         THREAD_ID mTid; // 本线程的ID
+         THREAD_SINGNAL mCond;
+         THREAD_MUTEX mMutex;
+
+         int mThreadWaitSecond; // 线程空闲状态超过这个秒数则线程退出, 小于0为永久线程(秒单位)
+         TPTask *mpCurrTask; // 该线程的当前执行的任务
+         ThreadPool *mpThreadPool; // 线程池指针
+         EThreadState mState; // 线程状态
+         uint32 mDoneTasks; // 线程启动一次在未改变到闲置状态下连续执行的任务计数
+     };
+   #+end_src
+   该对象封装了Win32和Unix平台下的线程实现。mpCurrTask指向该线程当前的任务，这不需要用户操心，它实际是由ThreadPool管理的。
+
+** ThreadPool的声明
+   #+begin_src c++
+     class ThreadPool
+     {
+     public:
+         ThreadPool();
+         virtual ~ThreadPool();
+
+         void finalise();
+         void destroy();
+
+         /** 创建线程池
+         @param inewThreadCount: 当系统繁忙时线程池会新增加这么多线程（临时）
+         @param inormalMaxThreadCount: 线程池会一直保持这么多个数的线程
+         @param imaxThreadCount: 线程池最多只能有这么多个线程
+         ,*/
+         bool createThreadPool(uint32 inewThreadCount, uint32 inormalMaxThreadCount, uint32 imaxThreadCount);
+
+         virtual TPThread* createThread(int threadWaitSecond = ThreadPool::timeout);
+
+         void bufferTask(TPTask* tptask);
+         TPTask* popbufferTask(void);
+
+         bool addFreeThread(TPThread* tptd);
+         bool addBusyThread(TPThread* tptd);
+         void addFiniTask(TPTask* tptask);
+
+         bool removeHangThread(TPThread* tptd);
+
+         virtual void onMainThreadTick();
+
+         bool hasThread(TPThread* pTPThread);
+
+         std::string printThreadWorks();
+
+         bool addTask(TPTask* tptask);
+
+         bool addBackgroundTask(TPTask* tptask) { return addTask(tptask); }
+         bool pushTask(TPTask* tptask) { return addTask(tptask); }
+
+         uint32 currentThreadCount(void) const { return mCurrentThreadCount; }
+         uint32 currentFreeThreadCount(void) const { return mCurrentFreeThreadCount; }
+         bool isThreadCountMax(void) const { return mCurrentThreadCount >= mMaxThreadCount; }
+
+         bool isBusy(void) const { return mBufferedTaskList.size() > THREAD_BUSY_SIZE; }
+
+         bool isInitialize(void) const { return mIsInitialize; }
+         bool isDestroyed() const { return mIsDestroyed; }
+
+         uint32 bufferTaskSize() const { return mBufferedTaskList.size(); }
+         std::queue<TPTask*>& bufferedTaskList() { return mBufferedTaskList; }
+
+         void lockBufferedTaskList() { THREAD_MUTEX_LOCK(mBufferedTaskListMutex); }
+         void unlockBufferedTaskList() { THREAD_MUTEX_UNLOCK(mBufferedTaskListMutex); }
+
+         uint32 finiTaskSize() const { return mFiniTaskListCount; }
+
+         virtual std::string name() const{ return "ThreadPool"; }
+     public:
+         static int timeout;
+     protected:
+         bool mIsInitialize;
+         bool mIsDestroyed;
+
+         std::queue<TPTask *> mBufferedTaskList; // 系统处于繁忙时还未处理的任务列表
+         std::list<TPTask *> mFinishedTaskList; // 已经完成的任务列表
+         size_t mFiniTaskListCount;
+
+         THREAD_MUTEX mBufferedTaskListMutex; // 处理mBufferedTaskList互斥锁
+         THREAD_MUTEX mThreadStateListMutex; // 处理mBufferedTaskList and mFreeThreadList互斥锁
+         THREAD_MUTEX mFinishedTaskListMutex; // 处理mFinishedTaskList互斥锁
+
+         std::list<TPThread *> mBusyThreadList; // 繁忙的线程列表
+         std::list<TPThread *> mFreeThreadList; // 闲置的线程列表
+         std::list<TPThread *> mAllThreadList; // 所有的线程列表
+
+         uint32 mMaxThreadCount; // 最大线程总数
+         uint32 mExtraNewAddThreadCount; // 如果mNormalThreadCount不足够使用则会新创建这么多线程
+         uint32 mCurrentThreadCount; // 当前线程数
+         uint32 mCurrentFreeThreadCount; // 当前闲置的线程数
+         uint32 mNormalThreadCount; // 标准状态下的线程总数 即：默认情况下一启动服务器就开启这么多线程，如果线程不足够，则会新创建一些线程， 最大能够到mMaxThreadCount
+     };
+   #+end_src
+*** 线程管理
+	从声明中可以看到有三个线程对象列表
+	1. mAllThreadList
+	   该容器是 mFreeThreadList 和 mBusyThreadList 容器的并集。
+	2. mFreeThreadList
+	   该容器记录了当前闲置的线程对象，当用户调用 addTask 方法添加并发任务对象时，线程池将尝试从该容器中取出线程对象来执行并发任务。
+	3. mBusyThreadList
+	   当前正在执行并发任务的线程对象将会保存到此容器。
+	在调用 createThreadPool 初始化线程池时，所有的线程对象都会被添加到 mFreeThreadList 容器， mBusyThreadList 初始化为空。
+
+	在调用线程池的 addTask 方法添加并发任务时，若 mFreeThreadList 非空则会从 mFreeThreadList 列表中取出一个线程对象来执行并发任务，该对象将被转移到 mBusyThreadList，表示其正在执行任务。
+*** 并发任务管理
+	线程池成员中跟任务相关的容器有：
+	1. mBufferedTaskList
+	2. mFinishedTaskList
