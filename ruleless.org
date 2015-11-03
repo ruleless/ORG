@@ -616,11 +616,11 @@
 	  这种实践不仅很普遍，而且已经制度化了。举例来说，在面向对象编程的世界中，我们大量听到"模式"（pattern）这个词，我觉得那些"模式"就是现实中的因素（c），也就是人肉编译器。 当我在自己的程序中，发现用到了模式，我觉得这就表明某个地方出错了。程序的形式，应该仅仅反映它所要解决的问题。代码中其他任何外加的形式，都是一个信号，（至少对我来说）表明我对问题的抽象还不够深，也经常提醒我，自己正在手工完成的事情，本应该写代码，通过宏的扩展自动实现。
 *** C语言取当前系统时间
 	#+BEGIN_SRC C
-      TIME_T NOWTIME;
-      STRUCT TM *TIMEINFO;
-      TIME( &NOWTIME );
-      TIMEINFO = LOCALTIME( &NOWTIME );
-      PRINTF("年：%D 月：%D 日：%D\N", TIMEINFO->TM_YEAR + 1900, TIMEINFO->TM_MON + 1, TIMEINFO->TM_MDAY);
+      time_t nowtime;
+      struct tm *timeinfo;
+      time( &nowtime );
+      timeinfo = localtime( &nowtime );
+      printf("年：%d 月：%d 日：%d\n", timeinfo->tm_year + 1900, timeinfo->tm_mon + 1, timeinfo->tm_mday);
 	#+END_SRC
 ** Source
 *** GitHub
