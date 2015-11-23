@@ -72,13 +72,19 @@
 	  CLOSED: [2015-10-26 周一 16:06]
 	  - State "DONE"       from "TODO"       [2015-10-26 周一 16:06]
 *** 2015/11
-**** TODO <2015-11-02 周一> [0%]
-***** TODO 摆摊模块支持可用Lua脚本关闭
-***** TODO OGame微客户端 [1/2]
+**** DONE <2015-11-02 周一> [50%]
+	 CLOSED: [2015-11-23 周一 09:45]
+	 - State "DONE"       from "TODO"       [2015-11-23 周一 09:45]
+***** DONE OGame微客户端 [1/1]
+	  CLOSED: [2015-11-23 周一 09:46]
+	  - State "DONE"       from "TODO"       [2015-11-23 周一 09:46]
 ****** DONE 可异步下载资源整理
 	   CLOSED: [2015-11-04 周三 16:01]
 	   - State "DONE"       from "TODO"       [2015-11-04 周三 16:01]
-****** TODO 资源推荐列表生成
+**** TODO <2015-11-23 周一> [0%]
+***** TODO 摆摊模块支持可用Lua脚本关闭
+***** PROCESSING OGame微客户端资源推荐列表生成
+	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:48]
 *** Bug Trace
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 *** TODO OGAME微端 [50%]
@@ -177,6 +183,130 @@
 	   2. 微客户端跑图时，定时向服务器请求推荐列表。
 	 * 静态推荐下载列表
 **** TODO 微客户端更新管理
+**** 微客户端操作指引
+***** 微客户端服务器部署
+****** 基于Http协议的资源服务器
+******* 外网 #<<http_resaddr>>
+		外网的资源服务器地址通过CDN提供商获得，我们只需将CDN提供商提供的地址填入配置文件即可：
+		#+begin_src html
+          [Cloud]
+          back_list=recomments.int
+          resource_1=http://localhost # 地址1
+          resource_2=http://localhost # 地址2
+
+          [setting]
+          open=1
+          enablerecommend=1
+          enable_check=0
+          cloud_1=127.0.0.1:9381
+		#+end_src
+		文件名：cloud_config.ini，放置到云服务器目录（虽然客户端也有该文件，但资源地址实际是通过云服务器获得的）。
+
+		哪些资源需要提交给CDN？工具 FileCloudIndex.exe 生成的所有zip压缩文件。
+******* 内网
+		内网需要我们自己搭建Web服务器，过程不予赘述。其他同外网。
+****** 云服务器(FileCloud.exe)
+******* 云服务器所提供的服务
+		1. 微客户端更新管理 #<<changelog>>
+		   服务器目录有一个名为changelog.xml的文件，其内容形如：
+		   #+begin_src html
+             <changelog>
+               <version ver=1>
+                 <file id=1541545 /> # id 在 fileindex.csv 中查找
+                 <file id=1541543 /> # id 在 fileindex.csv 中查找
+               </version>
+               <version ver=2>
+                 <file id=1541545 /> # id 在 fileindex.csv 中查找
+                 <file id=1541543 /> # id 在 fileindex.csv 中查找
+               </version>
+               <version ver=3>
+                 <file id=1541545 /> # id 在 fileindex.csv 中查找
+                 <file id=1541543 /> # id 在 fileindex.csv 中查找
+               </version>
+             </changelog>
+		   #+end_src
+		   需要更新的文件将由服务器发送到微客户端，然后微客户端将删除所有需要更新的文件，然后重新下载(不是马上)。
+		2. 提供资源服务器地址
+
+		   已在[[http_resaddr]]处说明。
+		3. 智能下载列表推送
+
+		   微客户端云服务器能够根据资源关联地图以及资源下载次数等相关参数动态地推送下载列表。一般来说微客户端玩家越多推送越精准、越及时。
+
+		   此功能需要将 FileCloudIndex.exe 工具生成的 fileindex.csv 文件放置到服务器目录下。
+		4. 静态下载列表推送 #<<recomments>>
+
+		   静态下载列表推送作为第3条功能的补充，将固定地推送 recomments.csv 配置表中的文件。recomments.csv 中的内容形如：
+		   #+begin_src html
+             文件名,
+             string,
+             Scene\Maps\4505\18_22.jpg,
+             Scene\Maps\4503\15_5.jpg,
+             UI\layout\GroupUI.layout,
+             Scene\Maps\104\2_5.jpg,
+             Scp\Wing.csv,
+             Effect\WingEFFect\wing_keai\keai_01\chibang_01_guangyun.pts,
+             Scene\Maps\102\6_7.jpg,
+		   #+end_src
+		5. 备用下载源
+
+		   当无法通过http协议从CDN服务器上下载资源时，微客户端将尝试从云服务器下载。
+******* 云服务器配置文件
+		1. cloud_config.ini 基础配置，客户端和服务器各放置一份。
+		2. changelog.xml 只放置在服务器目录，用于微客户端资源更新管理。见[[changelog]]。
+		3. fileindex.csv 由FileCloudIndex.exe工具生成，客户端也有一份同名的配置文件，但客户端的该文件内容可为空。
+		4. recomments.csv 只放置在服务器目录，用于存放静态推送列表。见[[recomments]]
+		5. verifylist.xml 只放置在服务器目录，用于文件校验。其内容形如：
+		   #+begin_src html
+             <filelist>
+               <file id=1541545 /> # id 在 fileindex.csv 中查找
+               <file id=1541543 /> # id 在 fileindex.csv 中查找
+             </filelist>
+		   #+end_src
+		   对于比较重要的文件可在此处填入其文件ID进行校验。
+****** 微客户端文件压缩 (工具:FileCloudIndex.exe)
+	   此工具遍历客户端资源目录([客户端根目录]/Data/)，加密并压缩该目录下的每一个文件(保存为[原文件名].zip)。最后还将会生成fileindex.csv文件。
+
+	   此工具生成的所有压缩文件为微客户端下载源，可通过Http(CDN)或Tcp(云服务器)协议下载。
+
+	   FileCloudIndex.exe工具指定的资源目录必须配置到Http服务器和云服务器中。
+***** 客户端配置文件
+	  1. cloud_config.ini 各配置项说明如下：
+		 #+begin_src html
+		   [Cloud]
+		   back_list=recomments.csv # 存放静态推送列表的文件
+		   resource_1=http://localhost # CDN地址1
+		   resource_2=http://localhost # CDN地址2
+
+		   [setting]
+		   open=1 # 是否开启微客户端模式
+		   enablerecommend=1
+		   enable_check=0
+		   cloud_1=127.0.0.1:9381 # 云服务器地址1
+		   cloud_1=127.0.0.1:9381 # 云服务器地址1
+		 #+end_src
+	  2. fileindex.csv 可配置为空，形如：
+		 #+begin_src html
+		   ID,路径,大小,下载次数,重要度,引用地图1,引用地图2,引用地图3,引用地图4,引用地图5,引用地图6,引用地图7,引用地图8
+		   int,string,int,int,int,int,int,int,int,int,int,int,int
+		 #+end_src
+***** 服务器部署以及客户端打包步骤
+****** 服务器部署步骤
+	   1. 打开FileCloudIndex.exe，选择资源目录(建议单独签出客户端Data目录)，点击生成。
+	   2. 在cloud_config.ini文件中填入资源下载地址，形如：
+		  #+begin_src html
+            resource_1=http://localhost
+		  #+end_src
+		  之后，需将FileCloudIndex.exe指定的资源目录配置为Http协议可访问模式。在外网时，将资源提交给CDN提供商即可；在内网时，可通过Appache配置。
+	   3. 在cloud_config.ini文件中填入云服务器IP地址，形如：
+		  #+begin_src html
+            cloud_1=127.0.0.1:9381
+		  #+end_src
+	   4. 打开FileCloud.exe，选择资源目录，点击Start按钮，若提示：[1123 10:22:15] ERROR: 启动成功...，则表示云服务器启动成功。
+****** 客户端打包
+	   1. 将mcmd.py和mclient.py文件拷贝到客户端Data目录，运行mcmd.py，选择"2. 移除非微端资源"。另外，建议单独签出整个客户端目录，作为每次微客户端打包的目录。
+	   2. 将cloud_config.ini文件和fileindex.csv文件(可不填任何具体文件)拷贝至客户端Bin目录
+	   3. 进入打包流程(与大端一致)。
 **** 微端原理及工作流程
 	 * 文件云服务协议及工作过程简述:
 	   1. 客户端连接到云服务器
@@ -225,13 +355,17 @@
       2. 数理逻辑是计算机科学相当重要的理论学科
 	  3. 数理逻辑包含二演算、四论：命题逻辑演算、谓词逻辑演算；模型论、递归论、证明论、集合论。
 *** 2015/11
-**** TODO <2015-11-02 周一> [25%]
-***** TODO 日志系统实现
-***** TODO 无锁队列
-***** TODO skynet消息队列同步操作方式
+**** DONE <2015-11-02 周一> [100%]
+	 CLOSED: [2015-11-23 周一 09:51]
+	 - State "DONE"       from "TODO"       [2015-11-23 周一 09:51]
 ***** DONE 线程池技术
 	  CLOSED: [2015-11-04 周三 09:24]
 	  - State "DONE"       from "TODO"       [2015-11-04 周三 09:24]
+**** TODO <2015-11-23 周一> [0%]
+***** PROCESSING 日志系统实现
+	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:52]
+***** TODO 无锁队列
+***** TODO skynet消息队列同步操作方式
 **** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
 **** PROCESSING [[LINK_QUATERNION][四元数]]
 	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
