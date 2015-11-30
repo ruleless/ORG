@@ -81,10 +81,18 @@
 ****** DONE 可异步下载资源整理
 	   CLOSED: [2015-11-04 周三 16:01]
 	   - State "DONE"       from "TODO"       [2015-11-04 周三 16:01]
-**** TODO <2015-11-23 周一> [0%]
-***** TODO 摆摊模块支持可用Lua脚本关闭
-***** PROCESSING OGame微客户端资源推荐列表生成
+**** DONE <2015-11-23 周一>
+	 CLOSED: [2015-11-30 周一 09:28]
+	 - State "DONE"       from "TODO"       [2015-11-30 周一 09:28]
+***** DONE 微客户端打包工具
+	  CLOSED: [2015-11-30 周一 09:28]
+	  - State "DONE"       from "TODO"       [2015-11-30 周一 09:28]
+**** TODO <2015-11-30 周一> [0%]
+***** PROCESSING 微客户端打包工具
 	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:48]
+***** TODO 基于CommonWindow的所有窗口托管给标准的窗口管理系统
+***** TODO 增加技能冷却中施放提示
+***** TODO 摆摊模块支持可用Lua脚本关闭
 *** Bug Trace
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 *** TODO OGAME微端 [50%]
@@ -361,7 +369,10 @@
 ***** DONE 线程池技术
 	  CLOSED: [2015-11-04 周三 09:24]
 	  - State "DONE"       from "TODO"       [2015-11-04 周三 09:24]
-**** TODO <2015-11-23 周一> [0%]
+**** DONE <2015-11-23 周一> do nothing.
+	 CLOSED: [2015-11-30 周一 09:30]
+	 - State "DONE"       from "TODO"       [2015-11-30 周一 09:30]
+**** TODO <2015-11-30 周一> [0%]
 ***** PROCESSING 日志系统实现
 	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:52]
 ***** TODO 无锁队列
@@ -370,9 +381,10 @@
 **** PROCESSING [[LINK_QUATERNION][四元数]]
 	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
 ** Summary
-*** BE SKILLED IN
+*** Be Skilled In
+	* 擅长基于Unix平台的应用开发
 	* 熟悉中心拓扑结构的MMOG服务器架构
-*** WORK EXP
+*** Work Exp
 **** OG
 	 * 技能模块设计和实现
 * Notes
