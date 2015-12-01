@@ -88,7 +88,7 @@
 	4. int64_t / uint64_t
 
 ** 无锁队列
-*** 无锁队列的实现
+*** 环形无锁队列的实现
 	数据结构定义：
 	#+begin_src c++
       template class LockFreeQueue
@@ -100,27 +100,21 @@
           int mTail;
       }
 	#+end_src
-	由于出队操作都是在队首进行，而入队操作则都是在队尾进行，因此，我们可以尝试用mFront和mTail来实现多个线程之间的协调。这其中会用到CAS操作：
+	由于出队操作是在队首进行，入队操作是在队尾进行，因此，我们可以尝试用mFront和mTail来实现多个线程之间的协调。这其中会用到CAS操作：
 
-	入队进程：
+	入队操作伪码：
+	#+begin_src c++
+      ……
 
-……
+      do {
+          获取当前的mTail的值：curTailIndex;
+          计算新的mTail的值：newTailIndex = (newTailIndex + 1) % size;
+      } while(!CAS(mTail, curTailIndex, newTailIndex));
+      插入元素到curTailIndex;
+	#+end_src
+	其中的do-while循环实现的是一个忙式等待：线程试图获取当前的队列尾部空间的控制权；一旦获取成功，则向其中插入元素。
 
-do {
-
-  获取当前的mTail的值cur_tail_index；
-
-  计算新的mTail的值：new_tail_index = (cur_tail_index + 1) % size;
-
-} while(!CAS(mTail, cur_tail_index, new_tail_index));
-
-插入元素到cur_tail_index;
-
-
-
-其中的do-while循环实现的是一个忙式等待：线程试图获取当前的队列尾部空间的控制权；一旦获取成功，则向其中插入元素。
-
-但是这样出队的时候就出现了问题：如何判断队首的位置里是否有相应元素呢？仅使用mFront来判断是不行的,这只能保证出队进程不会对同一个索引位置进行出队操作，而不能保证mFront的位置中一定有有效的元素。
+	但是这样出队的时候就出现了问题：如何判断队首的位置里是否有相应元素呢？仅使用mFront来判断是不行的,这只能保证出队进程不会对同一个索引位置进行出队操作，而不能保证mFront的位置中一定有有效的元素。
 
 因此，为了保证出队队列与入队队列之间的协调，需要在LockFreeQueue中添加一个标志数组：
 
@@ -266,9 +260,9 @@ bool LockFreeQueue::EnQueue(const ElementT & ele) {
 
         return false;
 
-    int cur_tail_index = mTail;
+    int curTailIndex = mTail;
 
-    char * cur_tail_flag_index = flags_array_ + cur_tail_index;
+    char * cur_tail_flag_index = flags_array_ + curTailIndex;
 
     // 忙式等待
 
@@ -278,9 +272,9 @@ bool LockFreeQueue::EnQueue(const ElementT & ele) {
 
     while (!__sync_bool_compare_and_swap(cur_tail_flag_index, 0, 1)) {
 
-        cur_tail_index = mTail;
+        curTailIndex = mTail;
 
-        cur_tail_flag_index = flags_array_ +  cur_tail_index;
+        cur_tail_flag_index = flags_array_ +  curTailIndex;
 
     }
 
@@ -288,17 +282,17 @@ bool LockFreeQueue::EnQueue(const ElementT & ele) {
 
     // 取模操作可以优化
 
-    int update_tail_index = (cur_tail_index + 1) % mSize;
+    int update_tail_index = (curTailIndex + 1) % mSize;
 
     // 如果已经被其他的线程更新过，则不需要更新；
 
-    // 否则，更新为 (cur_tail_index+1) % mSize;
+    // 否则，更新为 (curTailIndex+1) % mSize;
 
-    __sync_bool_compare_and_swap(&mTail, cur_tail_index, update_tail_index);
+    __sync_bool_compare_and_swap(&mTail, curTailIndex, update_tail_index);
 
     // 申请到可用的存储空间
 
-    *(mArray + cur_tail_index) = ele;
+    *(mArray + curTailIndex) = ele;
 
     // 写入完毕
 
