@@ -404,12 +404,16 @@
 **** DONE <2015-11-23 周一> do nothing.
 	 CLOSED: [2015-11-30 周一 09:30]
 	 - State "DONE"       from "TODO"       [2015-11-30 周一 09:30]
-**** TODO <2015-11-30 周一> [0%]
-***** TODO 安装 CentOS 后的系统配置及软件安装备忘
-***** PROCESSING 日志系统实现
+**** DONE <2015-11-30 周一> [100%]
+	 CLOSED: [2015-12-06 周日 22:24]
+	 - State "DONE"       from "TODO"       [2015-12-06 周日 22:24]
+***** DONE 安装 CentOS 后的系统配置及软件安装备忘
+	  CLOSED: [2015-12-06 周日 22:24]
+	  - State "DONE"       from "TODO"       [2015-12-06 周日 22:24]
+**** PROCESSING 日志系统实现
 	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:52]
-***** TODO 无锁队列
-***** TODO skynet消息队列同步操作方式
+**** TODO 无锁队列
+**** TODO skynet消息队列同步操作方式
 **** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
 **** PROCESSING [[LINK_QUATERNION][四元数]]
 	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
