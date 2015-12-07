@@ -110,6 +110,11 @@
 ***** DONE 基于CommonWindow的所有窗口托管给标准的窗口管理系统
 	  CLOSED: [2015-12-01 周二 16:18]
 	  - State "DONE"       from "TODO"       [2015-12-01 周二 16:18]
+*** 2015/12
+**** <2015-12-07 周一>
+***** TODO 支持怪物出生动画调用技能轨迹系统
+***** TODO 注册先前未注册管理器模块的窗口
+***** TODO 微客户端后台下载策略优化
 **** TODO 微客户端BUG修复 [1/3]
 	 1. [X] 通过fileindex.csv推送的下载列表若出错，游戏是否还能正常显示
 		结论：推送的列表出错不会引起逻辑错误，顶多浪费下带宽，报几个错误
@@ -410,13 +415,21 @@
 ***** DONE 安装 CentOS 后的系统配置及软件安装备忘
 	  CLOSED: [2015-12-06 周日 22:24]
 	  - State "DONE"       from "TODO"       [2015-12-06 周日 22:24]
+*** 2015/12
+**** <2015-12-07 周一>
+***** TODO 数理逻辑部分
 **** PROCESSING 日志系统实现
 	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:52]
+**** PROCESSING [[LINK_QUATERNION][四元数]]
+	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
 **** TODO 无锁队列
 **** TODO skynet消息队列同步操作方式
 **** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
-**** PROCESSING [[LINK_QUATERNION][四元数]]
-	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
+**** TODO AI [0%]
+	 * [ ] [[http://www.cnblogs.com/fingerpass/p/discussion-about-game-ai.html][漫谈游戏中的人工智能]]
+     * [ ] 决策树
+	 * [ ] 行为树
+	   腾讯开源行为树实现 https://github.com/ruleless/behaviac
 ** Summary
 *** Be Skilled In
 	* 擅长基于Unix平台的应用开发

@@ -12,9 +12,3 @@
    6. Social Server (社会服)
    7. Zone Server (场景服)
    8. Van Data Server (前端数据服)
-* TODO AI [0%]
-  * [ ] 游戏中的人工智能
-	* [ ] 资料
-	  * [ ] [[http://www.cnblogs.com/fingerpass/p/discussion-about-game-ai.html][漫谈游戏中的人工智能]]
-  * [ ] 决策树
-  * [ ] 行为树
