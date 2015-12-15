@@ -120,6 +120,8 @@
 ***** DONE 支持怪物出生动画调用技能轨迹系统
 	  CLOSED: [2015-12-09 周三 17:21]
 	  - State "DONE"       from "TODO"       [2015-12-09 周三 17:21]
+**** TODO <2015-12-14 周一> [0%]
+***** TODO 场景资源需根据与角色的距离确定下载顺序
 **** TODO 微客户端后台下载策略优化
 **** TODO 微客户端BUG修复 [1/3]
 	 1. [X] 通过fileindex.csv推送的下载列表若出错，游戏是否还能正常显示
@@ -422,9 +424,21 @@
 	  CLOSED: [2015-12-06 周日 22:24]
 	  - State "DONE"       from "TODO"       [2015-12-06 周日 22:24]
 *** 2015/12
-**** TODO <2015-12-07 周一> [%]
-***** TODO 基于各种I/O模型的网络I/O框架设计
-***** TODO TCP/IP协议之网络层IP协议
+**** DONE <2015-12-07 周一> [100%]
+	 CLOSED: [2015-12-14 周一 09:30]
+	 - State "DONE"       from "TODO"       [2015-12-14 周一 09:30]
+***** DONE TCP/IP协议
+	  CLOSED: [2015-12-14 周一 09:30]
+	  - State "DONE"       from "TODO"       [2015-12-14 周一 09:30]
+	  阅：
+	  * 网络地址类型/子网划分/特殊IP地址
+	  * 链路层协议(Ethernet/IEEE 802)
+	  * IP协议(IP首部格式/IP选路)
+	  * ARP地址解析协议(ARP协议的以太网数据帧首部格式/请求报文/应答报文)
+	  * RARP逆地址解析协议
+**** TODO <2015-12-14 周一> [0%]
+***** TODO TCP/IP协议
+***** TODO 使用自动机解析Ini脚本
 **** PROCESSING 日志系统实现
 	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:52]
 **** PROCESSING [[LINK_QUATERNION][四元数]]
