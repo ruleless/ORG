@@ -436,9 +436,11 @@
 	  * IP协议(IP首部格式/IP选路)
 	  * ARP地址解析协议(ARP协议的以太网数据帧首部格式/请求报文/应答报文)
 	  * RARP逆地址解析协议
-**** TODO <2015-12-14 周一> [0%]
+**** TODO <2015-12-14 周一> [50%]
 ***** TODO TCP/IP协议
-***** TODO 使用自动机解析Ini脚本
+***** DONE 使用自动机解析Ini脚本
+	  CLOSED: [2015-12-17 周四 15:21]
+	  - State "DONE"       from "TODO"       [2015-12-17 周四 15:21]
 **** PROCESSING 日志系统实现
 	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:52]
 **** PROCESSING [[LINK_QUATERNION][四元数]]
