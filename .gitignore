@@ -3,6 +3,7 @@
 *.suo
 *.user
 *.html
+*.bmp
 /Obj
 /obj
 /lib/win/obj
