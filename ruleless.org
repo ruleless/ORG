@@ -456,9 +456,11 @@
 ***** DONE 使用自动机解析Ini脚本
 	  CLOSED: [2015-12-17 周四 15:21]
 	  - State "DONE"       from "TODO"       [2015-12-17 周四 15:21]
-**** TODO <2015-12-21 周一> [0%]
-***** TODO 读《简明Python教程》
+**** TODO <2015-12-21 周一> [50%]
 ***** TODO UDP用户数据报协议
+***** DONE 读《简明Python教程》
+	  CLOSED: [2015-12-23 周三 10:30]
+	  - State "DONE"       from "TODO"       [2015-12-23 周三 10:30]
 **** PROCESSING 日志系统实现
 	  - State "PROCESSING" from "TODO"       [2015-11-23 周一 09:52]
 **** PROCESSING [[LINK_QUATERNION][四元数]]
@@ -899,7 +901,7 @@
 	 4. git pull
 	 5. git push
 **** Git远程仓库与本地仓库的关系图
-	 file:./Res/Git/GitRepRelation.png
+	 file:./.Res/Git/GitRepRelation.png
 **** git clone
 	 远程操作的第一步，通常是从远程主机克隆一个版本库，这时就要用到git clone命令：
 	 #+BEGIN_SRC sh
