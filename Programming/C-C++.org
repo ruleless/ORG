@@ -7,3 +7,79 @@
 	 timeinfo = localtime( &nowtime );
 	 printf("年：%d 月：%d 日：%d\n", timeinfo->tm_year + 1900, timeinfo->tm_mon + 1, timeinfo->tm_mday);
    #+END_SRC
+*
+* C++使用继承时子对象的内存布局
+** 示例程序
+   #+begin_src c++
+     class A
+     {
+     protected:
+         int a;
+     public:
+         A() : a(1) {}
+
+         virtual void a1() {}
+         virtual void a2() {}
+     };
+
+     class B
+     {
+     protected:
+         int b;
+     public:
+         B() : b(2) {}
+
+         virtual void b1() {}
+         virtual void b2() {}
+     };
+
+     class C : public A, public B
+     {
+     protected:
+         int c;
+     public:
+         C() : c(3) {}
+
+         virtual void a1() {}
+         virtual void b1() {}
+     };
+
+     int _tmain(int argc, _TCHAR* argv[])
+     {
+         C *c = new C;
+         B *b = (B *)c;
+
+         return 0;
+     }
+   #+end_src
+
+   类 A/B/C 之间的关系如下：
+   [[./.Res/InheritSample.png]]
+** 对象的内存布局
+   #+begin_src c++
+     C *c = new C();
+   #+end_src
+
+   在上面这段代码中，对象 c 的内存布局如下：
+   |-------------+-----+--------+--------+---|
+   | 低地址      |     |        |        |   |
+   | ...         |     |        |        |   |
+   | 1. 虚表指针 | --> | &C::a1 | &A::a2 | . |
+   | 2. A::a     |     |        |        |   |
+   | 3. 虚表指针 | --> | &C::b1 | &B::b2 | . |
+   | 4. B::b     |     |        |        |   |
+   | 5. c::c     |     |        |        |   |
+   | ...         |     |        |        |   |
+   | 高地址      |     |        |        |   |
+   |-------------+-----+--------+--------+---|
+
+   c 对象从低地址到高地址依次存储了：A 的虚表指针、A 的成员变量、B 的虚表指针、B 的成员变量、C 的成员变量。我们发现，虚函数表 A 中的 A::a1 函数被 C::a1 函数覆盖了，虚函数表 B 中 B::b1 函数被 C::b1 覆盖了，这是因为 C 重写了 a1 和 b1方法。这意味着通过 c 对象中的虚表指针调用 a1 或 b1 函数，只能够调用到 C 类中重写的方法。
+
+   #+begin_src c++
+     C *c = new C;
+     c->b1();
+
+     B *b = c;
+     b->b1();
+   #+end_src
+   上面的两句调用都会调用 C 的 b1 方法。另外，在对 b 赋值时，b 得到的结果并不是 c 的值，而是 c+8，这正好是 c 对象中用于存储 B 虚表指针的地址。
