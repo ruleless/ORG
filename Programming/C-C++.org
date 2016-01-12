@@ -1,0 +1,9 @@
+* 备忘
+** C语言取当前系统时间
+   #+BEGIN_SRC C
+	 time_t nowtime;
+	 struct tm *timeinfo;
+	 time( &nowtime );
+	 timeinfo = localtime( &nowtime );
+	 printf("年：%d 月：%d 日：%d\n", timeinfo->tm_year + 1900, timeinfo->tm_mon + 1, timeinfo->tm_mday);
+   #+END_SRC

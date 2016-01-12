@@ -501,6 +501,7 @@
 **** TODO <2016-01-11 周一> [0%]
 ***** PROCESSING 利用 sigar 收集和显示系统信息
 	  - State "PROCESSING" from "TODO"       [2016-01-11 周一 10:14]
+***** TODO 应用程序主循环设计
 **** TODO 从业经验总结
 **** TODO Python语法总结
 **** TODO 无锁队列

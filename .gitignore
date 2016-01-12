@@ -5,6 +5,7 @@
 *.user
 *.html
 *.bmp
+*.tex
 /Obj
 /obj
 /lib/win/obj
