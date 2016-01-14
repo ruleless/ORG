@@ -179,5 +179,175 @@
 
    这种实践不仅很普遍，而且已经制度化了。举例来说，在面向对象编程的世界中，我们大量听到"模式"（pattern）这个词，我觉得那些"模式"就是现实中的因素（c），也就是人肉编译器。 当我在自己的程序中，发现用到了模式，我觉得这就表明某个地方出错了。程序的形式，应该仅仅反映它所要解决的问题。代码中其他任何外加的形式，都是一个信号，（至少对我来说）表明我对问题的抽象还不够深，也经常提醒我，自己正在手工完成的事情，本应该写代码，通过宏的扩展自动实现。
 * 编程思考
-** 基于发布/订阅范式的应用程序主循环设计
-***
+** 基于发布/订阅模型的应用程序的主循环设计
+*** 什么是应用程序主循环？
+	我们在执行一个应用程序时，很多时候该应用程序不会一闪而过，而是会打开一个可与用户交互的UI，持续处理用户输入。我们写的应用程序代码总是有限的，而我们写代码时用到的三种编程结构(顺序、条件、循环)只有循环结构才会永不停歇的执行下去。这意味着，我们通常遇到的应用程序中必定有一段循环代码来保证程序永远执行下去。这就是应用程序主循环。
+
+*** 帧循环
+	应用程序在每一次循环中，执行的都是相同的代码，我们可以把每一次循环称作一个逻辑帧，主循环也可称为帧循环。
+
+	程序每秒的逻辑帧数称作逻辑帧率，对于3D游戏或一些图形软件而言，逻辑帧率就是它们的显示帧率，一般控制在60或30。我们这里提到了逻辑帧率，假如逻辑帧的平均执行时长为 t(s)，那么，逻辑帧率=1/t。逻辑帧的执行时长是指从进入本次循环到执行完本次循环的 CPU 时钟。可以想象，如果不在每帧中加入休眠指令，那么，对大多数程序而言，逻辑帧的执行时长几乎是可以忽略的。这个时候讨论帧率没有任何意义，而且不管应用程序的逻辑有多简单，不在主循环中加休眠指令的应用程序其 CPU 的占用率都会超高。
+
+*** 每次循环都做些什么？
+	这个问题的答案不是普适的。但据我观察，绝大部分应用程序的设计都有发布/订阅模型的影子。在发布/订阅模型中，参与者包括发布者和订阅者。这就类似于我们看新闻，我们订阅的感兴趣的条目会自动地发布给我们。基于发布/订阅模型设计的应用程序其主循环可以充当发布者的角色。
+
+*** 消息驱动
+	我们前面谈到主循环可以充当发布者的角色，那么，对应用程序而言，发布和订阅的具体对象是什么呢？结构化的数据，有时也称为事件或消息，我们在这里统一称为消息。经过大量的工程实践，人们发现对于服务器应用而言，需要用到的消息只有两类：*定时器消息*和*网络消息*；对于有用户交互的应用而言，需要用到的消息除了上述两类外还有键盘、鼠标以及其他设备的输入消息。据此分析，我们可将应用程序消息归纳为以下三类：
+	1. 定时器消息
+	2. 网络消息
+	3. 设备输入消息
+
+	我们前面谈到主循环可以充当发布者的角色，其实这是不严谨的。对于定时器消息，我们可以认为是主循环根据当前时间向订阅者发布的。但，网络消息呢？主循环明显不能产生网络消息，网络消息只能由以太网接口从物理链路收取，然后再交付给应用程序。针对网络消息，主循环充当的角色顶多算是二次发布者，它不是消息来源。同理，主循环也不是设备输入消息的消息来源，它只负责分发它们。将主循环理解为消息分发器或许更为合适。对于大部分应用程序而言，我们总是可以将其主循环设计为：
+	#+begin_src c++
+      while (1)
+      {
+          dispatchTimerMessages(); // 分发定时器消息
+          dispatchNetworkMessages(); // 分发网络消息
+          dispatchInputMessages(); // 分发设备输入消息
+      }
+	#+end_src
+
+*** Win32 程序的消息循环
+	不仅仅是 Win32 程序，基于 Qt、Gtk 等界面库的应用程序都有类似消息循环的概念。
+
+	#+begin_src c++
+      MSG msg;
+      ZeroMemory(&msg, sizeof(MSG));
+      while(TRUE)
+      {
+          while(PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+          {
+              if(msg.message == WM_QUIT)
+                  return;
+
+              TranslateMessage(&msg);
+              DispatchMessage(&msg);
+          }
+
+          UINT dwResult = MsgWaitForMultipleObjects(1, &m_hTickEvent, FALSE, INFINITE, QS_ALLINPUT);
+          if(dwResult == WAIT_OBJECT_0)
+          {
+              ... // 其他逻辑
+          }
+          else
+          {
+              continue;
+          }
+      }
+	#+end_src
+	上面展示了 Win32 程序的消息循环代码。 PeekMessage 从消息队列中取出一个消息， TranslateMessage 填入消息参数， *DispatchMessage 分发消息*。我们提到了消息队列的概念，编写过 Win32 程序的人应该知道，这个消息队列并没有出现在我们的应用程序中。实际上这个消息队列是系统帮我们维护的，当设备驱动程序捕获到设备输入时，系统会将该输入事件投入到相关进程的消息队列中， PeekMessage 能从该消息队列取出消息。
+
+	DispatchMessage 分发消息必然是分发给订阅者了，那么在 Win32 程序中怎么订阅各类设备消息呢？
+	#+begin_src c++
+      // 注册窗口类
+      WNDCLASSEX wcex;
+
+      wcex.cbSize         = sizeof(WNDCLASSEX);
+      wcex.style          = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
+      wcex.lpfnWndProc    = (WNDPROC)_MainWndProc; // 消息订阅者
+      wcex.cbClsExtra     = 0;
+      wcex.cbWndExtra     = 0;
+      wcex.hInstance      = g_hInstance;
+      wcex.hIcon          = LoadIcon(g_hInstance, (LPCTSTR)IDD_GAME_DIALOG);
+      wcex.hCursor        = LoadCursor( NULL, IDC_ARROW );
+      wcex.hbrBackground  = (HBRUSH)NULL; //GetStockObject(WHITE_BRUSH);
+      wcex.lpszMenuName   = (LPCTSTR)NULL;
+      wcex.lpszClassName  = MAINWINDOW_CLASS;
+      wcex.hIconSm        = LoadIcon(wcex.hInstance, (LPCTSTR)IDI_SMALL);
+
+      RegisterClassEx(&wcex);
+	#+end_src
+
+	如上所示，在注册窗口类时，我们订阅了设备消息处理函数。 _MainWndProc 函数体形如：
+	#+begin_src c++
+      LRESULT CALLBACK _MainWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
+      {
+          switch(message)
+          {
+          case WM_MOUSEWHEEL:
+              // todo
+              break;
+          case WM_KEYDOWN:
+              // todo
+              break;
+          default:
+              return DefWindowProc(hWnd, message, wParam, lParam);
+          }
+      }
+	#+end_src
+
+	综上所述， Win32 应用程序的主循环就是一个不断的取消息、分发消息的过程。
+
+*** 服务器程序执行流程示例
+	#+begin_src c++
+      void EventDispatcher::processUntilBreak()
+      {
+          if(mBreakProcessing != DispatcherStatus_BreakProcessing)
+              mBreakProcessing = DispatcherStatus_Running;
+
+          // 主循环
+          while(mBreakProcessing != DispatcherStatus_BreakProcessing)
+          {
+              // 执行一帧
+              this->processOnce(true);
+          }
+      }
+
+      int EventDispatcher::processOnce(bool shouldIdle)
+      {
+          if(mBreakProcessing != DispatcherStatus_BreakProcessing)
+              mBreakProcessing = DispatcherStatus_Running;
+
+          // 分发用户自定义任务消息
+          this->processTasks();
+
+          // 分发定时器消息
+          if(mBreakProcessing != DispatcherStatus_BreakProcessing)
+          {
+              this->processTimers();
+          }
+
+          this->processStats();
+
+          // 分发网络消息
+          if(mBreakProcessing != DispatcherStatus_BreakProcessing)
+          {
+              return this->processNetwork(shouldIdle);
+          }
+
+          return 0;
+      }
+
+      void EventDispatcher::processTasks()
+      {
+          mpTasks->process();
+      }
+
+      void EventDispatcher::processTimers()
+      {
+          uint64 now = timestamp();
+          mNumTimerCalls += mpTimers->process(now);
+      }
+
+      void EventDispatcher::processStats()
+      {
+          if (timestamp() - mLastStatisticsGathered >= stampsPerSecond())
+          {
+              mOldSpareTime = mTotSpareTime;
+              mTotSpareTime = mAccSpareTime + mpPoller->spareTime();
+
+              mLastStatisticsGathered = timestamp();
+          }
+      }
+
+      int EventDispatcher::processNetwork(bool shouldIdle)
+      {
+          double maxWait = shouldIdle ? this->calculateWait() : 0.0;
+          return mpPoller->processPendingEvents(maxWait);
+      }
+	#+end_src
+	在上面的程序中，我们在主函数中调用 processUntilBreak() 函数即可进入主循环。完整的程序可通过 https://github.com/ruleless/snail 获得。
+
+	正如我们前面所说，在此示例中，主循环分发了定时器和网络消息。
+
+	可以认为，服务器是由网络消息驱动的，服务器的主要业务就是接入客户端和处理客户请求。
