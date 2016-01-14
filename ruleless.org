@@ -498,10 +498,12 @@
 	  - State "DONE"       from "TODO"       [2016-01-10 周日 09:52]
 	  * 广播与多播
 	  * IGMP组管理协议
-**** TODO <2016-01-11 周一> [33%]
+**** TODO <2016-01-11 周一> [66%]
 ***** PROCESSING 利用 sigar 收集和显示系统信息
 	  - State "PROCESSING" from "TODO"       [2016-01-11 周一 10:14]
-***** TODO 应用程序主循环设计
+***** DONE 应用程序主循环设计
+	  CLOSED: [2016-01-14 周四 16:06]
+	  - State "DONE"       from "TODO"       [2016-01-14 周四 16:06]
 ***** DONE C++使用继承时子对象的内存布局
 	  CLOSED: [2016-01-12 周二 22:53]
 	  - State "DONE"       from "TODO"       [2016-01-12 周二 22:53]
