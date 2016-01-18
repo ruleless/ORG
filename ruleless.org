@@ -535,8 +535,15 @@
 ***** DONE snail新增Trace支持
 	  CLOSED: [2016-01-17 周日 14:11]
 	  - State "DONE"       from "TODO"       [2016-01-17 周日 14:11]
-**** TODO <2016-01-18 周一> [0%]
-***** TODO
+**** TODO <2016-01-18 周一> [16%]
+***** DONE TCP 连接的建立和终止
+	  CLOSED: [2016-01-18 周一 22:55]
+	  - State "DONE"       from "TODO"       [2016-01-18 周一 22:55]
+***** TODO TCP 交互数据流
+***** TODO TCP 成块数据流
+***** TODO TCP 的超时和重传机制
+***** TODO TCP 坚持定时器
+***** TODO TCP 保活定时器(keep alive)
 **** TODO 从业经验总结
 **** TODO Python语法总结
 **** TODO 无锁队列
