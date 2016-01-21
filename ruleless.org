@@ -167,13 +167,15 @@
 	  CLOSED: [2016-01-17 周日 14:09]
 	  - State "DONE"       from "PROCESSING" [2016-01-17 周日 14:09]
 	  - State "PROCESSING" from "TODO"       [2016-01-11 周一 10:04]
-**** TODO <2016-01-18 周一> [25%]
+**** TODO <2016-01-18 周一> [50%]
+***** TODO 微客户端与其代理进程之间建立管道用以通信
+***** TODO 设定焦点目标
+***** DONE 后台进程在空闲时根据资源列表下载所有资源
+	  CLOSED: [2016-01-21 周四 17:22]
+	  - State "DONE"       from "TODO"       [2016-01-21 周四 17:22]
 ***** DONE 微客户端下载提示
 	  CLOSED: [2016-01-20 周三 09:41]
 	  - State "DONE"       from "TODO"       [2016-01-20 周三 09:41]
-***** TODO 微客户端与其代理进程之间建立管道用以通信
-***** TODO 后台进程在空闲时根据资源列表下载所有资源
-***** TODO 设定焦点目标
 **** TODO 微客户端后台下载策略优化
 **** TODO 微客户端BUG修复 [1/3]
 	 1. [X] 通过fileindex.csv推送的下载列表若出错，游戏是否还能正常显示
@@ -540,12 +542,16 @@
 ***** DONE snail新增Trace支持
 	  CLOSED: [2016-01-17 周日 14:11]
 	  - State "DONE"       from "TODO"       [2016-01-17 周日 14:11]
-**** TODO <2016-01-18 周一> [16%]
+**** TODO <2016-01-18 周一> [50%]
 ***** DONE TCP 连接的建立和终止
 	  CLOSED: [2016-01-18 周一 22:55]
 	  - State "DONE"       from "TODO"       [2016-01-18 周一 22:55]
-***** TODO TCP 交互数据流
-***** TODO TCP 成块数据流
+***** DONE TCP 交互数据流
+	  CLOSED: [2016-01-21 周四 18:30]
+	  - State "DONE"       from "TODO"       [2016-01-21 周四 18:30]
+***** DONE TCP 成块数据流
+	  CLOSED: [2016-01-21 周四 18:30]
+	  - State "DONE"       from "TODO"       [2016-01-21 周四 18:30]
 ***** TODO TCP 的超时和重传机制
 ***** TODO TCP 坚持定时器
 ***** TODO TCP 保活定时器(keep alive)
