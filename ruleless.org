@@ -563,9 +563,13 @@
 ***** DONE TCP 的超时和重传机制
 	  CLOSED: [2016-01-24 周日 17:17]
 	  - State "DONE"       from "TODO"       [2016-01-24 周日 17:17]
-**** TODO <2016-01-25 周一> [0%]
-***** TODO TCP 坚持定时器
-***** TODO TCP 保活定时器(keep alive)
+**** TODO <2016-01-25 周一> [66%]
+***** DONE TCP 坚持定时器
+	  CLOSED: [2016-01-26 周二 10:53]
+	  - State "DONE"       from "TODO"       [2016-01-26 周二 10:53]
+***** DONE TCP 保活定时器(keep alive)
+	  CLOSED: [2016-01-26 周二 10:53]
+	  - State "DONE"       from "TODO"       [2016-01-26 周二 10:53]
 ***** TODO 实现基于共享内存的主从式消息订阅/发布模型
 **** TODO 从业经验总结
 **** TODO Python语法总结
