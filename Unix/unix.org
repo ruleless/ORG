@@ -551,7 +551,7 @@
               // 取模操作可以优化
               int update_head_index = (cur_head_index + 1) % mCapacity;
               __sync_bool_compare_and_swap(&mFront, cur_head_index, update_head_index);
-              ,*ele = *(mArray + cur_head_index);
+              *ele = *(mArray + cur_head_index);
 
               // 弹出完毕
               __sync_fetch_and_sub(cur_head_flag_index, 3);
