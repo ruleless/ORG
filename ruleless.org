@@ -193,6 +193,8 @@
 ***** DONE 生死考验奖励：鼠标第一次移至奖励图标，tips没有置顶，被大窗口覆盖
 	  CLOSED: [2016-02-03 周三 12:12]
 	  - State "DONE"       from "TODO"       [2016-02-03 周三 12:12]
+**** TODO <2016-02-19 周五> [0%]
+***** TODO 国战竞猜按钮风格不一致
 **** TODO 微客户端报错修复
 **** TODO 微客户端与其代理进程之间建立管道用以通信
 **** TODO 微客户端后台下载策略优化
@@ -590,14 +592,22 @@
 	  CLOSED: [2016-01-26 周二 10:53]
 	  - State "DONE"       from "TODO"       [2016-01-26 周二 10:53]
 *** 2016/02
-**** TODO <2016-02-01 周一> [66%]
+**** DONE <2016-02-01 周一> [100%]
+	 CLOSED: [2016-02-19 周五 09:38]
+	 - State "DONE"       from "TODO"       [2016-02-19 周五 09:38]
 ***** DONE 调整和改善CentOS配置的Makefile
 	  CLOSED: [2016-02-02 周二 15:58]
 	  - State "DONE"       from "TODO"       [2016-02-02 周二 15:58]
 ***** DONE linux 基本命令总结
 	  CLOSED: [2016-02-02 周二 15:41]
 	  - State "DONE"       from "TODO"       [2016-02-02 周二 15:41]
-***** TODO CentOS 7 Systemd服务简介
+***** DONE CentOS 7 Systemd服务简介
+	  CLOSED: [2016-02-19 周五 09:37]
+	  - State "DONE"       from "TODO"       [2016-02-19 周五 09:37]
+**** TODO <2016-02-19 周五> [100%]
+***** DONE 网络服务器开发总结：http://my.oschina.net/u/181613/blog/596022?fromerr=U59ofNAj
+	  CLOSED: [2016-02-19 周五 19:14]
+	  - State "DONE"       from "TODO"       [2016-02-19 周五 19:14]
 **** TODO TCP 的性能和未来
 **** TODO 浏览 jemalloc 源码，给出 jemalloc 的设计图
 **** TODO DNS 域名解析协议
