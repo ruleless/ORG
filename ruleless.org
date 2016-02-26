@@ -199,9 +199,14 @@
 ***** DONE 国战竞猜按钮风格不一致
 	  CLOSED: [2016-02-20 周六 16:58]
 	  - State "DONE"       from "TODO"       [2016-02-20 周六 16:58]
-**** TODO <2016-02-22 周一> [33%]
-***** TODO NPC 头顶喊话窗口抖动
+**** TODO <2016-02-22 周一> [75%]
 ***** TODO 微客户端报错修复
+***** DONE 通过技能轨迹系统播放死亡击碎特效
+	  CLOSED: [2016-02-24 周三 17:02]
+	  - State "DONE"       from "TODO"       [2016-02-24 周三 17:02]
+***** DONE NPC 头顶喊话窗口抖动
+	  CLOSED: [2016-02-24 周三 17:03]
+	  - State "DONE"       from "TODO"       [2016-02-24 周三 17:03]
 ***** DONE 微客户端代理进程通过共享内存方式向微客户端进程通知监听端口
 	  CLOSED: [2016-02-22 周一 17:02]
 	  - State "DONE"       from "TODO"       [2016-02-22 周一 17:02]
@@ -612,7 +617,9 @@
 ***** DONE CentOS 7 Systemd服务简介
 	  CLOSED: [2016-02-19 周五 09:37]
 	  - State "DONE"       from "TODO"       [2016-02-19 周五 09:37]
-**** TODO <2016-02-19 周五> [100%]
+**** DONE <2016-02-19 周五> [100%]
+	 CLOSED: [2016-02-25 周四 09:50]
+	 - State "DONE"       from "TODO"       [2016-02-25 周四 09:50]
 ***** DONE 网络服务器开发总结：http://my.oschina.net/u/181613/blog/596022?fromerr=U59ofNAj
 	  CLOSED: [2016-02-19 周五 19:14]
 	  - State "DONE"       from "TODO"       [2016-02-19 周五 19:14]
