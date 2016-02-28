@@ -199,8 +199,9 @@
 ***** DONE 国战竞猜按钮风格不一致
 	  CLOSED: [2016-02-20 周六 16:58]
 	  - State "DONE"       from "TODO"       [2016-02-20 周六 16:58]
-**** TODO <2016-02-22 周一> [75%]
-***** TODO 微客户端报错修复
+**** DONE <2016-02-22 周一> [100%]
+	 CLOSED: [2016-02-28 周日 20:16]
+	 - State "DONE"       from "TODO"       [2016-02-28 周日 20:16]
 ***** DONE 通过技能轨迹系统播放死亡击碎特效
 	  CLOSED: [2016-02-24 周三 17:02]
 	  - State "DONE"       from "TODO"       [2016-02-24 周三 17:02]
@@ -210,6 +211,7 @@
 ***** DONE 微客户端代理进程通过共享内存方式向微客户端进程通知监听端口
 	  CLOSED: [2016-02-22 周一 17:02]
 	  - State "DONE"       from "TODO"       [2016-02-22 周一 17:02]
+**** TODO 微客户端报错修复
 **** TODO 微客户端后台下载策略优化
 **** TODO 微客户端BUG修复 [1/3]
 	 1. [X] 通过fileindex.csv推送的下载列表若出错，游戏是否还能正常显示
@@ -623,9 +625,45 @@
 ***** DONE 网络服务器开发总结：http://my.oschina.net/u/181613/blog/596022?fromerr=U59ofNAj
 	  CLOSED: [2016-02-19 周五 19:14]
 	  - State "DONE"       from "TODO"       [2016-02-19 周五 19:14]
-**** TODO <2016-02-22 周一> [0%]
-***** TODO 读 ZMQ 文档
-***** TODO 读 《游戏引擎架构》
+**** DONE <2016-02-22 周一> [100%]
+	 CLOSED: [2016-02-28 周日 20:22]
+	 - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+***** DONE 读 ZMQ 文档
+	  CLOSED: [2016-02-28 周日 20:18]
+	  - State "DONE"       from "TODO"       [2016-02-28 周日 20:18]
+****** DONE ZMQ基础
+	   CLOSED: [2016-02-28 周日 20:18]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:18]
+****** DONE ZMQ进阶
+	   CLOSED: [2016-02-28 周日 20:18]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:18]
+***** DONE 读 《游戏引擎架构》 [8/8]
+	  CLOSED: [2016-02-28 周日 20:22]
+	  - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 专业工具
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 软件工程基础
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 游戏所需的 3D 数学
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 游戏支持系统
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 资源及文件系统
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 游戏循环及实时模拟
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 人体接口学设备
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+****** DONE 调试及开发工具
+	   CLOSED: [2016-02-28 周日 20:22]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
 **** TODO TCP 的性能和未来
 **** TODO 浏览 jemalloc 源码，给出 jemalloc 的设计图
 **** TODO DNS 域名解析协议
