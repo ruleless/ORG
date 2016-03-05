@@ -1,0 +1,409 @@
+* 微端原理及工作流程
+
+  * 文件云服务协议及工作过程简述:
+
+	1. 客户端连接到云服务器
+	2. 报告本地版本及本地已有文件ID列表
+	3. 服务器根据版本ID下发客户端需要重新更新的文件ID
+	4. 客户端将需要重新更新的文件删除同时修改版本号
+	5. 报告本地角色信息请求服务器智能调度预下载文件优先级
+	6. 本地正在请求的文件向服务器提交下载
+	7. 请求下载智能预下载队列中的文件
+	8. 下载成功后保存在本地文件索引表中
+	9. 上报文件请求响应情况采样给服务器供优化智能预下载算法
+
+  * 智能预下载算法补遗:
+
+	1. 正在请求的优先级最高
+	2. 文件小的优先级高
+	3. 访问次数多的优先级高
+	4. 内容重要的优先级高
+	5. 下载内容需要支持压缩
+	6. 本地需要保存为包态，并支持自动更新
+	7. 只下载当前地图可能用到的资源
+	8. 根据进入地图到用到该资源的TICK进行统计，优先下载相近时间点需要的资源
+	9. 按之前的评分进行下载，然后根据命中的效果对评分进行修正，例如30秒内用到
+	   则+10分,30-60秒用到+5分,5分钟内用到+1分
+	10. 由于基于HTTP访问，所以最好合并请求
+	11. 另外支持TCP专有协议请求，因为这样可以减少断开连接带来的损失，最好小文件
+	    TCP请求,大文件HTTP请求.2种做到无缝切换
+	12. 尝试建立文件关联性，如果某个文件被下载，则另外一个文件很可能被下载
+	13. 文件数据库存储在服务端，每次从服务器下载最新文件数据库
+	14. 支持多线程下载
+	15. TCP管道每天保存一定数量的请求采样，数据挖掘程序在后台定时分析作业
+	16. 需要同步下载的文件不能从网上下载，FB文件都要改成异步加载
+	17. 前期任务速度需要减慢速度，以赢得下载时间
+	18. 服务器上存储包文件好还是存储散文件好？
+
+* 微客户端操作指引
+
+** 微客户端服务器部署
+
+*** 基于Http协议的资源服务器
+
+**** 外网 #<<http_resaddr>>
+
+	 外网的资源服务器地址通过CDN提供商获得，我们只需将CDN提供商提供的地址填入配
+	 置文件即可：
+
+	 #+begin_src html
+	   [Cloud]
+	   back_list=recomments.int
+	   resource_1=http://localhost # 地址1
+	   resource_2=http://localhost # 地址2
+
+	   [setting]
+	   open=1
+	   enablerecommend=1
+	   enable_check=0
+	   cloud_1=127.0.0.1:9381
+	 #+end_src
+
+	 文件名：cloud_config.ini，放置到云服务器目录（虽然客户端也有该文件，但资源
+	 地址实际是通过云服务器获得的）。
+
+	 哪些资源需要提交给CDN？工具 FileCloudIndex.exe 生成的所有zip压缩文件。
+
+**** 内网
+
+	 内网需要我们自己搭建Web服务器，过程不予赘述。其他同外网。
+
+*** 云服务器(FileCloud.exe)
+
+**** 云服务器所提供的服务
+
+	 1. 微客户端更新管理 #<<changelog>>
+
+		服务器目录有一个名为changelog.xml的文件，其内容形如：
+
+		#+begin_src html
+		  <changelog>
+			<version ver=1>
+			  <file id=1541545 /> # id 在 fileindex.csv 中查找
+			  <file id=1541543 /> # id 在 fileindex.csv 中查找
+			</version>
+			<version ver=2>
+			  <file id=1541545 /> # id 在 fileindex.csv 中查找
+			  <file id=1541543 /> # id 在 fileindex.csv 中查找
+			</version>
+			<version ver=3>
+			  <file id=1541545 /> # id 在 fileindex.csv 中查找
+			  <file id=1541543 /> # id 在 fileindex.csv 中查找
+			</version>
+		  </changelog>
+		#+end_src
+
+		需要更新的文件将由服务器发送到微客户端，然后微客户端将删除所有需要更新的
+		文件，然后重新下载(不是马上)。
+
+	 2. 提供资源服务器地址
+
+		已在[[http_resaddr]]处说明。
+
+	 3. 智能下载列表推送
+
+		微客户端云服务器能够根据资源关联地图以及资源下载次数等相关参数动态地推送
+		下载列表。一般来说微客户端玩家越多推送越精准、越及时。
+
+		此功能需要将 FileCloudIndex.exe 工具生成的 fileindex.csv 文件放置到服务
+		器目录下。
+
+	 4. 静态下载列表推送 #<<recomments>>
+
+		静态下载列表推送作为第3条功能的补充，将固定地推送 recomments.csv 配置表
+		中的文件。recomments.csv 中的内容形如：
+
+		#+begin_src html
+		  文件名,
+		  string,
+		  Scene\Maps\4505\18_22.jpg,
+		  Scene\Maps\4503\15_5.jpg,
+		  UI\layout\GroupUI.layout,
+		  Scene\Maps\104\2_5.jpg,
+		  Scp\Wing.csv,
+		  Effect\WingEFFect\wing_keai\keai_01\chibang_01_guangyun.pts,
+		  Scene\Maps\102\6_7.jpg,
+		#+end_src
+
+	 5. 备用下载源
+
+		当无法通过http协议从CDN服务器上下载资源时，微客户端将尝试从云服务器下载。
+
+**** 云服务器配置文件
+
+	 1. cloud_config.ini 基础配置，客户端和服务器各放置一份。
+	 2. changelog.xml 只放置在服务器目录，用于微客户端资源更新管理。见[[changelog]]。
+	 3. fileindex.csv 由FileCloudIndex.exe工具生成，客户端也有一份同名的配置文
+	    件，但客户端的该文件内容可为空。
+	 4. recomments.csv 只放置在服务器目录，用于存放静态推送列表。见[[recomments]]
+	 5. verifylist.xml 只放置在服务器目录，用于文件校验。其内容形如：
+
+		#+begin_src html
+		  <filelist>
+			<file id=1541545 /> # id 在 fileindex.csv 中查找
+			<file id=1541543 /> # id 在 fileindex.csv 中查找
+		  </filelist>
+		#+end_src
+
+		对于比较重要的文件可在此处填入其文件ID进行校验。
+
+*** 微客户端文件压缩 (工具:FileCloudIndex.exe)
+
+	此工具遍历客户端资源目录([客户端根目录]/Data/)，加密并压缩该目录下的每一个
+	文件(保存为[原文件名].zip)。最后还将会生成fileindex.csv文件。
+
+	此工具生成的所有压缩文件为微客户端下载源，可通过Http(CDN)或Tcp(云服务器)协议
+	下载。
+
+	FileCloudIndex.exe工具指定的资源目录必须配置到Http服务器和云服务器中。
+
+** 客户端配置文件
+
+   1. cloud_config.ini 各配置项说明如下：
+
+	  #+begin_src html
+		[Cloud]
+		back_list=recomments.csv # 存放静态推送列表的文件
+		resource_1=http://localhost # CDN地址1
+		resource_2=http://localhost # CDN地址2
+
+		[setting]
+		open=1 # 是否开启微客户端模式
+		enablerecommend=1
+		enable_check=0
+		cloud_1=127.0.0.1:9381 # 云服务器地址1
+		cloud_1=127.0.0.1:9381 # 云服务器地址1
+	  #+end_src
+
+   2. fileindex.csv 可配置为空，形如：
+	  #+begin_src html
+		ID,路径,大小,下载次数,重要度,引用地图1,引用地图2,引用地图3,引用地图4,引用地图5,引用地图6,引用地图7,引用地图8
+		int,string,int,int,int,int,int,int,int,int,int,int,int
+	  #+end_src
+
+** 服务器部署以及客户端打包步骤
+
+*** 服务器部署步骤
+
+	1. 打开FileCloudIndex.exe，选择资源目录(建议单独签出客户端Data目录)，点击生成。
+	2. 在cloud_config.ini文件中填入资源下载地址，形如：
+
+	   #+begin_src html
+		 resource_1=http://localhost
+	   #+end_src
+
+	   之后，需将FileCloudIndex.exe指定的资源目录配置为Http协议可访问模式。在外
+	   网时，将资源提交给CDN提供商即可；在内网时，可通过Appache配置。
+
+	3. 在cloud_config.ini文件中填入云服务器IP地址，形如：
+	   #+begin_src html
+		 cloud_1=127.0.0.1:9381
+	   #+end_src
+
+	4. 打开FileCloud.exe，选择资源目录，点击Start按钮，若提示：[1123 10:22:15]
+	   ERROR: 启动成功...，则表示云服务器启动成功。
+
+*** 客户端打包
+
+	1. 将mcmd.py和mclient.py文件拷贝到客户端Data目录，运行mcmd.py，选择"2. 移除
+	   非微端资源"。另外，建议单独签出整个客户端目录，作为每次微客户端打包的目录。
+
+	2. 将cloud_config.ini文件和fileindex.csv文件(可不填任何具体文件)拷贝至客户端
+	   Bin目录
+
+	3. 进入打包流程(与大端一致)。
+
+* DONE 微端体验优化
+  CLOSED: [2016-03-05 周六 17:00]
+  - State "DONE"       from "TODO"       [2016-03-05 周六 17:00]
+
+** 重要资源排序
+
+   1. 主角动画
+   2. 怪物动画
+   3. 地表资源(若没有，在某些地方会悬空)
+   4. UI资源
+   5. 环境资源(花花草草)
+
+* DONE 微客户端资源后台下载
+  CLOSED: [2016-03-05 周六 17:00]
+  - State "DONE"       from "TODO"       [2016-03-05 周六 17:00]
+
+  * 智能下载列表推送
+
+	服务器可根据玩家所处地图智能推荐后台下载资源列表。工作流程如下：
+
+	1. 各微客户端跑图时，定时上传资源采样信息；服务器会根据采样信息动态调整资源的关联地图以及优先级等。
+	2. 微客户端跑图时，定时向服务器请求推荐列表。
+
+  * 静态推荐下载列表
+
+* DONE 微客户端可异步加载的资源 [7/7]
+  CLOSED: [2015-11-04 周三 15:11]
+  - State "DONE"       from "TODO"       [2015-11-04 周三 15:11]
+
+  1. [X] UI/ [4/4]
+
+	 本目录存放游戏界面所需的图片以及特效资源。
+
+	 1. [X] UI/Image/
+
+		远征遗留下来的旧UI资源目录，现在仍有部分图片资源在该目录下。
+		此目录下的所有资源均可异步加载。
+
+	 2. [X] UI/image_New/
+
+		可异步加载
+
+	 3. [X] UI/bg/
+
+		登陆、角色选取以及场景切换需使用到的大背景图存放于此目录。
+
+		* 登陆及角色选取背景图片由于是直接在逻辑层引用图片路径，未走文件系统逻
+	      辑，所以无法异步加载
+		* 场景切换背景图片在资源缺失时通常需要在完成场景切换后才会走完异步加载流
+	      程，原因待查
+
+	 4. [X] UI/effect/
+
+		此目录用于存放UI序列帧动画相应的图片资源，例如技能冷却转圈动画。
+		此目录下的所有资源均可异步加载。
+
+  2. [X] Models/
+
+	 此目录存放怪物、主角以及载具的模型、贴图和动画文件。可异步加载。
+
+  3. [X] Effect/ [10/10]
+
+	 不败传说特效资源目录，主要包含三类文件：模型文件(.Mz, .mzlod)，模型贴图文件
+	 (.dds)，粒子(.pts)。除了.skilleffects技能配置文件和.mzlod文件之外，该目录下
+	 的其余文件均可异步加载。
+
+	 1. [X] Effect/ActorSkillEffect/
+
+		技能特效资源目录，除在技能编辑器中引用到特效资源之外还包含技能升级特效资
+		源。另外.skilleffects格式的文件为配置文件，不可异步加载。
+
+	 2. [X] Effect/CommonEffect/
+
+		Buff和其他功能模块所引用的特效资源存放于此目录。
+
+	 3. [X] Effect/D3_sourceimages/
+
+	 4. [X] Effect/EquipmentFlash/
+
+		装备发光特效资源目录。
+
+	 5. [X] Effect/MonsterEffect/
+
+	 6. [X] Effect/NPCEffect/
+
+	 7. [X] Effect/SceneEffect/
+
+		场景相关的特效资源目录。
+
+	 8. [X] Effect/textures/
+
+		模型贴图资源目录。
+
+	 9. [X] Effect/UiEffect/
+
+		UI特效资源目录。
+
+	 10. [X] Effect/WingEFFect/
+
+		 翅膀特效资源目录。
+
+  4. [X] Creature/
+
+	 远征遗留的特效资源目录。可异步加载。
+
+  5. [X] Scene/
+
+	 游戏场景相关的资源存放在此目录。
+
+	 1. [X] Scene/Grass/
+
+		地表植被贴图资源。当前不可异步加载。
+
+	 2. [X] Scene/Maps/
+
+		此目录存放：mps文件、terrain文件以及切块后的小地图图片文件(jpg格式)。mps
+		及terrain文件不可异步加载，jpg可以异步加载。
+
+	 3. [X] Scene/Model/
+
+		场景物件模型资源目录。有BUG，需调试
+
+	 4. [X] Scene/Texture/
+		地表贴图。当前不可异步加载。
+
+  6. [X] Music/
+
+	 音频资源文件可异步加载。
+
+  7. [X] Environment/
+
+	 环境相关的资源目录。只有此目录下的模型和贴图文件才可异步加载。
+
+* DONE 微客户端必须资源    总大小:541 MB
+  CLOSED: [2015-11-05 周四 09:45]
+  - State "DONE"       from "TODO"       [2015-11-05 周四 09:45]
+
+  1. Scene/           361 MB
+
+	 1. Scene/Model/    258 MB
+
+		此文件下的 mz 文件全部予以保留，模型贴图和动画文件异步下载。
+
+		mz 文件必须保留的原因是：游戏场景中很多地表是直接铺的模型（如：王城、
+		逍遥城），所以模型的碰撞信息需同步加载，而模型的碰撞信息当前是保存在 mz
+		文件中的。
+
+	 2. Scene/Maps/    62.5 MB
+
+		保留terrain 和 mps 文件
+
+	 3. Scene/Texture/    39.8 MB
+
+		地表纹理贴图，当前不支持异步加载，个人认为也不需异步加载！
+
+  2. UI/              51.4 MB
+
+	 除了背景图片资源之外(16.5 MB)，其余图片和模型资源全部异步下载
+
+  3. Video/           47.2 MB
+
+	 全部保留
+
+  4. Scp/             31.0 MB
+
+	 全部保留
+
+  5. Fonts/           29.00 MB
+
+	 此目录全部保留
+
+  6. Effect/          7.83 MB
+
+	 需保留：技能配置文件(.skilleffects)，细节层次优化文件(.mzlog)
+
+  7. Shader/          4.96 MB
+
+	 全部保留
+
+  8. Lightmap/        1.33 MB
+
+	 此目录全部保留
+
+  9. Helper/          1.38 MB
+
+	 此目录全部保留
+
+  10. Models/         224 KB
+
+	  角色武器模型的mzlod文件
+
+  11. Environment/    58.2 KB
+
+	  需保留：env格式的文本配置文件
