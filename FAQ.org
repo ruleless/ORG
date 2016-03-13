@@ -27,3 +27,34 @@
 ** 子网内的主机是如何与互联网上的主机建立 TCP 连接的？
    我们知道，建立 TCP 连接的两台主机是需要三次握手的。首先发起连接的一方填入本机的IP地址(局域网地址)、端口号(可以是随机的)
    NAT 地址转换协议的工作过程，也就是解释题主为什么不能使用局域网内的主机作为外部可主动链接的目标机的原因NAT地址转换过程NAT地址转换过程如下：1、客户机将数据包发给运行NAT的计算机。2、NAT主机将数据包中的源端口号和源私有IP地址转换成自己的端口号和公网的IP地址，然后将数据包发给外部网络的目的主机，同时记录一条跟踪信息在地址转换映像表中，以便向客户机发送响应信息。3、外部网络发送回送信息给NAT主机。4、NAT主机根据映像表中的记录，将所收到数据包的端口号和公用IP地址转换成目标主机的端口号和内部网络中目标主机的专用IP地址，并转发给目标主机。 例如：内网机器（192.168.0.5） 访问 目标主机（220.181.28.42）1、客户机发送数据包　　　　目的主机 220.181.28.42　　目的端口 80　　源主机 192.168.0.5         (内网的私有IP）　　源端口 1025                  （随机打开）2、进行地址转换　　　　目的主机 220.181.28.42　　目的端口 80　　源主机 218.22.192.21  （NAT服务器的公网IP）　　源端口 5000                （随机打开）3、记录映像　　192.168.0.5 tcp 1025 ----- 218.22.192.21 tcp 50004、外部网络主机向NAT主机发送响应信息　　　　目的主机 218.22.192.21　　目的端口 5000　　源主机 220.181.28.42　　源端口 805、查找映像关系将数据包发给客户机　　　　目的主机 192.168.0.5　　目的端口 1025　　源主机 220.181.28.42　　源端口 80
+
+* DB
+
+** MySql 忘记 root 密码？
+
+   在 /etc/my.cnf 中加入一行：
+
+   #+begin_src sh
+     # For advice on how to change settings please see
+     # http://dev.mysql.com/doc/refman/5.7/en/server-configuration-defaults.html
+
+     [mysqld]
+     #
+     # Remove leading # and set to the amount of RAM for the most important data
+     # cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.
+     # innodb_buffer_pool_size = 128M
+     #
+     # Remove leading # to turn on a very important data integrity option: logging
+     # changes to the binary log between backups.
+     # log_bin
+     #
+     # Remove leading # to set options mainly useful for reporting servers.
+     # The server defaults are faster for transactions and fast SELECTs.
+     # Adjust sizes as needed, experiment to find the optimal values.
+     # join_buffer_size = 128M
+     # sort_buffer_size = 2M
+     # read_rnd_buffer_size = 2M
+     datadir=/var/lib/mysql
+     socket=/var/lib/mysql/mysql.sock
+     skip-grant-tables
+   #+end_src
