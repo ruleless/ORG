@@ -4,332 +4,332 @@
 
 *** 2016/01
 
-**** DONE <2016-01-04 ��һ> [100%]
-	 CLOSED: [2016-01-10 ���� 09:51]
-	 - State "DONE"       from "TODO"       [2016-01-10 ���� 09:51]
-***** DONE �ڿ󾭳�������ȴ�У��е�ʱ���ڿ��û�ж�����������Ҫ���Զ��һ�һ����
-	  ��һ����ʶ
-	  CLOSED: [2016-01-05 �ܶ� 17:18]
-	  - State "DONE"       from "TODO"       [2016-01-05 �ܶ� 17:18]
-***** DONE ΢�ͻ���ģʽ�·�ʦ��ǽ��Ч�޷���ʾ
-	  CLOSED: [2016-01-04 ��һ 16:10]
-	  - State "DONE"       from "TODO"       [2016-01-04 ��һ 16:10]
+**** DONE <2016-01-04 周一> [100%]
+	 CLOSED: [2016-01-10 周日 09:51]
+	 - State "DONE"       from "TODO"       [2016-01-10 周日 09:51]
+***** DONE 挖矿经常出现冷却中，有的时候挖矿会没有动作，所以需要向自动挂机一样，
+	  做一个标识
+	  CLOSED: [2016-01-05 周二 17:18]
+	  - State "DONE"       from "TODO"       [2016-01-05 周二 17:18]
+***** DONE 微客户端模式下法师火墙特效无法显示
+	  CLOSED: [2016-01-04 周一 16:10]
+	  - State "DONE"       from "TODO"       [2016-01-04 周一 16:10]
 
-**** DONE <2016-01-11 ��һ> [100%]
-	 CLOSED: [2016-01-17 ���� 14:09]
-	 - State "DONE"       from "TODO"       [2016-01-17 ���� 14:09]
-***** DONE ʹ��һ��������̨���̹�������ƴ��������б���΢�ͻ��˵���Դ����
-	  CLOSED: [2016-01-17 ���� 14:09]
-	  - State "DONE"       from "PROCESSING" [2016-01-17 ���� 14:09]
-	  - State "PROCESSING" from "TODO"       [2016-01-11 ��һ 10:04]
+**** DONE <2016-01-11 周一> [100%]
+	 CLOSED: [2016-01-17 周日 14:09]
+	 - State "DONE"       from "TODO"       [2016-01-17 周日 14:09]
+***** DONE 使用一个单例后台进程管理（或称代理）所有本机微客户端的资源下载
+	  CLOSED: [2016-01-17 周日 14:09]
+	  - State "DONE"       from "PROCESSING" [2016-01-17 周日 14:09]
+	  - State "PROCESSING" from "TODO"       [2016-01-11 周一 10:04]
 
-**** DONE <2016-01-18 ��һ> [100%]
-	 CLOSED: [2016-01-24 ���� 17:16]
-	 - State "DONE"       from "TODO"       [2016-01-24 ���� 17:16]
-***** DONE ��̨�����ڿ���ʱ������Դ�б�����������Դ
-	  CLOSED: [2016-01-21 ���� 17:22]
-	  - State "DONE"       from "DONE"       [2016-01-24 ���� 17:16]
-***** DONE ΢�ͻ���������ʾ
-	  CLOSED: [2016-01-20 ���� 09:41]
-	  - State "DONE"       from "TODO"       [2016-01-20 ���� 09:41]
+**** DONE <2016-01-18 周一> [100%]
+	 CLOSED: [2016-01-24 周日 17:16]
+	 - State "DONE"       from "TODO"       [2016-01-24 周日 17:16]
+***** DONE 后台进程在空闲时根据资源列表下载所有资源
+	  CLOSED: [2016-01-21 周四 17:22]
+	  - State "DONE"       from "DONE"       [2016-01-24 周日 17:16]
+***** DONE 微客户端下载提示
+	  CLOSED: [2016-01-20 周三 09:41]
+	  - State "DONE"       from "TODO"       [2016-01-20 周三 09:41]
 
-**** DONE <2016-01-25 ��һ> [100%]
-	 CLOSED: [2016-02-01 ��һ 09:55]
-	 - State "DONE"       from "TODO"       [2016-02-01 ��һ 09:55]
-***** DONE �㲥��ɫ������ϢʱҲ���䳯����Ϣͬ����ȥ
-	  CLOSED: [2016-01-25 ��һ 14:41]
-	  - State "DONE"       from "DONE"       [2016-02-01 ��һ 09:55]
-***** DONE �趨����Ŀ��
-	  CLOSED: [2016-01-27 ���� 17:29]
-	  - State "DONE"       from "TODO"       [2016-01-27 ���� 17:29]
+**** DONE <2016-01-25 周一> [100%]
+	 CLOSED: [2016-02-01 周一 09:55]
+	 - State "DONE"       from "TODO"       [2016-02-01 周一 09:55]
+***** DONE 广播角色进入消息时也将其朝向信息同步下去
+	  CLOSED: [2016-01-25 周一 14:41]
+	  - State "DONE"       from "DONE"       [2016-02-01 周一 09:55]
+***** DONE 设定焦点目标
+	  CLOSED: [2016-01-27 周三 17:29]
+	  - State "DONE"       from "TODO"       [2016-01-27 周三 17:29]
 
 *** 2016/02
 
-**** DONE <2016-02-01 ��һ> [100%]
-	 CLOSED: [2016-02-03 ���� 12:12]
-	 - State "DONE"       from "TODO"       [2016-02-03 ���� 12:12]
-***** DONE �������齱��������һ����������ͼ�꣬tipsû���ö������󴰿ڸ���
-	  CLOSED: [2016-02-03 ���� 12:12]
-	  - State "DONE"       from "TODO"       [2016-02-03 ���� 12:12]
+**** DONE <2016-02-01 周一> [100%]
+	 CLOSED: [2016-02-03 周三 12:12]
+	 - State "DONE"       from "TODO"       [2016-02-03 周三 12:12]
+***** DONE 生死考验奖励：鼠标第一次移至奖励图标，tips没有置顶，被大窗口覆盖
+	  CLOSED: [2016-02-03 周三 12:12]
+	  - State "DONE"       from "TODO"       [2016-02-03 周三 12:12]
 
-**** DONE <2016-02-19 ����> [100%]
-	 CLOSED: [2016-02-20 ���� 16:58]
-	 - State "DONE"       from "TODO"       [2016-02-20 ���� 16:58]
-***** DONE ��ս���°�ť���һ��
-	  CLOSED: [2016-02-20 ���� 16:58]
-	  - State "DONE"       from "TODO"       [2016-02-20 ���� 16:58]
+**** DONE <2016-02-19 周五> [100%]
+	 CLOSED: [2016-02-20 周六 16:58]
+	 - State "DONE"       from "TODO"       [2016-02-20 周六 16:58]
+***** DONE 国战竞猜按钮风格不一致
+	  CLOSED: [2016-02-20 周六 16:58]
+	  - State "DONE"       from "TODO"       [2016-02-20 周六 16:58]
 
-**** DONE <2016-02-22 ��һ> [100%]
-	 CLOSED: [2016-02-28 ���� 20:16]
-	 - State "DONE"       from "TODO"       [2016-02-28 ���� 20:16]
-***** DONE ͨ�����ܹ켣ϵͳ��������������Ч
-	  CLOSED: [2016-02-24 ���� 17:02]
-	  - State "DONE"       from "TODO"       [2016-02-24 ���� 17:02]
-***** DONE NPC ͷ���������ڶ���
-	  CLOSED: [2016-02-24 ���� 17:03]
-	  - State "DONE"       from "TODO"       [2016-02-24 ���� 17:03]
-***** DONE ΢�ͻ��˴�������ͨ�������ڴ淽ʽ��΢�ͻ��˽���֪ͨ�����˿�
-	  CLOSED: [2016-02-22 ��һ 17:02]
-	  - State "DONE"       from "TODO"       [2016-02-22 ��һ 17:02]
+**** DONE <2016-02-22 周一> [100%]
+	 CLOSED: [2016-02-28 周日 20:16]
+	 - State "DONE"       from "TODO"       [2016-02-28 周日 20:16]
+***** DONE 通过技能轨迹系统播放死亡击碎特效
+	  CLOSED: [2016-02-24 周三 17:02]
+	  - State "DONE"       from "TODO"       [2016-02-24 周三 17:02]
+***** DONE NPC 头顶喊话窗口抖动
+	  CLOSED: [2016-02-24 周三 17:03]
+	  - State "DONE"       from "TODO"       [2016-02-24 周三 17:03]
+***** DONE 微客户端代理进程通过共享内存方式向微客户端进程通知监听端口
+	  CLOSED: [2016-02-22 周一 17:02]
+	  - State "DONE"       from "TODO"       [2016-02-22 周一 17:02]
 
 *** 2016/03
 
-**** DONE <2016-02-29 ��һ> [100%]
-	 CLOSED: [2016-03-06 ���� 18:26]
-	 - State "DONE"       from "TODO"       [2016-03-06 ���� 18:26]
-***** DONE ��ֲԶ������ϵͳ
-	  CLOSED: [2016-03-06 ���� 18:25]
-	  - State "DONE"       from "TODO"       [2016-03-06 ���� 18:25]
+**** DONE <2016-02-29 周一> [100%]
+	 CLOSED: [2016-03-06 周日 18:26]
+	 - State "DONE"       from "TODO"       [2016-03-06 周日 18:26]
+***** DONE 移植远征寄售系统
+	  CLOSED: [2016-03-06 周日 18:25]
+	  - State "DONE"       from "TODO"       [2016-03-06 周日 18:25]
 
-	  �������ֲ���������ص�����Ż���
+	  已完成移植，接下来重点调试优化。
 
-**** DONE <2016-03-07 ��һ> [100%]
-	 CLOSED: [2016-03-14 ��һ 10:03]
-	 - State "DONE"       from "TODO"       [2016-03-14 ��һ 10:03]
-***** DONE ����ϵͳ��ֲ���Ż� [3/4]
-	  CLOSED: [2016-03-14 ��һ 10:03]
-	  - State "DONE"       from "TODO"       [2016-03-14 ��һ 10:03]
+**** DONE <2016-03-07 周一> [100%]
+	 CLOSED: [2016-03-14 周一 10:03]
+	 - State "DONE"       from "TODO"       [2016-03-14 周一 10:03]
+***** DONE 寄售系统移植及优化 [3/4]
+	  CLOSED: [2016-03-14 周一 10:03]
+	  - State "DONE"       from "TODO"       [2016-03-14 周一 10:03]
 
-	  * [X] ������Ʒ��������ع�
-	  * [X] ��Ҽ��۽����ع�
-	  * [ ] ����Ի����ع�
-	  * [X] ���۹�����������
+	  * [X] 寄售物品浏览界面重构
+	  * [X] 玩家寄售界面重构
+	  * [ ] 购买对话框重构
+	  * [X] 寄售购买流程梳理
 
-**** TODO <2016-03-14 ��һ> [0%]
+**** TODO <2016-03-14 周一> [0%]
 
-***** TODO ����ϵͳ�����Ż�
-**** TODO ΢�ͻ��˱����޸�
-**** TODO ΢�ͻ��˺�̨���ز����Ż�
-**** TODO ΢�ͻ���BUG�޸� [1/4]
+***** TODO 寄售系统跟踪优化
+**** TODO 微客户端报错修复
+**** TODO 微客户端后台下载策略优化
+**** TODO 微客户端BUG修复 [1/4]
 
-	 1. [X] ͨ��fileindex.csv���͵������б�����������Ϸ�Ƿ���������ʾ
-		���ۣ����͵��б��������������߼����󣬶����˷��´���������������
+	 1. [X] 通过fileindex.csv推送的下载列表若出错，游戏是否还能正常显示
+		结论：推送的列表出错不会引起逻辑错误，顶多浪费下带宽，报几个错误
 
-	 2. [-] ��Щ��Դ����ͨ�������첽����
-		1. [X] ��Ч��Դ
-		2. [X] UI������Դ
-		3. [ ] ����������Դ
+	 2. [-] 有些资源不能通过网络异步加载
+		1. [X] 音效资源
+		2. [X] UI纹理资源
+		3. [ ] 场景纹理资源
 
-	 4. [ ] ��ʿ�ƶ��似��û����Ч
+	 4. [ ] 道士蛊毒咒技能没有特效
 
 *** Bug Trace
 
-**** TODO �߾�����������һ����͵���������͵��������׷����ͷ͵��������ʧ����ż����
+**** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 
 ** Schedule For Career
 
 *** 2016/01
 
-**** DONE <2016-01-04 ��һ> [100%]
-	 CLOSED: [2016-01-10 ���� 09:52]
-	 - State "DONE"       from "TODO"       [2016-01-10 ���� 09:52]
-***** DONE ������TCP/IPЭ����⡷
-	  CLOSED: [2016-01-10 ���� 09:52]
-	  - State "DONE"       from "TODO"       [2016-01-10 ���� 09:52]
-	  * �㲥��ಥ
-	  * IGMP�����Э��
+**** DONE <2016-01-04 周一> [100%]
+	 CLOSED: [2016-01-10 周日 09:52]
+	 - State "DONE"       from "TODO"       [2016-01-10 周日 09:52]
+***** DONE 读：《TCP/IP协议详解》
+	  CLOSED: [2016-01-10 周日 09:52]
+	  - State "DONE"       from "TODO"       [2016-01-10 周日 09:52]
+	  * 广播与多播
+	  * IGMP组管理协议
 
-**** DONE <2016-01-11 ��һ> [100%]
-	 CLOSED: [2016-01-18 ��һ 10:39]
-	 - State "DONE"       from "TODO"       [2016-01-18 ��һ 10:39]
-***** DONE ���� sigar �ռ�����ʾϵͳ��Ϣ
-	  CLOSED: [2016-01-18 ��һ 10:38]
-	  - State "DONE"       from "PROCESSING" [2016-01-18 ��һ 10:38]
-	  - State "PROCESSING" from "TODO"       [2016-01-11 ��һ 10:14]
-	  - cpu����
-	  - mem����
-	  - update����
-***** DONE Ӧ�ó�����ѭ�����
-	  CLOSED: [2016-01-14 ���� 16:06]
-	  - State "DONE"       from "TODO"       [2016-01-14 ���� 16:06]
-***** DONE C++ʹ�ü̳�ʱ�Ӷ�����ڴ沼��
-	  CLOSED: [2016-01-12 �ܶ� 22:53]
-	  - State "DONE"       from "TODO"       [2016-01-12 �ܶ� 22:53]
-***** DONE snail��ƽ̨����
-	  CLOSED: [2016-01-17 ���� 14:11]
-	  - State "DONE"       from "TODO"       [2016-01-17 ���� 14:11]
-***** DONE snail����Trace֧��
-	  CLOSED: [2016-01-17 ���� 14:11]
-	  - State "DONE"       from "TODO"       [2016-01-17 ���� 14:11]
+**** DONE <2016-01-11 周一> [100%]
+	 CLOSED: [2016-01-18 周一 10:39]
+	 - State "DONE"       from "TODO"       [2016-01-18 周一 10:39]
+***** DONE 利用 sigar 收集和显示系统信息
+	  CLOSED: [2016-01-18 周一 10:38]
+	  - State "DONE"       from "PROCESSING" [2016-01-18 周一 10:38]
+	  - State "PROCESSING" from "TODO"       [2016-01-11 周一 10:14]
+	  - cpu命令
+	  - mem命令
+	  - update命令
+***** DONE 应用程序主循环设计
+	  CLOSED: [2016-01-14 周四 16:06]
+	  - State "DONE"       from "TODO"       [2016-01-14 周四 16:06]
+***** DONE C++使用继承时子对象的内存布局
+	  CLOSED: [2016-01-12 周二 22:53]
+	  - State "DONE"       from "TODO"       [2016-01-12 周二 22:53]
+***** DONE snail跨平台编译
+	  CLOSED: [2016-01-17 周日 14:11]
+	  - State "DONE"       from "TODO"       [2016-01-17 周日 14:11]
+***** DONE snail新增Trace支持
+	  CLOSED: [2016-01-17 周日 14:11]
+	  - State "DONE"       from "TODO"       [2016-01-17 周日 14:11]
 
-**** DONE <2016-01-18 ��һ> [100%]
-	 CLOSED: [2016-01-25 ��һ 10:34]
-	 - State "DONE"       from "TODO"       [2016-01-25 ��һ 10:34]
-***** DONE TCP ���ӵĽ�������ֹ
-	  CLOSED: [2016-01-18 ��һ 22:55]
-	  - State "DONE"       from "DONE"       [2016-01-25 ��һ 10:34]
-***** DONE TCP ����������
-	  CLOSED: [2016-01-21 ���� 18:30]
-	  - State "DONE"       from "TODO"       [2016-01-21 ���� 18:30]
-***** DONE TCP �ɿ�������
-	  CLOSED: [2016-01-21 ���� 18:30]
-	  - State "DONE"       from "TODO"       [2016-01-21 ���� 18:30]
-***** DONE TCP �ĳ�ʱ���ش�����
-	  CLOSED: [2016-01-24 ���� 17:17]
-	  - State "DONE"       from "TODO"       [2016-01-24 ���� 17:17]
+**** DONE <2016-01-18 周一> [100%]
+	 CLOSED: [2016-01-25 周一 10:34]
+	 - State "DONE"       from "TODO"       [2016-01-25 周一 10:34]
+***** DONE TCP 连接的建立和终止
+	  CLOSED: [2016-01-18 周一 22:55]
+	  - State "DONE"       from "DONE"       [2016-01-25 周一 10:34]
+***** DONE TCP 交互数据流
+	  CLOSED: [2016-01-21 周四 18:30]
+	  - State "DONE"       from "TODO"       [2016-01-21 周四 18:30]
+***** DONE TCP 成块数据流
+	  CLOSED: [2016-01-21 周四 18:30]
+	  - State "DONE"       from "TODO"       [2016-01-21 周四 18:30]
+***** DONE TCP 的超时和重传机制
+	  CLOSED: [2016-01-24 周日 17:17]
+	  - State "DONE"       from "TODO"       [2016-01-24 周日 17:17]
 
-**** DONE <2016-01-25 ��һ> [100%]
-	 CLOSED: [2016-02-01 ��һ 09:57]
-	 - State "DONE"       from "TODO"       [2016-02-01 ��һ 09:57]
-***** DONE ʵ�ֻ��ڹ����ڴ������ʽ��Ϣ����/����ģ��
-	  CLOSED: [2016-02-01 ��һ 09:56]
-	  - State "DONE"       from "TODO"       [2016-02-01 ��һ 09:56]
-***** DONE TCP ��ֶ�ʱ��
-	  CLOSED: [2016-01-26 �ܶ� 10:53]
-	  - State "DONE"       from "DONE"       [2016-02-01 ��һ 09:57]
-***** DONE TCP ���ʱ��(keep alive)
-	  CLOSED: [2016-01-26 �ܶ� 10:53]
-	  - State "DONE"       from "TODO"       [2016-01-26 �ܶ� 10:53]
+**** DONE <2016-01-25 周一> [100%]
+	 CLOSED: [2016-02-01 周一 09:57]
+	 - State "DONE"       from "TODO"       [2016-02-01 周一 09:57]
+***** DONE 实现基于共享内存的主从式消息订阅/发布模型
+	  CLOSED: [2016-02-01 周一 09:56]
+	  - State "DONE"       from "TODO"       [2016-02-01 周一 09:56]
+***** DONE TCP 坚持定时器
+	  CLOSED: [2016-01-26 周二 10:53]
+	  - State "DONE"       from "DONE"       [2016-02-01 周一 09:57]
+***** DONE TCP 保活定时器(keep alive)
+	  CLOSED: [2016-01-26 周二 10:53]
+	  - State "DONE"       from "TODO"       [2016-01-26 周二 10:53]
 
 *** 2016/02
 
-**** DONE <2016-02-01 ��һ> [100%]
-	 CLOSED: [2016-02-19 ���� 09:38]
-	 - State "DONE"       from "TODO"       [2016-02-19 ���� 09:38]
-***** DONE �����͸���CentOS���õ�Makefile
-	  CLOSED: [2016-02-02 �ܶ� 15:58]
-	  - State "DONE"       from "TODO"       [2016-02-02 �ܶ� 15:58]
-***** DONE linux ���������ܽ�
-	  CLOSED: [2016-02-02 �ܶ� 15:41]
-	  - State "DONE"       from "TODO"       [2016-02-02 �ܶ� 15:41]
-***** DONE CentOS 7 Systemd������
-	  CLOSED: [2016-02-19 ���� 09:37]
-	  - State "DONE"       from "TODO"       [2016-02-19 ���� 09:37]
+**** DONE <2016-02-01 周一> [100%]
+	 CLOSED: [2016-02-19 周五 09:38]
+	 - State "DONE"       from "TODO"       [2016-02-19 周五 09:38]
+***** DONE 调整和改善CentOS配置的Makefile
+	  CLOSED: [2016-02-02 周二 15:58]
+	  - State "DONE"       from "TODO"       [2016-02-02 周二 15:58]
+***** DONE linux 基本命令总结
+	  CLOSED: [2016-02-02 周二 15:41]
+	  - State "DONE"       from "TODO"       [2016-02-02 周二 15:41]
+***** DONE CentOS 7 Systemd服务简介
+	  CLOSED: [2016-02-19 周五 09:37]
+	  - State "DONE"       from "TODO"       [2016-02-19 周五 09:37]
 
-**** DONE <2016-02-19 ����> [100%]
-	 CLOSED: [2016-02-25 ���� 09:50]
-	 - State "DONE"       from "TODO"       [2016-02-25 ���� 09:50]
-***** DONE ��������������ܽ᣺http://my.oschina.net/u/181613/blog/596022?fromerr=U59ofNAj
-	  CLOSED: [2016-02-19 ���� 19:14]
-	  - State "DONE"       from "TODO"       [2016-02-19 ���� 19:14]
+**** DONE <2016-02-19 周五> [100%]
+	 CLOSED: [2016-02-25 周四 09:50]
+	 - State "DONE"       from "TODO"       [2016-02-25 周四 09:50]
+***** DONE 网络服务器开发总结：http://my.oschina.net/u/181613/blog/596022?fromerr=U59ofNAj
+	  CLOSED: [2016-02-19 周五 19:14]
+	  - State "DONE"       from "TODO"       [2016-02-19 周五 19:14]
 
-**** DONE <2016-02-22 ��һ> [100%]
-	 CLOSED: [2016-02-28 ���� 20:22]
-	 - State "DONE"       from "TODO"       [2016-02-28 ���� 20:22]
-***** DONE �� ZMQ �ĵ�
-	  CLOSED: [2016-02-28 ���� 20:18]
-	  - State "DONE"       from "TODO"       [2016-02-28 ���� 20:18]
-****** DONE ZMQ����
-	   CLOSED: [2016-02-28 ���� 20:18]
-	   - State "DONE"       from "TODO"       [2016-02-28 ���� 20:18]
-****** DONE ZMQ����
-	   CLOSED: [2016-02-28 ���� 20:18]
-	   - State "DONE"       from "TODO"       [2016-02-28 ���� 20:18]
-***** DONE �� ����Ϸ����ܹ��� [7/7]
-	  CLOSED: [2016-02-28 ���� 20:22]
-	  - State "DONE"       from "TODO"       [2016-02-28 ���� 20:22]
-	  - [X] רҵ����
-	  - [X] �������̻���
-	  - [X] ��Ϸ����� 3D ��ѧ
-	  - [X] ��Ϸ֧��ϵͳ
-	  - [X] ��Ϸѭ����ʵʱģ��
-	  - [X] ����ӿ�ѧ�豸
-	  - [X] ���Լ���������
+**** DONE <2016-02-22 周一> [100%]
+	 CLOSED: [2016-02-28 周日 20:22]
+	 - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+***** DONE 读 ZMQ 文档
+	  CLOSED: [2016-02-28 周日 20:18]
+	  - State "DONE"       from "TODO"       [2016-02-28 周日 20:18]
+****** DONE ZMQ基础
+	   CLOSED: [2016-02-28 周日 20:18]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:18]
+****** DONE ZMQ进阶
+	   CLOSED: [2016-02-28 周日 20:18]
+	   - State "DONE"       from "TODO"       [2016-02-28 周日 20:18]
+***** DONE 读 《游戏引擎架构》 [7/7]
+	  CLOSED: [2016-02-28 周日 20:22]
+	  - State "DONE"       from "TODO"       [2016-02-28 周日 20:22]
+	  - [X] 专业工具
+	  - [X] 软件工程基础
+	  - [X] 游戏所需的 3D 数学
+	  - [X] 游戏支持系统
+	  - [X] 游戏循环及实时模拟
+	  - [X] 人体接口学设备
+	  - [X] 调试及开发工具
 
 *** 2016/03
 
-**** DONE <2016-02-29 ��һ> [100%]
-	 CLOSED: [2016-03-06 ���� 18:24]
-	 - State "DONE"       from "TODO"       [2016-03-06 ���� 18:24]
-***** DONE Wireshark�������������/BPF����������
-	  CLOSED: [2016-03-06 ���� 18:23]
-	  - State "DONE"       from "TODO"       [2016-03-06 ���� 18:23]
+**** DONE <2016-02-29 周一> [100%]
+	 CLOSED: [2016-03-06 周日 18:24]
+	 - State "DONE"       from "TODO"       [2016-03-06 周日 18:24]
+***** DONE Wireshark网络包分析攻击/BPF包过滤语言
+	  CLOSED: [2016-03-06 周日 18:23]
+	  - State "DONE"       from "TODO"       [2016-03-06 周日 18:23]
 
-	  һ�������� BPF �����˹���Ĺ����� ` *proto dir type* id'������
-	  `ip dst port 21', `icmp dst host 192.168.1.1', `tcp src port 22' �ȣ�����
-	  �����İ����˹������⣬���ǿ���ͨ����/���ϵ����Щ������������γ�ǿ���
-	  BPF ���������ԡ����ڽ���ʵ�֣�������/�������ǲ�����ѡ������������ڵ㡢
-	  ��ڵ��Լ������������˹����Ҷ�ӽڵ㹹�ɡ�
+	  一条完整的 BPF 包过滤规则的构成是 ` *proto dir type* id'。例如
+	  `ip dst port 21', `icmp dst host 192.168.1.1', `tcp src port 22' 等，都是
+	  完整的包过滤规则。另外，我们可以通过与/或关系将这些规则组合起来形成强大的
+	  BPF 包过滤语言。至于解析实现，采用与/或树将是不错的选择：整棵树由与节点、
+	  或节点以及包含完整过滤规则的叶子节点构成。
 
-***** DONE �Ķ� ����Ϸ����ܹ��� [1/1]
-	  CLOSED: [2016-03-06 ���� 18:13]
-	  - State "DONE"       from "TODO"       [2016-03-06 ���� 18:13]
-	  * [X] ��Ⱦ����
-***** DONE ��ȡ�õĹ���--���������Ϸ��
-	  CLOSED: [2016-03-06 ���� 18:12]
-	  - State "DONE"       from "TODO"       [2016-03-06 ���� 18:12]
+***** DONE 阅读 《游戏引擎架构》 [1/1]
+	  CLOSED: [2016-03-06 周日 18:13]
+	  - State "DONE"       from "TODO"       [2016-03-06 周日 18:13]
+	  * [X] 渲染引擎
+***** DONE 《取悦的工序--如何理解游戏》
+	  CLOSED: [2016-03-06 周日 18:12]
+	  - State "DONE"       from "TODO"       [2016-03-06 周日 18:12]
 
-**** DONE <2016-03-07 ��һ> [100%]
-	 CLOSED: [2016-03-14 ��һ 11:14]
-	 - State "DONE"       from "TODO"       [2016-03-14 ��һ 11:14]
-***** DONE ��ɡ���Ϸ����ܹ������Ķ�
-	  CLOSED: [2016-03-14 ��һ 11:14]
-	  - State "DONE"       from "TODO"       [2016-03-14 ��һ 11:14]
+**** DONE <2016-03-07 周一> [100%]
+	 CLOSED: [2016-03-14 周一 11:14]
+	 - State "DONE"       from "TODO"       [2016-03-14 周一 11:14]
+***** DONE 完成《游戏引擎架构》的阅读
+	  CLOSED: [2016-03-14 周一 11:14]
+	  - State "DONE"       from "TODO"       [2016-03-14 周一 11:14]
 
-	  * [X] ����ϵͳ
-	  * [ ] ����ϵͳ
-	  * [ ] ��Ϸ��
+	  * [X] 动画系统
+	  * [ ] 物理系统
+	  * [ ] 游戏性
 
-***** DONE Redmine ��װָ��
-	  CLOSED: [2016-03-14 ��һ 11:14]
-	  - State "DONE"       from "TODO"       [2016-03-14 ��һ 11:14]
-***** DONE MySql��������
-	  CLOSED: [2016-03-10 ���� 10:52]
-	  - State "DONE"       from "TODO"       [2016-03-10 ���� 10:52]
+***** DONE Redmine 安装指引
+	  CLOSED: [2016-03-14 周一 11:14]
+	  - State "DONE"       from "TODO"       [2016-03-14 周一 11:14]
+***** DONE MySql命令整理
+	  CLOSED: [2016-03-10 周四 10:52]
+	  - State "DONE"       from "TODO"       [2016-03-10 周四 10:52]
 
-**** TODO <2016-03-14 ��һ> [0%]
-***** TODO ���� Nginx
-***** TODO ���� AsyncNet ��
-***** TODO TCP �����ܺ�δ��
-***** TODO Python �﷨�ܽ�
-***** TODO skynet ��Ϣ����ͬ��������ʽ
-***** TODO DNS ��������Э��
+**** TODO <2016-03-14 周一> [0%]
+***** TODO 从业经验总结
+***** TODO 调试 AsyncNet 库
+***** TODO TCP 的性能和未来
+***** TODO Python 语法总结
+***** TODO skynet 消息队列同步操作方式
+***** TODO DNS 域名解析协议
 ***** TODO My Tetris
 ***** TODO My Direct UI Library
-**** TODO ��� jemalloc Դ�룬���� jemalloc �����ͼ
-**** TODO ��ҵ�����ܽ�
-**** TODO ��������
-**** TODO [[LINK_KBE_STARTUP][KBE������ִ������]]
+***** TODO 调试 Nginx
+**** TODO 浏览 jemalloc 源码，给出 jemalloc 的设计图
+**** TODO 无锁队列
+**** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
 **** TODO AI [0%]
-	 * [ ] [[http://www.cnblogs.com/fingerpass/p/discussion-about-game-ai.html][��̸��Ϸ�е��˹�����]]
-     * [ ] ������
-	 * [ ] ��Ϊ��
-	   ��Ѷ��Դ��Ϊ��ʵ�� https://github.com/ruleless/behaviac
-**** PROCESSING [[LINK_QUATERNION][��Ԫ��]]
-	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 ��һ 19:56]
+	 * [ ] [[http://www.cnblogs.com/fingerpass/p/discussion-about-game-ai.html][漫谈游戏中的人工智能]]
+     * [ ] 决策树
+	 * [ ] 行为树
+	   腾讯开源行为树实现 https://github.com/ruleless/behaviac
+**** PROCESSING [[LINK_QUATERNION][四元数]]
+	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
 
 ** Summary
 
 *** Be Skilled In
 
-	* �ó�����Unixƽ̨��Ӧ�ÿ���
-	* �˽�TCP/IPЭ��ģ�ͣ����乤��ԭ��
-	* ��Ϥ�������˽ṹ��MMOG�������ܹ�
+	* 擅长基于Unix平台的应用开发
+	* 了解TCP/IP协议模型，及其工作原理
+	* 熟悉中心拓扑结构的MMOG服务器架构
 
 *** Work Exp
 
 **** OG
 
-***** �������ܹ�
+***** 服务器架构
 
-***** ����
+***** 技能
 
-	  ��״̬ģʽ���������ܵ��ͷ����̡����磬���ǿ��Գ�����ô����״̬������״̬��
-	  ����״̬��˲������״̬����������״̬������״̬����Ǩ�Ƶ���������������״
-	  ̬����������״̬��ʾ����ͷ��������ܣ������ɹ��Ļ�����˲������״̬��˲��
-	  ����״̬��ã���Ҵ󲿷ּ����ͷ�ʱ���ǽ����״̬�����ڷ��ƶ�ʩ�����ܸ�
-	  ״̬��������ҵ�������Ϊ����������״̬��Ӧ����ҵĶ��뼼�ܡ�
+	  用状态模式来管理技能的释放流程。比如，我们可以抽象这么几种状态：正常状态、
+	  蓄气状态、瞬发攻击状态、引导攻击状态。正常状态可以迁移到蓄气和两个攻击状
+	  态；进入蓄气状态表示玩家释放蓄气技能，蓄气成功的话进入瞬发攻击状态；瞬发
+	  攻击状态最常用，玩家大部分技能释放时都是进入该状态，对于非移动施法技能该
+	  状态必须否决玩家的行走行为；引导攻击状态对应的玩家的读秒技能。
 
 ***** AI
 
-****** ���ǵĽ������
+****** 我们的解决方案
 
-	   �������¼�/����/��Ϊ������ģ������һ���������䣬�����ٽ������Ĺ�����һ
-	   �����߷�װ������������һ��������飬�����¼�������ʱ��ͨ����ѵ�������
-	   �������ģ��򵥵Ĺ��������ˡ��������ǿ��Ը������¹֡��༭����һ�����ߣ�
-	   ������ҽ����ҵ���Ұʱ��ֱ�ӹ��������Ը�����ƽ�֡��༭���ߣ�������Ҵ���
-	   ʱ�����ܡ�
+	   我们用事件/条件/行为规则来模拟怪物的一类条件发射，我们再将这样的规则用一
+	   条决策封装起来。怪物有一组决策数组，在有事件发生的时候，通过轮训这个决策
+	   数组就能模拟简单的怪物智能了。比如我们可以给“惹事怪”编辑这样一条决策：
+	   当有玩家进入我的视野时，直接攻击；可以给“和平怪”编辑决策：当有玩家打我
+	   时，逃跑。
 
-***** �淨
+***** 玩法
 
-***** ΢��ģʽ֧��
+***** 微端模式支持
 
-	  ΢��ģʽʵ�ʾ��ǽ������ļ����������ȡ�����Ƕ�����һ�� I/O �ӿڣ���Ϸ�߼�
-	  �е����� I/O ������ͨ���ýӿ���ɡ��� I/O �ӿ�֧���첽ģʽ�����ģʽ�£�
-	  ���ñ��� I/O ������΢��ģʽ�£��������� I/O ������
+	  微端模式实际就是将本地文件放置网络读取。我们独立出一个 I/O 接口，游戏逻辑
+	  中的所有 I/O 操作都通过该接口完成。该 I/O 接口支持异步模式，大端模式下，
+	  调用本地 I/O 方法；微端模式下，调用网络 I/O 方法。
 
-	  ������Ҫʵ��һ��΢�˳����ӷ��������������е�΢����ҡ�΢�˷���������Ҫ����
-	  �У�������Դ��ַ��ͨ������΢����ҵ�������Ϊ�������������б���
+	  另外需要实现一个微端长连接服务器来管理所有的微端玩家。微端服务器的主要功能
+	  有：推送资源地址；通过分析微端玩家的下载行为智能推送下载列表。
 
 * Notes
 
@@ -337,20 +337,20 @@
 
 ** Apache
 
-*** Apache�������ļ�http.conf�����������
+*** Apache的配置文件http.conf参数含义详解
 
-**** ��������
+**** 基本配置
 
 	 #+begin_src sh
-       ServerRoot "/mnt/software/apache2" #���apache������װ��λ�á�����ָ����Ŀ¼���û��ָ������·������Ŀ¼������ڸ�Ŀ¼��
-       PidFile logs/httpd.pid #��һ��httpd����(�����������̵ĸ�����)�Ľ��̺��ļ�λ�á�
-       Listen 80 #�����������Ķ˿ںš�
-       ServerName www.clusting.com:80 #��վ�����ƣ���վ������������
-       ServerAdmin admin@clusting.com #����Ա���ʼ���ַ��
-       DocumentRoot "/mnt/web/clusting" #��վ�����ҳ�洢λ�á�
+       ServerRoot "/mnt/software/apache2" #你的apache软件安装的位置。其它指定的目录如果没有指定绝对路径，则目录是相对于该目录。
+       PidFile logs/httpd.pid #第一个httpd进程(所有其他进程的父进程)的进程号文件位置。
+       Listen 80 #服务器监听的端口号。
+       ServerName www.clusting.com:80 #主站点名称（网站的主机名）。
+       ServerAdmin admin@clusting.com #管理员的邮件地址。
+       DocumentRoot "/mnt/web/clusting" #主站点的网页存储位置。
 	 #+end_src
 
-	 Ŀ¼���ʿ�������
+	 目录访问控制配置
 
 	 #+begin_src html
        <Directory "D:/xampp/cgi-bin">
@@ -361,136 +361,136 @@
        </Directory>
 	 #+end_src
 
-	 ���������Ŀ¼���������У���Ҫ�������ѡ�
+	 在上面这段目录属性配置中，主要有下面的选项：
 
-	 1. Options���������ض�Ŀ¼ʹ����Щ���ԣ����õ�ֵ�ͻ����������£�
+	 1. Options：配置在特定目录使用哪些特性，常用的值和基本含义如下：
 
-	    1. ExecCGI: �ڸ�Ŀ¼������ִ��CGI�ű���
-		2. FollowSymLinks: �ڸ�Ŀ¼�������ļ�ϵͳʹ�÷������ӡ�
-		3. Indexes: ���û����ʸ�Ŀ¼ʱ������û��Ҳ���DirectoryIndexָ������ҳ�ļ�(����index.html),�򷵻ظ�Ŀ¼�µ��ļ��б����û���
-		4. SymLinksIfOwnerMatch: ��ʹ�÷�������ʱ��ֻ�е��������ӵ��ļ�ӵ������ʵ���ļ���ӵ������ͬʱ�ſ��Է��ʡ�
+	    1. ExecCGI: 在该目录下允许执行CGI脚本。
+		2. FollowSymLinks: 在该目录下允许文件系统使用符号连接。
+		3. Indexes: 当用户访问该目录时，如果用户找不到DirectoryIndex指定的主页文件(例如index.html),则返回该目录下的文件列表给用户。
+		4. SymLinksIfOwnerMatch: 当使用符号连接时，只有当符号连接的文件拥有者与实际文件的拥有者相同时才可以访问。
 
-	    ��������ֵ�ͺ�������ģ�http://www.clusting.com/Apache/ApacheManual/mod/core.html#options
+	    其它可用值和含义请参阅：http://www.clusting.com/Apache/ApacheManual/mod/core.html#options
 
-	 2. AllowOverride������������.htaccess�ļ��е�ָ������(.htaccess�ļ����ǿ��Ըı�ģ����ļ�����AccessFileNameָ�����)��
+	 2. AllowOverride：允许存在于.htaccess文件中的指令类型(.htaccess文件名是可以改变的，其文件名由AccessFileName指令决定)：
 
-	    1. None: ��AllowOverride������ΪNoneʱ����������Ŀ¼�µ�.htaccess�ļ������Լ�С��������������
-		2. All: ��.htaccess�ļ��п���ʹ�����е�ָ�
+	    1. None: 当AllowOverride被设置为None时。不搜索该目录下的.htaccess文件（可以减小服务器开销）。
+		2. All: 在.htaccess文件中可以使用所有的指令。
 
-	    �����Ŀ���ֵ������(�磺Options FileInfo AuthConfig Limit��)����ο��� http://www.clusting.com/Apache/ApacheManual/mod/core.html#AllowOverride
+	    其他的可用值及含义(如：Options FileInfo AuthConfig Limit等)，请参看： http://www.clusting.com/Apache/ApacheManual/mod/core.html#AllowOverride
 
-	 3. Order�������ڷ���ʱAllow��Deny�������ʹ����ĸ����ȣ�
+	 3. Order：控制在访问时Allow和Deny两个访问规则哪个优先：
 
-		1. Allow���������ʵ������б�(�������������������磺Allow from 192.168.0.0/16)��
-		2. Deny���ܾ����ʵ������б���
+		1. Allow：允许访问的主机列表(可用域名或子网，例如：Allow from 192.168.0.0/16)。
+		2. Deny：拒绝访问的主机列表。
 
-	    ����ϸ���÷��ɲο���http://www.clusting.com/Apache/ApacheManual/mod/mod_access.html#order
+	    更详细的用法可参看：http://www.clusting.com/Apache/ApacheManual/mod/mod_access.html#order
 
 	 #+begin_src sh
-       DirectoryIndex index.html index.htm index.PHP #��ҳ�ļ������ã���������ҳ�ļ�����Ϊ��index.html,index.htm��index.php��
+       DirectoryIndex index.html index.htm index.PHP #主页文件的设置（本例将主页文件设置为：index.html,index.htm和index.php）
 	 #+end_src
 
-**** ���������Ż� (MPM: Multi-Processing Modules)
+**** 服务器的优化 (MPM: Multi-Processing Modules)
 
-	 apache2��Ҫ�����ƾ��ǶԶദ������֧�ָ��ã��ڱ���ʱͬ��ʹ�èCwith-mpmѡ��������apache2�Ĺ���ģʽ�����֪����ǰ��apache2ʹ��ʲô�������ƣ�����ͨ��httpd -l�����г�apache������ģ�飬�Ϳ���֪���乤����ʽ��
+	 apache2主要的优势就是对多处理器的支持更好，在编译时同过使用–with-mpm选项来决定apache2的工作模式。如果知道当前的apache2使用什么工作机制，可以通过httpd -l命令列出apache的所有模块，就可以知道其工作方式：
 
-	 * prefork�����httpd -l�г�prefork.c������Ҫ������Ķν������ã�
-	   1. StartServers 5 #����apacheʱ������httpd���̸�����
-	   2. MinSpareServers 5 #���������ֵ���С���н�������
-	   3. MaxSpareServers 10 #���������ֵ������н�������
-	   4. MaxClients 150 #��󲢷���������
-	   5. MaxRequestsPerChild 1000 #ÿ���ӽ��̱����������ٴκ�kill����0��ʾ�����ƣ��Ƽ�����Ϊ1000��
-	   �ڸù���ģʽ�£���������������5��httpd����(�Ӹ����̹�6����ͨ��ps -ax|grep httpd������Կ���)�������û�����ʱ��apache��ʹ��һ�����н���Ϊ�����ӷ���ͬʱ�����̻�forkһ���ӽ��̡�ֱ���ڴ��еĿ��н��̴ﵽ MaxSpareServers����ģʽ��Ϊ�˼���һЩ�ɰ汾�ĳ�����ȱʡ����ʱ��ѡ�
+	 * prefork：如果httpd -l列出prefork.c，则需要对下面的段进行配置：
+	   1. StartServers 5 #启动apache时启动的httpd进程个数。
+	   2. MinSpareServers 5 #服务器保持的最小空闲进程数。
+	   3. MaxSpareServers 10 #服务器保持的最大空闲进程数。
+	   4. MaxClients 150 #最大并发连接数。
+	   5. MaxRequestsPerChild 1000 #每个子进程被请求服务多少次后被kill掉。0表示不限制，推荐设置为1000。
+	   在该工作模式下，服务器启动后起动5个httpd进程(加父进程共6个，通过ps -ax|grep httpd命令可以看到)。当有用户连接时，apache会使用一个空闲进程为该连接服务，同时父进程会fork一个子进程。直到内存中的空闲进程达到 MaxSpareServers。该模式是为了兼容一些旧版本的程序。我缺省编译时的选项。
 
-	 * worker�����httpd -l�г�worker.c������Ҫ������Ķν������ã�
-	   1. StartServers 2 #����apacheʱ������httpd���̸�����
-	   2. MaxClients 150 #��󲢷���������
-	   3. MinSpareThreads 25 #���������ֵ���С�����߳�����
-	   4. MaxSpareThreads 75 #���������ֵ��������߳�����
-	   5. ThreadsPerChild 25 #ÿ���ӽ��̵Ĳ������߳�����
-	   6. MaxRequestsPerChild 0 #ÿ���ӽ��̱����������ٴκ�kill����0��ʾ�����ƣ��Ƽ�����Ϊ1000��
-	   ��ģʽ�����߳��������ͻ������ӡ������¿ͻ�����ʱ�������е�һ�������߳̽������ӡ�������������ʱ�����������̣�ÿ�����̲������߳����ǹ̶��� (ThreadsPerChild����)���������ʱ��50���̡߳���50���̲߳�����ʱ���������Զ�forkһ�����̣��ٲ���25���̡߳�
+	 * worker：如果httpd -l列出worker.c，则需要对下面的段进行配置：
+	   1. StartServers 2 #启动apache时启动的httpd进程个数。
+	   2. MaxClients 150 #最大并发连接数。
+	   3. MinSpareThreads 25 #服务器保持的最小空闲线程数。
+	   4. MaxSpareThreads 75 #服务器保持的最大空闲线程数。
+	   5. ThreadsPerChild 25 #每个子进程的产生的线程数。
+	   6. MaxRequestsPerChild 0 #每个子进程被请求服务多少次后被kill掉。0表示不限制，推荐设置为1000。
+	   该模式是由线程来监听客户的连接。当有新客户连接时，由其中的一个空闲线程接受连接。服务器在启动时启动两个进程，每个进程产生的线程数是固定的 (ThreadsPerChild决定)，因此启动时有50个线程。当50个线程不够用时，服务器自动fork一个进程，再产生25个线程。
 
-	 * perchild�����httpd -l�г�perchild.c������Ҫ������Ķν������ã�
-	   1. NumServers 5 #����������ʱ�������ӽ�����
-	   2. StartThreads 5 #ÿ���ӽ�������ʱ�������߳���
-	   3. MinSpareThreads 5 #�ڴ��е���С�����߳���
-	   4. MaxSpareThreads 10 #�������߳���
-	   5. MaxThreadsPerChild 2000 #ÿ���߳���౻������ٴκ��˳���0�������ơ�
-	   6. MaxRequestsPerChild 10000 #ÿ���ӽ��̷�����ٴκ�����fork��0��ʾ�������ơ�
-	   ��ģʽ�£��ӽ��̵������ǹ̶��ģ��߳����������ơ����ͻ������ӵ�������ʱ���ֿ��е��߳��ṩ���� ��������߳����������ӽ����Զ������߳���Ϊ�µ����ӷ��񡣸�ģʽ���ڶ�վ���������
-**** HTTP����ͷ��Ϣ����
-	 * ServerTokens Prod #�ò�������httpͷ�����ص�apache�汾��Ϣ�����õ�ֵ�ͺ������£�
-	   1. Prod�����������ƣ����磺apache
-	   2. Major���������汾�ţ����磺apache/2
-	   3. Minor�������ΰ汾�ţ����磺apache/2.0
-	   4. Min����apache�������汾�ţ����磺apache/2.0.54
-	   5. OS����������ϵͳ���ͣ����磺apache/2.0.54��Unix��
-	   6. Full������apache֧�ֵ�ģ�鼰ģ��汾�ţ����磺Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7g
-	 * ServerSignature Off #��ҳ���������ʱ�Ƿ���ַ������汾��Ϣ���Ƽ�����ΪOff
-**** �־�����������
-	 * KeepAlive On #�����־������ӹ��ܡ������ͻ������ӵ������������������ݺ���Ȼ��������״̬��
-	 * MaxKeepAliveRequests 100 #һ�����ӷ����������������
-	 * KeepAliveTimeout 30 #�������Ӷ೤ʱ�䣬������û�����������ݣ���Ͽ������ӡ�ȱʡΪ15�롣
-**** ��������
-	 ���ڲ���DocumentRootָ����Ŀ¼�ڵ�ҳ�棬�ȿ���ʹ�÷������ӣ�Ҳ����ʹ�ñ������������������£�
+	 * perchild：如果httpd -l列出perchild.c，则需要对下面的段进行配置：
+	   1. NumServers 5 #服务器启动时启动的子进程数
+	   2. StartThreads 5 #每个子进程启动时启动的线程数
+	   3. MinSpareThreads 5 #内存中的最小空闲线程数
+	   4. MaxSpareThreads 10 #最大空闲线程数
+	   5. MaxThreadsPerChild 2000 #每个线程最多被请求多少次后退出。0不受限制。
+	   6. MaxRequestsPerChild 10000 #每个子进程服务多少次后被重新fork。0表示不受限制。
+	   该模式下，子进程的数量是固定的，线程数不受限制。当客户端连接到服务器时，又空闲的线程提供服务。 如果空闲线程数不够，子进程自动产生线程来为新的连接服务。该模式用于多站点服务器。
+**** HTTP返回头信息配置
+	 * ServerTokens Prod #该参数设置http头部返回的apache版本信息，可用的值和含义如下：
+	   1. Prod：仅软件名称，例如：apache
+	   2. Major：包括主版本号，例如：apache/2
+	   3. Minor：包括次版本号，例如：apache/2.0
+	   4. Min：仅apache的完整版本号，例如：apache/2.0.54
+	   5. OS：包括操作系统类型，例如：apache/2.0.54（Unix）
+	   6. Full：包括apache支持的模块及模块版本号，例如：Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7g
+	 * ServerSignature Off #在页面产生错误时是否出现服务器版本信息。推荐设置为Off
+**** 持久性连接设置
+	 * KeepAlive On #开启持久性连接功能。即当客户端连接到服务器，下载完数据后仍然保持连接状态。
+	 * MaxKeepAliveRequests 100 #一个连接服务的最多请求次数。
+	 * KeepAliveTimeout 30 #持续连接多长时间，该连接没有再请求数据，则断开该连接。缺省为15秒。
+**** 别名设置
+	 对于不在DocumentRoot指定的目录内的页面，既可以使用符号连接，也可以使用别名。别名的设置如下：
 	 #+begin_src html
-       Alias /download/ "/var/www/download/" #����ʱ��������:http://www.custing.com/download/
-       #�Ը�Ŀ¼���з��ʿ�������
+       Alias /download/ "/var/www/download/" #访问时可以输入:http://www.custing.com/download/
+       #对该目录进行访问控制设置
        Options Indexes MultiViews
        AllowOverride AuthConfig
        Order allow,deny
        Allow from all
 	 #+end_src
-**** CGI����
+**** CGI设置
 	 #+begin_src html
-       scr��ptAlias /cgi-bin/ "/mnt/software/apache2/cgi-bin/" # ����ʱ���ԣ�http://www.clusting.com/cgi-bin/ �����Ǹ�Ŀ¼�µ�CGI�ű��ļ�Ҫ�ӿ�ִ��Ȩ�ޣ�
+       scrīptAlias /cgi-bin/ "/mnt/software/apache2/cgi-bin/" # 访问时可以：http://www.clusting.com/cgi-bin/ 。但是该目录下的CGI脚本文件要加可执行权限！
 
-       #����Ŀ¼����
+       #设置目录属性
        AllowOverride None
        Options None
        Order allow,deny
        Allow from all
 	 #+end_src
-**** ��־������
-	 * ������־������
+**** 日志的设置
+	 * 错误日志的设置
 	   #+begin_src sh
-         ErrorLog logs/error_log #��־�ı���λ��
-         LogLevel warn #��־�ļ���
+         ErrorLog logs/error_log #日志的保存位置
+         LogLevel warn #日志的级别
 	   #+end_src
-	   ��ʾ�ĸ�ʽ����
+	   显示的格式如下
 	   #+begin_src html
          [Mon Oct 10 15:54:29 2005] [error] [client 192.168.10.22] access to /download/ failed, reason: user admin not allowed access
 	   #+end_src
-	 * ��־��ʽ����
-	   ��־��ȱʡ��ʽ�����¼��֣�
+	 * 日志格式设置
+	   日志的缺省格式有如下几种：
 	   #+begin_src html
          LogFormat "%h %l %u %t "%r" %>s %b "%{Referer}i" "%{User-Agent}i"" combined
-         LogFormat "%h %l %u %t "%r" %>s %b" common #commonΪ��־��ʽ����
+         LogFormat "%h %l %u %t "%r" %>s %b" common #common为日志格式名称
          LogFormat "%{Referer}i -> %U" referer
          LogFormat "%{User-agent}i" agent
          CustomLog logs/access_log common
 	   #+end_src
-	   ��ʽ�еĸ����������£�
+	   格式中的各个参数如下：
 	   #+begin_src html
-         %h �C�ͻ��˵�ip��ַ��������
-         %l �CThe �����ɿͻ��� identd �жϵ�RFC 1413���ݣ�����еķ��� "-" ��ʾ�˴���Ϣ��Ч��
-         %u �C��HTTP��֤ϵͳ�õ��ķ��ʸ���ҳ�Ŀͻ���������֤ʱ����Ч������еķ��� "-" ��ʾ�˴���Ϣ��Ч��
-         %t �C��������ɶ�����Ĵ���ʱ��ʱ�䡣
-         "%r" �C�������ǿͻ������İ���������������Ϣ���������ݡ�
-         %>s �C����Ƿ��������ظ��ͻ��˵�״̬�롣
-         %b �C��������Ƿ��ظ��ͻ��˵Ĳ�������Ӧͷ���ֽ�����
-         "%{Referer}i" �C����ָ���˸������Ǵӱ��ĸ���ҳ�ύ�����ġ�
-         "%{User-Agent}i" �C�����ǿͻ�������ṩ�������ʶ����Ϣ��
+         %h –客户端的ip地址或主机名
+         %l –The 这是由客户端 identd 判断的RFC 1413身份，输出中的符号 "-" 表示此处信息无效。
+         %u –由HTTP认证系统得到的访问该网页的客户名。有认证时才有效，输出中的符号 "-" 表示此处信息无效。
+         %t –服务器完成对请求的处理时的时间。
+         "%r" –引号中是客户发出的包含了许多有用信息的请求内容。
+         %>s –这个是服务器返回给客户端的状态码。
+         %b –最后这项是返回给客户端的不包括响应头的字节数。
+         "%{Referer}i" –此项指明了该请求是从被哪个网页提交过来的。
+         "%{User-Agent}i" –此项是客户浏览器提供的浏览器识别信息。
 	   #+end_src
-	   ������һ�η�����־��ʵ����
+	   下面是一段访问日志的实例：
 	   #+begin_src html
-         192.168.10.22 �C bearzhang [10/Oct/2005:16:53:06 +0800] "GET /download/ HTTP/1.1" 200 1228
-         192.168.10.22 �C - [10/Oct/2005:16:53:06 +0800] "GET /icons/blank.gif HTTP/1.1" 304 -
-         192.168.10.22 �C - [10/Oct/2005:16:53:06 +0800] "GET /icons/back.gif HTTP/1.1" 304 -
+         192.168.10.22 – bearzhang [10/Oct/2005:16:53:06 +0800] "GET /download/ HTTP/1.1" 200 1228
+         192.168.10.22 – - [10/Oct/2005:16:53:06 +0800] "GET /icons/blank.gif HTTP/1.1" 304 -
+         192.168.10.22 – - [10/Oct/2005:16:53:06 +0800] "GET /icons/back.gif HTTP/1.1" 304 -
 	   #+end_src
-**** ��������������
-	 * ����IP��ַ��������������
+**** 虚拟主机的配置
+	 * 基于IP地址的虚拟主机配置
 	   #+begin_src html
          Listen 80
 
@@ -500,7 +500,7 @@
          DocumentRoot /www/example2
          ServerName www.example2.org
 	   #+end_src
-	 * ����IP�Ͷ�˿ڵ�������������
+	 * 基于IP和多端口的虚拟主机配置
 	   #+begin_src html
          Listen 172.20.30.40:80
          Listen 172.20.30.40:8080
@@ -519,7 +519,7 @@
          DocumentRoot /www/example2-8080
          ServerName www.example2.org
 	   #+end_src
-	 * ����IP��ַ�ķ������ϻ���������������������
+	 * 单个IP地址的服务器上基于域名的虚拟主机配置
 	   #+begin_src html
          # Ensure that Apache listens on port 80
          Listen 80
@@ -536,7 +536,7 @@
          ServerName www.example2.org
          # Other directives here
 	   #+end_src
-	 * �ڶ��IP��ַ�ķ����������û�������������������
+	 * 在多个IP地址的服务器上配置基于域名的虚拟主机：
 	   #+begin_src html
          Listen 80
 
@@ -549,13 +549,13 @@
 
          DocumentRoot /www/example1
          ServerName www.example1.com
-         # Other directives here ��
+         # Other directives here …
 
          DocumentRoot /www/example2
          ServerName www.example2.org
-         # Other directives here ��
+         # Other directives here …
 	   #+end_src
-	 * �ڲ�ͬ�Ķ˿������в�ͬ��վ��(���ڶ�˿ڵķ����������û�����������������)
+	 * 在不同的端口上运行不同的站点(基于多端口的服务器上配置基于域名的虚拟主机)
 	   #+begin_src html
          Listen 80
          Listen 8080
@@ -575,7 +575,7 @@
          ServerName www.example2.org
          DocumentRoot /www/otherdomain-8080
 	   #+end_src
-	 * ���������ͻ���IP�Ļ����������������
+	 * 基于域名和基于IP的混合虚拟主机的配置
 	   #+begin_src html
          Listen 80
 
@@ -591,49 +591,49 @@
          ServerName www.example3.net
 	   #+end_src
 ** Git																	:git:
-*** .gitĿ¼�ṹ
-**** .gitĿ¼�µ���Ҫ�ļ�
+*** .git目录结构
+**** .git目录下的重要文件
      |--------+------------------------+---------------------------------------------------|
-     | �ļ��� | �ļ�����               | �ļ�����                                          |
+     | 文件名 | 文件内容               | 文件作用                                          |
      |--------+------------------------+---------------------------------------------------|
-     | config | Զ��������Ϣ����֧��Ϣ | Git���ã���������Զ��������ַ����֧�Լ���ģ����Ϣ |
-     | index  | �������ļ�             | ��ӦGit���ݴ���                                   |
-     | HEAD   | ref: refs/heads/master | ��Ӧ��ǰ���ط�֧�������ģ���еİ汾�⣩          |
+     | config | 远程主机信息；分支信息 | Git配置，用于描述远程主机地址、分支以及子模块信息 |
+     | index  | 二进制文件             | 对应Git的暂存区                                   |
+     | HEAD   | ref: refs/heads/master | 对应当前本地分支（或概念模型中的版本库）          |
      |--------+------------------------+---------------------------------------------------|
-**** .gitĿ¼�µ���ҪĿ¼
+**** .git目录下的重要目录
      |----------+--------------------------|
-     | Ŀ¼��   | ����                     |
+     | 目录名   | 描述                     |
      |----------+--------------------------|
-     | refs/    | ��Ŀ¼��������Ŀ¼��     |
-     |          | *heads* : ���ط�ָ֧��   |
-     |          | *remotes* : Զ�̷�ָ֧�� |
+     | refs/    | 该目录有三个子目录：     |
+     |          | *heads* : 本地分支指针   |
+     |          | *remotes* : 远程分支指针 |
      |          | *tags* :                 |
-     | objects/ | Git�����                |
+     | objects/ | Git对象库                |
      | logs/    |                          |
      |----------+--------------------------|
-*** GitԶ�̲���
-**** GitԶ���������
+*** Git远程操作
+**** Git远程命令概览
 	 1. git clone
 	 2. git remote
 	 3. git fetch
 	 4. git pull
 	 5. git push
-**** GitԶ�ֿ̲��뱾�زֿ�Ĺ�ϵͼ
+**** Git远程仓库与本地仓库的关系图
 	 [[./.Res/Git/GitRepRelation.png]]
 **** git clone
-	 Զ�̲����ĵ�һ����ͨ���Ǵ�Զ��������¡һ���汾�⣬��ʱ��Ҫ�õ�git clone���
+	 远程操作的第一步，通常是从远程主机克隆一个版本库，这时就要用到git clone命令：
 	 #+BEGIN_SRC sh
-       $ git clone <�汾�����ַ>
+       $ git clone <版本库的网址>
 	 #+END_SRC
-	 ���磬��¡jQuery�İ汾�⣺
+	 比如，克隆jQuery的版本库：
 	 #+BEGIN_SRC sh
        $ git clone https://github.com/jquery/jquery.git
 	 #+END_SRC
-	 ��������ڱ�����������һ��Ŀ¼����Զ�������İ汾��ͬ�������Ҫָ����ͬ��Ŀ¼�������Խ�Ŀ¼����Ϊgit clone����ĵڶ���������
+	 该命令会在本地主机生成一个目录，与远程主机的版本库同名。如果要指定不同的目录名，可以将目录名作为git clone命令的第二个参数：
 	 #+BEGIN_SRC sh
-       $ git clone <�汾�����ַ> <����Ŀ¼��>
+       $ git clone <版本库的网址> <本地目录名>
 	 #+END_SRC
-	 git clone֧�ֶ���Э�飬����HTTP(s)���⣬��֧��SSH��Git�������ļ�Э��ȣ�������һЩ���ӣ�
+	 git clone支持多种协议，除了HTTP(s)以外，还支持SSH、Git、本地文件协议等，下面是一些例子：
 	 #+BEGIN_SRC sh
        $ git clone http[s]://example.com/path/to/repo.git/
        $ git clone ssh://example.com/path/to/repo.git/
@@ -643,63 +643,63 @@
        $ git clone ftp[s]://example.com/path/to/repo.git/
        $ git clone rsync://example.com/path/to/repo.git/
 	 #+END_SRC
-	 SSHЭ�黹����һ��д����
+	 SSH协议还有另一种写法：
 	 #+BEGIN_SRC sh
        $ git clone [user@]example.com:path/to/repo.git/
 	 #+END_SRC
-	 ͨ����˵��GitЭ�������ٶ���죬SSHЭ��������Ҫ�û���֤�ĳ��ϡ�
+	 通常来说，Git协议下载速度最快，SSH协议用于需要用户认证的场合。
 **** git remote
-     Ϊ�˱��ڹ�����GitҪ��ÿ��Զ������������ָ��һ����������git remote��������ڹ���������������ѡ���ʱ��git remote�����г�����Զ��������
+     为了便于管理，Git要求每个远程主机都必须指定一个主机名。git remote命令就用于管理主机名。不带选项的时候，git remote命令列出所有远程主机：
 	 #+BEGIN_SRC sh
        $ git remote
        origin
 	 #+END_SRC
-	 ʹ��-vѡ����Բο�Զ����������ַ��
+	 使用-v选项，可以参看远程主机的网址：
 	 #+BEGIN_SRC sh
        $ git remote -v
        origin  git@github.com:jquery/jquery.git (fetch)
        origin  git@github.com:jquery/jquery.git (push)
 	 #+END_SRC
-	 ���������ʾ����ǰֻ��һ̨Զ������������origin�����������������ַ��
-	 ��¡�汾���ʱ����ʹ�õ�Զ�������Զ���Git����Ϊorigin�������������������������Ҫ��git clone�����-oѡ��ָ����
+	 上面命令表示，当前只有一台远程主机，叫做origin，后面跟随了它的网址。
+	 克隆版本库的时候，所使用的远程主机自动被Git命名为origin。如果想用其他的主机名，需要用git clone命令的-o选项指定：
 	 #+BEGIN_SRC sh
        $ git clone -o jQuery https://github.com/jquery/jquery.git
        $ git remote
        jQuery
 	 #+END_SRC
-	 ���������ʾ����¡��ʱ��ָ��Զ����������jQuery��
-	 1) git remote show������������������Բ鿴����������ϸ��Ϣ��
+	 上面命令表示，克隆的时候，指定远程主机叫做jQuery。
+	 1) git remote show命令加上主机名，可以查看该主机的详细信息。
 		#+BEGIN_SRC sh
-          $ git remote show <������>
+          $ git remote show <主机名>
 		#+END_SRC
-	 2) git remote add������������Զ��������
+	 2) git remote add命令用于添加远程主机。
 		#+BEGIN_SRC sh
-          $ git remote add <������> <��ַ>
+          $ git remote add <主机名> <网址>
 		#+END_SRC
-	 3) git remote rm��������ɾ��Զ��������
+	 3) git remote rm命令用于删除远程主机。
 		#+BEGIN_SRC sh
-          $ git remote rm <������>
+          $ git remote rm <主机名>
 		#+END_SRC
-	 4) git remote rename��������Զ�������ĸ�����
+	 4) git remote rename命令用于远程主机的改名。
 		#+BEGIN_SRC sh
-          $ git remote rename <ԭ������> <��������>
+          $ git remote rename <原主机名> <新主机名>
 		#+END_SRC
 **** git fetch
-	 ������������ǣ���Զ�̷�֧�ĸ���ȡ�ر���
+	 此命令的作用是：将远程分支的更新取回本地
 	 #+BEGIN_SRC sh
-       $ git fetch <Զ��������>
+       $ git fetch <远程主机名>
 	 #+END_SRC
-	 �������ĳ��Զ�������ĸ��£�ȫ��ȡ�ر��ء�
-	 Ĭ������£�git fetchȡ�����з�֧��branch���ĸ��¡����ֻ��ȡ���ض���֧�ĸ��£�����ָ����֧����
+	 上面命令将某个远程主机的更新，全部取回本地。
+	 默认情况下，git fetch取回所有分支（branch）的更新。如果只想取回特定分支的更新，可以指定分支名。
 	 #+BEGIN_SRC sh
-       $ git fetch <Զ��������> <��֧��>
+       $ git fetch <远程主机名> <分支名>
 	 #+END_SRC
-	 ���磬ȡ��origin������master��֧��
+	 比如，取回origin主机的master分支。
 	 #+BEGIN_SRC sh
        $ git fetch origin master
 	 #+END_SRC
-	 ��ȡ�صĸ��£��ڱ���������Ҫ��"Զ��������/��֧��"����ʽ��ȡ������origin������master����Ҫ��origin/master��ȡ��
-	 git branch�����-rѡ����������鿴Զ�̷�֧��-aѡ��鿴���з�֧��
+	 所取回的更新，在本地主机上要用"远程主机名/分支名"的形式读取。比如origin主机的master，就要用origin/master读取。
+	 git branch命令的-r选项，可以用来查看远程分支，-a选项查看所有分支。
 	 #+BEGIN_SRC sh
        $ git branch -r
        origin/master
@@ -707,150 +707,150 @@
        * master
        remotes/origin/master
 	 #+END_SRC
-	 ���������ʾ�����������ĵ�ǰ��֧��master��Զ�̷�֧��origin/master��
-	 ȡ��Զ�������ĸ����Ժ󣬿��������Ļ����ϣ�ʹ��git checkout�����һ���µķ�֧��
+	 上面命令表示，本地主机的当前分支是master，远程分支是origin/master。
+	 取回远程主机的更新以后，可以在它的基础上，使用git checkout命令创建一个新的分支。
 	 #+BEGIN_SRC sh
        $ git checkout -b newBrach origin/master
 	 #+END_SRC
-	 ���������ʾ����origin/master�Ļ����ϣ�����һ���·�֧��
-	 ���⣬Ҳ����ʹ��git merge�������git rebase����ڱ��ط�֧�Ϻϲ�Զ�̷�֧��
+	 上面命令表示，在origin/master的基础上，创建一个新分支。
+	 此外，也可以使用git merge命令或者git rebase命令，在本地分支上合并远程分支。
 	 #+BEGIN_SRC sh
        $ git merge origin/master
 	 #+END_SRC
-	 ����
+	 或者
 	 #+BEGIN_SRC sh
        $ git rebase origin/master
 	 #+END_SRC
-	 ���������ʾ�ڵ�ǰ��֧�ϣ��ϲ�origin/master��
+	 上面命令表示在当前分支上，合并origin/master。
 **** git pull
-     git pull����������ǣ���Զ�̷�֧�ĸ���ȡ�ر��أ����뱾�ص�ָ����֧�ϲ�������������ʽ�����е㸴�ӡ�
+     git pull命令的作用是：将远程分支的更新取回本地，再与本地的指定分支合并。它的完整格式稍稍有点复杂。
 	 #+BEGIN_SRC sh
-       $ git pull <Զ��������> <Զ�̷�֧��>:<���ط�֧��>
+       $ git pull <远程主机名> <远程分支名>:<本地分支名>
 	 #+END_SRC
-	 ���磬ȡ��origin������next��֧���뱾�ص�master��֧�ϲ�����Ҫд������������
+	 比如，取回origin主机的next分支，与本地的master分支合并，需要写成下面这样。
 	 #+BEGIN_SRC sh
        $ git pull origin next:master
 	 #+END_SRC
-	 ���Զ�̷�֧���뵱ǰ��֧�ϲ�����ð�ź���Ĳ��ֿ���ʡ�ԡ�
+	 如果远程分支是与当前分支合并，则冒号后面的部分可以省略。
 	 #+BEGIN_SRC sh
        $ git pull origin next
 	 #+END_SRC
-	 ���������ʾ��ȡ��origin/next��֧�����뵱ǰ��֧�ϲ���ʵ���ϣ����ͬ������git fetch������git merge��
+	 上面命令表示，取回origin/next分支，再与当前分支合并。实质上，这等同于先做git fetch，再做git merge。
 	 #+begin_src sh
        $ git fetch origin
        $ git merge origin/next
 	 #+end_src
-	 ��ĳЩ���ϣ�Git���Զ��ڱ��ط�֧��Զ�̷�֧֮�䣬����һ��׷�ٹ�ϵ��tracking�������磬��git clone��ʱ�����б��ط�֧Ĭ����Զ��������ͬ����֧������׷�ٹ�ϵ��Ҳ����˵�����ص�master��֧�Զ�"׷��"origin/master��֧��
-	 GitҲ�����ֶ�����׷�ٹ�ϵ��
+	 在某些场合，Git会自动在本地分支与远程分支之间，建立一种追踪关系（tracking）。比如，在git clone的时候，所有本地分支默认与远程主机的同名分支，建立追踪关系，也就是说，本地的master分支自动"追踪"origin/master分支。
+	 Git也允许手动建立追踪关系。
 	 #+begin_src sh
        $ git branch --set-upstream master origin/next
 	 #+end_src
-	 ��������ָ��master��֧׷��origin/next��֧��
-	 �����ǰ��֧��Զ�̷�֧����׷�ٹ�ϵ��git pull�Ϳ���ʡ��Զ�̷�֧����
+	 上面命令指定master分支追踪origin/next分支。
+	 如果当前分支与远程分支存在追踪关系，git pull就可以省略远程分支名。
 	 #+begin_src sh
        $ git pull origin
 	 #+end_src
-	 ���������ʾ�����صĵ�ǰ��֧�Զ����Ӧ��origin����"׷�ٷ�֧"��remote-tracking branch�����кϲ���
-	 �����ǰ��ֻ֧��һ��׷�ٷ�֧����Զ��������������ʡ�ԡ�
+	 上面命令表示，本地的当前分支自动与对应的origin主机"追踪分支"（remote-tracking branch）进行合并。
+	 如果当前分支只有一个追踪分支，连远程主机名都可以省略。
 	 #+begin_src sh
        $ git pull
 	 #+end_src
-	 ���������ʾ����ǰ��֧�Զ���Ψһһ��׷�ٷ�֧���кϲ���
-	 ����ϲ���Ҫ����rebaseģʽ������ʹ��--rebaseѡ�
+	 上面命令表示，当前分支自动与唯一一个追踪分支进行合并。
+	 如果合并需要采用rebase模式，可以使用--rebase选项。
 	 #+begin_src sh
-       $ git pull --rebase <Զ��������> <Զ�̷�֧��>:<���ط�֧��>
+       $ git pull --rebase <远程主机名> <远程分支名>:<本地分支名>
 	 #+end_src
-	 ���Զ������ɾ����ĳ����֧��Ĭ������£�git pull ��������ȡԶ�̷�֧��ʱ��ɾ����Ӧ�ı��ط�֧������Ϊ�˷�ֹ�����������˲�����Զ������������git pull��֪����ɾ���˱��ط�֧��
-	 ���ǣ�����Ըı������Ϊ�����ϲ��� -p �ͻ��ڱ���ɾ��Զ���Ѿ�ɾ���ķ�֧��
+	 如果远程主机删除了某个分支，默认情况下，git pull 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致git pull不知不觉删除了本地分支。
+	 但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。
 	 #+begin_src sh
        $ git pull -p
 	 #+end_src
-	 ����ͬ����������
+	 它等同于下面的命令：
 	 #+begin_src sh
        $ git fetch --prune origin
        $ git fetch -p
 	 #+end_src
 **** git push
-	 git push�������ڽ����ط�֧�ĸ��£����͵�Զ�̷�֧�����ĸ�ʽ��git pull������¡�
+	 git push命令用于将本地分支的更新，推送到远程分支。它的格式与git pull命令相仿。
 	 #+begin_src sh
-       $ git push <Զ��������> <���ط�֧��>:<Զ�̷�֧��>
+       $ git push <远程主机名> <本地分支名>:<远程分支名>
 	 #+end_src
-	 ע�⣬��֧����˳���д����<��Դ��>:<Ŀ�ĵ�>������git pull��<Զ�̷�֧>:<���ط�֧>����git push��<���ط�֧>:<Զ�̷�֧>��
-	 ���ʡ��Զ�̷�֧�������ʾ�����ط�֧���͵���֮����"׷�ٹ�ϵ"��Զ�̷�֧��ͨ������ͬ�����������Զ�̷�֧�����ڣ���ᱻ�½���
+	 注意，分支推送顺序的写法是<来源地>:<目的地>，所以git pull是<远程分支>:<本地分支>，而git push是<本地分支>:<远程分支>。
+	 如果省略远程分支名，则表示将本地分支推送到与之存在"追踪关系"的远程分支（通常两者同名），如果该远程分支不存在，则会被新建。
 	 #+begin_src sh
        $ git push origin master
 	 #+end_src
-	 ���������ʾ�������ص�master��֧���͵�origin������master��֧��������߲����ڣ���ᱻ�½���
-	 ���ʡ�Ա��ط�֧�������ʾɾ��ָ����Զ�̷�֧����Ϊ���ͬ������һ���յı��ط�֧��Զ�̷�֧��
+	 上面命令表示，将本地的master分支推送到origin主机的master分支。如果后者不存在，则会被新建。
+	 如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支。
 	 #+begin_src sh
        $ git push origin :master
 	 #+end_src
-	 ����ͬ�ڣ�
+	 它等同于：
 	 #+begin_src sh
        $ git push origin --delete master
 	 #+end_src
-	 ���������ʾɾ��origin������master��֧��
-	 �����ǰ��֧��Զ�̷�֧֮�����׷�ٹ�ϵ���򱾵ط�֧��Զ�̷�֧������ʡ�ԡ�
+	 上面命令表示删除origin主机的master分支。
+	 如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。
 	 #+begin_src sh
        $ git push origin
 	 #+end_src
-	 ���������ʾ������ǰ��֧���͵�origin�����Ķ�Ӧ��֧��
-	 �����ǰ��ֻ֧��һ��׷�ٷ�֧����ô������������ʡ�ԡ�
+	 上面命令表示，将当前分支推送到origin主机的对应分支。
+	 如果当前分支只有一个追踪分支，那么主机名都可以省略。
 	 #+begin_src sh
        $ git push
 	 #+end_src
-	 �����ǰ��֧������������׷�ٹ�ϵ�������ʹ��-uѡ��ָ��һ��Ĭ����������������Ϳ��Բ����κβ���ʹ��git push��
+	 如果当前分支与多个主机存在追踪关系，则可以使用-u选项指定一个默认主机，这样后面就可以不加任何参数使用git push。
 	 #+begin_src sh
        $ git push -u origin master
 	 #+end_src
-	 ����������ص�master��֧���͵�origin������ͬʱָ��originΪĬ������������Ϳ��Բ����κβ���ʹ��git push�ˡ�
-	 �����κβ�����git push��Ĭ��ֻ���͵�ǰ��֧�������simple��ʽ�����⣬����һ��matching��ʽ�������������ж�Ӧ��Զ�̷�֧�ı��ط�֧��Git 2.0�汾֮ǰ��Ĭ�ϲ���matching���������ڸ�ΪĬ�ϲ���simple��ʽ�����Ҫ�޸�������ã����Բ���git config���
+	 上面命令将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用git push了。
+	 不带任何参数的git push，默认只推送当前分支，这叫做simple方式。此外，还有一种matching方式，会推送所有有对应的远程分支的本地分支。Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。如果要修改这个设置，可以采用git config命令。
 	 #+begin_src sh
        $ git config --global push.default matching
 	 #+end_src
-	 ����
+	 或者
 	 #+begin_src sh
        $ git config --global push.default simple
 	 #+end_src
-	 ����һ����������ǲ����Ƿ���ڶ�Ӧ��Զ�̷�֧�������ص����з�֧�����͵�Զ����������ʱ��Ҫʹ��--allѡ�
+	 还有一种情况，就是不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要使用--all选项。
 	 #+begin_src sh
        $ git push --all origin
 	 #+end_src
-	 ���������ʾ�������б��ط�֧�����͵�origin������
-	 ���Զ�������İ汾�ȱ��ذ汾���£�����ʱGit�ᱨ����Ҫ�����ڱ�����git pull�ϲ����죬Ȼ�������͵�Զ����������ʱ�������һ��Ҫ���ͣ�����ʹ��--forceѡ�
+	 上面命令表示，将所有本地分支都推送到origin主机。
+	 如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做git pull合并差异，然后再推送到远程主机。这时，如果你一定要推送，可以使用--force选项。
 	 #+begin_src sh
        $ git push --force origin
 	 #+end_src
-	 ��������ʹ��--forceѡ��������Զ�������ϸ��µİ汾�����ǡ��������ȷ��Ҫ������������Ӧ�þ�������ʹ��--forceѡ�
-	 ���git push�������ͱ�ǩ��tag��������ʹ��--tagsѡ�
+	 上面命令使用--force选项，结果导致远程主机上更新的版本被覆盖。除非你很确定要这样做，否则应该尽量避免使用--force选项。
+	 最后，git push不会推送标签（tag），除非使用--tags选项。
 	 #+begin_src sh
        $ git push origin --tags
 	 #+end_src
-**** Fork֮����Դͬ��
-	 �ɰ����²���ͬ��Դ�����´��룺
-	 1. ��Դ�ֿ����ӵ�Զ�ֿ̲��б�(git remote add)
-	 2. ��Դ�ֿ��ȡ���´���
-	 3. ���¸��������ķ�֧�ϲ���master��֧
+**** Fork之后与源同步
+	 可按如下步骤同步源的最新代码：
+	 1. 将源仓库添加到远程仓库列表(git remote add)
+	 2. 从源仓库获取最新代码
+	 3. 将新更新下来的分支合并到master分支
 	 #+BEGIN_SRC c
        git remote add source git@github.com:source/proj.git
        git fetch source
        git merge source/master
 	 #+END_SRC
-*** Git��֧
-**** ��֧�鿴
-	 * �鿴���ط�֧
+*** Git分支
+**** 分支查看
+	 * 查看本地分支
 	   #+BEGIN_SRC sh
          $ git branch
          * master
 	   #+END_SRC
-	 * �鿴Զ�̷�֧
+	 * 查看远程分支
 	   #+BEGIN_SRC sh
          $ git branch -r
            kbengine/master
            origin/HEAD -> origin/master
            origin/master
 	   #+END_SRC
-	 * �鿴���з�֧
+	 * 查看所有分支
 	   #+BEGIN_SRC sh
          $ git branch -a
          * master
@@ -858,21 +858,21 @@
            remotes/origin/HEAD -> origin/master
            remotes/origin/master
 	   #+END_SRC
-	 * ������֧
+	 * 创建分支
 	   #+BEGIN_SRC sh
-         $ git branch <��֧��>
+         $ git branch <分支名>
 	   #+END_SRC
-	 * ɾ�����ط�֧
+	 * 删除本地分支
 	   #+BEGIN_SRC sh
-         $ git branch -d <��֧��>
+         $ git branch -d <分支名>
 	   #+END_SRC
-	 * �л���֧
+	 * 切换分支
 	   #+BEGIN_SRC sh
-         git checkout <��֧��>
+         git checkout <分支名>
 	   #+END_SRC
-**** ��֧�ϲ�
+**** 分支合并
 ** Tools
-*** VMware ����������ű�
+*** VMware 虚拟机启动脚本
 	#+begin_src sh
       start /min vmware.exe -x "F:\Virtual Machine\CentOS\CentOS.vmx"
       ping -n 10 127.0.0.1 >nul 2>nul
@@ -883,6 +883,6 @@
 ** MMOG
    * [[https://developer.valvesoftware.com/wiki/Main_Page][Source Engine]]
 
-	 1. [ ] [[https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization][������ʱ����]]
+	 1. [ ] [[https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization][网络延时补偿]]
 	 2. [ ] [[https://developer.valvesoftware.com/wiki/Lag_compensation][Lag compensation]]
 	 3. [ ] [[https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking][Source Multiplayer Networking]]
