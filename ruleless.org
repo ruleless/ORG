@@ -267,16 +267,18 @@
 	  CLOSED: [2016-03-10 周四 10:52]
 	  - State "DONE"       from "TODO"       [2016-03-10 周四 10:52]
 
-**** TODO <2016-03-14 周一> [0%]
-***** TODO 从业经验总结
-***** TODO 调试 AsyncNet 库
-***** TODO TCP 的性能和未来
+**** TODO <2016-03-14 周一> [11%]
 ***** TODO Python 语法总结
-***** TODO skynet 消息队列同步操作方式
 ***** TODO DNS 域名解析协议
+***** TODO TCP 的性能和未来
 ***** TODO My Tetris
-***** TODO My Direct UI Library
+***** TODO 熟悉 AsyncNet 库
+***** TODO skynet 消息队列同步操作方式
 ***** TODO 调试 Nginx
+***** DONE 从业经验总结
+	  CLOSED: [2016-03-17 周四 10:23]
+	  - State "DONE"       from "TODO"       [2016-03-17 周四 10:23]
+**** TODO My Direct UI Library
 **** TODO 浏览 jemalloc 源码，给出 jemalloc 的设计图
 **** TODO 无锁队列
 **** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
