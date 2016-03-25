@@ -292,15 +292,22 @@
 	  - State "DONE"       from "TODO"       [2016-03-21 周一 09:45]
 
 	  重新使用 2D 平移、旋转方程实现
-**** TODO <2016-03-21 周一> [33%]
+**** TODO <2016-03-21 周一> [57%]
 
+***** TODO Linux 平台下的性能分析工具：Valgrind
+***** TODO 调试 Nginx
+***** TODO DNS 域名解析协议
+***** DONE The BSD Packet Filter
+	  CLOSED: [2016-03-24 周四 14:30]
+	  - State "DONE"       from "TODO"       [2016-03-24 周四 14:30]
+
+	  包过滤可用布尔表达式树或控制流图(CFG)实现，BPF 利用 CFG 实现。
+***** DONE TCP 的性能和未来
+	  CLOSED: [2016-03-24 周四 09:33]
+	  - State "DONE"       from "TODO"       [2016-03-24 周四 09:33]
 ***** DONE C++ Template（编译器泛型技术）
 	  CLOSED: [2016-03-22 周二 19:53]
 	  - State "DONE"       from "TODO"       [2016-03-22 周二 19:53]
-***** TODO Linux 平台下的性能分析工具：Valgrind
-***** TODO 调试 Nginx
-***** TODO TCP 的性能和未来
-***** TODO DNS 域名解析协议
 ***** DONE Linux 平台下的调试工具：strace
 	  CLOSED: [2016-03-22 周二 14:46]
 	  - State "DONE"       from "TODO"       [2016-03-22 周二 14:46]
