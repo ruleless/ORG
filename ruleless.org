@@ -115,12 +115,24 @@
 
 *** 2016/04
 
-**** TODO <2016-03-28 周一> [0%]
+**** DONE <2016-03-28 周一> [100%]
+	 CLOSED: [2016-04-04 周一 18:53]
+	 - State "DONE"       from "TODO"       [2016-04-04 周一 18:53]
 
-***** TODO 微客户端资源下载改用 libcurl 库
+***** DONE 寄售跟进
+	  CLOSED: [2016-04-04 周一 18:52]
+	  - State "DONE"       from "DONE"       [2016-04-04 周一 18:52]
+	  - State "DONE"       from "TODO"       [2016-04-04 周一 18:52]
+***** DONE 微客户端资源下载改用 libcurl 库
+	  CLOSED: [2016-04-04 周一 18:52]
+	  - State "DONE"       from "TODO"       [2016-04-04 周一 18:52]
+
+	  暂且观望
+
+**** TODO <2016-04-04 周一> [0%]
+***** PROCESSING 微客户端代理进程智能限速
+	  - State "PROCESSING" from "TODO"       [2016-04-04 周一 18:53]
 ***** TODO 微客户端代理进程宕机时生成转储文件，并可通过邮件获取
-***** TODO 微客户端代理进程智能限速
-***** TODO 寄售跟进
 **** TODO 微客户端报错修复
 **** TODO 微客户端后台下载策略优化
 **** TODO 微客户端bug修复 [1/4]
@@ -333,18 +345,25 @@
 	  #+end_src
 
 *** 2016/04
-**** TODO <2016-03-28 周一> [28%]
-***** TODO stl allocate
-***** TODO 红黑树
-***** TODO 堆
-***** TODO 算法
-***** TODO 适配器
+**** DONE <2016-03-28 周一> [100%]
+	 CLOSED: [2016-04-04 周一 18:51]
+	 - State "DONE"       from "TODO"       [2016-04-04 周一 18:51]
+***** DONE 红黑树
+	  CLOSED: [2016-04-04 周一 18:51]
+	  - State "DONE"       from "TODO"       [2016-04-04 周一 18:51]
+	  根据红黑树算法实现了简单的红黑树容器，包含插入和删除，但不能迭代元素。
 ***** DONE 仿函数
 	  CLOSED: [2016-03-29 周二 15:47]
 	  - State "DONE"       from "TODO"       [2016-03-29 周二 15:47]
 ***** DONE stl iterator 设计
 	  CLOSED: [2016-03-28 周一 10:24]
+	  - State "DONE"       from "DONE"       [2016-04-04 周一 18:51]
 	  - State "DONE"       from "TODO"       [2016-03-28 周一 10:24]
+**** TODO <2016-04-04 周一> [%]
+**** TODO stl allocate
+**** TODO 堆
+**** TODO 算法
+**** TODO 适配器
 **** TODO 调试 Nginx
 **** TODO DNS 域名解析协议
 **** TODO Linux 平台下的性能分析工具：Valgrind
