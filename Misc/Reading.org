@@ -21,6 +21,7 @@
    * [ ] *C++编程新思维.pdf*
    * [ ] *railstutorial3rd-1.0.2.pdf*
    * [ ] *STL源码剖析.pdf*
+   * [ ] *C++语言导学.pdf*
 
 ** OpenSource
 
