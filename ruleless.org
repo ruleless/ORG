@@ -129,10 +129,22 @@
 
 	  暂且观望
 
-**** TODO <2016-04-04 周一> [0%]
-***** PROCESSING 微客户端代理进程智能限速
+**** DONE <2016-04-04 周一> [100%]
+	 CLOSED: [2016-04-11 周一 09:29]
+	 - State "DONE"       from "TODO"       [2016-04-11 周一 09:29]
+***** DONE 微客户端代理进程智能限速
+	  CLOSED: [2016-04-11 周一 09:29]
+	  - State "DONE"       from "PROCESSING" [2016-04-11 周一 09:29]
 	  - State "PROCESSING" from "TODO"       [2016-04-04 周一 18:53]
-***** TODO 微客户端代理进程宕机时生成转储文件，并可通过邮件获取
+
+**** TODO <2016-04-11 周一> [66%]
+***** TODO 搭建 gitlab 服务器
+***** DONE 微客户端代理进程宕机时生成转储文件，并可通过邮件获取
+	  CLOSED: [2016-04-12 周二 17:39]
+	  - State "DONE"       from "TODO"       [2016-04-12 周二 17:39]
+***** DONE 微端：CDN 或 微端云服务器从异常恢复后，保证微客户端继续可玩
+	  CLOSED: [2016-04-12 周二 17:28]
+	  - State "DONE"       from "TODO"       [2016-04-12 周二 17:28]
 **** TODO 微客户端报错修复
 **** TODO 微客户端后台下载策略优化
 **** TODO 微客户端bug修复 [1/4]
@@ -359,8 +371,14 @@
 	  CLOSED: [2016-03-28 周一 10:24]
 	  - State "DONE"       from "DONE"       [2016-04-04 周一 18:51]
 	  - State "DONE"       from "TODO"       [2016-03-28 周一 10:24]
-**** TODO <2016-04-04 周一> [%]
-***** TODO 在 github 上搭建博客
+**** DONE <2016-04-04 周一> [100%]
+	 CLOSED: [2016-04-11 周一 09:29]
+	 - State "DONE"       from "TODO"       [2016-04-11 周一 09:29]
+***** DONE 在 github 上搭建博客
+	  CLOSED: [2016-04-11 周一 09:29]
+	  - State "DONE"       from "TODO"       [2016-04-11 周一 09:29]
+**** TODO <2016-04-11 周一> [%]
+***** TODO 熟悉 AsyncNet 库
 **** TODO stl allocate
 **** TODO 堆
 **** TODO 算法
@@ -369,7 +387,6 @@
 **** TODO DNS 域名解析协议
 **** TODO Linux 平台下的性能分析工具：Valgrind
 **** TODO skynet 消息队列同步操作方式
-**** TODO 熟悉 AsyncNet 库
 **** TODO My Direct UI Library
 **** TODO 浏览 jemalloc 源码，给出 jemalloc 的设计图
 **** TODO 无锁队列
