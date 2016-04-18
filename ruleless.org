@@ -137,14 +137,31 @@
 	  - State "DONE"       from "PROCESSING" [2016-04-11 周一 09:29]
 	  - State "PROCESSING" from "TODO"       [2016-04-04 周一 18:53]
 
-**** TODO <2016-04-11 周一> [66%]
-***** TODO 搭建 gitlab 服务器
+**** DONE <2016-04-11 周一> [100%]
+	 CLOSED: [2016-04-18 周一 09:42]
+	 - State "DONE"       from "TODO"       [2016-04-18 周一 09:42]
+***** DONE 废弃资源整理
+	  CLOSED: [2016-04-18 周一 09:42]
+	  - State "DONE"       from "TODO"       [2016-04-18 周一 09:42]
+
+	  * [X] 场景
+	  * [X] 模型
+	  * [X] 特效
+
 ***** DONE 微客户端代理进程宕机时生成转储文件，并可通过邮件获取
 	  CLOSED: [2016-04-12 周二 17:39]
 	  - State "DONE"       from "TODO"       [2016-04-12 周二 17:39]
 ***** DONE 微端：CDN 或 微端云服务器从异常恢复后，保证微客户端继续可玩
 	  CLOSED: [2016-04-12 周二 17:28]
 	  - State "DONE"       from "TODO"       [2016-04-12 周二 17:28]
+
+**** TODO <2016-04-18 周一> [50%]
+
+***** TODO 配合新版UI调整如下界面：技能/装备福利/寄售
+***** DONE mz 关联资源整理工具完善
+	  CLOSED: [2016-04-18 周一 15:39]
+	  - State "DONE"       from "TODO"       [2016-04-18 周一 15:39]
+**** TODO 搭建 gitlab 服务器
 **** TODO 微客户端报错修复
 **** TODO 微客户端后台下载策略优化
 **** TODO 微客户端bug修复 [1/4]
@@ -163,7 +180,7 @@
 
 **** todo 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 
-** schedule for career
+** Schedule For Career
 
 *** 2016/01
 
@@ -377,8 +394,15 @@
 ***** DONE 在 github 上搭建博客
 	  CLOSED: [2016-04-11 周一 09:29]
 	  - State "DONE"       from "TODO"       [2016-04-11 周一 09:29]
-**** TODO <2016-04-11 周一> [%]
+**** DONE <2016-04-11 周一> [100%]
+	 CLOSED: [2016-04-18 周一 14:25]
+	 - State "DONE"       from "TODO"       [2016-04-18 周一 14:25]
+***** DONE 熟悉 AsyncNet 库
+	  CLOSED: [2016-04-18 周一 14:25]
+	  - State "DONE"       from "TODO"       [2016-04-18 周一 14:25]
+**** TODO <2016-04-18 周一> [0%]
 ***** TODO 熟悉 AsyncNet 库
+***** TODO 构建“软件积木”(以搭积木的方式编写应用软件)
 **** TODO stl allocate
 **** TODO 堆
 **** TODO 算法
