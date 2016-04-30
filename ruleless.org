@@ -166,16 +166,20 @@
 	  CLOSED: [2016-04-18 周一 15:39]
 	  - State "DONE"       from "TODO"       [2016-04-18 周一 15:39]
 
-**** TODO <2016-04-25 周一> [40%]
-***** TODO 国战竞猜活动入口超时追踪及解决
-***** TODO 新增武器时装
+**** DONE <2016-04-25 周一> [100%]
+	 CLOSED: [2016-04-30 周六 20:44]
+	 - State "DONE"       from "TODO"       [2016-04-30 周六 20:44]
+***** DONE 新增武器时装
+	  CLOSED: [2016-04-30 周六 20:44]
+	  - State "DONE"       from "TODO"       [2016-04-30 周六 20:44]
 ***** DONE 寄售行UI更换
 	  CLOSED: [2016-04-27 周三 10:52]
 	  - State "DONE"       from "TODO"       [2016-04-27 周三 10:52]
 ***** DONE 寄售入口显示荐字显示；当没有寄售物品时不再通过弹窗提示
 	  CLOSED: [2016-04-26 周二 14:45]
 	  - State "DONE"       from "TODO"       [2016-04-26 周二 14:45]
-***** TODO 外网内存破坏问题追踪
+**** TODO 国战竞猜活动入口超时追踪及解决
+**** TODO 外网内存破坏问题追踪
 **** TODO 搭建 gitlab 服务器
 **** TODO 微客户端报错修复
 **** TODO 微客户端后台下载策略优化
@@ -424,9 +428,14 @@
 
 	  已完成 cill 库的 core 模块和 cmd 模块编写
 
-**** TODO <2016-04-25 周一> [0%]
-***** TODO 熟悉 AsyncNet 库
+**** TODO <2016-04-25 周一> [66%]
 ***** TODO 使用 iptables 配置防火墙
+***** DONE 将 AsyncNet 融合到 cill 库
+	  CLOSED: [2016-04-30 周六 23:10]
+	  - State "DONE"       from "TODO"       [2016-04-30 周六 23:10]
+***** DONE 利用 AsyncNet 编写回射测试程序
+	  CLOSED: [2016-04-30 周六 20:46]
+	  - State "DONE"       from "TODO"       [2016-04-30 周六 20:46]
 **** TODO stl allocate
 **** TODO 堆
 **** TODO 算法
