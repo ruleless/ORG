@@ -428,7 +428,8 @@
 
 	  已完成 cill 库的 core 模块和 cmd 模块编写
 
-**** TODO <2016-04-25 周一> [66%]
+**** TODO <2016-04-25 周一> [50%]
+***** TODO 将 jemalloc 引入到 cill 库
 ***** TODO 使用 iptables 配置防火墙
 ***** DONE 将 AsyncNet 融合到 cill 库
 	  CLOSED: [2016-04-30 周六 23:10]
