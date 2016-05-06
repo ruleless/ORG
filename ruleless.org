@@ -178,6 +178,9 @@
 ***** DONE 寄售入口显示荐字显示；当没有寄售物品时不再通过弹窗提示
 	  CLOSED: [2016-04-26 周二 14:45]
 	  - State "DONE"       from "TODO"       [2016-04-26 周二 14:45]
+*** 2016/05
+**** TODO <2016-05-03 周二> [0%]
+***** TODO 武器时装相关BUG修复/武器时装分区功能
 **** TODO 国战竞猜活动入口超时追踪及解决
 **** TODO 外网内存破坏问题追踪
 **** TODO 搭建 gitlab 服务器
@@ -428,15 +431,19 @@
 
 	  已完成 cill 库的 core 模块和 cmd 模块编写
 
-**** TODO <2016-04-25 周一> [50%]
-***** TODO 将 jemalloc 引入到 cill 库
-***** TODO 使用 iptables 配置防火墙
+**** DONE <2016-04-25 周一> [100%]
+	 CLOSED: [2016-05-03 周二 10:10]
+	 - State "DONE"       from "TODO"       [2016-05-03 周二 10:10]
 ***** DONE 将 AsyncNet 融合到 cill 库
 	  CLOSED: [2016-04-30 周六 23:10]
 	  - State "DONE"       from "TODO"       [2016-04-30 周六 23:10]
-***** DONE 利用 AsyncNet 编写回射测试程序
+***** DONE 为 AsyncNet 编写回射测试程序
 	  CLOSED: [2016-04-30 周六 20:46]
 	  - State "DONE"       from "TODO"       [2016-04-30 周六 20:46]
+*** 2016/05
+**** TODO <2016-05-03 周二> [0%]
+***** TODO 使用 iptables 配置防火墙
+***** TODO 为 kmem 编写测试程序
 **** TODO stl allocate
 **** TODO 堆
 **** TODO 算法
