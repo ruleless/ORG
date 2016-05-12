@@ -185,9 +185,14 @@
 ***** DONE 武器时装相关BUG修复/武器时装分区功能
 	  CLOSED: [2016-05-07 周六 11:21]
 	  - State "DONE"       from "TODO"       [2016-05-07 周六 11:21]
-**** TODO <2016-05-09 周一> [%]
-***** TODO 寄售行中将可进阶的紫装归类到橙色装备中
+**** TODO <2016-05-09 周一> [66%]
 ***** TODO 国战竞猜活动入口超时追踪及解决
+***** DONE 寄售行中将可进阶的紫装归类到橙色装备中
+	  CLOSED: [2016-05-12 周四 17:26]
+	  - State "DONE"       from "TODO"       [2016-05-12 周四 17:26]
+***** DONE 微端下载库由 Winnet 改为 libcurl
+	  CLOSED: [2016-05-12 周四 11:05]
+	  - State "DONE"       from "TODO"       [2016-05-12 周四 11:05]
 **** TODO 外网内存破坏问题追踪
 **** TODO 搭建 gitlab 服务器
 **** TODO 微客户端报错修复
@@ -453,10 +458,12 @@
 ***** DONE 为 kmem 编写测试程序
 	  CLOSED: [2016-05-09 周一 11:27]
 	  - State "DONE"       from "TODO"       [2016-05-09 周一 11:27]
-**** TODO <2016-05-09 周一> [40%]
-***** TODO 使用 iptables 配置防火墙
+**** TODO <2016-05-09 周一> [60%]
 ***** TODO AsyncNet 库中 AsyncCore 设计
 ***** TODO P2P 原理及实现
+***** DONE 使用 iptables 配置防火墙
+	  CLOSED: [2016-05-12 周四 11:57]
+	  - State "DONE"       from "TODO"       [2016-05-12 周四 11:57]
 ***** DONE kmem 库中的 slab 算法说明
 	  CLOSED: [2016-05-10 周二 18:16]
 	  - State "DONE"       from "TODO"       [2016-05-10 周二 18:16]
