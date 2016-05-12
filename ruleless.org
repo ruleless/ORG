@@ -470,6 +470,46 @@
 ***** DONE Linux Slab 分配器剖析
 	  CLOSED: [2016-05-09 周一 18:20]
 	  - State "DONE"       from "TODO"       [2016-05-09 周一 18:20]
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php][第一部份 Linux 的规划与安装]] [40%]
+	 * [X] Linux是什么
+	 * [X] Linux如何学习
+	 * [ ] 主机规划与磁盘分区
+	 * [ ] 安装CentOS 5.x与多重引导技巧
+	 * [ ] 首次登陆与在线求助 man page
+
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php#part2][第二部分 Linux 文件、目录与磁盘格式]]
+	 * [ ] Linux文件权限与目录配置
+	 * [ ] Linux文件与目录管理
+	 * [ ] Linux 磁盘与文件系统管理
+	 * [ ] 文件的压缩与打包
+
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php#part3][第三部分：学习 Shell 与 Shell scripts]]
+	 * [ ] vim程序编辑器
+	 * [ ] 认识与学习 BASH
+	 * [ ] 正规表示法与文件格式化处理
+	 * [ ] 学习 shell scripts
+
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php#part4][第四部分：Linux 使用者管理]]
+	 * [ ] Linux 账号管理与 ACL 权限控制
+	 * [ ] 磁盘配额(Quota)与进阶文件系统管理
+	 * [ ] 例行性工作排程 (crontab)
+	 * [ ] 程序管理与 SELinux 初探
+
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php#part5][第五部分：Linux 系统管理员]]
+	 * [ ] 认识系统服务(daemon)
+	 * [ ] 认识与分析登录档
+	 * [ ] 启动流程、模块管理与 loader
+	 * [ ] 系统配置工具(网络与打印机)与硬件侦测
+	 * [ ] 软件安装：原始码与 Tarball
+	 * [ ] 软件安装：RPM, SRPM 与 YUM 功能
+	 * [ ] X Window 配置介绍
+	 * [ ] Linux 备份策略
+	 * [ ] 核心编译
+
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_server/#part1][第一部份：架站前的进修专区]]
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_server/#part2][第二部分：主机的简易防火措施]]
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_server/#part3][第三部分：局域网络内常见的服务器架设]]
+**** TODO [[http://vbird.dic.ksu.edu.tw/linux_server/#part4][第四部分：常见因特网服务器架设]]
 **** TODO stl allocate
 **** TODO 堆
 **** TODO 算法
