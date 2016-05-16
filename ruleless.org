@@ -185,14 +185,20 @@
 ***** DONE 武器时装相关BUG修复/武器时装分区功能
 	  CLOSED: [2016-05-07 周六 11:21]
 	  - State "DONE"       from "TODO"       [2016-05-07 周六 11:21]
-**** TODO <2016-05-09 周一> [66%]
-***** TODO 国战竞猜活动入口超时追踪及解决
+**** DONE <2016-05-09 周一> [100%]
+	 CLOSED: [2016-05-16 周一 09:49]
+	 - State "DONE"       from "TODO"       [2016-05-16 周一 09:49]
 ***** DONE 寄售行中将可进阶的紫装归类到橙色装备中
 	  CLOSED: [2016-05-12 周四 17:26]
 	  - State "DONE"       from "TODO"       [2016-05-12 周四 17:26]
 ***** DONE 微端下载库由 Winnet 改为 libcurl
 	  CLOSED: [2016-05-12 周四 11:05]
 	  - State "DONE"       from "TODO"       [2016-05-12 周四 11:05]
+**** TODO <2016-05-16 周一> [100%]
+***** DONE 鼠标点击命中水域时，在水面显示地面光效，而非水底；支持一种新的载具类型：船。船在陆地时贴地行进，在水面时可以漂浮于水面
+	  CLOSED: [2016-05-16 周一 09:51]
+	  - State "DONE"       from "TODO"       [2016-05-16 周一 09:51]
+**** TODO 国战竞猜活动入口超时追踪及解决
 **** TODO 外网内存破坏问题追踪
 **** TODO 搭建 gitlab 服务器
 **** TODO 微客户端报错修复
@@ -458,9 +464,9 @@
 ***** DONE 为 kmem 编写测试程序
 	  CLOSED: [2016-05-09 周一 11:27]
 	  - State "DONE"       from "TODO"       [2016-05-09 周一 11:27]
-**** TODO <2016-05-09 周一> [60%]
-***** TODO AsyncNet 库中 AsyncCore 设计
-***** TODO P2P 原理及实现
+**** DONE <2016-05-09 周一> [100%]
+	 CLOSED: [2016-05-16 周一 09:53]
+	 - State "DONE"       from "TODO"       [2016-05-16 周一 09:53]
 ***** DONE 使用 iptables 配置防火墙
 	  CLOSED: [2016-05-12 周四 11:57]
 	  - State "DONE"       from "TODO"       [2016-05-12 周四 11:57]
@@ -470,13 +476,16 @@
 ***** DONE Linux Slab 分配器剖析
 	  CLOSED: [2016-05-09 周一 18:20]
 	  - State "DONE"       from "TODO"       [2016-05-09 周一 18:20]
-**** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php][第一部份 Linux 的规划与安装]] [40%]
-	 * [X] Linux是什么
-	 * [X] Linux如何学习
-	 * [ ] 主机规划与磁盘分区
-	 * [ ] 安装CentOS 5.x与多重引导技巧
-	 * [ ] 首次登陆与在线求助 man page
-
+**** TODO <2016-05-16 周一> [0%]
+***** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php][第一部份 Linux 的规划与安装]] [40%]
+	  * [X] Linux是什么
+	  * [X] Linux如何学习
+	  * [ ] 主机规划与磁盘分区
+	  * [ ] 安装CentOS 5.x与多重引导技巧
+	  * [ ] 首次登陆与在线求助 man page
+***** TODO 反向代理服务器初步实现
+**** TODO AsyncNet 库中 AsyncCore 设计
+**** TODO P2P 原理及实现
 **** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php#part2][第二部分 Linux 文件、目录与磁盘格式]]
 	 * [ ] Linux文件权限与目录配置
 	 * [ ] Linux文件与目录管理
