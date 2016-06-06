@@ -524,8 +524,12 @@
 	  5. Socket 编程以及网络通信库。
 	  6. 题目：Bitmap
 
-**** TODO <2016-06-06 周一> [%]
+**** TODO <2016-06-06 周一> [0%]
 ***** TODO AsyncNet 库中 AsyncCore 设计
+***** TODO AsyncNet 中的数据结构
+	  + [ ] IVECTOR
+	  + [ ] IMEMNODE
+	  + [ ] IQUEUE
 ***** TODO md文档：Unix 编程环境下的线程知识
 ***** TODO md文档：Unix 编程环境下的 I/O
 ***** TODO md文档：Unix 编程环境下的进程IPC
