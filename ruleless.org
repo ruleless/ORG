@@ -209,320 +209,323 @@
 *** 2016/06
 **** DONE <2016-05-30 周一> [66%]
 	 CLOSED: [2016-06-06 周一 09:54]
-	 - State "DONE"       from "TODO"       [2016-06-06 周一 09:54]
+	 - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 09:54]
 ***** DONE 载具技能体验优化
 	  CLOSED: [2016-06-06 周一 09:53]
-	  - State "DONE"       from "TODO"       [2016-06-06 周一 09:53]
+	  - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 09:53]
 ***** DONE 龙舟地图载具抖动问题
 	  CLOSED: [2016-06-06 周一 09:53]
-	  - State "DONE"       from "TODO"       [2016-06-06 周一 09:53]
-**** TODO <2016-06-06 周一> [%]
-**** TODO 制作10M(或以下)登录器，游戏客户端所含文件在玩家第一次运行登录器后再开始下载。
-	 + [X] 游戏安装更新项只更新最新的一个版本组
-	 + [X] 展开游戏安装包时，不检测mpk完整性
-	 + [X] 游戏安装包安装完成后可支持设置本地的内测或压测版本号
-	 + [X] 安装游戏时根据需要删除Bin和Data目录
-	 + [ ] 游戏安装包安装一次后不可再次安装
-	 + [ ] 登录器时常卡死
+	  - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 09:53]
+**** TODO <2016-06-06 周一> [100%]
+***** DONE 制作10M(或以下)登录器，游戏客户端所含文件在玩家第一次运行登录器后再开始下载。
+	  CLOSED: [2016-06-07 周二 18:37]
+	  - State "DONE"       from "TODO"       [2016-06-07 周二 18:37]
+	  + [X] 游戏安装更新项只更新最新的一个版本组
+	  + [X] 展开游戏安装包时，不检测MPK完整性
+	  + [X] 游戏安装包安装完成后可支持设置本地的内测或压测版本号
+	  + [X] 安装游戏时根据需要删除BIN和DATA目录
+	  + [X] 安装过程中不弹更新公告
+	  + [X] 游戏安装包安装一次后不可再次安装
+	  + [ ] 登录器时常卡死
 **** TODO 新增参数标记玩家是大端登陆还是微端登陆
 **** TODO 坐骑界面的图标底图显示优化
 **** TODO 国战竞猜活动入口超时追踪及解决
-**** TODO 搭建 gitlab 服务器
+**** TODO 搭建 GITLAB 服务器
 
-*** Bug Trace
+*** BUG TRACE
 
-**** todo 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
+**** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
 
 ** Schedule For Career
 
 *** 2016/01
 
-**** done <2016-01-04 周一> [100%]
-	 closed: [2016-01-10 周日 09:52]
-	 - state "done"       from "todo"       [2016-01-10 周日 09:52]
-***** done 读：《tcp/ip协议详解》
-	  closed: [2016-01-10 周日 09:52]
-	  - state "done"       from "todo"       [2016-01-10 周日 09:52]
+**** DONE <2016-01-04 周一> [100%]
+	 CLOSED: [2016-01-10 周日 09:52]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-10 周日 09:52]
+***** DONE 读：《TCP/IP协议详解》
+	  CLOSED: [2016-01-10 周日 09:52]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-10 周日 09:52]
 	  * 广播与多播
-	  * igmp组管理协议
+	  * IGMP组管理协议
 
-**** done <2016-01-11 周一> [100%]
-	 closed: [2016-01-18 周一 10:39]
-	 - state "done"       from "todo"       [2016-01-18 周一 10:39]
-***** done 利用 sigar 收集和显示系统信息
-	  closed: [2016-01-18 周一 10:38]
-	  - state "done"       from "processing" [2016-01-18 周一 10:38]
-	  - state "processing" from "todo"       [2016-01-11 周一 10:14]
-	  - cpu命令
-	  - mem命令
-	  - update命令
-***** done 应用程序主循环设计
-	  closed: [2016-01-14 周四 16:06]
-	  - state "done"       from "todo"       [2016-01-14 周四 16:06]
-***** done c++使用继承时子对象的内存布局
-	  closed: [2016-01-12 周二 22:53]
-	  - state "done"       from "todo"       [2016-01-12 周二 22:53]
-***** done snail跨平台编译
-	  closed: [2016-01-17 周日 14:11]
-	  - state "done"       from "todo"       [2016-01-17 周日 14:11]
-***** done snail新增trace支持
-	  closed: [2016-01-17 周日 14:11]
-	  - state "done"       from "todo"       [2016-01-17 周日 14:11]
+**** DONE <2016-01-11 周一> [100%]
+	 CLOSED: [2016-01-18 周一 10:39]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-18 周一 10:39]
+***** DONE 利用 SIGAR 收集和显示系统信息
+	  CLOSED: [2016-01-18 周一 10:38]
+	  - STATE "DONE"       FROM "PROCESSING" [2016-01-18 周一 10:38]
+	  - STATE "PROCESSING" FROM "TODO"       [2016-01-11 周一 10:14]
+	  - CPU命令
+	  - MEM命令
+	  - UPDATE命令
+***** DONE 应用程序主循环设计
+	  CLOSED: [2016-01-14 周四 16:06]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-14 周四 16:06]
+***** DONE C++使用继承时子对象的内存布局
+	  CLOSED: [2016-01-12 周二 22:53]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-12 周二 22:53]
+***** DONE SNAIL跨平台编译
+	  CLOSED: [2016-01-17 周日 14:11]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-17 周日 14:11]
+***** DONE SNAIL新增TRACE支持
+	  CLOSED: [2016-01-17 周日 14:11]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-17 周日 14:11]
 
-**** done <2016-01-18 周一> [100%]
-	 closed: [2016-01-25 周一 10:34]
-	 - state "done"       from "todo"       [2016-01-25 周一 10:34]
-***** done tcp 连接的建立和终止
-	  closed: [2016-01-18 周一 22:55]
-	  - state "done"       from "done"       [2016-01-25 周一 10:34]
-***** done tcp 交互数据流
-	  closed: [2016-01-21 周四 18:30]
-	  - state "done"       from "todo"       [2016-01-21 周四 18:30]
-***** done tcp 成块数据流
-	  closed: [2016-01-21 周四 18:30]
-	  - state "done"       from "todo"       [2016-01-21 周四 18:30]
-***** done tcp 的超时和重传机制
-	  closed: [2016-01-24 周日 17:17]
-	  - state "done"       from "todo"       [2016-01-24 周日 17:17]
+**** DONE <2016-01-18 周一> [100%]
+	 CLOSED: [2016-01-25 周一 10:34]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-25 周一 10:34]
+***** DONE TCP 连接的建立和终止
+	  CLOSED: [2016-01-18 周一 22:55]
+	  - STATE "DONE"       FROM "DONE"       [2016-01-25 周一 10:34]
+***** DONE TCP 交互数据流
+	  CLOSED: [2016-01-21 周四 18:30]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-21 周四 18:30]
+***** DONE TCP 成块数据流
+	  CLOSED: [2016-01-21 周四 18:30]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-21 周四 18:30]
+***** DONE TCP 的超时和重传机制
+	  CLOSED: [2016-01-24 周日 17:17]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-24 周日 17:17]
 
-**** done <2016-01-25 周一> [100%]
-	 closed: [2016-02-01 周一 09:57]
-	 - state "done"       from "todo"       [2016-02-01 周一 09:57]
-***** done 实现基于共享内存的主从式消息订阅/发布模型
-	  closed: [2016-02-01 周一 09:56]
-	  - state "done"       from "todo"       [2016-02-01 周一 09:56]
-***** done tcp 坚持定时器
-	  closed: [2016-01-26 周二 10:53]
-	  - state "done"       from "done"       [2016-02-01 周一 09:57]
-***** done tcp 保活定时器(keep alive)
-	  closed: [2016-01-26 周二 10:53]
-	  - state "done"       from "todo"       [2016-01-26 周二 10:53]
+**** DONE <2016-01-25 周一> [100%]
+	 CLOSED: [2016-02-01 周一 09:57]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-01 周一 09:57]
+***** DONE 实现基于共享内存的主从式消息订阅/发布模型
+	  CLOSED: [2016-02-01 周一 09:56]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-01 周一 09:56]
+***** DONE TCP 坚持定时器
+	  CLOSED: [2016-01-26 周二 10:53]
+	  - STATE "DONE"       FROM "DONE"       [2016-02-01 周一 09:57]
+***** DONE TCP 保活定时器(KEEP ALIVE)
+	  CLOSED: [2016-01-26 周二 10:53]
+	  - STATE "DONE"       FROM "TODO"       [2016-01-26 周二 10:53]
 
 *** 2016/02
 
-**** done <2016-02-01 周一> [100%]
-	 closed: [2016-02-19 周五 09:38]
-	 - state "done"       from "todo"       [2016-02-19 周五 09:38]
-***** done 调整和改善centos配置的makefile
-	  closed: [2016-02-02 周二 15:58]
-	  - state "done"       from "todo"       [2016-02-02 周二 15:58]
-***** done linux 基本命令总结
-	  closed: [2016-02-02 周二 15:41]
-	  - state "done"       from "todo"       [2016-02-02 周二 15:41]
-***** done centos 7 systemd服务简介
-	  closed: [2016-02-19 周五 09:37]
-	  - state "done"       from "todo"       [2016-02-19 周五 09:37]
+**** DONE <2016-02-01 周一> [100%]
+	 CLOSED: [2016-02-19 周五 09:38]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-19 周五 09:38]
+***** DONE 调整和改善CENTOS配置的MAKEFILE
+	  CLOSED: [2016-02-02 周二 15:58]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-02 周二 15:58]
+***** DONE LINUX 基本命令总结
+	  CLOSED: [2016-02-02 周二 15:41]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-02 周二 15:41]
+***** DONE CENTOS 7 SYSTEMD服务简介
+	  CLOSED: [2016-02-19 周五 09:37]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-19 周五 09:37]
 
-**** done <2016-02-19 周五> [100%]
-	 closed: [2016-02-25 周四 09:50]
-	 - state "done"       from "todo"       [2016-02-25 周四 09:50]
-***** done 网络服务器开发总结：http://my.oschina.net/u/181613/blog/596022?fromerr=u59ofnaj
-	  closed: [2016-02-19 周五 19:14]
-	  - state "done"       from "todo"       [2016-02-19 周五 19:14]
+**** DONE <2016-02-19 周五> [100%]
+	 CLOSED: [2016-02-25 周四 09:50]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-25 周四 09:50]
+***** DONE 网络服务器开发总结：HTTP://MY.OSCHINA.NET/U/181613/BLOG/596022?FROMERR=U59OFNAJ
+	  CLOSED: [2016-02-19 周五 19:14]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-19 周五 19:14]
 
-**** done <2016-02-22 周一> [100%]
-	 closed: [2016-02-28 周日 20:22]
-	 - state "done"       from "todo"       [2016-02-28 周日 20:22]
-***** done 读 zmq 文档
-	  closed: [2016-02-28 周日 20:18]
-	  - state "done"       from "todo"       [2016-02-28 周日 20:18]
-****** done zmq基础
-	   closed: [2016-02-28 周日 20:18]
-	   - state "done"       from "todo"       [2016-02-28 周日 20:18]
-****** done zmq进阶
-	   closed: [2016-02-28 周日 20:18]
-	   - state "done"       from "todo"       [2016-02-28 周日 20:18]
-***** done 读 《游戏引擎架构》 [7/7]
-	  closed: [2016-02-28 周日 20:22]
-	  - state "done"       from "todo"       [2016-02-28 周日 20:22]
-	  - [x] 专业工具
-	  - [x] 软件工程基础
-	  - [x] 游戏所需的 3d 数学
-	  - [x] 游戏支持系统
-	  - [x] 游戏循环及实时模拟
-	  - [x] 人体接口学设备
-	  - [x] 调试及开发工具
+**** DONE <2016-02-22 周一> [100%]
+	 CLOSED: [2016-02-28 周日 20:22]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:22]
+***** DONE 读 ZMQ 文档
+	  CLOSED: [2016-02-28 周日 20:18]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:18]
+****** DONE ZMQ基础
+	   CLOSED: [2016-02-28 周日 20:18]
+	   - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:18]
+****** DONE ZMQ进阶
+	   CLOSED: [2016-02-28 周日 20:18]
+	   - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:18]
+***** DONE 读 《游戏引擎架构》 [7/7]
+	  CLOSED: [2016-02-28 周日 20:22]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:22]
+	  - [X] 专业工具
+	  - [X] 软件工程基础
+	  - [X] 游戏所需的 3D 数学
+	  - [X] 游戏支持系统
+	  - [X] 游戏循环及实时模拟
+	  - [X] 人体接口学设备
+	  - [X] 调试及开发工具
 
 *** 2016/03
 
-**** done <2016-02-29 周一> [100%]
-	 closed: [2016-03-06 周日 18:24]
-	 - state "done"       from "todo"       [2016-03-06 周日 18:24]
-***** done wireshark网络包分析攻击/bpf包过滤语言
-	  closed: [2016-03-06 周日 18:23]
-	  - state "done"       from "todo"       [2016-03-06 周日 18:23]
+**** DONE <2016-02-29 周一> [100%]
+	 CLOSED: [2016-03-06 周日 18:24]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:24]
+***** DONE WIRESHARK网络包分析攻击/BPF包过滤语言
+	  CLOSED: [2016-03-06 周日 18:23]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:23]
 
-	  一条完整的 bpf 包过滤规则的构成是 ` *proto dir type* id'。例如
-	  `ip dst port 21', `icmp dst host 192.168.1.1', `tcp src port 22' 等，都是
+	  一条完整的 BPF 包过滤规则的构成是 ` *PROTO DIR TYPE* ID'。例如
+	  `IP DST PORT 21', `ICMP DST HOST 192.168.1.1', `TCP SRC PORT 22' 等，都是
 	  完整的包过滤规则。另外，我们可以通过与/或关系将这些规则组合起来形成强大的
-	  bpf 包过滤语言。至于解析实现，采用与/或树将是不错的选择：整棵树由与节点、
+	  BPF 包过滤语言。至于解析实现，采用与/或树将是不错的选择：整棵树由与节点、
 	  或节点以及包含完整过滤规则的叶子节点构成。
 
-***** done 阅读 《游戏引擎架构》 [1/1]
-	  closed: [2016-03-06 周日 18:13]
-	  - state "done"       from "todo"       [2016-03-06 周日 18:13]
-	  * [x] 渲染引擎
-***** done 《取悦的工序--如何理解游戏》
-	  closed: [2016-03-06 周日 18:12]
-	  - state "done"       from "todo"       [2016-03-06 周日 18:12]
+***** DONE 阅读 《游戏引擎架构》 [1/1]
+	  CLOSED: [2016-03-06 周日 18:13]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:13]
+	  * [X] 渲染引擎
+***** DONE 《取悦的工序--如何理解游戏》
+	  CLOSED: [2016-03-06 周日 18:12]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:12]
 
-**** done <2016-03-07 周一> [100%]
-	 closed: [2016-03-14 周一 11:14]
-	 - state "done"       from "todo"       [2016-03-14 周一 11:14]
-***** done 完成《游戏引擎架构》的阅读
-	  closed: [2016-03-14 周一 11:14]
-	  - state "done"       from "todo"       [2016-03-14 周一 11:14]
+**** DONE <2016-03-07 周一> [100%]
+	 CLOSED: [2016-03-14 周一 11:14]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-14 周一 11:14]
+***** DONE 完成《游戏引擎架构》的阅读
+	  CLOSED: [2016-03-14 周一 11:14]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-14 周一 11:14]
 
-	  * [x] 动画系统
+	  * [X] 动画系统
 	  * [ ] 物理系统
 	  * [ ] 游戏性
 
-***** done redmine 安装指引
-	  closed: [2016-03-14 周一 11:14]
-	  - state "done"       from "todo"       [2016-03-14 周一 11:14]
-***** done mysql命令整理
-	  closed: [2016-03-10 周四 10:52]
-	  - state "done"       from "todo"       [2016-03-10 周四 10:52]
+***** DONE REDMINE 安装指引
+	  CLOSED: [2016-03-14 周一 11:14]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-14 周一 11:14]
+***** DONE MYSQL命令整理
+	  CLOSED: [2016-03-10 周四 10:52]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-10 周四 10:52]
 
-**** done <2016-03-14 周一> [100%]
-	 closed: [2016-03-21 周一 09:46]
-	 - state "done"       from "todo"       [2016-03-21 周一 09:46]
-***** done 从业经验总结
-	  closed: [2016-03-17 周四 10:23]
-	  - state "done"       from "todo"       [2016-03-17 周四 10:23]
-***** done python 语法总结
-	  closed: [2016-03-18 周五 11:41]
-	  - state "done"       from "todo"       [2016-03-18 周五 11:41]
-***** done my tetris
-	  closed: [2016-03-21 周一 09:45]
-	  - state "done"       from "todo"       [2016-03-21 周一 09:45]
+**** DONE <2016-03-14 周一> [100%]
+	 CLOSED: [2016-03-21 周一 09:46]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-21 周一 09:46]
+***** DONE 从业经验总结
+	  CLOSED: [2016-03-17 周四 10:23]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-17 周四 10:23]
+***** DONE PYTHON 语法总结
+	  CLOSED: [2016-03-18 周五 11:41]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-18 周五 11:41]
+***** DONE MY TETRIS
+	  CLOSED: [2016-03-21 周一 09:45]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-21 周一 09:45]
 
-	  重新使用 2d 平移、旋转方程实现
-**** done <2016-03-21 周一> [100%]
-	 closed: [2016-03-28 周一 10:22]
-	 - state "done"       from "todo"       [2016-03-28 周一 10:22]
+	  重新使用 2D 平移、旋转方程实现
+**** DONE <2016-03-21 周一> [100%]
+	 CLOSED: [2016-03-28 周一 10:22]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-28 周一 10:22]
 
-***** done the bsd packet filter
-	  closed: [2016-03-24 周四 14:30]
-	  - state "done"       from "todo"       [2016-03-24 周四 14:30]
+***** DONE THE BSD PACKET FILTER
+	  CLOSED: [2016-03-24 周四 14:30]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-24 周四 14:30]
 
-	  包过滤可用布尔表达式树或控制流图(cfg)实现，bpf 利用 cfg 实现。
-***** done tcp 的性能和未来
-	  closed: [2016-03-24 周四 09:33]
-	  - state "done"       from "todo"       [2016-03-24 周四 09:33]
-***** done c++ template（编译器泛型技术）
-	  closed: [2016-03-22 周二 19:53]
-	  - state "done"       from "todo"       [2016-03-22 周二 19:53]
-***** done linux 平台下的调试工具：strace
-	  closed: [2016-03-22 周二 14:46]
-	  - state "done"       from "done"       [2016-03-28 周一 10:22]
-	  - state "done"       from "todo"       [2016-03-22 周二 14:46]
+	  包过滤可用布尔表达式树或控制流图(CFG)实现，BPF 利用 CFG 实现。
+***** DONE TCP 的性能和未来
+	  CLOSED: [2016-03-24 周四 09:33]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-24 周四 09:33]
+***** DONE C++ TEMPLATE（编译器泛型技术）
+	  CLOSED: [2016-03-22 周二 19:53]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-22 周二 19:53]
+***** DONE LINUX 平台下的调试工具：STRACE
+	  CLOSED: [2016-03-22 周二 14:46]
+	  - STATE "DONE"       FROM "DONE"       [2016-03-28 周一 10:22]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-22 周二 14:46]
 
-	  linux 平台下的系统调用追踪和分析工具，可显示一个 linux 进程的全部系统调用信息及其性能统计。
+	  LINUX 平台下的系统调用追踪和分析工具，可显示一个 LINUX 进程的全部系统调用信息及其性能统计。
 	  例：
-	  #+begin_src sh
-        $ strace -h # 显示帮助
-        $ strace -c cd ~
-        $ strace -p 2210
-	  #+end_src
+	  #+BEGIN_SRC SH
+        $ STRACE -H # 显示帮助
+        $ STRACE -C CD ~
+        $ STRACE -P 2210
+	  #+END_SRC
 
 *** 2016/04
 **** DONE <2016-03-28 周一> [100%]
 	 CLOSED: [2016-04-04 周一 18:51]
-	 - State "DONE"       from "TODO"       [2016-04-04 周一 18:51]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-04 周一 18:51]
 ***** DONE 红黑树
 	  CLOSED: [2016-04-04 周一 18:51]
-	  - State "DONE"       from "TODO"       [2016-04-04 周一 18:51]
+	  - STATE "DONE"       FROM "TODO"       [2016-04-04 周一 18:51]
 	  根据红黑树算法实现了简单的红黑树容器，包含插入和删除，但不能迭代元素。
 ***** DONE 仿函数
 	  CLOSED: [2016-03-29 周二 15:47]
-	  - State "DONE"       from "TODO"       [2016-03-29 周二 15:47]
-***** DONE stl iterator 设计
+	  - STATE "DONE"       FROM "TODO"       [2016-03-29 周二 15:47]
+***** DONE STL ITERATOR 设计
 	  CLOSED: [2016-03-28 周一 10:24]
-	  - State "DONE"       from "DONE"       [2016-04-04 周一 18:51]
-	  - State "DONE"       from "TODO"       [2016-03-28 周一 10:24]
+	  - STATE "DONE"       FROM "DONE"       [2016-04-04 周一 18:51]
+	  - STATE "DONE"       FROM "TODO"       [2016-03-28 周一 10:24]
 **** DONE <2016-04-04 周一> [100%]
 	 CLOSED: [2016-04-11 周一 09:29]
-	 - State "DONE"       from "TODO"       [2016-04-11 周一 09:29]
-***** DONE 在 github 上搭建博客
+	 - STATE "DONE"       FROM "TODO"       [2016-04-11 周一 09:29]
+***** DONE 在 GITHUB 上搭建博客
 	  CLOSED: [2016-04-11 周一 09:29]
-	  - State "DONE"       from "TODO"       [2016-04-11 周一 09:29]
+	  - STATE "DONE"       FROM "TODO"       [2016-04-11 周一 09:29]
 **** DONE <2016-04-11 周一> [100%]
 	 CLOSED: [2016-04-18 周一 14:25]
-	 - State "DONE"       from "TODO"       [2016-04-18 周一 14:25]
-***** DONE 熟悉 AsyncNet 库
+	 - STATE "DONE"       FROM "TODO"       [2016-04-18 周一 14:25]
+***** DONE 熟悉 ASYNCNET 库
 	  CLOSED: [2016-04-18 周一 14:25]
-	  - State "DONE"       from "TODO"       [2016-04-18 周一 14:25]
+	  - STATE "DONE"       FROM "TODO"       [2016-04-18 周一 14:25]
 **** DONE <2016-04-18 周一> [100%]
 	 CLOSED: [2016-04-23 周六 14:34]
-	 - State "DONE"       from "TODO"       [2016-04-23 周六 14:34]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-23 周六 14:34]
 ***** DONE 构建“软件积木”(以搭积木的方式编写应用软件)
 	  CLOSED: [2016-04-23 周六 14:33]
-	  - State "DONE"       from "TODO"       [2016-04-23 周六 14:33]
+	  - STATE "DONE"       FROM "TODO"       [2016-04-23 周六 14:33]
 
-	  已完成 cill 库的 core 模块和 cmd 模块编写
+	  已完成 CILL 库的 CORE 模块和 CMD 模块编写
 
 **** DONE <2016-04-25 周一> [100%]
 	 CLOSED: [2016-05-03 周二 10:10]
-	 - State "DONE"       from "TODO"       [2016-05-03 周二 10:10]
-***** DONE 将 AsyncNet 融合到 cill 库
+	 - STATE "DONE"       FROM "TODO"       [2016-05-03 周二 10:10]
+***** DONE 将 ASYNCNET 融合到 CILL 库
 	  CLOSED: [2016-04-30 周六 23:10]
-	  - State "DONE"       from "TODO"       [2016-04-30 周六 23:10]
-***** DONE 为 AsyncNet 编写回射测试程序
+	  - STATE "DONE"       FROM "TODO"       [2016-04-30 周六 23:10]
+***** DONE 为 ASYNCNET 编写回射测试程序
 	  CLOSED: [2016-04-30 周六 20:46]
-	  - State "DONE"       from "TODO"       [2016-04-30 周六 20:46]
+	  - STATE "DONE"       FROM "TODO"       [2016-04-30 周六 20:46]
 *** 2016/05
 **** DONE <2016-05-03 周二> [100%]
 	 CLOSED: [2016-05-09 周一 11:27]
-	 - State "DONE"       from "TODO"       [2016-05-09 周一 11:27]
-***** DONE 为 kmem 编写测试程序
+	 - STATE "DONE"       FROM "TODO"       [2016-05-09 周一 11:27]
+***** DONE 为 KMEM 编写测试程序
 	  CLOSED: [2016-05-09 周一 11:27]
-	  - State "DONE"       from "TODO"       [2016-05-09 周一 11:27]
+	  - STATE "DONE"       FROM "TODO"       [2016-05-09 周一 11:27]
 **** DONE <2016-05-09 周一> [100%]
 	 CLOSED: [2016-05-16 周一 09:53]
-	 - State "DONE"       from "TODO"       [2016-05-16 周一 09:53]
-***** DONE 使用 iptables 配置防火墙
+	 - STATE "DONE"       FROM "TODO"       [2016-05-16 周一 09:53]
+***** DONE 使用 IPTABLES 配置防火墙
 	  CLOSED: [2016-05-12 周四 11:57]
-	  - State "DONE"       from "TODO"       [2016-05-12 周四 11:57]
-***** DONE kmem 库中的 slab 算法说明
+	  - STATE "DONE"       FROM "TODO"       [2016-05-12 周四 11:57]
+***** DONE KMEM 库中的 SLAB 算法说明
 	  CLOSED: [2016-05-10 周二 18:16]
-	  - State "DONE"       from "TODO"       [2016-05-10 周二 18:16]
-***** DONE Linux Slab 分配器剖析
+	  - STATE "DONE"       FROM "TODO"       [2016-05-10 周二 18:16]
+***** DONE LINUX SLAB 分配器剖析
 	  CLOSED: [2016-05-09 周一 18:20]
-	  - State "DONE"       from "TODO"       [2016-05-09 周一 18:20]
+	  - STATE "DONE"       FROM "TODO"       [2016-05-09 周一 18:20]
 **** DONE <2016-05-16 周一> [50%]
 	 CLOSED: [2016-05-23 周一 09:49]
-	 - State "DONE"       from "TODO"       [2016-05-23 周一 09:49]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-23 周一 09:49]
 ***** DONE 反向代理服务器初步实现
 	  CLOSED: [2016-05-23 周一 09:48]
-	  - State "DONE"       from "TODO"       [2016-05-23 周一 09:48]
+	  - STATE "DONE"       FROM "TODO"       [2016-05-23 周一 09:48]
 **** DONE <2016-05-23 周一> [75%]
 	 CLOSED: [2016-05-30 周一 12:02]
-	 - State "DONE"       from "TODO"       [2016-05-30 周一 12:02]
-***** DONE Ini 解析器完善
+	 - STATE "DONE"       FROM "TODO"       [2016-05-30 周一 12:02]
+***** DONE INI 解析器完善
 	  CLOSED: [2016-05-26 周四 10:34]
-	  - State "DONE"       from "TODO"       [2016-05-26 周四 10:34]
-***** DONE md文档：Unix 用户态下的进程知识
+	  - STATE "DONE"       FROM "TODO"       [2016-05-26 周四 10:34]
+***** DONE MD文档：UNIX 用户态下的进程知识
 	  CLOSED: [2016-05-28 周六 23:05]
-	  - State "DONE"       from "TODO"       [2016-05-28 周六 23:05]
-***** DONE md文档：Unix 编程环境下的文件系统
+	  - STATE "DONE"       FROM "TODO"       [2016-05-28 周六 23:05]
+***** DONE MD文档：UNIX 编程环境下的文件系统
 	  CLOSED: [2016-05-28 周六 15:01]
-	  - State "DONE"       from "TODO"       [2016-05-28 周六 15:01]
+	  - STATE "DONE"       FROM "TODO"       [2016-05-28 周六 15:01]
 *** 2016/06
 **** DONE <2016-05-30 周一> [100%]
 	 CLOSED: [2016-06-06 周一 10:08]
-	 - State "DONE"       from "TODO"       [2016-06-06 周一 10:08]
+	 - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 10:08]
 ***** DONE 腾讯公司后台安全工程师职位面试
 	  CLOSED: [2016-06-06 周一 10:08]
-	  - State "DONE"       from "TODO"       [2016-06-06 周一 10:08]
+	  - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 10:08]
 
 	  涉及点：
 	  1. 架构。这似乎是每次必答题，我这方面的造诣还远远不够看的。
 	  2. 共享内存知识点。使用共享内存时应注意什么？1. 避免操作映射区以外的内存；2. ？
 	  3. 共享内存时的同步手段？信号量。
 	  4. 设计模式。
-	  5. Socket 编程以及网络通信库。
-	  6. 题目：Bitmap
+	  5. SOCKET 编程以及网络通信库。
+	  6. 题目：BITMAP
 
 **** TODO <2016-06-06 周一> [0%]
 ***** TODO AsyncNet 库中 AsyncCore 设计
