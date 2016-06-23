@@ -247,11 +247,15 @@
 ***** DONE 数据下载写磁盘时增加应用层缓存，以期通过减少磁盘I/O频度来达到提高磁盘I/O效率的目的
 	  CLOSED: [2016-06-16 周四 14:20]
 	  - State "DONE"       from "TODO"       [2016-06-16 周四 14:20]
-**** TODO <2016-06-20 周一> [%]
+**** TODO <2016-06-20 周一> [33%]
+***** TODO 寄售搜索结果显示BUG修复；支持按职业类别搜索寄售物品
 ***** TODO 寄售购买物品弹出框中添加MAX功能
-***** TODO 登录器支持先微端后大端式的下载、安装方式 [0%]
-	  * [ ] 更新完必要条目之后，玩家可进游戏，但登录器必须继续完成可选条目的更新
-	  * [ ] 游戏逻辑支持微端转大端(例如：Creature.mpk表示微端模式下所需的资源，则Creature1.mpk表示完整端模式下剩余的资源)
+***** DONE 登录器支持先微端后大端式的下载、安装方式 [100%]
+	  CLOSED: [2016-06-23 周四 19:27]
+	  - State "DONE"       from "TODO"       [2016-06-23 周四 19:27]
+	  * [X] 更新完必要条目之后，玩家可进游戏，但登录器必须继续完成可选条目的更新
+	  * [X] 游戏逻辑支持微端转大端(例如：Creature.mpk表示微端模式下所需的资源，则Creature1.mpk表示完整端模式下剩余的资源)
+	  * [X] 下载进度由单一条目进度改为总进度；在玩家下载游戏安装包时，显示可进入提示
 **** TODO 多国国战竞猜(许天明)
 **** TODO 国战竞猜活动入口超时追踪及解决
 **** TODO 搭建 GITLAB 服务器
@@ -583,17 +587,18 @@
 	  * [X] 主机间的远过程调用：Sun RPC
 	  * [X] Posix fcntl 记录上锁
 
-**** TODO <2016-06-20 周一> [%]
+**** TODO <2016-06-20 周一> [0%]
 ***** TODO KBE环境搭建
+***** TODO C++临时对象构建场景 [md]
+***** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php][第一部份 Linux 的规划与安装]] [40%]
+	  * [X] Linux是什么
+	  * [X] Linux如何学习
+	  * [ ] 主机规划与磁盘分区
+	  * [ ] 安装CentOS 5.x与多重引导技巧
+	  * [ ] 首次登陆与在线求助 man page
 **** TODO md文档：Unix 环境下的 Socket 编程知识
 **** TODO md文档：Unix 环境下的同步机制
 **** TODO P2P 原理及实现
-**** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php][第一部份 Linux 的规划与安装]] [40%]
-	 * [X] Linux是什么
-	 * [X] Linux如何学习
-	 * [ ] 主机规划与磁盘分区
-	 * [ ] 安装CentOS 5.x与多重引导技巧
-	 * [ ] 首次登陆与在线求助 man page
 **** TODO [[http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php#part2][第二部分 Linux 文件、目录与磁盘格式]]
 	 * [ ] Linux文件权限与目录配置
 	 * [ ] Linux文件与目录管理
