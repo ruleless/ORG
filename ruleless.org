@@ -627,6 +627,7 @@
 	  * [ ] 安装CentOS 5.x与多重引导技巧
 	  * [ ] 首次登陆与在线求助 man page
 ***** TODO kbe 架构解析
+	  * [X] kbengine 消息处理函数注册
 **** TODO md文档：Unix 环境下的 Socket 编程知识
 **** TODO md文档：Unix 环境下的同步机制
 **** TODO P2P 原理及实现
