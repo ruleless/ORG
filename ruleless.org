@@ -637,11 +637,11 @@
 
 *** 2016/07
 **** TODO <2016-07-04 周一> [0%]
-***** TODO [[http://linux.vbird.org/linux_basic/#part1][第一部份 Linux 的规划与安装]] [60%]
+***** TODO [[http://linux.vbird.org/linux_basic/#part1][第一部份 Linux 的规划与安装]] [80%]
 	  * [X] Linux是什么
 	  * [X] Linux如何学习
 	  * [X] 主机规划与磁盘分区
-	  * [ ] 安装CentOS 5.x与多重引导技巧
+	  * [X] 安装CentOS 5.x与多重引导技巧
 	  * [ ] 首次登陆与在线求助 man page
 ***** TODO kbe代码阅览
 **** TODO md文档：Unix 环境下的 Socket 编程知识
