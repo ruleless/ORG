@@ -283,8 +283,10 @@
 	  CLOSED: [2016-07-01 周五 11:49]
 	  - State "DONE"       from "TODO"       [2016-07-01 周五 11:49]
 *** 2016/07
-**** TODO <2016-07-04 周一> [0%]
-***** TODO 登录器BUG修复：下载所显示进度与实际进度不匹配
+**** TODO <2016-07-04 周一> [50%]
+***** DONE 登录器BUG修复：下载所显示进度与实际进度不匹配
+	  CLOSED: [2016-07-05 周二 19:22]
+	  - State "DONE"       from "TODO"       [2016-07-05 周二 19:22]
 ***** TODO 登录器支持开机启动
 **** TODO 国战竞猜活动入口超时追踪及解决
 **** TODO 搭建 Gitlab 服务器
@@ -635,10 +637,10 @@
 
 *** 2016/07
 **** TODO <2016-07-04 周一> [0%]
-***** TODO [[http://linux.vbird.org/linux_basic/#part1][第一部份 Linux 的规划与安装]] [40%]
+***** TODO [[http://linux.vbird.org/linux_basic/#part1][第一部份 Linux 的规划与安装]] [60%]
 	  * [X] Linux是什么
 	  * [X] Linux如何学习
-	  * [ ] 主机规划与磁盘分区
+	  * [X] 主机规划与磁盘分区
 	  * [ ] 安装CentOS 5.x与多重引导技巧
 	  * [ ] 首次登陆与在线求助 man page
 ***** TODO kbe代码阅览
