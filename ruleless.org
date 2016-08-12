@@ -334,6 +334,10 @@
 ***** TODO 联运登录器 [0/13]
 	  + [ ] logo
 	  + [ ] 链接
+		官网地址：http://syzj.9377.com/main.html
+	    论坛地址：http://bbs.9377.com/forum-912-1.html
+	    客服地址：http://www.9377.com/kefu.html
+	    充值地址：http://wvw.9377.com/pay_index.php?gid=292
 	  + [ ] 注册账号
 	  + [ ] 轮播图和新闻
 	  + [ ] 补丁下载地址
