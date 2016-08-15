@@ -324,20 +324,23 @@
 ***** DONE 双人坐骑支持
 	  CLOSED: [2016-08-08 周一 09:40]
 	  - State "DONE"       from "TODO"       [2016-08-08 周一 09:40]
-**** TODO <2016-08-08 周一> [50%]
+**** DONE <2016-08-08 周一> [66%]
+	 CLOSED: [2016-08-15 周一 09:38]
+	 - State "DONE"       from "TODO"       [2016-08-15 周一 09:38]
 ***** DONE 双人坐骑测试跟进
 	  CLOSED: [2016-08-08 周一 17:04]
 	  - State "DONE"       from "TODO"       [2016-08-08 周一 17:04]
 ***** DONE 联运版本的微端资源分离工具
 	  CLOSED: [2016-08-09 周二 15:09]
 	  - State "DONE"       from "TODO"       [2016-08-09 周二 15:09]
+**** TODO <2016-08-15 周一> [0%]
 ***** TODO 联运登录器 [0/13]
 	  + [ ] logo
 	  + [ ] 链接
-		官网地址：http://syzj.9377.com/main.html
-	    论坛地址：http://bbs.9377.com/forum-912-1.html
-	    客服地址：http://www.9377.com/kefu.html
-	    充值地址：http://wvw.9377.com/pay_index.php?gid=292
+	   	官网地址：http://syzj.9377.com/main.html
+	   	论坛地址：http://bbs.9377.com/forum-912-1.html
+	   	客服地址：http://www.9377.com/kefu.html
+	   	充值地址：http://wvw.9377.com/pay_index.php?gid=292
 	  + [ ] 注册账号
 	  + [ ] 轮播图和新闻
 	  + [ ] 补丁下载地址
@@ -761,10 +764,18 @@
 ***** DONE DNS解析
 	  CLOSED: [2016-08-08 周一 09:40]
 	  - State "DONE"       from "TODO"       [2016-08-08 周一 09:40]
-**** TODO <2016-08-08 周一> [0%]
-***** TODO 了解kcp的使用
-***** TODO 大略了解go语言
-***** TODO 理解kcptun原理
+**** DONE <2016-08-08 周一> [100%]
+	 CLOSED: [2016-08-15 周一 09:33]
+	 - State "DONE"       from "TODO"       [2016-08-15 周一 09:33]
+***** DONE 了解kcp的使用
+	  CLOSED: [2016-08-15 周一 09:33]
+	  - State "DONE"       from "TODO"       [2016-08-15 周一 09:33]
+***** DONE 理解kcptun原理
+	  CLOSED: [2016-08-15 周一 09:33]
+	  - State "DONE"       from "TODO"       [2016-08-15 周一 09:33]
+**** TODO <2016-08-15 周一> [0%]
+***** TODO 完成fasttun的初步开发工作
+**** TODO 大略了解go语言
 **** TODO 连接服在网游服务器中的地位及职责
 **** TODO 抽离出 Linux 内核源码中使用的数据结构
 **** TODO 格蠹汇编
