@@ -37,4 +37,8 @@
 
   12. [X] 跟我一起写Makefile
 
-* TODO 读书计划 [%]
+* TODO 读书计划 [0%]
+
+** TODO Linux Kernel Development [/]
+** TODO 算法导论 [/]
+** TODO 编译原理(龙书) [/]
