@@ -40,6 +40,7 @@
    * [ ] Learning.the.Bash.Shell.3rd
    * [ ] proactor
    * [ ] Linux.Kernel.Development.3rd.Edition
+   * [X] Linux系统编程
    * [X] 跟我一起写Makefile
 
 ** Article
