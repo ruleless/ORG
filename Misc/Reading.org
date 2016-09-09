@@ -92,4 +92,4 @@
    * [ ] 现代编译原理(虎书)
 ** Algorithm
 
-   * [ ] ARQ协议 (Automatic Repeat reQuest)
+   * [X] ARQ协议 (Automatic Repeat reQuest)

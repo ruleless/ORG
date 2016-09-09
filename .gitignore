@@ -5,6 +5,7 @@
 *.user
 *.html
 *.bmp
+*.png
 *.tex
 /Obj
 /obj
