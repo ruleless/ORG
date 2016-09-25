@@ -867,7 +867,7 @@
 ***** DONE fasttun Bug修复
 	  CLOSED: [2016-09-01 周四 11:18]
 	  - State "DONE"       from "TODO"       [2016-09-01 周四 11:18]
-**** TODO <2016-09-05 周一> [42%]
+**** TODO <2016-09-05 周一> [37%]
 ***** TODO 微分、微分中值定理
 ***** TODO 算法导论 [0/7]
 	  * [ ] 3、函数的增长
@@ -878,10 +878,11 @@
 	  * [ ] 8、线性时间排序
 	  * [ ] 9、中位数和顺序统计学
 ***** TODO nginx源码阅读
+***** TODO 加强fasttun数据发送机制
+***** TODO fasttun增加心跳探测
 ***** DONE cill库增加定时器
 	  CLOSED: [2016-09-23 周五 10:21]
 	  - State "DONE"       from "TODO"       [2016-09-23 周五 10:21]
-***** TODO fasttun增加心跳探测
 ***** DONE fasttun进一步优化 [1/1]
 	  CLOSED: [2016-09-19 周一 10:06]
 	  - State "DONE"       from "TODO"       [2016-09-19 周一 10:06]
