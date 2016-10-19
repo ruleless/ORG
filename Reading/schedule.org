@@ -1,5 +1,5 @@
 
-+ 专业书籍 [14/14]
++ 专业书籍 [15/15]
   1. [X] Unix环境高级编程
 
 	 从事Unix环境应用编程的技术人员至少应该读一遍此书。
@@ -58,9 +58,13 @@
 
 	  3. Selective Repeat
 
-* TODO 读书计划 [0%]
+  15. [X] C程序设计语言
 
-** TODO C程序设计语言
+* TODO 读书计划 [25%]
+
 ** TODO Linux Kernel Development [/]
 ** TODO 算法导论 [/]
 ** TODO 编译原理(龙书) [/]
+** DONE C程序设计语言
+   CLOSED: [2016-10-17 周一 09:30]
+   - State "DONE"       from "TODO"       [2016-10-17 周一 09:30]
