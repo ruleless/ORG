@@ -447,8 +447,30 @@
 ***** DONE 试玩支持
 	  CLOSED: [2016-10-10 周一 17:01]
 	  - State "DONE"       from "TODO"       [2016-10-10 周一 17:01]
-**** TODO <2016-10-17 周一> [%]
-***** TODO 飞火联运登录
+**** DONE <2016-10-17 周一> [100%]
+	 CLOSED: [2016-10-24 周一 09:45]
+	 - State "DONE"       from "TODO"       [2016-10-24 周一 09:45]
+***** DONE 飞火联运登录
+	  CLOSED: [2016-10-20 周四 10:04]
+	  - State "DONE"       from "TODO"       [2016-10-20 周四 10:04]
+***** DONE 飞火联运需求 [2/2]
+	  CLOSED: [2016-10-24 周一 09:45]
+	  - State "DONE"       from "TODO"       [2016-10-24 周一 09:45]
+
+	  + [X] 联运标识整理
+	  + [X] 联运充值内嵌页
+
+**** DONE <2016-10-24 周一> [100%]
+	 CLOSED: [2016-10-28 周五 15:15]
+	 - State "DONE"       from "TODO"       [2016-10-28 周五 15:15]
+
+***** DONE 登录器换肤
+	  CLOSED: [2016-10-28 周五 15:14]
+	  - State "DONE"       from "TODO"       [2016-10-28 周五 15:14]
+
+***** DONE 内嵌页版登录器换肤
+	  CLOSED: [2016-10-28 周五 15:15]
+	  - State "DONE"       from "TODO"       [2016-10-28 周五 15:15]
 **** TODO 编写技能标记工具
 **** TODO 结婚巡游bug修复：在非巡游时间去发起巡游，虽然没有发起成功，但是道具“巡游令”扣除了，导致玩家完成不了相应的结婚成就
 **** TODO 一键打包工具完善
@@ -918,34 +940,30 @@
 
 *** 2016/10
 
-**** TODO <2016-10-09 周日> [28%]
+**** DONE <2016-10-09 周日> [37%]
+	 CLOSED: [2016-10-24 周一 09:47]
+	 - State "DONE"       from "TODO"       [2016-10-24 周一 09:47]
 
-***** TODO 算法导论 [0/7]
-	  * [ ] 3、函数的增长
-	  * [ ] 4、递归式
-	  * [ ] 5、概率分布和随机算法
-	  * [ ] 6、堆排序
-	  * [ ] 7、快速排序
-	  * [ ] 8、线性时间排序
-	  * [ ] 9、中位数和顺序统计学
-
-***** TODO Linux 源码阅读：Process Schedule
-***** TODO 一致性啥希
-***** TODO Lua源码分析
-***** TODO 《C专家编程》阅读
+***** DONE 《C专家编程》阅读
+	  CLOSED: [2016-10-24 周一 09:46]
+	  - State "DONE"       from "TODO"       [2016-10-24 周一 09:46]
 ***** DONE bitset实现
 	  CLOSED: [2016-10-18 周二 17:46]
 	  - State "DONE"       from "TODO"       [2016-10-18 周二 17:46]
 ***** DONE 《C程序语言设计》阅读
 	  CLOSED: [2016-10-18 周二 17:46]
 	  - State "DONE"       from "TODO"       [2016-10-18 周二 17:46]
-**** TODO 大略了解go语言
-**** TODO 连接服在网游服务器中的地位及职责
-**** TODO 抽离出 Linux 内核源码中使用的数据结构
-**** TODO 格蠹汇编
-**** TODO md文档：Unix 环境下的 Socket 编程知识
-**** TODO md文档：Unix 环境下的同步机制
-**** TODO P2P 原理及实现
+
+**** TODO <2016-10-24 周一> [14%]
+***** DONE cdecl程序实现
+	  CLOSED: [2016-10-28 周五 15:16]
+	  - State "DONE"       from "TODO"       [2016-10-28 周五 15:16]
+***** TODO Lua源码分析
+***** TODO fasttun说明文档
+***** TODO 一致性啥希
+***** TODO Linux 源码阅读：Process Schedule
+***** TODO md文档：Unix 环境下的 Socket 编程知识
+***** TODO md文档：Unix 环境下的同步机制
 **** TODO [[http://linux.vbird.org/linux_basic/#part2][第二部分 Linux 文件、目录与磁盘格式]]
 	 * [ ] Linux文件权限与目录配置
 	 * [ ] Linux文件与目录管理
@@ -979,26 +997,6 @@
 **** TODO [[http://linux.vbird.org/linux_server/#part2][第二部分：主机的简易防火措施]]
 **** TODO [[http://linux.vbird.org/linux_server/#part3][第三部分：局域网络内常见的服务器架设]]
 **** TODO [[http://linux.vbird.org/linux_server/#part4][第四部分：常见因特网服务器架设]]
-**** TODO stl allocate
-**** TODO 堆
-**** TODO 算法
-**** TODO 适配器
-**** TODO 调试 Nginx
-**** TODO DNS 域名解析协议
-**** TODO Linux 平台下的性能分析工具：Valgrind
-**** TODO skynet 消息队列同步操作方式
-**** TODO My Direct UI Library
-**** TODO 浏览 jemalloc 源码，给出 jemalloc 的设计图
-**** TODO 无锁队列
-**** TODO [[LINK_KBE_STARTUP][KBE启动和执行流程]]
-**** TODO AI [0%]
-	 * [ ] [[http://www.cnblogs.com/fingerpass/p/discussion-about-game-ai.html][漫谈游戏中的人工智能]]
-     * [ ] 决策树
-	 * [ ] 行为树
-	   腾讯开源行为树实现 https://github.com/ruleless/behaviac
-**** PROCESSING [[LINK_QUATERNION][四元数]]
-	 - STATE "PROCESSING" FROM "TODO"       [2015-10-19 周一 19:56]
-
 ** Professional Skills
 
 *** Lua
