@@ -1,0 +1,38 @@
+PRIVATE_FILES:= .passwd cert id_rsa
+PUBLIC_FILES:= passwd.rsa cert.rsa cert.pub id_rsa.pub
+
+all:
+
+## generate key
+gencert: cert.pub
+
+cert.pub:
+	openssl req -x509 -nodes -newkey rsa:1092 -keyout cert -out cert.pub -subj '/'
+
+genkey: id_rsa.pub cert.rsa
+
+id_rsa.pub:
+	openssl genrsa -aes128 -out id_rsa 4196
+	openssl rsa -in id_rsa -outform PEM -pubout -out id_rsa.pub
+
+cert.rsa:
+	openssl rsautl -encrypt -inkey id_rsa.pub -pubin -in cert -out cert.rsa
+
+## encryption
+encrypt: .passwd
+	openssl smime -encrypt -aes256 -in .passwd -binary -outform DEM -out passwd.rsa cert.pub
+
+.passwd:
+	@echo "no plaintext"
+
+## decyption
+decrypt: cert
+	openssl smime -decrypt -in passwd.rsa -binary -inform DEM -inkey $^ -out passwd
+
+cert:
+	openssl rsautl -decrypt -inkey id_rsa -in cert.rsa -out cert
+
+fake:
+
+clean:
+	-rm $(PRIVATE_FILES)

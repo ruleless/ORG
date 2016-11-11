@@ -21,3 +21,5 @@ QueueTest
 GPATH
 GRTAGS
 GTAGS
+.passwd
+cert
