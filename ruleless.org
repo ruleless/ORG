@@ -492,9 +492,26 @@
 ***** DONE 双人坐骑支持拒绝邀请的效果
 	  CLOSED: [2016-11-05 周六 16:49]
 	  - State "DONE"       from "TODO"       [2016-11-05 周六 16:49]
-**** TODO <2016-11-07 周一> [0%]
-***** TODO 提供寄售切页打开接口
-***** TODO 腾讯开放平台登录接入
+**** DONE <2016-11-07 周一> [66%]
+	 CLOSED: [2016-11-14 周一 14:26]
+	 - State "DONE"       from "TODO"       [2016-11-14 周一 14:26]
+***** DONE 9377腾讯联运启动器换肤
+	  CLOSED: [2016-11-10 周四 11:43]
+	  - State "DONE"       from "TODO"       [2016-11-10 周四 11:43]
+***** DONE 腾讯开放平台登录接入
+	  CLOSED: [2016-11-10 周四 09:56]
+	  - State "DONE"       from "TODO"       [2016-11-10 周四 09:56]
+**** TODO <2016-11-14 周一> [66%]
+***** TODO 腾讯开放平台联运接入 [/]
+	  * [ ] win7任务栏图标处理
+	  * [X] openkey续期
+	  * [X] pfkey实时获取机制
+***** DONE 提供寄售物品搜索接口(Consign_SearchGoods)
+	  CLOSED: [2016-11-16 周三 11:52]
+	  - State "DONE"       from "TODO"       [2016-11-16 周三 11:52]
+***** DONE 坐骑封印珠tips优化
+	  CLOSED: [2016-11-16 周三 18:25]
+	  - State "DONE"       from "TODO"       [2016-11-16 周三 18:25]
 **** TODO 结婚巡游bug修复：在非巡游时间去发起巡游，虽然没有发起成功，但是道具“巡游令”扣除了，导致玩家完成不了相应的结婚成就
 **** TODO 仅重启社会服导致重启前成立的团队在重启后解散后会出现异常
 **** TODO 编写技能标记工具
@@ -984,24 +1001,27 @@
 	  CLOSED: [2016-10-28 周五 15:16]
 	  - State "DONE"       from "TODO"       [2016-10-28 周五 15:16]
 *** 2016/11
-**** TODO <2016-10-31 周一> [25%]
-***** TODO STL源码分析 [3/4]
+**** DONE <2016-10-31 周一> [37%]
+	 CLOSED: [2016-11-14 周一 14:25]
+	 - State "DONE"       from "TODO"       [2016-11-14 周一 14:25]
+***** DONE STL源码分析 [4/4]
+	  CLOSED: [2016-11-14 周一 14:24]
+	  - State "DONE"       from "TODO"       [2016-11-14 周一 14:24]
 	  + [X] 空间分配器
 	  + [X] 迭代器
 	  + [X] 序列式容器(vector/list/dqueue/stack/queue/heap/priority_queue)
-	  + [ ] 关联式容器
-***** TODO Lua源码分析
-***** TODO 一致性啥希
-***** TODO Linux 源码阅读：Process Schedule
-***** TODO md文档：Unix 环境下的 Socket 编程知识
-***** TODO md文档：Unix 环境下的同步机制
+	  + [X] 关联式容器
 ***** DONE 二叉堆实现
 	  CLOSED: [2016-11-08 周二 09:41]
 	  - State "DONE"       from "TODO"       [2016-11-08 周二 09:41]
 ***** DONE fasttun说明文档
 	  CLOSED: [2016-10-31 周一 09:46]
 	  - State "DONE"       from "TODO"       [2016-10-31 周一 09:46]
-
+**** TODO <2016-11-14 周一> [0%]
+***** TODO md文档：Unix 环境下的 Socket 编程知识
+***** TODO md文档：Unix 环境下的同步机制
+**** TODO 一致性啥希
+**** TODO Lua源码分析
 **** TODO [[http://linux.vbird.org/linux_basic/#part2][第二部分 Linux 文件、目录与磁盘格式]]
 	 * [ ] Linux文件权限与目录配置
 	 * [ ] Linux文件与目录管理
