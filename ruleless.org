@@ -1024,9 +1024,15 @@
 ***** DONE fasttun说明文档
 	  CLOSED: [2016-10-31 周一 09:46]
 	  - State "DONE"       from "TODO"       [2016-10-31 周一 09:46]
-**** TODO <2016-11-14 周一> [0%]
-***** TODO md文档：Unix 环境下的 Socket 编程知识
-***** TODO md文档：Unix 环境下的同步机制
+**** DONE <2016-11-14 周一> [100%]
+	 CLOSED: [2016-11-20 周日 14:27]
+	 - State "DONE"       from "TODO"       [2016-11-20 周日 14:27]
+***** DONE md文档：Unix 环境下的 Socket 编程知识
+	  CLOSED: [2016-11-20 周日 14:27]
+	  - State "DONE"       from "TODO"       [2016-11-20 周日 14:27]
+***** DONE md文档：Unix 环境下的同步机制
+	  CLOSED: [2016-11-20 周日 14:27]
+	  - State "DONE"       from "TODO"       [2016-11-20 周日 14:27]
 **** TODO 一致性啥希
 **** TODO Lua源码分析
 **** TODO [[http://linux.vbird.org/linux_basic/#part2][第二部分 Linux 文件、目录与磁盘格式]]
