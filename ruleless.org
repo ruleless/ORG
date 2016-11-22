@@ -1046,6 +1046,127 @@
 	  - State "DONE"       from "TODO"       [2016-11-20 周日 14:27]
 **** TODO 一致性啥希
 **** TODO Lua源码分析
+**** PROCESSING nginx源码解析 [0%]
+	 - State "PROCESSING" from "TODO"       [2016-11-22 周二 21:40]
+***** TODO nginx核心框架
+
+nginx采用分层模块化设计来组织所有部件，在运行configure脚本后，会在objs目录下生成一个文件ngx_modules.c。
+该文件下的全局变量ngx_modules即记录了nginx运行时的所有模块：
+
+#+begin_src c++
+ngx_module_t *ngx_modules[] = {
+    &ngx_core_module,
+    &ngx_errlog_module,
+    &ngx_conf_module,
+    &ngx_regex_module,
+    &ngx_events_module,
+    &ngx_event_core_module,
+    &ngx_epoll_module,
+    &ngx_http_module,
+    &ngx_http_core_module,
+    &ngx_http_log_module,
+    &ngx_http_upstream_module,
+    &ngx_http_static_module,
+    &ngx_http_autoindex_module,
+    &ngx_http_index_module,
+    &ngx_http_auth_basic_module,
+    &ngx_http_access_module,
+    &ngx_http_limit_conn_module,
+    &ngx_http_limit_req_module,
+    &ngx_http_geo_module,
+    &ngx_http_map_module,
+    &ngx_http_split_clients_module,
+    &ngx_http_referer_module,
+    &ngx_http_rewrite_module,
+    &ngx_http_proxy_module,
+    &ngx_http_fastcgi_module,
+    &ngx_http_uwsgi_module,
+    &ngx_http_scgi_module,
+    &ngx_http_memcached_module,
+    &ngx_http_empty_gif_module,
+    &ngx_http_browser_module,
+    &ngx_http_upstream_hash_module,
+    &ngx_http_upstream_ip_hash_module,
+    &ngx_http_upstream_least_conn_module,
+    &ngx_http_upstream_keepalive_module,
+    &ngx_http_upstream_zone_module,
+    &ngx_http_write_filter_module,
+    &ngx_http_header_filter_module,
+    &ngx_http_chunked_filter_module,
+    &ngx_http_range_header_filter_module,
+    &ngx_http_gzip_filter_module,
+    &ngx_http_postpone_filter_module,
+    &ngx_http_ssi_filter_module,
+    &ngx_http_charset_filter_module,
+    &ngx_http_userid_filter_module,
+    &ngx_http_headers_filter_module,
+    &ngx_http_copy_filter_module,
+    &ngx_http_range_body_filter_module,
+    &ngx_http_not_modified_filter_module,
+    NULL
+};
+#+end_src
+
+ngx_modules是一个一维数组，它是如何来体现分层设计的呢？
+我们来看下ngx_module_t的定义：
+
+#+begin_src c++
+struct ngx_module_s {
+    ngx_uint_t            ctx_index;
+    ngx_uint_t            index;
+
+    char                 *name;
+
+    ngx_uint_t            spare0;
+    ngx_uint_t            spare1;
+
+    ngx_uint_t            version;
+    const char           *signature;
+
+    void                 *ctx;
+    ngx_command_t        *commands;
+    ngx_uint_t            type;
+
+    ngx_int_t           (*init_master)(ngx_log_t *log);
+
+    ngx_int_t           (*init_module)(ngx_cycle_t *cycle);
+
+    ngx_int_t           (*init_process)(ngx_cycle_t *cycle);
+    ngx_int_t           (*init_thread)(ngx_cycle_t *cycle);
+    void                (*exit_thread)(ngx_cycle_t *cycle);
+    void                (*exit_process)(ngx_cycle_t *cycle);
+
+    void                (*exit_master)(ngx_cycle_t *cycle);
+
+    uintptr_t             spare_hook0;
+    uintptr_t             spare_hook1;
+    uintptr_t             spare_hook2;
+    uintptr_t             spare_hook3;
+    uintptr_t             spare_hook4;
+    uintptr_t             spare_hook5;
+    uintptr_t             spare_hook6;
+    uintptr_t             spare_hook7;
+};
+typedef struct ngx_module_s      ngx_module_t;
+#+end_src
+
+ngx_module_t有一个type成员记录模块的类型，nginx预定义了如下几种类型：
+
+#+begin_src c++
+#define NGX_CORE_MODULE      0x45524F43  /* "CORE" */
+#define NGX_CONF_MODULE      0x464E4F43  /* "CONF" */
+#define NGX_EVENT_MODULE     0x544E5645  /* "EVNT" */
+#define NGX_HTTP_MODULE      0x50545448  /* "HTTP" */
+#define NGX_MAIL_MODULE      0x4C49414D  /* "MAIL" */
+#+end_src
+
+其中 NGX_CORE_MODULE 类型的模块为顶层模块，其他为二级模块。
+顶层模块一般干两种事情：
+
+  1. 负责核心事务
+  2. 负责接入二级模块
+
+***** TODO nginx事件模块
 **** TODO [[http://linux.vbird.org/linux_basic/#part2][第二部分 Linux 文件、目录与磁盘格式]]
 	 * [ ] Linux文件权限与目录配置
 	 * [ ] Linux文件与目录管理
