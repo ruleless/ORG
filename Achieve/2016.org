@@ -1,0 +1,1121 @@
+* Schedule For Job
+
+** 2016/01
+
+*** DONE <2016-01-04 周一> [100%]
+	CLOSED: [2016-01-10 周日 09:51]
+	- State "DONE"       from "TODO"       [2016-01-10 周日 09:51]
+**** DONE 挖矿经常出现冷却中，有的时候挖矿会没有动作，所以需要向自动挂机一样，
+	 做一个标识
+	 CLOSED: [2016-01-05 周二 17:18]
+	 - State "DONE"       from "TODO"       [2016-01-05 周二 17:18]
+**** DONE 微客户端模式下法师火墙特效无法显示
+	 CLOSED: [2016-01-04 周一 16:10]
+	 - State "DONE"       from "TODO"       [2016-01-04 周一 16:10]
+
+*** DONE <2016-01-11 周一> [100%]
+	CLOSED: [2016-01-17 周日 14:09]
+	- State "DONE"       from "TODO"       [2016-01-17 周日 14:09]
+**** DONE 使用一个单例后台进程管理（或称代理）所有本机微客户端的资源下载
+	 CLOSED: [2016-01-17 周日 14:09]
+	 - State "DONE"       from "PROCESSING" [2016-01-17 周日 14:09]
+	 - State "PROCESSING" from "TODO"       [2016-01-11 周一 10:04]
+
+*** DONE <2016-01-18 周一> [100%]
+	CLOSED: [2016-01-24 周日 17:16]
+	- State "DONE"       from "TODO"       [2016-01-24 周日 17:16]
+**** DONE 后台进程在空闲时根据资源列表下载所有资源
+	 CLOSED: [2016-01-21 周四 17:22]
+	 - State "DONE"       from "DONE"       [2016-01-24 周日 17:16]
+**** DONE 微客户端下载提示
+	 CLOSED: [2016-01-20 周三 09:41]
+	 - State "DONE"       from "TODO"       [2016-01-20 周三 09:41]
+
+*** DONE <2016-01-25 周一> [100%]
+	CLOSED: [2016-02-01 周一 09:55]
+	- State "DONE"       from "TODO"       [2016-02-01 周一 09:55]
+**** DONE 广播角色进入消息时也将其朝向信息同步下去
+	 CLOSED: [2016-01-25 周一 14:41]
+	 - State "DONE"       from "DONE"       [2016-02-01 周一 09:55]
+**** DONE 设定焦点目标
+	 CLOSED: [2016-01-27 周三 17:29]
+	 - State "DONE"       from "TODO"       [2016-01-27 周三 17:29]
+
+** 2016/02
+
+*** DONE <2016-02-01 周一> [100%]
+	CLOSED: [2016-02-03 周三 12:12]
+	- State "DONE"       from "TODO"       [2016-02-03 周三 12:12]
+**** DONE 生死考验奖励：鼠标第一次移至奖励图标，tips没有置顶，被大窗口覆盖
+	 CLOSED: [2016-02-03 周三 12:12]
+	 - State "DONE"       from "TODO"       [2016-02-03 周三 12:12]
+
+*** DONE <2016-02-19 周五> [100%]
+	CLOSED: [2016-02-20 周六 16:58]
+	- State "DONE"       from "TODO"       [2016-02-20 周六 16:58]
+**** DONE 国战竞猜按钮风格不一致
+	 CLOSED: [2016-02-20 周六 16:58]
+	 - State "DONE"       from "TODO"       [2016-02-20 周六 16:58]
+
+*** DONE <2016-02-22 周一> [100%]
+	CLOSED: [2016-02-28 周日 20:16]
+	- State "DONE"       from "TODO"       [2016-02-28 周日 20:16]
+**** DONE 通过技能轨迹系统播放死亡击碎特效
+	 CLOSED: [2016-02-24 周三 17:02]
+	 - State "DONE"       from "TODO"       [2016-02-24 周三 17:02]
+**** DONE NPC 头顶喊话窗口抖动
+	 CLOSED: [2016-02-24 周三 17:03]
+	 - State "DONE"       from "TODO"       [2016-02-24 周三 17:03]
+**** DONE 微客户端代理进程通过共享内存方式向微客户端进程通知监听端口
+	 CLOSED: [2016-02-22 周一 17:02]
+	 - State "DONE"       from "TODO"       [2016-02-22 周一 17:02]
+
+** 2016/03
+
+*** DONE <2016-02-29 周一> [100%]
+	CLOSED: [2016-03-06 周日 18:26]
+	- State "DONE"       from "TODO"       [2016-03-06 周日 18:26]
+**** DONE 移植远征寄售系统
+	 CLOSED: [2016-03-06 周日 18:25]
+	 - State "DONE"       from "TODO"       [2016-03-06 周日 18:25]
+
+	 已完成移植，接下来重点调试优化。
+
+*** DONE <2016-03-07 周一> [100%]
+	CLOSED: [2016-03-14 周一 10:03]
+	- State "DONE"       from "TODO"       [2016-03-14 周一 10:03]
+**** DONE 寄售系统移植及优化 [3/4]
+	 CLOSED: [2016-03-14 周一 10:03]
+	 - State "DONE"       from "TODO"       [2016-03-14 周一 10:03]
+
+	 * [X] 寄售物品浏览界面重构
+	 * [X] 玩家寄售界面重构
+	 * [ ] 购买对话框重构
+	 * [X] 寄售购买流程梳理
+
+*** DONE <2016-03-14 周一> [100%]
+	CLOSED: [2016-03-21 周一 10:37]
+	- State "DONE"       from "TODO"       [2016-03-21 周一 10:37]
+
+**** DONE 寄售系统跟踪优化
+	 CLOSED: [2016-03-21 周一 10:37]
+	 - State "DONE"       from "TODO"       [2016-03-21 周一 10:37]
+
+*** DONE <2016-03-21 周一> [100%]
+	CLOSED: [2016-03-28 周一 10:20]
+	- State "DONE"       from "TODO"       [2016-03-28 周一 10:20]
+**** DONE 整理微端多线程
+	 CLOSED: [2016-03-21 周一 18:03]
+	 - State "DONE"       from "TODO"       [2016-03-21 周一 18:03]
+**** DONE 寄售跟进优化
+	 CLOSED: [2016-03-28 周一 10:20]
+	 - State "DONE"       from "TODO"       [2016-03-28 周一 10:20]
+
+** 2016/04
+
+*** DONE <2016-03-28 周一> [100%]
+	CLOSED: [2016-04-04 周一 18:53]
+	- State "DONE"       from "TODO"       [2016-04-04 周一 18:53]
+
+**** DONE 寄售跟进
+	 CLOSED: [2016-04-04 周一 18:52]
+	 - State "DONE"       from "DONE"       [2016-04-04 周一 18:52]
+	 - State "DONE"       from "TODO"       [2016-04-04 周一 18:52]
+**** DONE 微客户端资源下载改用 libcurl 库
+	 CLOSED: [2016-04-04 周一 18:52]
+	 - State "DONE"       from "TODO"       [2016-04-04 周一 18:52]
+
+	 暂且观望
+
+*** DONE <2016-04-04 周一> [100%]
+	CLOSED: [2016-04-11 周一 09:29]
+	- State "DONE"       from "TODO"       [2016-04-11 周一 09:29]
+**** DONE 微客户端代理进程智能限速
+	 CLOSED: [2016-04-11 周一 09:29]
+	 - State "DONE"       from "PROCESSING" [2016-04-11 周一 09:29]
+	 - State "PROCESSING" from "TODO"       [2016-04-04 周一 18:53]
+
+*** DONE <2016-04-11 周一> [100%]
+	CLOSED: [2016-04-18 周一 09:42]
+	- State "DONE"       from "TODO"       [2016-04-18 周一 09:42]
+**** DONE 废弃资源整理
+	 CLOSED: [2016-04-18 周一 09:42]
+	 - State "DONE"       from "TODO"       [2016-04-18 周一 09:42]
+
+	 * [X] 场景
+	 * [X] 模型
+	 * [X] 特效
+
+**** DONE 微客户端代理进程宕机时生成转储文件，并可通过邮件获取
+	 CLOSED: [2016-04-12 周二 17:39]
+	 - State "DONE"       from "TODO"       [2016-04-12 周二 17:39]
+**** DONE 微端：CDN 或 微端云服务器从异常恢复后，保证微客户端继续可玩
+	 CLOSED: [2016-04-12 周二 17:28]
+	 - State "DONE"       from "TODO"       [2016-04-12 周二 17:28]
+
+*** DONE <2016-04-18 周一> [100%]
+	CLOSED: [2016-04-23 周六 14:32]
+	- State "DONE"       from "TODO"       [2016-04-23 周六 14:32]
+
+**** DONE 配合新版UI调整如下界面：技能/装备福利/寄售
+	 CLOSED: [2016-04-21 周四 09:33]
+	 - State "DONE"       from "TODO"       [2016-04-21 周四 09:33]
+**** DONE mz 关联资源整理工具完善
+	 CLOSED: [2016-04-18 周一 15:39]
+	 - State "DONE"       from "TODO"       [2016-04-18 周一 15:39]
+
+*** DONE <2016-04-25 周一> [100%]
+	CLOSED: [2016-04-30 周六 20:44]
+	- State "DONE"       from "TODO"       [2016-04-30 周六 20:44]
+**** DONE 新增武器时装
+	 CLOSED: [2016-04-30 周六 20:44]
+	 - State "DONE"       from "TODO"       [2016-04-30 周六 20:44]
+**** DONE 寄售行UI更换
+	 CLOSED: [2016-04-27 周三 10:52]
+	 - State "DONE"       from "TODO"       [2016-04-27 周三 10:52]
+**** DONE 寄售入口显示荐字显示；当没有寄售物品时不再通过弹窗提示
+	 CLOSED: [2016-04-26 周二 14:45]
+	 - State "DONE"       from "TODO"       [2016-04-26 周二 14:45]
+** 2016/05
+*** DONE <2016-05-03 周二> [100%]
+	CLOSED: [2016-05-07 周六 11:21]
+	- State "DONE"       from "TODO"       [2016-05-07 周六 11:21]
+**** DONE 武器时装相关BUG修复/武器时装分区功能
+	 CLOSED: [2016-05-07 周六 11:21]
+	 - State "DONE"       from "TODO"       [2016-05-07 周六 11:21]
+*** DONE <2016-05-09 周一> [100%]
+	CLOSED: [2016-05-16 周一 09:49]
+	- State "DONE"       from "TODO"       [2016-05-16 周一 09:49]
+**** DONE 寄售行中将可进阶的紫装归类到橙色装备中
+	 CLOSED: [2016-05-12 周四 17:26]
+	 - State "DONE"       from "TODO"       [2016-05-12 周四 17:26]
+**** DONE 微端下载库由 Winnet 改为 libcurl
+	 CLOSED: [2016-05-12 周四 11:05]
+	 - State "DONE"       from "TODO"       [2016-05-12 周四 11:05]
+*** DONE <2016-05-16 周一> [100%]
+	CLOSED: [2016-05-23 周一 09:48]
+	- State "DONE"       from "TODO"       [2016-05-23 周一 09:48]
+**** DONE 鼠标点击命中水域时，在水面显示地面光效，而非水底；支持一种新的载具类型：船。船在陆地时贴地行进，在水面时可以漂浮于水面
+	 CLOSED: [2016-05-16 周一 09:51]
+	 - State "DONE"       from "TODO"       [2016-05-16 周一 09:51]
+*** DONE <2016-05-23 周一> [33%]
+	CLOSED: [2016-05-27 周五 17:17]
+	- State "DONE"       from "TODO"       [2016-05-27 周五 17:17]
+**** DONE 封装特定于微端代理进程的 curl 库(解决外网下载时线程池相关的大量非法)
+	 CLOSED: [2016-05-24 周二 14:22]
+	 - State "DONE"       from "TODO"       [2016-05-24 周二 14:22]
+** 2016/06
+*** DONE <2016-05-30 周一> [66%]
+	CLOSED: [2016-06-06 周一 09:54]
+	- STATE "DONE"       FROM "TODO"       [2016-06-06 周一 09:54]
+**** DONE 载具技能体验优化
+	 CLOSED: [2016-06-06 周一 09:53]
+	 - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 09:53]
+**** DONE 龙舟地图载具抖动问题
+	 CLOSED: [2016-06-06 周一 09:53]
+	 - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 09:53]
+*** DONE <2016-06-06 周一> [50%]
+	CLOSED: [2016-06-12 周日 09:36]
+	- State "DONE"       from "TODO"       [2016-06-12 周日 09:36]
+**** DONE 下载器通知后台记录“首次运行下载器”以及“完成下载/安装”等事件
+	 CLOSED: [2016-06-08 周三 14:42]
+	 - State "DONE"       from "TODO"       [2016-06-08 周三 14:42]
+**** DONE 制作10M(或以下)登录器，游戏客户端所含文件在玩家第一次运行登录器后再开始下载。
+	 CLOSED: [2016-06-07 周二 18:37]
+	 - State "DONE"       from "TODO"       [2016-06-07 周二 18:37]
+	 + [X] 游戏安装更新项只更新最新的一个版本组
+	 + [X] 展开游戏安装包时，不检测MPK完整性
+	 + [X] 游戏安装包安装完成后可支持设置本地的内测或压测版本号
+	 + [X] 安装游戏时根据需要删除BIN和DATA目录
+	 + [X] 安装过程中不弹更新公告
+	 + [X] 游戏安装包安装一次后不可再次安装
+	 + [ ] 登录器时常卡死
+*** DONE <2016-06-12 周日> [80%]
+	CLOSED: [2016-06-19 周日 16:19]
+	- State "DONE"       from "TODO"       [2016-06-19 周日 16:19]
+**** DONE 采用不同按钮提示登录器下载/安装过程
+	 CLOSED: [2016-06-14 周二 09:44]
+	 - State "DONE"       from "TODO"       [2016-06-14 周二 09:44]
+**** DONE 法师1技能在副本中命中延时过大
+	 CLOSED: [2016-06-13 周一 11:26]
+	 - State "DONE"       from "TODO"       [2016-06-13 周一 11:26]
+**** DONE 坐骑界面的图标底图显示优化
+	 CLOSED: [2016-06-13 周一 09:53]
+	 - State "DONE"       from "TODO"       [2016-06-13 周一 09:53]
+**** DONE 数据下载写磁盘时增加应用层缓存，以期通过减少磁盘I/O频度来达到提高磁盘I/O效率的目的
+	 CLOSED: [2016-06-16 周四 14:20]
+	 - State "DONE"       from "TODO"       [2016-06-16 周四 14:20]
+*** DONE <2016-06-20 周一> [80%]
+	CLOSED: [2016-06-25 周六 17:49]
+	- State "DONE"       from "TODO"       [2016-06-25 周六 17:49]
+**** DONE 寄售搜索结果显示BUG修复；支持按所有类别搜索寄售物品
+	 CLOSED: [2016-06-24 周五 15:59]
+	 - State "DONE"       from "TODO"       [2016-06-24 周五 15:59]
+**** DONE 登录器优化
+	 CLOSED: [2016-06-25 周六 17:49]
+	 - State "DONE"       from "TODO"       [2016-06-25 周六 17:49]
+	 + [X] 可进入提示与进度条对不上
+	 + [X] 修复：压测或内测版总有一个无法添加补丁包到文件系统
+**** DONE 寄售购买物品弹出框中添加MAX功能
+	 CLOSED: [2016-06-24 周五 16:17]
+	 - State "DONE"       from "TODO"       [2016-06-24 周五 16:17]
+**** DONE 登录器支持先微端后大端式的下载、安装方式 [100%]
+	 CLOSED: [2016-06-23 周四 19:27]
+	 - State "DONE"       from "TODO"       [2016-06-23 周四 19:27]
+	 * [X] 更新完必要条目之后，玩家可进游戏，但登录器必须继续完成可选条目的更新
+	 * [X] 游戏逻辑支持微端转大端(例如：Creature.mpk表示微端模式下所需的资源，则Creature1.mpk表示完整端模式下剩余的资源)
+	 * [X] 下载进度由单一条目进度改为总进度；在玩家下载游戏安装包时，显示可进入提示
+*** DONE <2016-06-27 周一> [66%]
+	CLOSED: [2016-07-04 周一 09:49]
+	- State "DONE"       from "TODO"       [2016-07-04 周一 09:49]
+**** DONE 登录器优化 [100%]
+	 CLOSED: [2016-06-29 周三 19:39]
+	 - State "DONE"       from "TODO"       [2016-06-29 周三 19:39]
+	 * [X] 登录器的安装包必须有某种关联对应剩余补丁包的机制
+	 * [X] 微端代理进程不下载非当前必要资源
+	 * [X] 游戏首次安装过程中去掉新闻弹框
+	 * [X] 下载完游戏基本组件进入游戏，登录器停止下载，只下载微端资源
+	 * [X] 下载器进度条去掉多余显示（下载点1/1）
+**** TODO 登录器非法检查
+**** DONE 多国国战竞猜(许天明) [代码Review]
+	 CLOSED: [2016-07-01 周五 11:49]
+	 - State "DONE"       from "TODO"       [2016-07-01 周五 11:49]
+** 2016/07
+*** DONE <2016-07-04 周一> [100%]
+	CLOSED: [2016-07-10 周日 20:25]
+	- State "DONE"       from "TODO"       [2016-07-10 周日 20:25]
+**** DONE 登录器BUG修复：下载所显示进度与实际进度不匹配
+	 CLOSED: [2016-07-05 周二 19:22]
+	 - State "DONE"       from "TODO"       [2016-07-05 周二 19:22]
+**** DONE 登录器支持开机启动
+	 CLOSED: [2016-07-06 周三 10:38]
+	 - State "DONE"       from "TODO"       [2016-07-06 周三 10:38]
+*** DONE <2016-07-11 周一> [66%]
+	CLOSED: [2016-07-18 周一 17:14]
+	- State "DONE"       from "TODO"       [2016-07-18 周一 17:14]
+**** DONE 针对性屏蔽受击闪白
+	 CLOSED: [2016-07-13 周三 15:06]
+	 - State "DONE"       from "TODO"       [2016-07-13 周三 15:06]
+**** DONE 下载器换肤及体验优化
+	 CLOSED: [2016-07-18 周一 17:14]
+	 - State "DONE"       from "TODO"       [2016-07-18 周一 17:14]
+*** DONE <2016-07-18 周一> [75%]
+	CLOSED: [2016-07-25 周一 09:31]
+	- State "DONE"       from "TODO"       [2016-07-25 周一 09:31]
+**** DONE 登录器界面调整
+	 CLOSED: [2016-07-22 周五 12:25]
+	 - State "DONE"       from "TODO"       [2016-07-22 周五 12:25]
+**** DONE 登录器弹窗程序
+	 CLOSED: [2016-07-22 周五 12:25]
+	 - State "DONE"       from "TODO"       [2016-07-22 周五 12:25]
+**** DONE 微端代理进程优化
+	 CLOSED: [2016-07-22 周五 12:25]
+	 - State "DONE"       from "TODO"       [2016-07-22 周五 12:25]
+*** DONE <2016-07-25 周一> [0%]
+	CLOSED: [2016-08-01 周一 09:54]
+	- State "DONE"       from "TODO"       [2016-08-01 周一 09:54]
+** 2016/08
+*** DONE <2016-08-01 周一> [100%]
+	CLOSED: [2016-08-08 周一 09:40]
+	- State "DONE"       from "TODO"       [2016-08-08 周一 09:40]
+**** DONE 双人坐骑支持
+	 CLOSED: [2016-08-08 周一 09:40]
+	 - State "DONE"       from "TODO"       [2016-08-08 周一 09:40]
+*** DONE <2016-08-08 周一> [66%]
+	CLOSED: [2016-08-15 周一 09:38]
+	- State "DONE"       from "TODO"       [2016-08-15 周一 09:38]
+**** DONE 双人坐骑测试跟进
+	 CLOSED: [2016-08-08 周一 17:04]
+	 - State "DONE"       from "TODO"       [2016-08-08 周一 17:04]
+**** DONE 联运版本的微端资源分离工具
+	 CLOSED: [2016-08-09 周二 15:09]
+	 - State "DONE"       from "TODO"       [2016-08-09 周二 15:09]
+*** DONE <2016-08-15 周一> [100%]
+	CLOSED: [2016-08-22 周一 10:44]
+	- State "DONE"       from "TODO"       [2016-08-22 周一 10:44]
+**** DONE 联运登录器 [13/13]
+	 CLOSED: [2016-08-22 周一 10:44]
+	 - State "DONE"       from "TODO"       [2016-08-22 周一 10:44]
+	 + [X] logo
+	 + [X] 链接
+	   官网地址：http://syzj.9377.com/main.html
+	   论坛地址：http://bbs.9377.com/forum-912-1.html
+	   客服地址：http://www.9377.com/kefu.html
+	   充值地址：http://wvw.9377.com/pay_index.php?gid=292
+	 + [X] 注册账号
+	 + [X] 轮播图和新闻
+	 + [X] 补丁下载地址
+	 + [X] 游戏修复里的客户端下载地址
+	 + [X] serverlist.xml修改
+	 + [X] 登陆器编译去掉调试信息
+	 + [X] 去掉发dump邮件功能
+	 + [X] 写版号的地方换成《神谕之剑》的版号
+	 + [X] 日常更新分支
+	 + [X] 角色查询链接
+	 + [X] 更新公告
+**** DONE 登录创建角色 [9/9]
+	 CLOSED: [2016-08-22 周一 10:44]
+	 - State "DONE"       from "TODO"       [2016-08-22 周一 10:44]
+	 + [X] 联运账号密码登陆
+	 + [X] 创建角色声明
+	 + [X] 预约送礼
+	 + [X] 去掉角色界面二维码图片
+	 + [X] 创建新角色开始默认随机名字
+	 + [X] 创建完角色自动进游戏
+	 + [X] 注册账号
+	 + [X] 忘记密码
+	 + [X] 角色查询链接
+*** DONE <2016-08-22 周一> [100%]
+	CLOSED: [2016-08-29 周一 09:33]
+	- State "DONE"       from "TODO"       [2016-08-29 周一 09:33]
+**** DONE 联运版本的登录器和客户端跟进 [6/7]
+	 CLOSED: [2016-08-25 周四 14:36]
+	 - State "DONE"       from "TODO"       [2016-08-25 周四 14:36]
+	 + [X] 不需下载 serverlist.xml
+	 + [ ] GetLast 步骤经常无法下载配置文件
+	 + [X] 账号冲突中的返回按钮应返回到登录器
+	 + [X] 选角界面中的“上一步”按钮需返回到登录器
+	 + [X] 创建角色时需先随机名字
+	 + [X] 创建好角色后直接进入游戏
+	 + [X] 登录器更新成功后启动代理进程
+** 2016/09
+
+*** DONE <2016-08-29 周一> [66%]
+	CLOSED: [2016-09-03 周六 17:16]
+	- State "DONE"       from "TODO"       [2016-09-03 周六 17:16]
+**** TODO 玩家在读取地图过程中，送鲜花不会记录到夫妻成就
+**** DONE AES加密算法移植
+	 CLOSED: [2016-09-03 周六 10:22]
+	 - State "DONE"       from "TODO"       [2016-09-03 周六 10:22]
+**** DONE 周五 [75%]
+	 CLOSED: [2016-09-03 周六 17:16]
+	 - State "DONE"       from "TODO"       [2016-09-03 周六 17:16]
+	 + [X] fix bug: 不能随机名字
+	 + [X] 登录器重构
+	 + [ ] 挖矿图标遮挡DIDA
+	 + [X] 插入排序和归并排序
+
+*** DONE <2016-09-05 周一> [100%]
+	CLOSED: [2016-09-09 周五 17:14]
+	- State "DONE"       from "TODO"       [2016-09-09 周五 17:14]
+**** DONE 不败传说支持使用内嵌页方式登录器
+	 CLOSED: [2016-09-09 周五 17:14]
+	 - State "DONE"       from "TODO"       [2016-09-09 周五 17:14]
+**** DONE 修复：挖矿提示遮挡DIDA
+	 CLOSED: [2016-09-05 周一 15:39]
+	 - State "DONE"       from "TODO"       [2016-09-05 周一 15:39]
+*** DONE <2016-09-12 周一> [100%]
+	CLOSED: [2016-09-18 周日 09:32]
+	- State "DONE"       from "TODO"       [2016-09-18 周日 09:32]
+**** DONE 调通不败传说内嵌页方式登录器
+	 CLOSED: [2016-09-14 周三 09:35]
+	 - State "DONE"       from "TODO"       [2016-09-14 周三 09:35]
+*** DONE <2016-09-19 周一> [100%]
+	CLOSED: [2016-09-26 周一 09:39]
+	- State "DONE"       from "TODO"       [2016-09-26 周一 09:39]
+**** DONE 有无可能在打开游戏时屏蔽防火墙提示
+	 CLOSED: [2016-09-26 周一 09:38]
+	 - State "DONE"       from "TODO"       [2016-09-26 周一 09:38]
+
+	 暂时没发现办法！
+
+**** DONE 内嵌页方式登录端起始时不显示进度信息，点进入游戏后再显示
+	 CLOSED: [2016-09-21 周三 16:23]
+	 - State "DONE"       from "TODO"       [2016-09-21 周三 16:23]
+**** DONE 弹窗广告程序不需校验内嵌页，且配置独立的皮肤目录
+	 CLOSED: [2016-09-21 周三 14:23]
+	 - State "DONE"       from "TODO"       [2016-09-21 周三 14:23]
+**** DONE 支持未鉴定橙装可回收
+	 CLOSED: [2016-09-20 周二 14:56]
+	 - State "DONE"       from "TODO"       [2016-09-20 周二 14:56]
+**** DONE 给微客户端代理程序添加图标
+	 CLOSED: [2016-09-19 周一 15:18]
+	 - State "DONE"       from "TODO"       [2016-09-19 周一 15:18]
+*** TODO <2016-09-26 周一> [16%]
+**** DONE 问题跟踪："获取最新版本信息失败!请检查网络及防火墙设置."
+	 CLOSED: [2016-09-29 周四 15:19]
+	 - State "DONE"       from "TODO"       [2016-09-29 周四 15:19]
+
+** 2016/10
+
+*** DONE <2016-10-09 周日> [16%]
+	CLOSED: [2016-10-17 周一 09:28]
+	- State "DONE"       from "TODO"       [2016-10-17 周一 09:28]
+**** DONE 试玩支持
+	 CLOSED: [2016-10-10 周一 17:01]
+	 - State "DONE"       from "TODO"       [2016-10-10 周一 17:01]
+*** DONE <2016-10-17 周一> [100%]
+	CLOSED: [2016-10-24 周一 09:45]
+	- State "DONE"       from "TODO"       [2016-10-24 周一 09:45]
+**** DONE 飞火联运登录
+	 CLOSED: [2016-10-20 周四 10:04]
+	 - State "DONE"       from "TODO"       [2016-10-20 周四 10:04]
+**** DONE 飞火联运需求 [2/2]
+	 CLOSED: [2016-10-24 周一 09:45]
+	 - State "DONE"       from "TODO"       [2016-10-24 周一 09:45]
+
+	 + [X] 联运标识整理
+	 + [X] 联运充值内嵌页
+
+*** DONE <2016-10-24 周一> [100%]
+	CLOSED: [2016-10-28 周五 15:15]
+	- State "DONE"       from "TODO"       [2016-10-28 周五 15:15]
+
+**** DONE 登录器换肤
+	 CLOSED: [2016-10-28 周五 15:14]
+	 - State "DONE"       from "TODO"       [2016-10-28 周五 15:14]
+
+**** DONE 内嵌页版登录器换肤
+	 CLOSED: [2016-10-28 周五 15:15]
+	 - State "DONE"       from "TODO"       [2016-10-28 周五 15:15]
+** 2016/11
+*** DONE <2016-10-31 周一> [83%]
+	CLOSED: [2016-11-05 周六 16:49]
+	- State "DONE"       from "TODO"       [2016-11-05 周六 16:49]
+**** DONE 修复：敌国团队可合并
+	 CLOSED: [2016-11-01 周二 10:06]
+	 - State "DONE"       from "TODO"       [2016-11-01 周二 10:06]
+**** DONE 修复：释放载具技能常出现技能ID错误
+	 CLOSED: [2016-10-31 周一 16:04]
+	 - State "DONE"       from "TODO"       [2016-10-31 周一 16:04]
+**** DONE 飞火联运问题跟踪
+	 CLOSED: [2016-11-02 周三 12:04]
+	 - State "DONE"       from "TODO"       [2016-11-02 周三 12:04]
+	 + [X] 启动器参数带双引号
+	 + [X] 启动器注册页需要传外部参数
+**** DONE 新增龙石：金龙石，圣金龙盘
+	 CLOSED: [2016-11-02 周三 17:05]
+	 - State "DONE"       from "TODO"       [2016-11-02 周三 17:05]
+**** DONE 双人坐骑支持拒绝邀请的效果
+	 CLOSED: [2016-11-05 周六 16:49]
+	 - State "DONE"       from "TODO"       [2016-11-05 周六 16:49]
+*** DONE <2016-11-07 周一> [66%]
+	CLOSED: [2016-11-14 周一 14:26]
+	- State "DONE"       from "TODO"       [2016-11-14 周一 14:26]
+**** DONE 9377腾讯联运启动器换肤
+	 CLOSED: [2016-11-10 周四 11:43]
+	 - State "DONE"       from "TODO"       [2016-11-10 周四 11:43]
+**** DONE 腾讯开放平台登录接入
+	 CLOSED: [2016-11-10 周四 09:56]
+	 - State "DONE"       from "TODO"       [2016-11-10 周四 09:56]
+*** DONE <2016-11-14 周一> [100%]
+	CLOSED: [2016-11-21 周一 10:19]
+	- State "DONE"       from "TODO"       [2016-11-21 周一 10:19]
+**** DONE 腾讯开放平台联运接入 [4/4]
+	 CLOSED: [2016-11-21 周一 10:19]
+	 - State "DONE"       from "TODO"       [2016-11-21 周一 10:19]
+	 * [X] win7任务栏图标处理
+	 * [X] 返回登录处理：1、向腾讯微端请求建立新连接 2、打开登录器 3、登录器与腾讯微端建立连接 4、关闭游戏
+	 * [X] openkey续期
+	 * [X] pfkey实时获取机制
+**** DONE 提供寄售物品搜索接口(Consign_SearchGoods)
+	 CLOSED: [2016-11-16 周三 11:52]
+	 - State "DONE"       from "TODO"       [2016-11-16 周三 11:52]
+**** DONE 坐骑封印珠tips优化
+	 CLOSED: [2016-11-16 周三 18:25]
+	 - State "DONE"       from "TODO"       [2016-11-16 周三 18:25]
+**** DONE 遇到合区活动刚好在31号结束的时候，界面时间显示会出现变成下月0号的情况
+	 CLOSED: [2016-11-17 周四 09:51]
+	 - State "DONE"       from "TODO"       [2016-11-17 周四 09:51]
+**** DONE 技能标记工具
+	 CLOSED: [2016-11-18 周五 10:51]
+	 - State "DONE"       from "TODO"       [2016-11-18 周五 10:51]
+*** DONE <2016-11-21 周一> [100%]
+	CLOSED: [2016-11-30 周三 09:35]
+	- State "DONE"       from "TODO"       [2016-11-30 周三 09:35]
+**** DONE 腾讯联运QZone特权 [2/2]
+	 CLOSED: [2016-11-30 周三 09:35]
+	 - State "DONE"       from "TODO"       [2016-11-30 周三 09:35]
+	 * [X] 服务器逻辑(礼包配置，礼包领取)
+	 * [X] UI显示
+**** DONE 腾讯联运黄钻特权 [2/2]
+	 CLOSED: [2016-11-30 周三 09:35]
+	 - State "DONE"       from "TODO"       [2016-11-30 周三 09:35]
+	 * [X] 服务器逻辑(礼包配置，礼包领取)
+	 * [X] UI显示
+** 2016/12
+*** DONE <2016-11-30 周三> [50%]
+	CLOSED: [2016-12-05 周一 09:29]
+	- State "DONE"       from "TODO"       [2016-12-05 周一 09:29]
+**** DONE 腾讯开放平台接入 [1/1]
+	 CLOSED: [2016-12-05 周一 09:29]
+	 - State "DONE"       from "TODO"       [2016-12-05 周一 09:29]
+	 + [X] 更新登录器版本，重启登录器时需要先向腾讯微端请求新连接，并将命令行参数原样传入
+*** DONE <2016-12-05 周一> [75%]
+	CLOSED: [2016-12-12 周一 09:39]
+	- State "DONE"       from "TODO"       [2016-12-12 周一 09:39]
+**** DONE 新增成就 [9/9]
+	 CLOSED: [2016-12-07 周三 09:57]
+	 - State "DONE"       from "TODO"       [2016-12-07 周三 09:57]
+	 + [X] 师德成就
+	 + [X] 翅膀成就
+	 + [X] 国家宝藏
+	 + [X] 商行天下
+	 + [X] 副本成就
+	 + [X] 藏经阁
+	 + [X] 技能心法
+	 + [X] 神兵
+	 + [X] 战魂
+**** DONE 星盘数据整理：兼容现有数据结构; 保证数据可扩充性; 保证数据结构清晰、简洁; 数据读取和回写过程简洁明了
+	 CLOSED: [2016-12-09 周五 18:09]
+	 - State "DONE"       from "TODO"       [2016-12-09 周五 18:09]
+*** DONE <2016-12-12 周一> [100%]
+	CLOSED: [2016-12-17 周六 17:19]
+	- State "DONE"       from "TODO"       [2016-12-17 周六 17:19]
+**** DONE 元素龙魂养成功能开发
+	 CLOSED: [2016-12-17 周六 17:19]
+	 - State "DONE"       from "TODO"       [2016-12-17 周六 17:19]
+**** DONE 伏羲玄天盘功能开发
+	 CLOSED: [2016-12-17 周六 17:19]
+	 - State "DONE"       from "TODO"       [2016-12-17 周六 17:19]
+**** DONE 阴阳养成功能开发
+	 CLOSED: [2016-12-17 周六 17:19]
+	 - State "DONE"       from "TODO"       [2016-12-17 周六 17:19]
+**** DONE 阴阳移位功能开发
+	 CLOSED: [2016-12-17 周六 17:19]
+	 - State "DONE"       from "TODO"       [2016-12-17 周六 17:19]
+*** DONE <2016-12-19 周一> [100%]
+	CLOSED: [2016-12-27 周二 09:45]
+	- State "DONE"       from "TODO"       [2016-12-27 周二 09:45]
+**** DONE 五芒星相关功能调试，阴阳移位功能调试
+	 CLOSED: [2016-12-19 周一 16:37]
+	 - State "DONE"       from "TODO"       [2016-12-19 周一 16:37]
+**** DONE 【双人坐骑】双人坐骑变载具后进入副本角色没有下载具
+	 CLOSED: [2016-12-20 周二 16:01]
+	 - State "DONE"       from "TODO"       [2016-12-20 周二 16:01]
+**** DONE 技能心法UI逻辑重构
+	 CLOSED: [2016-12-22 周四 09:38]
+	 - State "DONE"       from "TODO"       [2016-12-22 周四 09:38]
+**** DONE 技能心法操作UI移植
+	 CLOSED: [2016-12-23 周五 11:07]
+	 - State "DONE"       from "TODO"       [2016-12-23 周五 11:07]
+*** DONE <2016-12-27 周二> [100%]
+	CLOSED: [2017-01-03 周二 09:33]
+	- State "DONE"       from "TODO"       [2017-01-03 周二 09:33]
+**** DONE 心法 UI 上增加对应的技能条目显示
+	 CLOSED: [2016-12-29 周四 17:37]
+	 - State "DONE"       from "TODO"       [2016-12-29 周四 17:37]
+**** DONE 心法激活、刷新转圈特效支持
+	 CLOSED: [2017-01-03 周二 09:32]
+	 - State "DONE"       from "TODO"       [2017-01-03 周二 09:32]
+* Schedule For Career
+
+** 2016/01
+
+*** DONE <2016-01-04 周一> [100%]
+	CLOSED: [2016-01-10 周日 09:52]
+	- STATE "DONE"       FROM "TODO"       [2016-01-10 周日 09:52]
+**** DONE 读：《TCP/IP协议详解》
+	 CLOSED: [2016-01-10 周日 09:52]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-10 周日 09:52]
+	 * 广播与多播
+	 * IGMP组管理协议
+
+*** DONE <2016-01-11 周一> [100%]
+	CLOSED: [2016-01-18 周一 10:39]
+	- STATE "DONE"       FROM "TODO"       [2016-01-18 周一 10:39]
+**** DONE 利用 SIGAR 收集和显示系统信息
+	 CLOSED: [2016-01-18 周一 10:38]
+	 - STATE "DONE"       FROM "PROCESSING" [2016-01-18 周一 10:38]
+	 - STATE "PROCESSING" FROM "TODO"       [2016-01-11 周一 10:14]
+	 - CPU命令
+	 - MEM命令
+	 - UPDATE命令
+**** DONE 应用程序主循环设计
+	 CLOSED: [2016-01-14 周四 16:06]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-14 周四 16:06]
+**** DONE C++使用继承时子对象的内存布局
+	 CLOSED: [2016-01-12 周二 22:53]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-12 周二 22:53]
+**** DONE SNAIL跨平台编译
+	 CLOSED: [2016-01-17 周日 14:11]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-17 周日 14:11]
+**** DONE SNAIL新增TRACE支持
+	 CLOSED: [2016-01-17 周日 14:11]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-17 周日 14:11]
+
+*** DONE <2016-01-18 周一> [100%]
+	CLOSED: [2016-01-25 周一 10:34]
+	- STATE "DONE"       FROM "TODO"       [2016-01-25 周一 10:34]
+**** DONE TCP 连接的建立和终止
+	 CLOSED: [2016-01-18 周一 22:55]
+	 - STATE "DONE"       FROM "DONE"       [2016-01-25 周一 10:34]
+**** DONE TCP 交互数据流
+	 CLOSED: [2016-01-21 周四 18:30]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-21 周四 18:30]
+**** DONE TCP 成块数据流
+	 CLOSED: [2016-01-21 周四 18:30]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-21 周四 18:30]
+**** DONE TCP 的超时和重传机制
+	 CLOSED: [2016-01-24 周日 17:17]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-24 周日 17:17]
+
+*** DONE <2016-01-25 周一> [100%]
+	CLOSED: [2016-02-01 周一 09:57]
+	- STATE "DONE"       FROM "TODO"       [2016-02-01 周一 09:57]
+**** DONE 实现基于共享内存的主从式消息订阅/发布模型
+	 CLOSED: [2016-02-01 周一 09:56]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-01 周一 09:56]
+**** DONE TCP 坚持定时器
+	 CLOSED: [2016-01-26 周二 10:53]
+	 - STATE "DONE"       FROM "DONE"       [2016-02-01 周一 09:57]
+**** DONE TCP 保活定时器(KEEP ALIVE)
+	 CLOSED: [2016-01-26 周二 10:53]
+	 - STATE "DONE"       FROM "TODO"       [2016-01-26 周二 10:53]
+
+** 2016/02
+
+*** DONE <2016-02-01 周一> [100%]
+	CLOSED: [2016-02-19 周五 09:38]
+	- STATE "DONE"       FROM "TODO"       [2016-02-19 周五 09:38]
+**** DONE 调整和改善CENTOS配置的MAKEFILE
+	 CLOSED: [2016-02-02 周二 15:58]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-02 周二 15:58]
+**** DONE LINUX 基本命令总结
+	 CLOSED: [2016-02-02 周二 15:41]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-02 周二 15:41]
+**** DONE CENTOS 7 SYSTEMD服务简介
+	 CLOSED: [2016-02-19 周五 09:37]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-19 周五 09:37]
+
+*** DONE <2016-02-19 周五> [100%]
+	CLOSED: [2016-02-25 周四 09:50]
+	- STATE "DONE"       FROM "TODO"       [2016-02-25 周四 09:50]
+**** DONE 网络服务器开发总结：HTTP://MY.OSCHINA.NET/U/181613/BLOG/596022?FROMERR=U59OFNAJ
+	 CLOSED: [2016-02-19 周五 19:14]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-19 周五 19:14]
+
+*** DONE <2016-02-22 周一> [100%]
+	CLOSED: [2016-02-28 周日 20:22]
+	- STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:22]
+**** DONE 读 ZMQ 文档
+	 CLOSED: [2016-02-28 周日 20:18]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:18]
+***** DONE ZMQ基础
+	  CLOSED: [2016-02-28 周日 20:18]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:18]
+***** DONE ZMQ进阶
+	  CLOSED: [2016-02-28 周日 20:18]
+	  - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:18]
+**** DONE 读 《游戏引擎架构》 [7/7]
+	 CLOSED: [2016-02-28 周日 20:22]
+	 - STATE "DONE"       FROM "TODO"       [2016-02-28 周日 20:22]
+	 - [X] 专业工具
+	 - [X] 软件工程基础
+	 - [X] 游戏所需的 3D 数学
+	 - [X] 游戏支持系统
+	 - [X] 游戏循环及实时模拟
+	 - [X] 人体接口学设备
+	 - [X] 调试及开发工具
+
+** 2016/03
+
+*** DONE <2016-02-29 周一> [100%]
+	CLOSED: [2016-03-06 周日 18:24]
+	- STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:24]
+**** DONE WIRESHARK网络包分析攻击/BPF包过滤语言
+	 CLOSED: [2016-03-06 周日 18:23]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:23]
+
+	 一条完整的 BPF 包过滤规则的构成是 ` *PROTO DIR TYPE* ID'。例如
+	 `IP DST PORT 21', `ICMP DST HOST 192.168.1.1', `TCP SRC PORT 22' 等，都是
+	 完整的包过滤规则。另外，我们可以通过与/或关系将这些规则组合起来形成强大的
+	 BPF 包过滤语言。至于解析实现，采用与/或树将是不错的选择：整棵树由与节点、
+	 或节点以及包含完整过滤规则的叶子节点构成。
+
+**** DONE 阅读 《游戏引擎架构》 [1/1]
+	 CLOSED: [2016-03-06 周日 18:13]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:13]
+	 * [X] 渲染引擎
+**** DONE 《取悦的工序--如何理解游戏》
+	 CLOSED: [2016-03-06 周日 18:12]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-06 周日 18:12]
+
+*** DONE <2016-03-07 周一> [100%]
+	CLOSED: [2016-03-14 周一 11:14]
+	- STATE "DONE"       FROM "TODO"       [2016-03-14 周一 11:14]
+**** DONE 完成《游戏引擎架构》的阅读
+	 CLOSED: [2016-03-14 周一 11:14]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-14 周一 11:14]
+
+	 * [X] 动画系统
+	 * [ ] 物理系统
+	 * [ ] 游戏性
+
+**** DONE REDMINE 安装指引
+	 CLOSED: [2016-03-14 周一 11:14]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-14 周一 11:14]
+**** DONE MYSQL命令整理
+	 CLOSED: [2016-03-10 周四 10:52]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-10 周四 10:52]
+
+*** DONE <2016-03-14 周一> [100%]
+	CLOSED: [2016-03-21 周一 09:46]
+	- STATE "DONE"       FROM "TODO"       [2016-03-21 周一 09:46]
+**** DONE 从业经验总结
+	 CLOSED: [2016-03-17 周四 10:23]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-17 周四 10:23]
+**** DONE PYTHON 语法总结
+	 CLOSED: [2016-03-18 周五 11:41]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-18 周五 11:41]
+**** DONE MY TETRIS
+	 CLOSED: [2016-03-21 周一 09:45]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-21 周一 09:45]
+
+	 重新使用 2D 平移、旋转方程实现
+*** DONE <2016-03-21 周一> [100%]
+	CLOSED: [2016-03-28 周一 10:22]
+	- STATE "DONE"       FROM "TODO"       [2016-03-28 周一 10:22]
+
+**** DONE THE BSD PACKET FILTER
+	 CLOSED: [2016-03-24 周四 14:30]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-24 周四 14:30]
+
+	 包过滤可用布尔表达式树或控制流图(CFG)实现，BPF 利用 CFG 实现。
+**** DONE TCP 的性能和未来
+	 CLOSED: [2016-03-24 周四 09:33]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-24 周四 09:33]
+**** DONE C++ TEMPLATE（编译器泛型技术）
+	 CLOSED: [2016-03-22 周二 19:53]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-22 周二 19:53]
+**** DONE LINUX 平台下的调试工具：STRACE
+	 CLOSED: [2016-03-22 周二 14:46]
+	 - STATE "DONE"       FROM "DONE"       [2016-03-28 周一 10:22]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-22 周二 14:46]
+
+	 LINUX 平台下的系统调用追踪和分析工具，可显示一个 LINUX 进程的全部系统调用信息及其性能统计。
+	 例：
+	 #+BEGIN_SRC SH
+	   $ STRACE -H # 显示帮助
+	   $ STRACE -C CD ~
+	   $ STRACE -P 2210
+	 #+END_SRC
+
+** 2016/04
+*** DONE <2016-03-28 周一> [100%]
+	CLOSED: [2016-04-04 周一 18:51]
+	- STATE "DONE"       FROM "TODO"       [2016-04-04 周一 18:51]
+**** DONE 红黑树
+	 CLOSED: [2016-04-04 周一 18:51]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-04 周一 18:51]
+	 根据红黑树算法实现了简单的红黑树容器，包含插入和删除，但不能迭代元素。
+**** DONE 仿函数
+	 CLOSED: [2016-03-29 周二 15:47]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-29 周二 15:47]
+**** DONE STL ITERATOR 设计
+	 CLOSED: [2016-03-28 周一 10:24]
+	 - STATE "DONE"       FROM "DONE"       [2016-04-04 周一 18:51]
+	 - STATE "DONE"       FROM "TODO"       [2016-03-28 周一 10:24]
+*** DONE <2016-04-04 周一> [100%]
+	CLOSED: [2016-04-11 周一 09:29]
+	- STATE "DONE"       FROM "TODO"       [2016-04-11 周一 09:29]
+**** DONE 在 GITHUB 上搭建博客
+	 CLOSED: [2016-04-11 周一 09:29]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-11 周一 09:29]
+*** DONE <2016-04-11 周一> [100%]
+	CLOSED: [2016-04-18 周一 14:25]
+	- STATE "DONE"       FROM "TODO"       [2016-04-18 周一 14:25]
+**** DONE 熟悉 ASYNCNET 库
+	 CLOSED: [2016-04-18 周一 14:25]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-18 周一 14:25]
+*** DONE <2016-04-18 周一> [100%]
+	CLOSED: [2016-04-23 周六 14:34]
+	- STATE "DONE"       FROM "TODO"       [2016-04-23 周六 14:34]
+**** DONE 构建“软件积木”(以搭积木的方式编写应用软件)
+	 CLOSED: [2016-04-23 周六 14:33]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-23 周六 14:33]
+
+	 已完成 CILL 库的 CORE 模块和 CMD 模块编写
+
+*** DONE <2016-04-25 周一> [100%]
+	CLOSED: [2016-05-03 周二 10:10]
+	- STATE "DONE"       FROM "TODO"       [2016-05-03 周二 10:10]
+**** DONE 将 ASYNCNET 融合到 CILL 库
+	 CLOSED: [2016-04-30 周六 23:10]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-30 周六 23:10]
+**** DONE 为 ASYNCNET 编写回射测试程序
+	 CLOSED: [2016-04-30 周六 20:46]
+	 - STATE "DONE"       FROM "TODO"       [2016-04-30 周六 20:46]
+** 2016/05
+*** DONE <2016-05-03 周二> [100%]
+	CLOSED: [2016-05-09 周一 11:27]
+	- STATE "DONE"       FROM "TODO"       [2016-05-09 周一 11:27]
+**** DONE 为 KMEM 编写测试程序
+	 CLOSED: [2016-05-09 周一 11:27]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-09 周一 11:27]
+*** DONE <2016-05-09 周一> [100%]
+	CLOSED: [2016-05-16 周一 09:53]
+	- STATE "DONE"       FROM "TODO"       [2016-05-16 周一 09:53]
+**** DONE 使用 IPTABLES 配置防火墙
+	 CLOSED: [2016-05-12 周四 11:57]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-12 周四 11:57]
+**** DONE KMEM 库中的 SLAB 算法说明
+	 CLOSED: [2016-05-10 周二 18:16]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-10 周二 18:16]
+**** DONE LINUX SLAB 分配器剖析
+	 CLOSED: [2016-05-09 周一 18:20]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-09 周一 18:20]
+*** DONE <2016-05-16 周一> [50%]
+	CLOSED: [2016-05-23 周一 09:49]
+	- STATE "DONE"       FROM "TODO"       [2016-05-23 周一 09:49]
+**** DONE 反向代理服务器初步实现
+	 CLOSED: [2016-05-23 周一 09:48]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-23 周一 09:48]
+*** DONE <2016-05-23 周一> [75%]
+	CLOSED: [2016-05-30 周一 12:02]
+	- STATE "DONE"       FROM "TODO"       [2016-05-30 周一 12:02]
+**** DONE INI 解析器完善
+	 CLOSED: [2016-05-26 周四 10:34]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-26 周四 10:34]
+**** DONE MD文档：UNIX 用户态下的进程知识
+	 CLOSED: [2016-05-28 周六 23:05]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-28 周六 23:05]
+**** DONE MD文档：UNIX 编程环境下的文件系统
+	 CLOSED: [2016-05-28 周六 15:01]
+	 - STATE "DONE"       FROM "TODO"       [2016-05-28 周六 15:01]
+** 2016/06
+*** DONE <2016-05-30 周一> [100%]
+	CLOSED: [2016-06-06 周一 10:08]
+	- STATE "DONE"       FROM "TODO"       [2016-06-06 周一 10:08]
+**** DONE 腾讯公司后台安全工程师职位面试
+	 CLOSED: [2016-06-06 周一 10:08]
+	 - STATE "DONE"       FROM "TODO"       [2016-06-06 周一 10:08]
+
+	 涉及点：
+	 1. 架构。这似乎是每次必答题，我这方面的造诣还远远不够看的。
+	 2. 共享内存知识点。使用共享内存时应注意什么？1. 避免操作映射区以外的内存；2. ？
+	 3. 共享内存时的同步手段？信号量。
+	 4. 设计模式。
+	 5. SOCKET 编程以及网络通信库。
+	 6. 题目：BITMAP
+
+*** DONE <2016-06-06 周一> [100%]
+	CLOSED: [2016-06-12 周日 09:40]
+	- State "DONE"       from "TODO"       [2016-06-12 周日 09:40]
+**** DONE AsyncNet 库中 AsyncCore 设计
+	 CLOSED: [2016-06-12 周日 09:40]
+	 - State "DONE"       from "TODO"       [2016-06-12 周日 09:40]
+**** DONE AsyncNet 中的数据结构
+	 CLOSED: [2016-06-12 周日 09:40]
+	 - State "DONE"       from "TODO"       [2016-06-12 周日 09:40]
+	 + [ ] IVECTOR
+	 + [ ] IMEMNODE
+	 + [ ] IQUEUE
+**** DONE md文档：Unix 编程环境下的 I/O
+	 CLOSED: [2016-06-10 周五 22:53]
+	 - State "DONE"       from "TODO"       [2016-06-10 周五 22:53]
+**** DONE md文档：Unix 编程环境下的进程IPC
+	 CLOSED: [2016-06-10 周五 17:16]
+	 - State "DONE"       from "TODO"       [2016-06-10 周五 17:16]
+**** DONE md文档：Unix 编程环境下的线程知识
+	 CLOSED: [2016-06-09 周四 22:00]
+	 - State "DONE"       from "TODO"       [2016-06-09 周四 22:00]
+
+*** DONE <2016-06-12 周日> [50%]
+	CLOSED: [2016-06-19 周日 20:22]
+	- State "DONE"       from "TODO"       [2016-06-19 周日 20:22]
+**** DONE 《Unix网络编程卷三(进程间的通信)》剩余章节阅读 [3/3]
+	 CLOSED: [2016-06-19 周日 16:22]
+	 - State "DONE"       from "TODO"       [2016-06-19 周日 16:22]
+	 * [X] 单主机内进程间的远过程调用：门
+	 * [X] 主机间的远过程调用：Sun RPC
+	 * [X] Posix fcntl 记录上锁
+
+*** DONE <2016-06-20 周一> [66%]
+	CLOSED: [2016-06-26 周日 18:57]
+	- State "DONE"       from "TODO"       [2016-06-26 周日 18:57]
+**** DONE KBE环境搭建
+	 CLOSED: [2016-06-26 周日 18:56]
+	 - State "DONE"       from "TODO"       [2016-06-26 周日 18:56]
+	 * [X] mysql 命令概要 [md]
+**** DONE C++临时对象构建场景 [md]
+	 CLOSED: [2016-06-25 周六 23:55]
+	 - State "DONE"       from "TODO"       [2016-06-25 周六 23:55]
+
+*** DONE <2016-06-27 周一> [%]
+	CLOSED: [2016-07-04 周一 09:57]
+	- State "DONE"       from "TODO"       [2016-07-04 周一 09:57]
+**** TODO kbe 架构解析
+	 * [X] kbengine 消息处理函数注册
+
+** 2016/07
+*** DONE <2016-07-04 周一> [100%]
+	CLOSED: [2016-07-10 周日 20:26]
+	- State "DONE"       from "TODO"       [2016-07-10 周日 20:26]
+**** DONE [[http://linux.vbird.org/linux_basic/#part1][第一部份 Linux 的规划与安装]] [100%]
+	 CLOSED: [2016-07-10 周日 20:26]
+	 - State "DONE"       from "TODO"       [2016-07-10 周日 20:26]
+	 * [X] Linux是什么
+	 * [X] Linux如何学习
+	 * [X] 主机规划与磁盘分区
+	 * [X] 安装CentOS 5.x与多重引导技巧
+	 * [X] 首次登陆与在线求助 man page
+**** DONE kbe 代码阅览
+	 CLOSED: [2016-07-10 周日 20:25]
+	 - State "DONE"       from "TODO"       [2016-07-10 周日 20:25]
+**** DONE Linux 代码阅览
+	 CLOSED: [2016-07-10 周日 20:26]
+	 - State "DONE"       from "TODO"       [2016-07-10 周日 20:26]
+*** DONE <2016-07-11 周一> [100%]
+	CLOSED: [2016-08-01 周一 09:33]
+	- State "DONE"       from "TODO"       [2016-08-01 周一 09:33]
+**** DONE 格蠹汇编
+	 CLOSED: [2016-07-18 周一 17:18]
+	 - State "DONE"       from "TODO"       [2016-07-18 周一 17:18]
+	 已阅部分章节，如果熟练WinDbg工具再来读这本书应该会更容易，感受也应该更真切。
+**** DONE 抽离出 Linux 内核源码中使用的数据结构
+	 CLOSED: [2016-07-18 周一 17:18]
+	 - State "DONE"       from "TODO"       [2016-07-18 周一 17:18]
+	 已将双向链表(list)抽离出来，目前已发现的还值得移植的有：rbtree, 字典。
+*** DONE <2016-07-18 周一> [0%]
+	CLOSED: [2016-07-25 周一 09:31]
+	- State "DONE"       from "DONE"       [2016-08-01 周一 09:34]
+	- State "DONE"       from "TODO"       [2016-07-25 周一 09:31]
+*** DONE <2016-07-25 周一> [40%]
+	CLOSED: [2016-08-01 周一 09:34]
+	- State "DONE"       from "TODO"       [2016-08-01 周一 09:34]
+**** DONE Linux网络工具总结
+	 CLOSED: [2016-07-29 周五 09:32]
+	 - State "DONE"       from "TODO"       [2016-07-29 周五 09:32]
+**** DONE Shadowsocks 搭建
+	 CLOSED: [2016-07-26 周二 09:52]
+	 - State "DONE"       from "TODO"       [2016-07-26 周二 09:52]
+** 2016/08
+*** DONE <2016-08-01 周一> [100%]
+	CLOSED: [2016-08-08 周一 09:40]
+	- State "DONE"       from "TODO"       [2016-08-08 周一 09:40]
+**** DONE DNS解析
+	 CLOSED: [2016-08-08 周一 09:40]
+	 - State "DONE"       from "TODO"       [2016-08-08 周一 09:40]
+*** DONE <2016-08-08 周一> [100%]
+	CLOSED: [2016-08-15 周一 09:33]
+	- State "DONE"       from "TODO"       [2016-08-15 周一 09:33]
+**** DONE 了解kcp的使用
+	 CLOSED: [2016-08-15 周一 09:33]
+	 - State "DONE"       from "TODO"       [2016-08-15 周一 09:33]
+**** DONE 理解kcptun原理
+	 CLOSED: [2016-08-15 周一 09:33]
+	 - State "DONE"       from "TODO"       [2016-08-15 周一 09:33]
+*** DONE <2016-08-15 周一> [100%]
+	CLOSED: [2016-08-22 周一 10:46]
+	- State "DONE"       from "TODO"       [2016-08-22 周一 10:46]
+**** DONE 完成fasttun的初步开发工作
+	 CLOSED: [2016-08-22 周一 10:46]
+	 - State "DONE"       from "TODO"       [2016-08-22 周一 10:46]
+*** DONE <2016-08-22 周一> [100%]
+	CLOSED: [2016-08-29 周一 09:53]
+	- State "DONE"       from "TODO"       [2016-08-29 周一 09:53]
+**** DONE fasttun: kcptunnel 发送目的地地址改为动态模式
+	 CLOSED: [2016-08-29 周一 09:53]
+	 - State "DONE"       from "TODO"       [2016-08-29 周一 09:53]
+**** DONE 完成 fasttun 的开发，并将其部署到 vps 上
+	 CLOSED: [2016-08-29 周一 09:53]
+	 - State "DONE"       from "TODO"       [2016-08-29 周一 09:53]
+**** DONE fasttun: 多模式 kcp tunnel 支持
+	 CLOSED: [2016-08-26 周五 11:06]
+	 - State "DONE"       from "TODO"       [2016-08-26 周五 11:06]
+**** DONE 初步 fasttun 的开发
+	 CLOSED: [2016-08-25 周四 14:37]
+	 - State "DONE"       from "TODO"       [2016-08-25 周四 14:37]
+** 2016/09
+*** DONE <2016-08-29 周一> [66%]
+	CLOSED: [2016-09-05 周一 10:50]
+	- State "DONE"       from "TODO"       [2016-09-05 周一 10:50]
+**** DONE fasttun: FastConnection的生命周期与Connection分离
+	 CLOSED: [2016-09-01 周四 12:01]
+	 - State "DONE"       from "TODO"       [2016-09-01 周四 12:01]
+**** DONE fasttun Bug修复
+	 CLOSED: [2016-09-01 周四 11:18]
+	 - State "DONE"       from "TODO"       [2016-09-01 周四 11:18]
+*** TODO <2016-09-05 周一> [66%]
+**** TODO 微分、微分中值定理
+**** TODO nginx源码阅读
+**** DONE fasttun: 基于文件的列表缓存机制
+	 CLOSED: [2016-09-29 周四 15:20]
+	 - State "DONE"       from "TODO"       [2016-09-29 周四 15:20]
+**** DONE 加强fasttun数据发送机制
+	 CLOSED: [2016-09-26 周一 09:42]
+	 - State "DONE"       from "TODO"       [2016-09-26 周一 09:42]
+**** DONE fasttun增加心跳探测
+	 CLOSED: [2016-09-26 周一 09:42]
+	 - State "DONE"       from "TODO"       [2016-09-26 周一 09:42]
+**** DONE cill库增加定时器
+	 CLOSED: [2016-09-23 周五 10:21]
+	 - State "DONE"       from "TODO"       [2016-09-23 周五 10:21]
+**** DONE fasttun进一步优化 [1/1]
+	 CLOSED: [2016-09-19 周一 10:06]
+	 - State "DONE"       from "TODO"       [2016-09-19 周一 10:06]
+	 * [X] 去除不必要的log
+**** DONE ARQ(Automatic Repeat reQuest) 协议了解
+	 CLOSED: [2016-09-09 周五 17:14]
+	 - State "DONE"       from "TODO"       [2016-09-09 周五 17:14]
+
+** 2016/10
+
+*** DONE <2016-10-09 周日> [37%]
+	CLOSED: [2016-10-24 周一 09:47]
+	- State "DONE"       from "TODO"       [2016-10-24 周一 09:47]
+
+**** DONE 《C专家编程》阅读
+	 CLOSED: [2016-10-24 周一 09:46]
+	 - State "DONE"       from "TODO"       [2016-10-24 周一 09:46]
+**** DONE bitset实现
+	 CLOSED: [2016-10-18 周二 17:46]
+	 - State "DONE"       from "TODO"       [2016-10-18 周二 17:46]
+**** DONE 《C程序语言设计》阅读
+	 CLOSED: [2016-10-18 周二 17:46]
+	 - State "DONE"       from "TODO"       [2016-10-18 周二 17:46]
+
+*** DONE <2016-10-24 周一> [14%]
+	CLOSED: [2016-10-31 周一 09:45]
+	- State "DONE"       from "TODO"       [2016-10-31 周一 09:45]
+**** DONE cdecl程序实现
+	 CLOSED: [2016-10-28 周五 15:16]
+	 - State "DONE"       from "TODO"       [2016-10-28 周五 15:16]
+** 2016/11
+*** DONE <2016-10-31 周一> [37%]
+	CLOSED: [2016-11-14 周一 14:25]
+	- State "DONE"       from "TODO"       [2016-11-14 周一 14:25]
+**** DONE STL源码分析 [4/4]
+	 CLOSED: [2016-11-14 周一 14:24]
+	 - State "DONE"       from "TODO"       [2016-11-14 周一 14:24]
+	 + [X] 空间分配器
+	 + [X] 迭代器
+	 + [X] 序列式容器(vector/list/dqueue/stack/queue/heap/priority_queue)
+	 + [X] 关联式容器
+**** DONE 二叉堆实现
+	 CLOSED: [2016-11-08 周二 09:41]
+	 - State "DONE"       from "TODO"       [2016-11-08 周二 09:41]
+**** DONE fasttun说明文档
+	 CLOSED: [2016-10-31 周一 09:46]
+	 - State "DONE"       from "TODO"       [2016-10-31 周一 09:46]
+*** DONE <2016-11-14 周一> [100%]
+	CLOSED: [2016-11-20 周日 14:27]
+	- State "DONE"       from "TODO"       [2016-11-20 周日 14:27]
+**** DONE md文档：Unix 环境下的 Socket 编程知识
+	 CLOSED: [2016-11-20 周日 14:27]
+	 - State "DONE"       from "TODO"       [2016-11-20 周日 14:27]
+**** DONE md文档：Unix 环境下的同步机制
+	 CLOSED: [2016-11-20 周日 14:27]
+	 - State "DONE"       from "TODO"       [2016-11-20 周日 14:27]
+** 2016/12
+*** DONE <2016-11-30 周三> [%]
+	CLOSED: [2016-12-05 周一 09:36]
+	- State "DONE"       from "TODO"       [2016-12-05 周一 09:36]
+*** DONE <2016-12-05 周一> [50%]
+	CLOSED: [2016-12-12 周一 09:43]
+	- State "DONE"       from "TODO"       [2016-12-12 周一 09:43]
+**** DONE 阅读 《Effective C++》
+	 CLOSED: [2016-12-12 周一 09:41]
+	 - State "DONE"       from "TODO"       [2016-12-12 周一 09:41]
+
+	 完成大部分章节的阅读！
+*** DONE <2016-12-12 周一> [50%]
+	CLOSED: [2016-12-19 周一 10:25]
+	- State "DONE"       from "TODO"       [2016-12-19 周一 10:25]
+**** DONE 完成 《Effective C++》 的阅读
+	 CLOSED: [2016-12-16 周五 09:28]
+	 - State "DONE"       from "TODO"       [2016-12-16 周五 09:28]
+*** DONE <2016-12-19 周一> [%]
+	 CLOSED: [2017-01-03 周二 09:38]
+	 - State "DONE"       from "TODO"       [2017-01-03 周二 09:38]
