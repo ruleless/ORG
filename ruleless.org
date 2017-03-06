@@ -33,11 +33,32 @@
 ***** TODO 将登录器资源更新逻辑融入微端代理进程，为预更新或剩余资源下载铺路
 ***** TODO 内测/压测资源合并
 *** 2017/3
-**** TODO <2017-02-27 周一> [0%]
-***** TODO 熟悉proxyd
-***** TODO 整合Log到proxyd应用中
-***** TODO 为proxyd增加配置功能
-***** TODO 为proxyd完善shell命令
+**** DONE <2017-02-27 周一> [100%]
+	 CLOSED: [2017-03-06 周一 11:15]
+	 - State "DONE"       from "TODO"       [2017-03-06 周一 11:15]
+***** DONE 熟悉proxyd
+	  CLOSED: [2017-03-06 周一 11:14]
+	  - State "DONE"       from "TODO"       [2017-03-06 周一 11:14]
+***** DONE proxyd命令行参数解析
+	  CLOSED: [2017-03-03 周五 08:39]
+	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:39]
+***** DONE 单实例运行
+	  CLOSED: [2017-03-03 周五 08:39]
+	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:39]
+***** DONE BugReport支持
+	  CLOSED: [2017-03-03 周五 08:40]
+	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:40]
+***** DONE 为proxyd完善shell命令
+	  CLOSED: [2017-03-06 周一 11:14]
+	  - State "DONE"       from "TODO"       [2017-03-06 周一 11:14]
+***** DONE 整合Log到proxyd应用中
+	  CLOSED: [2017-03-02 周四 08:42]
+	  - State "DONE"       from "TODO"       [2017-03-02 周四 08:42]
+***** DONE 为proxyd增加配置功能
+	  CLOSED: [2017-03-02 周四 08:42]
+	  - State "DONE"       from "TODO"       [2017-03-02 周四 08:42]
+**** TODO <2017-03-06 周一> [%]
+***** TODO 熟悉MDM服务端
 *** BUG TRACE
 
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
