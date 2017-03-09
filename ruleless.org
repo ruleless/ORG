@@ -57,8 +57,21 @@
 ***** DONE 为proxyd增加配置功能
 	  CLOSED: [2017-03-02 周四 08:42]
 	  - State "DONE"       from "TODO"       [2017-03-02 周四 08:42]
-**** TODO <2017-03-06 周一> [%]
+**** TODO <2017-03-06 周一> [9%]
 ***** TODO 熟悉MDM服务端
+***** DONE BUG: 守护进程模式下proxyd不能正常启动
+	  CLOSED: [2017-03-08 周三 08:42]
+	  - State "DONE"       from "TODO"       [2017-03-08 周三 08:42]
+***** TODO proxyd的服务脚本
+***** TODO node.js脚本安装为服务
+***** TODO node.js脚本日志支持
+***** TODO 建立反向连接过程中的token校验机制完善
+***** TODO tcp服务针对反向代理程序的session支持(已完成？)
+***** TODO proxyutil(反向代理工具)命令添加。还需支持的命令至少包括：
+	  1. [X] 日志级别控制
+	  2. [X] 根据vpn地址查询和控制反向连接信息
+***** TODO mdmutil 命令添加：对接反向代理的node.js程序，用于取token
+***** TODO 反向代理的node.js程序的日志支持
 *** BUG TRACE
 
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
