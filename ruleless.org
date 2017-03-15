@@ -36,42 +36,51 @@
 **** DONE <2017-02-27 周一> [100%]
 	 CLOSED: [2017-03-06 周一 11:15]
 	 - State "DONE"       from "TODO"       [2017-03-06 周一 11:15]
-***** DONE 熟悉proxyd
-	  CLOSED: [2017-03-06 周一 11:14]
-	  - State "DONE"       from "TODO"       [2017-03-06 周一 11:14]
-***** DONE proxyd命令行参数解析
-	  CLOSED: [2017-03-03 周五 08:39]
-	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:39]
-***** DONE 单实例运行
-	  CLOSED: [2017-03-03 周五 08:39]
-	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:39]
-***** DONE BugReport支持
-	  CLOSED: [2017-03-03 周五 08:40]
-	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:40]
-***** DONE 为proxyd完善shell命令
-	  CLOSED: [2017-03-06 周一 11:14]
-	  - State "DONE"       from "TODO"       [2017-03-06 周一 11:14]
 ***** DONE 整合Log到proxyd应用中
 	  CLOSED: [2017-03-02 周四 08:42]
 	  - State "DONE"       from "TODO"       [2017-03-02 周四 08:42]
 ***** DONE 为proxyd增加配置功能
 	  CLOSED: [2017-03-02 周四 08:42]
 	  - State "DONE"       from "TODO"       [2017-03-02 周四 08:42]
-**** TODO <2017-03-06 周一> [9%]
-***** TODO 熟悉MDM服务端
+***** DONE BugReport支持
+	  CLOSED: [2017-03-03 周五 08:40]
+	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:40]
+***** DONE proxyd命令行参数解析
+	  CLOSED: [2017-03-03 周五 08:39]
+	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:39]
+***** DONE 单实例运行
+	  CLOSED: [2017-03-03 周五 08:39]
+	  - State "DONE"       from "TODO"       [2017-03-03 周五 08:39]
+***** DONE 熟悉proxyd
+	  CLOSED: [2017-03-06 周一 11:14]
+	  - State "DONE"       from "TODO"       [2017-03-06 周一 11:14]
+**** DONE <2017-03-06 周一> [15%]
+	 CLOSED: [2017-03-14 周二 14:00]
+	 - State "DONE"       from "TODO"       [2017-03-14 周二 14:00]
 ***** DONE BUG: 守护进程模式下proxyd不能正常启动
 	  CLOSED: [2017-03-08 周三 08:42]
 	  - State "DONE"       from "TODO"       [2017-03-08 周三 08:42]
-***** TODO proxyd的服务脚本
-***** TODO node.js脚本安装为服务
-***** TODO node.js脚本日志支持
-***** TODO 建立反向连接过程中的token校验机制完善
-***** TODO tcp服务针对反向代理程序的session支持(已完成？)
-***** TODO proxyutil(反向代理工具)命令添加。还需支持的命令至少包括：
+***** DONE proxyutil(反向代理工具)命令添加。需支持的命令至少包括：
+	  CLOSED: [2017-03-10 周五 12:47]
+	  - State "DONE"       from "TODO"       [2017-03-10 周五 12:47]
 	  1. [X] 日志级别控制
 	  2. [X] 根据vpn地址查询和控制反向连接信息
-***** TODO mdmutil 命令添加：对接反向代理的node.js程序，用于取token
-***** TODO 反向代理的node.js程序的日志支持
+**** TODO <2017-03-14 周二> [0%]
+***** TODO MDM IOS APP安装命令推送
+***** TODO MDM IOS APP卸载命令推送
+***** TODO MDM IOS截屏命令推送
+**** TODO tsmanager代码阅读[必须产出文档]
+**** TODO proxyd的服务脚本
+**** TODO node.js脚本安装为服务
+**** TODO node.js脚本日志支持
+**** TODO node.js脚本异常处理(try catch)
+**** TODO node.js脚本定时器C进程的清理 否则会产生很多无效进程
+**** TODO tcp服务针对反向代理程序的session支持(通过算法保证session安全)
+**** TODO mdmutil 命令添加：对接反向代理的node.js程序，用于取token
+**** TODO 反向代理的node.js程序的日志支持
+**** TODO 反向代理内存泄漏查找
+**** TODO 反向代理：需要在安装脚本中处理防火墙关闭端口的情况
+
 *** BUG TRACE
 
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
