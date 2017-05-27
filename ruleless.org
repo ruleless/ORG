@@ -145,10 +145,91 @@
 	  CLOSED: [2017-05-02 周二 09:25]
 	  - State "DONE"       from "TODO"       [2017-05-02 周二 09:25]
 *** 2017/5
-**** TODO <2017-05-02 周二> [0%]
-***** TODO Web资源改进代码走读问题修改
-***** TODO Web资源改进设计图修正
-***** TODO 编写Web服务模块答辩文档
+**** DONE <2017-05-02 周二> [62%]
+	 CLOSED: [2017-05-08 周一 08:55]
+	 - State "DONE"       from "TODO"       [2017-05-08 周一 08:55]
+***** DONE Web资源改进代码走读问题修改
+	  CLOSED: [2017-05-04 周四 14:04]
+	  - State "DONE"       from "TODO"       [2017-05-04 周四 14:04]
+***** DONE Web资源改进设计图修正
+	  CLOSED: [2017-05-04 周四 16:38]
+	  - State "DONE"       from "TODO"       [2017-05-04 周四 16:38]
+***** DONE 编写Web服务模块答辩文档
+	  CLOSED: [2017-05-08 周一 08:53]
+	  - State "DONE"       from "TODO"       [2017-05-08 周一 08:53]
+***** DONE 替换 document.domain='tt.com' 形式的字符串 [在mod_regex里面完成此项工作]
+	  CLOSED: [2017-05-08 周一 08:54]
+	  - State "DONE"       from "TODO"       [2017-05-08 周一 08:54]
+***** DONE regex模块重写
+	  CLOSED: [2017-05-08 周一 08:54]
+	  - State "DONE"       from "TODO"       [2017-05-08 周一 08:54]
+**** DONE <2017-05-08 周一> [100%]
+	 CLOSED: [2017-05-15 周一 10:02]
+	 - State "DONE"       from "TODO"       [2017-05-15 周一 10:02]
+***** DONE Web资源改进BUG修复
+	  CLOSED: [2017-05-15 周一 09:20]
+	  - State "DONE"       from "TODO"       [2017-05-15 周一 09:20]
+***** DONE Web资源站点分析
+	  CLOSED: [2017-05-15 周一 09:20]
+	  - State "DONE"       from "TODO"       [2017-05-15 周一 09:20]
+***** DONE Web资源改进代码扫描问题修改
+	  CLOSED: [2017-05-15 周一 09:57]
+	  - State "DONE"       from "TODO"       [2017-05-15 周一 09:57]
+***** DONE text/plain 的页面需要替换
+	  CLOSED: [2017-05-15 周一 10:02]
+	  - State "DONE"       from "TODO"       [2017-05-15 周一 10:02]
+***** DONE Web资源改进定制包升级脚本限制必须从M7.5Beta3升级
+	  CLOSED: [2017-05-08 周一 17:32]
+	  - State "DONE"       from "TODO"       [2017-05-08 周一 17:32]
+**** DONE <2017-05-15 周一> [100%]
+	 CLOSED: [2017-05-22 周一 10:18]
+	 - State "DONE"       from "TODO"       [2017-05-22 周一 10:18]
+***** DONE Web资源改进：新老形式的Cookie混用时会影响登录
+	  CLOSED: [2017-05-15 周一 15:15]
+	  - State "DONE"       from "TODO"       [2017-05-15 周一 15:15]
+***** DONE Web资源改进合入M7.6
+	  CLOSED: [2017-05-16 周二 19:40]
+	  - State "DONE"       from "TODO"       [2017-05-16 周二 19:40]
+***** DONE 微信企业号巴奴技术支持
+	  CLOSED: [2017-05-22 周一 10:06]
+	  - State "DONE"       from "TODO"       [2017-05-22 周一 10:06]
+
+结论：
+我们目前仅支持主页型应用，在主页型应用模式下，
+通过Easylink资源接入的系统不需要(也不允许)再调用微信的身份验证接口，
+而只能使用VPN通过URL参数(可以自己配，默认配的是login=user_id)传递过来的身份信息。
+
+***** DONE 微信企业号航天科技神软移动办公技术支持
+	  CLOSED: [2017-05-22 周一 10:06]
+	  - State "DONE"       from "TODO"       [2017-05-22 周一 10:06]
+
+结论：
+前线实施人员不熟悉实施步骤，在技术支持过程中遇到的大部分问题都属于实施人员对实施步骤不熟悉所致。
+这些问题包括：
+
+  1. 手机微信端打开企业号应用显示空白。因为未申请授权证书
+  2. VPN未配置企业号corpid和secret
+  3. 使用Web资源而非Easylink资源导致在打开微信企业号应用之后，很多页面访问不正常
+
+在跟渠道方实施人员沟通的过程中，发现他没有实施文档，而在定制包中实际是有文档打包在里面的。
+
+**** DONE <2017-05-22 周一> [60%]
+	 CLOSED: [2017-05-27 周六 17:52]
+	 - State "DONE"       from "TODO"       [2017-05-27 周六 17:52]
+***** DONE Web资源支持黑名单
+	  CLOSED: [2017-05-27 周六 17:52]
+	  - State "DONE"       from "TODO"       [2017-05-27 周六 17:52]
+***** DONE 转正
+	  CLOSED: [2017-05-27 周六 17:52]
+	  - State "DONE"       from "TODO"       [2017-05-27 周六 17:52]
+***** DONE 深圳证券所相关的定制：集群下真实服务器不启用用户配置的路由
+	  CLOSED: [2017-05-25 周四 16:34]
+	  - State "DONE"       from "TODO"       [2017-05-25 周四 16:34]
+**** TODO Web资源性能分析
+**** TODO checklist阅读
+**** TODO 微信企业号认证定制包合入M7.6
+**** TODO 无Content-Type 的页面需要替换
+**** TODO 替换 http:\/\/xxx.xxx.xxx 形式的url
 *** BUG TRACE
 
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
