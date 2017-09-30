@@ -516,11 +516,40 @@
 	  - [X] [Web资源改进]Referer修正错误
 	  - [X] [l2tp]l2tp服务启动失败（非必现）  [排查结果为设备存在多余的ppp_generic.ko文件所致]
 	  - [X] rdb_integral_check内部死循环导致CPU过高  [合入]
-**** TODO <2017-09-11 周一> [%]
-***** TODO BUG修复 [0/3]
-	  + [ ] 特定操作下登录马上注销 [timeqry]
-	  + [ ] 证书登录后用的sessionid是登录前的
-	  + [ ] L3VPN资源的域名不能访问 [下发的DNS解析域名出错]
+**** DONE <2017-09-11 周一> [100%]
+	 CLOSED: [2017-09-22 周五 08:38]
+	 - State "DONE"       from "TODO"       [2017-09-22 周五 08:38]
+***** DONE BUG修复 [4/5]
+	  CLOSED: [2017-09-22 周五 08:34]
+	  - State "DONE"       from "DONE"       [2017-09-22 周五 08:38]
+	  - State "DONE"       from "TODO"       [2017-09-22 周五 08:34]
+	  - [X] 特定操作下登录马上注销 [timeqry]
+	  - [X] 证书登录后用的sessionid是登录前的
+	  - [X] 普通L2TP接入失败(非IPSEC)
+	  - [X] 控制台修改IP不生效，需要重启VPN
+	  - [ ] L3VPN资源的域名不能访问 [下发的DNS解析域名出错]
+**** DONE <2017-09-22 周五> [100%]
+	 CLOSED: [2017-09-25 周一 10:03]
+	 - State "DONE"       from "TODO"       [2017-09-25 周一 10:03]
+***** DONE 技术支持：Web资源 [2/2]
+	  CLOSED: [2017-09-22 周五 08:41]
+	  - State "DONE"       from "TODO"       [2017-09-22 周五 08:41]
+	  + [X] CAS发布为Web资源后认证有问题
+	  + [X] 手机浏览器无法打开Web资源
+***** DONE BUG修复 [2/2]
+	  CLOSED: [2017-09-25 周一 10:03]
+	  - State "DONE"       from "TODO"       [2017-09-25 周一 10:03]
+	  + [X] L3VPN资源的域名不能访问
+	  + [X] 内置管理员CA被禁用后仍然可以使用禁用之前颁发的证书登录管理员账号
+**** DONE <2017-09-25 周一> [100%]
+	 CLOSED: [2017-09-30 周六 08:54]
+	 - State "DONE"       from "TODO"       [2017-09-30 周六 08:54]
+***** DONE Linux EC代码扫描问题修复
+	  CLOSED: [2017-09-30 周六 08:51]
+	  - State "DONE"       from "TODO"       [2017-09-30 周六 08:51]
+***** DONE Web资源改进合入到定制
+	  CLOSED: [2017-09-30 周六 08:54]
+	  - State "DONE"       from "TODO"       [2017-09-30 周六 08:54]
 **** TODO 替换 http:\/\/xxx.xxx.xxx 形式的url
 *** BUG TRACE
 
