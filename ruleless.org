@@ -551,6 +551,22 @@
 	  CLOSED: [2017-09-30 周六 08:54]
 	  - State "DONE"       from "TODO"       [2017-09-30 周六 08:54]
 **** TODO 替换 http:\/\/xxx.xxx.xxx 形式的url
+*** 2017/10
+**** DONE <2017-10-11 周三> [100%]
+	 CLOSED: [2017-10-16 周一 09:57]
+	 - State "DONE"       from "TODO"       [2017-10-16 周一 09:57]
+***** DONE 修复valgrind扫描问题 [周一]
+	  CLOSED: [2017-10-11 周三 14:37]
+	  - State "DONE"       from "TODO"       [2017-10-11 周三 14:37]
+***** DONE 2017092106: radius计费相关定制 [周三]
+	  CLOSED: [2017-10-13 周五 09:17]
+	  - State "DONE"       from "TODO"       [2017-10-13 周五 09:17]
+***** DONE 技术支持：DNS域名解析混乱(libevent所致) [周四]
+	  CLOSED: [2017-10-13 周五 09:18]
+	  - State "DONE"       from "TODO"       [2017-10-13 周五 09:18]
+**** TODO <2017-10-16 周一> [0%]
+***** TODO Web资源支持Http访问
+***** TODO 初步定位pptp导致设备宕机的问题在哪个模块
 *** BUG TRACE
 
 **** TODO 边境任务如果最后一轮是偷马任务，完成偷马后任务追踪里头偷马任务不消失。（偶尔）
