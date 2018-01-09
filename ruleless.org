@@ -17,6 +17,13 @@
 ***** DONE 问题排查: 导入ldap大量用户时失败(数据库损坏以及导入中断) [本周四~本周五]
 	  CLOSED: [2018-01-07 周日 14:41]
 	  - State "DONE"       from "TODO"       [2018-01-07 周日 14:41]
+**** TODO <2018-01-08 周一> [25%]
+***** DONE 杭州移动CAS统一认证问题 [周一]
+	  CLOSED: [2018-01-09 周二 18:43]
+	  - State "DONE"       from "TODO"       [2018-01-09 周二 18:43]
+url过长导致浏览器截短了其url，致使认证失败
+***** TODO 38483: 上传附件失败 [周一 ~ 周二]
+***** TODO linux客户端迁移到CentOS7.0及Ubuntu
 ** Schedule For Career
 
 ** Professional Skills
