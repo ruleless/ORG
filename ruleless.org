@@ -297,9 +297,98 @@ url过长导致浏览器截短了其url，致使认证失败
 iconv-lite中对Buffer使用不当，在一个函数中返回了一大段内存的某部分的引用
 ***** PROCESSING node proxy概要设计【未完成】 [周五]
 	  - State "PROCESSING" from "TODO"       [2018-07-16 周一 09:42]
-**** TODO <2018-07-16 周一> [0%]
-***** TODO node proxy概要设计
-***** TODO node proxy预研报告书
+**** DONE <2018-07-16 周一> [66%]
+	 CLOSED: [2018-07-23 周一 14:08]
+	 - State "DONE"       from "TODO"       [2018-07-23 周一 14:08]
+***** DONE node proxy概要设计 [周一 ~ 周二： 中断]
+	  CLOSED: [2018-07-23 周一 14:05]
+	  - State "DONE"       from "TODO"       [2018-07-23 周一 14:05]
+***** DONE 证书认证转接到node [周三]
+	  CLOSED: [2018-07-23 周一 14:06]
+	  - State "DONE"       from "TODO"       [2018-07-23 周一 14:06]
+***** DONE rpc thrift框架 [周四 ~ 周五]
+	  CLOSED: [2018-07-23 周一 14:06]
+	  - State "DONE"       from "TODO"       [2018-07-23 周一 14:06]
+***** DONE rpc对外接口设计 [周六]
+	  CLOSED: [2018-07-23 周一 14:06]
+	  - State "DONE"       from "TODO"       [2018-07-23 周一 14:06]
+**** DONE <2018-07-23 周一> [60%]
+	 CLOSED: [2018-07-30 周一 08:55]
+	 - State "DONE"       from "TODO"       [2018-07-30 周一 08:55]
+***** PROCESSING OnlineDB转redis方案可行性分析 [周一 ~ 周二]
+	  - State "PROCESSING" from "TODO"       [2018-07-27 周五 09:03]
+***** DONE Node.Js转连接方案 [周三 ~ 周四上午]
+	  CLOSED: [2018-07-27 周五 09:02]
+	  - State "DONE"       from "TODO"       [2018-07-27 周五 09:02]
+***** DONE CRDB RPC接口设计 [周四下午]
+	  CLOSED: [2018-07-27 周五 09:04]
+	  - State "DONE"       from "TODO"       [2018-07-27 周五 09:04]
+***** PROCESSING RPC可扩展接口设计 [周五]
+	  - State "PROCESSING" from "DONE"       [2018-07-30 周一 08:54]
+	  - State "DONE"       from "TODO"       [2018-07-30 周一 08:52]
+上午讨论了redis方案
+***** DONE 新员工代码审核、沟通/web资源培训/RPC接口设计 [周六]
+	  CLOSED: [2018-07-30 周一 08:55]
+	  - State "DONE"       from "TODO"       [2018-07-30 周一 08:55]
+*** 2018/8
+**** DONE <2018-07-30 周一> [100%]
+	 CLOSED: [2018-08-05 周日 18:23]
+	 - State "DONE"       from "TODO"       [2018-08-05 周日 18:23]
+***** DONE RPC数据接口设计并文档化
+	  CLOSED: [2018-08-05 周日 18:18]
+	  - State "DONE"       from "TODO"       [2018-08-05 周日 18:18]
+数据接口：
+  1. [X] 用户基本数据读写接口
+  2. [X] 用户业务(插件)数据读取接口
+  3. [X] 函数调用接口
+**** DONE <2018-08-06 周一> [100%]
+	 CLOSED: [2018-08-13 周一 10:01]
+	 - State "DONE"       from "TODO"       [2018-08-13 周一 10:01]
+***** DONE RPC接口完善
+	  CLOSED: [2018-08-13 周一 10:01]
+	  - State "DONE"       from "TODO"       [2018-08-13 周一 10:01]
+***** DONE 编写模拟业务场景的demo程序 [周四 ~ 周五]
+	  CLOSED: [2018-08-13 周一 10:01]
+	  - State "DONE"       from "TODO"       [2018-08-13 周一 10:01]
+**** DONE <2018-08-13 周一> [100%]
+	 CLOSED: [2018-08-22 周三 09:01]
+	 - State "DONE"       from "TODO"       [2018-08-22 周三 09:01]
+***** DONE 新方案压力测试 [周一 ~ 周四上午]
+	  CLOSED: [2018-08-16 周四 19:30]
+	  - State "DONE"       from "TODO"       [2018-08-16 周四 19:30]
+***** DONE RPC框架编写 [周四下午]
+	  CLOSED: [2018-08-17 周五 08:39]
+	  - State "DONE"       from "TODO"       [2018-08-17 周五 08:39]
+***** DONE RPC任务梳理及概要设计
+	  CLOSED: [2018-08-22 周三 09:00]
+	  - State "DONE"       from "TODO"       [2018-08-22 周三 09:00]
+  * node -> rpc -> redis [不满足，跨服务通信导致系统调用增多，从而导致性能下降厉害]
+  * apache -> redis [勉强满足]
+**** TODO <2018-08-20 周一> [85%]
+***** DONE RPC服务概要设计：总体结构 [周一]
+	  CLOSED: [2018-08-23 周四 21:17]
+	  - State "DONE"       from "TODO"       [2018-08-23 周四 21:17]
+***** DONE RPC服务概要设计：概要流程 [周一]
+	  CLOSED: [2018-08-23 周四 21:17]
+	  - State "DONE"       from "TODO"       [2018-08-23 周四 21:17]
+***** DONE RPC服务概要设计：详细流程 [周二]
+	  CLOSED: [2018-08-23 周四 21:17]
+	  - State "DONE"       from "TODO"       [2018-08-23 周四 21:17]
+***** DONE RPC服务概要设计：可调试性 [周二]
+	  CLOSED: [2018-08-23 周四 21:17]
+	  - State "DONE"       from "TODO"       [2018-08-23 周四 21:17]
+***** DONE 集群下的数据同步方案(设置接口) [周三]
+	  CLOSED: [2018-08-23 周四 21:17]
+	  - State "DONE"       from "TODO"       [2018-08-23 周四 21:17]
+***** DONE RPC框架编写 [周四]
+	  CLOSED: [2018-08-23 周四 21:30]
+	  - State "DONE"       from "TODO"       [2018-08-23 周四 21:30]
+  + profiler
+  + 信号处理
+  + 为动态库支持module_init和module_exit
+  + 注册函数时带上下文(needSync/funcname)
+***** TODO RPC服务概要设计：可测试性
+**** TODO redis共享存储方案
 **** TODO web资源黑白名单功能迁移
 **** TODO node proxy方案性能分析及改进
 *** TODO 日志改进 [2/5]
