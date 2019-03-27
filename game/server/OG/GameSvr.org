@@ -1,0 +1,14 @@
+* 游戏服务器所应包含的基本功能
+  * 网络通信
+  * 集群结构
+  * 数据持久化
+* OG服务器架构
+** 集群成员以及各成员的职责
+   1. Gateway Server (网关服务器)
+   2. Login Server (登陆服)
+   3. Bridge Server (桥服务器)
+   4. Verify Server (验证码服务器)
+   5. Passport Server (通行证服务器)
+   6. Social Server (社会服)
+   7. Zone Server (场景服)
+   8. Van Data Server (前端数据服)
