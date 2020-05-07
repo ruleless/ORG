@@ -1,0 +1,24 @@
+@startuml
+
+class Observer {
+    +Update()
+}
+
+class ConcreteObserver {
+    +Update()
+}
+note right of ConcreteObserver
+当Subject的Notify被调用时，该监听者将得到通知
+end note
+
+Observer <|- ConcreteObserver
+
+class Subject {
+    +Attach(Observer)
+    +Detach(Observer)
+    +Notify()
+}
+
+Observer --o Subject
+
+@enduml

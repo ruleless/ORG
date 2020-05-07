@@ -1,0 +1,12 @@
+@startuml
+
+class CurrentClass1
+class CurrentClass2
+class CurrentClassn
+
+class Facade
+Facade --> CurrentClass1
+Facade --> CurrentClass2
+Facade --> CurrentClassn
+
+@enduml

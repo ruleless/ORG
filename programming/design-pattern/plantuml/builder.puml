@@ -1,0 +1,24 @@
+@startuml
+
+class Builder {
+    +BuildPart()
+}
+
+class ConcreteBuilder {
+    +BuildPart()
+    +GetResult()
+}
+
+Builder <|-- ConcreteBuilder
+
+class Product
+
+ConcreteBuilder .> Product
+
+class Director {
+    +Construct()
+}
+
+Director "1" o- "n" Builder
+
+@enduml

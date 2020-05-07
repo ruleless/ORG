@@ -1,0 +1,28 @@
+@startuml
+
+class Product
+class ConcreteProductA
+class ConcreteProductB
+
+Product <|-- ConcreteProductA
+Product <|-- ConcreteProductB
+
+class Creator {
+    +FactoryMethod()
+}
+
+class ConcreteCreatorA {
+    +FactoryMethod()
+}
+
+class ConcreteCreatorB {
+    +FactoryMethod()
+}
+
+Creator <|-- ConcreteCreatorA
+Creator <|-- ConcreteCreatorB
+
+ConcreteProductA <. ConcreteCreatorA
+ConcreteProductB <. ConcreteCreatorB
+
+@enduml

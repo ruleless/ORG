@@ -1,0 +1,28 @@
+@startuml
+
+class Context {
+    +void ContextInterface()
+}
+
+class Strategy {
+    +void AlgorithmInterface()
+}
+
+Context o-- Strategy
+
+class ConcreteStrategyA {
+    +void AlgorithmInterface()
+}
+Strategy <|-- ConcreteStrategyA
+
+class ConcreteStrategyB {
+    +void AlgorithmInterface()
+}
+Strategy <|-- ConcreteStrategyB
+
+class ConcreteStrategyC {
+    +void AlgorithmInterface()
+}
+Strategy <|-- ConcreteStrategyC
+
+@enduml
