@@ -1,0 +1,27 @@
+@startuml
+
+class State {
+    +Handle()
+}
+
+class ConcreteStateA {
+    +Handle()
+}
+
+class ConcreteStateB {
+    +Handle()
+}
+
+State <|-- ConcreteStateA
+State <|-- ConcreteStateB
+
+class Context {
+    +Request()
+}
+note left of Context
+state->Handle()
+end note
+
+Context o- State
+
+@enduml

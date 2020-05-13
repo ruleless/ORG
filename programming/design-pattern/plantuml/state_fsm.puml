@@ -1,0 +1,31 @@
+@startuml
+
+class State {
+    +onEnter()
+    +onLeave()
+    +onExecute()
+}
+
+class ConcreteStateA {
+    +onEnter()
+    +onLeave()
+    +onExecute()
+}
+
+class ConcreteStateB {
+    +onEnter()
+    +onLeave()
+    +onExecute()
+}
+
+State <|-- ConcreteStateA
+State <|-- ConcreteStateB
+
+class StateFSM {
+    +gotoState()
+    +execute()
+}
+
+StateFSM "1" o- "n" State
+
+@enduml
