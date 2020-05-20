@@ -1,0 +1,35 @@
+@startuml Iteraotr
+
+class Aggregate {
+    {method} +CreateIterator(): Iterator
+}
+
+class ConcreteAggregate {
+    {method} +CreateIterator(): Iterator
+}
+
+note left of ConcreteAggregate::CreateIterator
+return new ConcreteIterator(this)
+end note
+
+Aggregate <|-- ConcreteAggregate
+
+class Iterator {
+    {method} +First()
+    {method} +Next()
+    {method} +IsDone()
+    {method} +CurrentItem()
+}
+
+class ConcreteIterator
+
+Iterator <|-- ConcreteIterator
+
+ConcreteAggregate .> ConcreteIterator
+ConcreteAggregate <- ConcreteIterator
+
+class Client
+Aggregate <- Client
+Client -> Iterator
+
+@enduml

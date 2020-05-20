@@ -1,0 +1,25 @@
+@startuml Adapter
+
+class Target {
+    +Request()
+}
+
+class Adaptee {
+    +SpecificRequest()
+}
+
+class Adapter {
+    +Request()
+}
+
+note left of Adapter::Request
+adaptee->SpecificRequest()
+end note
+
+Target <|-- Adapter
+Adapter -> Adaptee
+
+class Client
+Client -> Target
+
+@enduml

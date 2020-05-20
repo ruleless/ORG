@@ -1,0 +1,32 @@
+@startuml Bridge
+
+' 抽象
+class Abstraction {
+    {method} +Operation()
+}
+
+class RefinedAbstraction
+Abstraction <|-- RefinedAbstraction
+
+' 实现
+class Implementor {
+    {method} +OperationImp()
+}
+
+class ConcreteImlementorA {
+    {method} +OperationImp()
+}
+class ConcreteImlementorB {
+    {method} +OperationImp()
+}
+
+Implementor <|-- ConcreteImlementorA
+Implementor <|-- ConcreteImlementorB
+
+Abstraction "imp" o-> Implementor
+
+note left of Abstraction::Operation
+imp->OperationImp()
+end note
+
+@enduml

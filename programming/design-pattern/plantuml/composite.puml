@@ -1,0 +1,27 @@
+@startuml Composite
+
+class Component {
+    {method} +Operation()
+    {method} +Add(Component *c) {}
+    {method} +Remove(Component *c) {}
+}
+
+class Leaf {
+    {method} +Operation()
+}
+
+class Composite {
+    {method} +Operation()
+    {method} +Add(Component *c)
+    {method} +Remove(Component *c)
+}
+
+Component <|-- Leaf
+Component <|-- Composite
+
+Component --o Composite: children
+
+class Client
+Client -> Component
+
+@enduml
