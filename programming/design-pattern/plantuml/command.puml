@@ -1,0 +1,31 @@
+@startuml Command
+
+interface Command {
+    {method} +Execute()
+}
+
+class ConcreteCommand {
+    {method} +Execute()
+    {field} -state
+}
+
+Command <|-- ConcreteCommand
+
+class Invoker
+Invoker "1" o- "n" Command
+
+class Receiver {
+    {method} +Action()
+}
+
+Receiver <- ConcreteCommand
+
+note right of ConcreteCommand::Execute
+receiver->Action
+end note
+
+class Client
+Receiver <-- Client 
+ConcreteCommand <.. Client 
+
+@enduml
