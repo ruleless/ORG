@@ -1,4 +1,4 @@
-@startuml
+@startuml Prototype
 
 class Prototype {
     +Clone()

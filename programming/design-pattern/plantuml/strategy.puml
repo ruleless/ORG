@@ -1,4 +1,4 @@
-@startuml
+@startuml Strategy
 
 class Context {
     +void ContextInterface()

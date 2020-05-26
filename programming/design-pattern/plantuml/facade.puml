@@ -1,4 +1,4 @@
-@startuml
+@startuml Facade
 
 class CurrentClass1
 class CurrentClass2
