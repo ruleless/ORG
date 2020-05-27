@@ -1,0 +1,32 @@
+@startuml Flyweight
+
+class Flyweight {
+    {method} +Operation(extrinsicState)
+}
+
+class ConcreteFlyweight {
+    {field} -intrinsicState
+    {method} +Operation(extrinsicState)
+}
+
+class UnsharedConcreteFlyweight {
+    {field} -allState
+    {method} +Operation(extrinsicState)
+}
+
+Flyweight <|-- ConcreteFlyweight
+Flyweight <|-- UnsharedConcreteFlyweight
+
+class FlyweightFactory {
+    {method} +GetFlyweight(key)
+}
+
+FlyweightFactory "1" o- "n" Flyweight
+
+class Client
+
+FlyweightFactory <-- Client
+Client -> UnsharedConcreteFlyweight
+Client -> ConcreteFlyweight
+
+@enduml

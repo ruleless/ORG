@@ -1,0 +1,19 @@
+@startuml Interpreter
+
+class AbstractExpression {
+    {method} +Interpret(Context)
+}
+
+class TerminalExpression {
+    {method} +Interpret(Context)
+}
+
+class NonterminalExpression {
+    {method} +Interpret(Context)
+}
+
+AbstractExpression <|-- TerminalExpression
+AbstractExpression <|-- NonterminalExpression
+AbstractExpression "n" --o "1" NonterminalExpression
+
+@enduml

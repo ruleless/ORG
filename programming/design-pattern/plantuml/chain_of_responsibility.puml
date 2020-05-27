@@ -1,0 +1,25 @@
+@startuml Chain of Responsibility
+
+class Handler {
+    {field} -next: Handler
+    {method} +HandleRequest()
+    {method} +SetNext(Handler *next)
+}
+
+class ConcreteHandler1 {
+    {method} +HandleRequest()
+}
+
+class ConcreteHandler2 {
+    {method} +HandleRequest()
+}
+
+Handler -> Handler
+
+Handler <|-- ConcreteHandler1
+Handler <|-- ConcreteHandler2
+
+class Client
+Client -> Handler
+
+@enduml
