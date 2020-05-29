@@ -1,0 +1,21 @@
+@startuml Visitor
+
+class Visitor {
+    {method} +VisitConcreteElementA(ConcreteElementA)
+    {method} +VisitConcreteElementB(ConcreteElementB)
+}
+
+class ConcreteVisitor1 {
+    {method} +VisitConcreteElementA(ConcreteElementA)
+    {method} +VisitConcreteElementB(ConcreteElementB)
+}
+
+class ConcreteVisitor2 {
+    {method} +VisitConcreteElementA(ConcreteElementA)
+    {method} +VisitConcreteElementB(ConcreteElementB)
+}
+
+Visitor <|-- ConcreteVisitor1
+Visitor <|-- ConcreteVisitor2
+
+@enduml

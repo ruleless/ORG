@@ -1,0 +1,26 @@
+@startuml Visitor
+
+class Element {
+    {method} +Accept(Visitor)
+}
+
+class ConcreteElementA {
+    {method} +Accept(Visitor v)
+    {method} +OperationA()
+}
+note left of ConcreteElementA::Accept
+v->VisitConcreteElementA(this)
+end note
+
+class ConcreteElementB {
+    {method} +Accept(Visitor v)
+    {method} +OperationB()
+}
+note right of ConcreteElementB::Accept
+v->VisitConcreteElementB(this)
+end note
+
+Element <|-- ConcreteElementA
+Element <|-- ConcreteElementB
+
+@enduml

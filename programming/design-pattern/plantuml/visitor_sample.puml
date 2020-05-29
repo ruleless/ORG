@@ -1,0 +1,24 @@
+@startuml Vistor Sample
+
+class Node {
+    {method} +TypeCheck()
+    {method} +GenerateCode()
+    {method} +PrettyPrint()
+}
+
+class VariableRefNode {
+    {method} +TypeCheck()
+    {method} +GenerateCode()
+    {method} +PrettyPrint()
+}
+
+class AssignmentNode {
+    {method} +TypeCheck()
+    {method} +GenerateCode()
+    {method} +PrettyPrint()
+}
+
+Node <|-- VariableRefNode
+Node <|-- AssignmentNode
+
+@enduml
