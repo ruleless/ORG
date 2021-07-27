@@ -1,0 +1,23 @@
+@startuml net_rx_action
+
+start
+
+:__raise_softirq_irqoff(NET_RX_SOFTIRQ);
+:net_rx_action;
+
+while (!list_empty(&sd->poll_list))
+    :netpoll_poll_lock;
+
+    :napi->poll: ie. e1000_clean;
+    :adapter->clean_rx: ie. e1000_clean_jumbo_rx_irq;
+    :e1000_receive_skb;
+    :napi_gro_receive;
+    :napi_skb_finish;
+    :netif_receive_skb;
+
+    :netpoll_poll_unlock;
+endwhile
+
+stop
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml e1000_intr
+
+(*) --> e1000_intr
+
+--> __napi_schedule
+--> list_add_tail(&napi->poll_list, &sd->poll_list)
+--> __raise_softirq_irqoff(NET_RX_SOFTIRQ)
+
+--> (*)
+
+@enduml
