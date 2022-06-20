@@ -1,0 +1,12 @@
+@startuml netif_receive_skb
+
+start
+
+:netif_receive_skb;
+:__netif_receive_skb;
+:deliver_skb;
+:packet_type->func;
+
+stop
+
+@enduml
