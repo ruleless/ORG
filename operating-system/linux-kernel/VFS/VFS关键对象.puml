@@ -1,0 +1,66 @@
+@startuml VFS关键对象
+
+class file_system_type {
+    +struct dentry *(*mount)(...)
+}
+
+class super_block {
+    +const struct super_operations *s_op
+
+    +struct block_device *s_bdev
+    +struct dentry *s_root
+    +struct list_head s_inodes
+    +struct list_head s_files
+}
+
+class inode {
+    +const struct inode_operations *i_op
+
+    +unsigned long i_ino
+    +struct timespec i_atime
+    +struct timespec i_mtime
+    +struct timespec i_ctime
+}
+
+class dentry {
+    +const struct dentry_operations *d_op
+
+    +struct dentry *d_parent
+    +struct qstr d_name
+    +struct inode *d_inode
+    +struct super_block *d_sb
+    +struct list_head d_subdirs
+}
+
+class vfsmount {
+    +struct vfsmount *mnt_parent
+    +struct dentry *mnt_mountpoint
+    +struct dentry *mnt_root
+    +struct super_block *mnt_sb
+    +const char *mnt_devname
+}
+
+class file {
+    +const struct file_operations *f_op
+
+    +struct dentry *f_dentry
+    +struct vfsmount *f_vfsmnt
+    +atomic_long_t f_count
+    +unsigned int f_flags
+    +fmode_t f_mode
+    +loff_t f_pos
+    +struct address_space *f_mapping
+}
+
+file_system_type o-down- super_block
+super_block o-down- inode
+
+vfsmount -right-> super_block
+vfsmount -down-> dentry
+
+dentry -right-> inode
+
+file -right-> dentry
+file -up-> vfsmount
+
+@enduml
