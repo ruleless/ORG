@@ -15,6 +15,7 @@ class super_block {
 
 class inode {
     +const struct inode_operations *i_op
+    +const struct file_operations *i_fop
 
     +unsigned long i_ino
     +struct timespec i_atime
