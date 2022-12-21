@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e">
+    <diagram id="7a6T3NaaVdlsPsVl4XTb" name="第 1 页">
+        <mxGraphModel dx="1071" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="net/socket.c, net/sysctl_net.c,&lt;br&gt;net/core/, net/netfilter,&lt;br&gt;net/bridge/, net/ethernet/" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="201" y="520" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="core" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=14;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="196" y="520" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="职责：&lt;br&gt;核心对象（结构）、公共函数、&lt;br&gt;netfilter、文件系统接口、系统调用、&lt;br&gt;邻居子系统、设备子系统" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="530" width="240" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="net/ipv4/" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="201" y="440" width="79" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="net/ipv6/" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="295" y="440" width="79" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="net/unix/" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="388" y="440" width="79" height="71" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="..." style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="482" y="440" width="79" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="协议簇" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="465" width="60" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
