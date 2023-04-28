@@ -1,0 +1,62 @@
+@startuml 分组发送流程
+
+partition 系统调用(net/socket.c) {
+    :sys_sendmsg;
+    :sock_sendmsg;
+    :sock->ops->sendmsg;
+}
+
+partition 协议栈(net/ipv4/) {
+    :inet_sendmsg;
+    :sk->sk_prot->sendmsg;
+    :tcp_sendmsg;
+    floating note left: 这里以发送TCP分组为例
+    :tcp_write_xmit;
+    :**tcp_transmit_skb**;
+    :**ip_queue_xmit**;
+    floating note left: **分组进入网络层**
+    :ip_route_output_ports;
+    note left: 路由查找
+    :ip_local_out;
+    note left
+    NF_HOOK:
+    NF_INET_LOCAL_OUT
+    end note
+    :dst_output;
+    :skb_dst(skb)->output;
+    :ip_output;
+    note left
+    NF_HOOK:
+    NF_INET_POST_ROUTING
+    end note
+}
+
+partition 邻居子系统(net/core/neighbour.c) {
+    :neigh_output;
+    :neigh_resolve_output;
+    note left
+    还可能是函数：
+    neigh_direct_output 或
+    neigh_hh_output
+    end note
+}
+
+partition 设备子系统(net/core/dev.c) {
+    :dev_queue_xmit;
+    note left
+    如果网卡设备支持队列，
+    则会将分组添加到队列
+    end note
+    :dev_hard_start_xmit;
+    :dev->ops->ndo_start_xmit;
+}
+
+partition 驱动层(drivers/net/) {
+    :igb_xmit_frame;
+    note left
+    将分组添加到网卡的发送队列
+    然后由网卡完成发送
+    end note
+}
+
+@enduml
