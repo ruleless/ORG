@@ -1,0 +1,77 @@
+<mxfile host="65bd71144e">
+    <diagram id="rIOExLRtfl85iGjMS-xl" name="第 1 页">
+        <mxGraphModel dx="1386" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="50" value="公共组件" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="80" width="770" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="socket" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="125" width="140" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="+ file: file&lt;br&gt;+ sk: sock&lt;br&gt;+ wq:&amp;nbsp;socket_wq&lt;br&gt;+ ops: proto_ops&lt;br&gt;..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="36" vertex="1">
+                    <mxGeometry y="29" width="140" height="81" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="proto_ops" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="344" y="110" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;div&gt;+ family: int&lt;/div&gt;&lt;div&gt;+ bind()&lt;/div&gt;&lt;div&gt;+ listen()&lt;/div&gt;&lt;div&gt;+ accept()&lt;/div&gt;&lt;div&gt;+ sendmsg()&lt;/div&gt;&lt;div&gt;+ recvmsg()&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="39" vertex="1">
+                    <mxGeometry y="29" width="140" height="111" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="net_proto_family" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="400" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="+ family: int&lt;br&gt;+ create" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="44" vertex="1">
+                    <mxGeometry y="29" width="140" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="接口(net.h)" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="110" width="350" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 8px;&quot;&gt;+ sock_register(const struct net_proto_family *ops)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ sock_create(int family, int type, int proto, ...)&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 8px;&quot;&gt;+&amp;nbsp;sock_sendmsg(struct socket *sock, struct msghdr *msg)&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 8px;&quot;&gt;+&amp;nbsp;sock_recvmsg(struct socket *sock, struct msghdr *msg, ...)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;...&lt;/p&gt;" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;align=left;" parent="47" vertex="1">
+                    <mxGeometry width="350" height="104.99999999999999" relative="1" as="geometry">
+                        <mxPoint y="30" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="net_families[NPROTO]" style="fontStyle=0;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="500" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="sock" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="275" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="+&amp;nbsp;sk_sndtimeo: long&lt;br&gt;+&amp;nbsp;sk_timer: timer_list&lt;br&gt;+ sk_mark: __u32&lt;br&gt;+ sk_prot: proto&lt;br&gt;+&amp;nbsp;sk_state_change()&lt;br&gt;+&amp;nbsp;sk_data_ready()&lt;br&gt;..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="52" vertex="1">
+                    <mxGeometry y="29" width="140" height="111" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="endArrow=open;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="38" target="41" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="360" y="310" as="sourcePoint"/>
+                        <mxPoint x="520" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="proto" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="270" width="150" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="+ close()&lt;br&gt;+&amp;nbsp;connect()&lt;br&gt;+&amp;nbsp;accept()&lt;br&gt;+&amp;nbsp;setsockopt/getsockopt()&lt;br&gt;+&amp;nbsp;sendmsg()&lt;br&gt;+ recvmsg()&lt;br&gt;+ bind()&lt;br&gt;..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="58" vertex="1">
+                    <mxGeometry y="29" width="150" height="121" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="接口(net/sock.h)" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="270" width="360" height="151" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="+&amp;nbsp;sk_alloc(..., struct proto *prot, ...)&lt;br&gt;+&amp;nbsp;sock_init_data(struct socket *sock, struct sock *sk)&lt;br&gt;+&amp;nbsp;sk_dst_set(struct sock *sk, struct dst_entry *dst)&lt;br&gt;+ proto_register(struct proto *prot, int alloc_slab) // 似乎只用于proc&lt;br&gt;+&amp;nbsp;sock_prot_inuse_add(struct net *net, struct proto *prot, int inc)&lt;br&gt;..." style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;align=left;verticalAlign=middle;" parent="61" vertex="1">
+                    <mxGeometry width="359.99999999999994" height="105.7" relative="1" as="geometry">
+                        <mxPoint y="30" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="" style="endArrow=open;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="54" target="59">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="30" y="540" as="sourcePoint"/>
+                        <mxPoint x="190" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="64" value="系统调用层" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;" vertex="1" parent="1">
+                    <mxGeometry x="1050" y="600" width="340" height="180" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
