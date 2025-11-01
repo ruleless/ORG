@@ -1,5 +1,6 @@
 """一个简单的单头自注意力模块的实现"""
 
+import math
 import torch
 from torch import nn, Tensor
 import torch.nn.functional as F
@@ -25,6 +26,7 @@ class SelfAttention(nn.Module):
         # PyTorch提供了 `scaled_dot_product_attention` 来高效地计算缩放点积注意力
         # return F.scaled_dot_product_attention(query, key, value, is_causal=False)
         attn_score = query @ key.transpose(-2, -1)
+        attn_score /= math.sqrt(query.size(-1))
         attn_weight = torch.softmax(attn_score, -1)  # (batch_size, seq_len, seq_len)
         return attn_weight @ value
 
